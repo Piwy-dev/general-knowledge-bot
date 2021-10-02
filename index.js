@@ -1,7 +1,11 @@
 const Discord = require('discord.js');
+const { Intents } = require('discord.js')
+
 const path = require('path')
 const fs = require('fs')
-const client = new Discord.Client({partials: ["MESSAGE", "CHANNEL", "REACTION", "USER", "GUILD_MEMBER"]});
+
+const client = new Discord.Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS] },
+    { partials: ["MESSAGE", "CHANNEL", "REACTION", "USER", "GUILD_MEMBER"] });
 
 const {token} = require("./keys.json")
 

@@ -1,7 +1,6 @@
 const Discord = require('discord.js')
 const language = require('../language')
 
-
 module.exports = {
     commands: ['info', 'help'],
     callback: async (message, arguments, text, client) => {

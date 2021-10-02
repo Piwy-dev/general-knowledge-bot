@@ -164,6 +164,10 @@
         "CREDITS": {
             "english": "Bot created by Piwy#3333. \nIf you need help with the bot, join the help server: https://discord.gg/Myq4UjMrUq or uses the command *bug + the description of the bug. \nTo see the commands list, uses the command *help.",
             "french": "Bor créer par Piwy#3333. \nPour reçevoir de l'aide, rejoingez le serveur d'aide: https://discord.gg/Myq4UjMrUq ou utilisez la commande *bug + la description du bug. \nPour voir ma liste des commandes, utilizez la commande *help."
+        },
+        "INVITE": {
+            "english": "There's the link to invite the bot on your server: \n",
+            "french": "Voici le lien pour inviter le bot sur ton serveur: \n"
         }
     }
 }
