@@ -1,4 +1,4 @@
-const { languages } = require('../Json FILES/lang.json');
+const { languages } = require('../lang.json');
 const mongo = require('../bdd/mongo')
 const languageSchema = require('../bdd/language-schema');
 const { setLanguage } = require('../language')

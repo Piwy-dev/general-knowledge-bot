@@ -1,6 +1,6 @@
 const mongo = require('./bdd/mongo')
 const languageSchema = require('./bdd/language-schema')
-const lang = require('./Json FILES/lang.json')
+const lang = require('./lang.json')
 
 const guildLanguages = {}
 
