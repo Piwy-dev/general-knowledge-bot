@@ -12,7 +12,7 @@ module.exports = {
 
         var i = Math.floor(Math.random() * Math.floor(questions.length));
 
-        var msg = await message.channel.send(questions[i]);
+        var msg = await message.reply(questions[i]);
         msg.react('✅')
         msg.react('❌')
     
@@ -32,25 +32,21 @@ module.exports = {
                         
                         if(answers[i] === "vrai"){
                             profile.addxp(guildId, userId, 5)
-                            channel.send(`${message.author} ${language(guild, "WIN_XP")} 5 points! ${informations[i]}`)
-                            msg.delete().catch(e => {});
+                            msg.reply(`${message.author} ${language(guild, "WIN_XP")} 5 points! ${informations[i]}`)
                         }
                         else{ 
                             profile.addxp(guildId, userId, -5)
-                            channel.send(`${message.author} ${language(guild, "LOSE_XP")} 5 points. ${informations[i]}`)
-                            msg.delete().catch(e => {});
+                            msg.reply(`${message.author} ${language(guild, "LOSE_XP")} 5 points. ${informations[i]}`)
                         }
                     }
                     else if(reaction.emoji.name === '❌'){
                         if(answers[i] === "faux"){
                             profile.addxp(guildId, userId, 5)
-                            channel.send(`${message.author} ${language(guild, "WIN_XP")} 5 points! ${informations[i]}`)
-                            msg.delete().catch(e => {});
+                            msg.reply(`${message.author} ${language(guild, "WIN_XP")} 5 points! ${informations[i]}`)
                         }
                         else { 
                             profile.addxp(guildId, userId, -5)
-                            channel.send(`${message.author} ${language(guild, "LOSE_XP")} 5 points. ${informations[i]}`)
-                            msg.delete().catch(e => {});
+                            msg.reply(`${message.author} ${language(guild, "LOSE_XP")} 5 points. ${informations[i]}`)
                         }
                     }
                     else return message.reply("Le but d'un vrai ou faux, c'est qu'il n'y a que deux options possibles, en rajouter d'autres ne marchera pas.");

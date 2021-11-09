@@ -31,7 +31,7 @@ module.exports = (guild, textId) => {
         throw new Error (`Unknown textId: "${textId}"`)
     }
 
-    const selectedLanguage = guildLanguages[guild.id].toLowerCase();
+    const selectedLanguage = guildLanguages[guild.id];
 
     return lang.translations[textId][selectedLanguage]
 }

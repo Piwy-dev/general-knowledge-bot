@@ -7,7 +7,7 @@
         },
         "LOSE_XP": {
             "english": "bad answer, you loses",
-            "french": "mavaise réponse, tu perds"
+            "french": "mauvaise réponse, tu perds"
         },
         "ANSWER_WAS": {
             "english": "The good answer was:",
@@ -29,13 +29,9 @@
             "english": "What is the name of the company that belong to this logo:",
             "french": "Quel est le nom de la société à qui appartiens ce logo:"
         },
-        "RETURN": {
-            "english": "React with 🚪 to return to main menu.",
-            "french": "Réagis avec 🚪 pour retourner au menu pricipal"
-        },
         "GEN_INFO": {
             "english": "General informations",
-            "french": "Information Générales"
+            "french": "Informations Générales"
         },
         "GEN_INFO_VALUE": {
             "english": "This bot uses a connection to a database to save diffents data's from the users, like their points. Each time you uses a test command, you earns points if you answer correctly and loses it in the opposite case. For more informations react with 📈",
@@ -54,8 +50,8 @@
             "french": "Merci d'utiliser le bot de Culture générale! Apprenez ici comment l'utiliser."
         },
         "INFO_FOOTER": {
-            "english": "Bot created by Piwy#3333. See more informations using *credits",
-            "french": "Bot créer par Piwy#3333. Pour plus d'information utilises *credits."
+            "english": "Bot created by Piwy#2703. See more informations using *credits",
+            "french": "Bot créer par Piwy#2703. Pour plus d'information utilises *credits."
         },
         "TEST_CMD": {
             "english": "Tests commands",

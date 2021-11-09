@@ -11,14 +11,14 @@ module.exports = {
 
         var i = Math.floor(Math.random() * Math.floor(contries.length));
 
-        message.channel.send(`${message.author} ${language(guild, "CAPITAL")} ${contries[i]}?`);
+        message.reply({content: `${message.author} ${language(guild, "CAPITAL")} ${contries[i]}?`});
     
         const guildId = message.guild.id
         const userId = message.author.id
     
         var canAnswer = true
     
-        client.on("message", msg => {
+        client.on("messageCreate", msg => {
             if(msg.author !== message.author) return;  // Verifie que ce sois le bon auteur
             if(msg.author.id === "803979491373219840") return; // Verifie qeu ce ne sois pas le bot qui réponde
             if(!canAnswer) return
@@ -37,13 +37,15 @@ module.exports = {
             var similarity = Compare(capitals[i].toLowerCase() ,msg.content.toLowerCase());
         
             if(similarity > 0.5){
-                channel.send(`${message.author} ${language(guild, "WIN_XP")} 10 points!`);
-                profile.addxp(guildId, userId, 10)
+                msg.reply({content: `${message.author} ${language(guild, "WIN_XP")} 8 points!`});
+                profile.addxp(guildId, userId, 8)
                 canAnswer = false
             }
             else{
-                channel.send(`${message.author} ${language(guild, "LOSE_XP")} 5 points! ${language(guild, "ANSWER_WAS")} ${capitals[i]}`);
-                profile.addxp(guildId, userId, -5)
+                msg.reply({
+                    content:`${message.author} ${language(guild, "LOSE_XP")} 2 points! ${language(guild, "ANSWER_WAS")} ${capitals[i]}`
+                });
+                profile.addxp(guildId, userId, -3)
                 canAnswer = false
             }
         })

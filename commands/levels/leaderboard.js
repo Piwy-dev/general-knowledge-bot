@@ -36,6 +36,6 @@ module.exports = {
     .setColor('#3B5998')
     .setTitle('LeaderBoard')
     .setDescription(topMembers)
-    message.channel.send(newEmbed);
+    message.channel.send({embeds: [newEmbed]});
   },
 }

@@ -5,13 +5,11 @@ const { flags } = require('../../Json FILES/flags.json');
 const { contries } = require('../../Json FILES/contries.json');
 
 module.exports = {
-    commands: ['flag', 'f'],
+    commands: ['flag', 'f', 'drapeau', 'd'],
     callback: (message, argument, text, client) => {
-        const { guild, channel } = message
+        const {guild, channel} = message
 
-        //var i = Math.floor(Math.random() * Math.floor(flags.length));
-
-        var i = 3;
+        var i = Math.floor(Math.random() * Math.floor(flags.length));
 
         message.channel.send(`${message.author} ${language(guild, "CONTRY_NAME")}`);
         message.channel.send(flags[i]);
@@ -22,8 +20,12 @@ module.exports = {
 
         client.on("messageCreate", msg => {
             if (msg.author !== message.author) return;  // Verifie que ce sois le bon auteur
-            if (message.author.id === "880803470872027156") return; // Verifie que ce ne sois pas le bot qui réponde
+            if (msg.author.id === "803979491373219840") return; // Verifie qeu ce ne sois pas le bot qui réponde
             if (!canAnswer) return
+
+            var similarity;
+            var propositions;
+            var verification = false;
 
             function Compare(strA, strB) {
                 for (var result = 0, i = strA.length; i--;) {
@@ -36,25 +38,38 @@ module.exports = {
                 return 1 - (result + 4 * Math.abs(strA.length - strB.length)) / (2 * (strA.length + strB.length));
             }
 
-            console.log(contries[i])
-            console.log(contries[i][0])
-            if (contries[i][0]) {
-                console.log("vsy fait voir")
-                for (var f = 0; f <= contries[i][f].length + 1 ; f++) {
-                    console.log(contries[i][f])
-                    var similarity = Compare(contries[i][f].toLowerCase(), msg.content.toLowerCase());
-                    if (similarity > 0.5) {
-                        channel.send(`${message.author} ${language(guild, "WIN_XP")} 10 points!`);
-                        profile.addxp(guild.id, userId, 10)
-                        canAnswer = false
+            if(contries[i].includes(", ")){ // Si il y a plusieurs solution pour le pays
+                propositions = contries[i].split(", ");
+                for(var prop = 0, p = propositions.length; p--;){
+                    similarity = Compare(propositions[p].toLocaleLowerCase() , msg.content.toLowerCase())
+                    if(similarity > 0.5){ // Si une des réponse est bonne
+                        verification = true;
                         break;
-                    }
-                    else {
-                        channel.send(`${message.author} ${language(guild, "LOSE_XP")} 5 points ! ${language(guild, "ANSWER_WAS")} ${contries[i][f]}`);
-                        profile.addxp(guild.id, userId, -5)
-                        canAnswer = false
+                    } else if (similarity <= 0.5 && p == 0) {
+                        verification = false;
+                        break
                     }
                 }
+            }
+            else // Si il n'y a qu'une seule solution possible
+            {
+                similarity = Compare(contries[i].toLowerCase(), msg.content.toLowerCase());
+                if(similarity > 0.5){ // Si une des réponse est bonne
+                    verification = true;
+                } else {
+                    verification = false;
+                }
+            }
+
+            if (verification) { // Si la réponse est bonne
+                msg.reply(`${message.author} ${language(guild, "WIN_XP")} 10 points!`);
+                profile.addxp(guild.id, userId, 10)
+                canAnswer = false
+            }
+            else { // Si elle est fausse
+                msg.reply(`${message.author} ${language(guild, "LOSE_XP")} 5 points ! ${language(guild, "ANSWER_WAS")} ${contries[i]}`);
+                profile.addxp(guild.id, userId, -5)
+                canAnswer = false
             }
         })
     },

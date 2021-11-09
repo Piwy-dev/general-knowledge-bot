@@ -13,7 +13,10 @@ module.exports = {
         var i = Math.floor(Math.random() * Math.floor(logos.length));
 
         const attachement = new MessageAttachment(logos[i])
-        message.reply(`${language(guild, "LOGO")}`, attachement)
+        message.reply({
+            content: `${language(guild, "LOGO")}`, 
+            files: [attachement]
+        })
   
         const guildId = message.guild.id
         const userId = message.author.id
@@ -21,7 +24,7 @@ module.exports = {
     
         var canAnswer = true
     
-        client.on("message", msg => {
+        client.on("messageCreate", msg => {
             if(msg.author !== message.author) return;  // Verifie que ce sois le bon auteur
             if(msg.author.id === "803979491373219840") return; // Verifie qeu ce ne sois pas le bot qui réponde
             if(!canAnswer) return
