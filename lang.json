@@ -11,7 +11,7 @@
         },
         "ANSWER_WAS": {
             "english": "The good answer was:",
-            "french": "La bonne réonse était:"
+            "french": "La bonne réponse était:"
         },
         "CONTRY_NAME": {
             "english": "Give the name of the country: ",
@@ -27,23 +27,15 @@
         },
         "LOGO": {
             "english": "What is the name of the company that belong to this logo:",
-            "french": "Quel est le nom de la société à qui appartiens ce logo:"
+            "french": "Quel est le nom de la société à qui appartient ce logo:"
         },
         "GEN_INFO": {
             "english": "General informations",
             "french": "Informations Générales"
         },
         "GEN_INFO_VALUE": {
-            "english": "This bot uses a connection to a database to save diffents data's from the users, like their points. Each time you uses a test command, you earns points if you answer correctly and loses it in the opposite case. For more informations react with 📈",
-            "french": "Ce bot utilises une connection à une base de données qui sauvegarde les différentes données des utilisateurs, comme leurs points. Chaque fois que vous utiliseez une commande de test vous gagnez des points si vous répondez correctement et vous en perdez dans le cas contraire. Pour plus d'inoformations réagissez avec 📈"
-        },
-        "INFO_CMD_LIST": {
-            "english": "Commands list",
-            "french": "Liste des commandes"
-        },
-        "INFO_CMD_LIST_VALUE": {
-            "english": "📝 React to see all test commands \n📈 React to see the profiles commands \n⚙️ React to see the configuration commands",
-            "french": "📝 Réagis pour voir les commandes de test \n📈 Réagis pour voir les commandes de profiles \n⚙️ Réagis pour voir les commands de configuration"
+            "english": "This bot uses a connection to a database to save different data from the users, like their points. Each time you use a test command, you earn points if you answer correctly and lose it in the opposite case.",
+            "french": "Ce bot utilise une connexion à une base de données qui sauvegarde les différentes données des utilisateurs, comme leurs points. Chaque fois que vous utilisez une commande de test vous gagnez des points si vous répondez correctement et vous en perdez dans le cas contraire."
         },
         "INFO_THANKS": {
             "english": "Thanks for using the General Knowledge bot! Learn hier how to use it.",
@@ -58,7 +50,7 @@
             "french": "Commandes de tests"
         },
         "TEST_CMD_DESCR": {
-            "english": "They're multiple test available. See hier the diffrents tests available.",
+            "english": "They're multiple tests available. See hier the difference tests available.",
             "french": "Il y a plusieurs sortes de tests disponibles. Voyez ici la liste des différents tests."
         },
         "TRUE_FALSE": {
@@ -67,7 +59,7 @@
         },
         "TRUE_FALSE_DESCR": {
             "english": "In order to have a true or false question, uses the *tf or *truefalse commands, then react with ✅ if it's true or ❌ it it's false.",
-            "french": "Pour avoir une question de vrai ou faux, utilises la commande *vf ou *vraifaux, ensuite réajisser avec ✅ si c'est vrai ou ❌ si c'est faux."
+            "french": "Pour avoir une question de vrai ou faux, utilises la commande *vf ou *vraifaux, ensuite réagissez avec ✅ si c'est vrai ou ❌ si c'est faux."
         },
         "FLAG_TEST": {
             "english": "Flag test",
@@ -75,7 +67,7 @@
         },
         "FLAG_TEST_DESCR": {
             "english": "Uses the command *f or *flag for testing your knowledge in flags. The first message you send after it will be considered as your answer.",
-            "french": "Utilises la commende *d, ou *drapeau pour tester tes connaissances en drapeaux. Le premier message que tu envoies par après sera considéré comme ta réponse."
+            "french": "Utilises la commande *f, ou *flag pour tester tes connaissances en drapeaux. Le premier message que tu envoies par après sera considéré comme ta réponse."
         },
         "CAPITAL_TEST": {
             "english": "Capitals test",
@@ -83,14 +75,14 @@
         },
         "CAPITAL_TEST_DESCR": {
             "english": "Uses the *c or *capital for testing your knowledge in capitals. The first message you send after it will be considered as your answer.",
-            "french": "Utilises la commende *c, ou *capital pour tester tes connaissances en capitales. Le premier message que tu envoies par après sera considéré comme ta réponse."
+            "french": "Utilises la commande *c, ou *capital pour tester tes connaissances en capitales. Le premier message que tu envoies par après sera considéré comme ta réponse."
         },
         "LOGO_TEST": {
             "english": "Logos test",
             "french": "Test des logos"
         },
         "LOGO_TEST_DESCR": {
-            "english": "Uses the *logo command to test your knoledge in logos. The first message you send after it will be considered as your answer.",
+            "english": "Uses the *logo command to test your knowledge in logos. The first message you send after it will be considered as your answer.",
             "french": "Utilises la commande *logo pour tester tes connaissances en logos. Le premier message que tu envoies par après sera considéré comme ta réponse."
         },
         "CONFIG_CMD": {
@@ -99,7 +91,7 @@
         },
         "CONFIG_CMD_DESCR": {
             "english": "The configuration commands allows to configure the differents parameters of the bot and are only available for the administrators.",
-            "french": "Les commandes de configuration permetent de configurer les paramètres du bot ne sont disponibles que pour les administrateurs."
+            "french": "Les commandes de configuration permettent de configurer les paramètres du bot ne sont disponibles que pour les administrateurs."
         },
         "SETLANG_CMD": {
             "english": "Language setting",
@@ -114,7 +106,7 @@
             "french": "Commandes des points"
         },
         "POINT_CMD_DESCR": {
-            "english": "With these commands you can see all things releated to points.",
+            "english": "With these commands you can see all things related to points.",
             "french": "Avec ces commandes tu peux voir toutes les choses liées aux points."
         },
         "PROFILE_CMD": {
@@ -123,7 +115,7 @@
         },
         "PROFILE_CMD_DESCR": {
             "english": "The *profile commands show the points you have. You can tag someone after the command to see his points.",
-            "french": "La commande *profile te montre tes points. Tu peux tagger quelqu'un après la commande pour voir ses points."
+            "french": "La commande *profile te montre tes points. Tu peux taguer quelqu'un après la commande pour voir ses points."
         },
         "LEAD_CMD": {
             "english": "Leaderboard",
@@ -146,7 +138,7 @@
             "french": "Merci de rentrer un nombre valide."
         },
         "HAS_RECIVED": {
-            "english": "has recived",
+            "english": "has received",
             "french": "as reçu"
         },
         "NOW_HAS": {
@@ -158,16 +150,26 @@
             "french": "as:"
         },
         "CREDITS": {
-            "english": "Bot created by Piwy#3333. \nIf you need help with the bot, join the help server: https://discord.gg/Myq4UjMrUq or uses the command *bug + the description of the bug. \nTo see the commands list, uses the command *help.",
-            "french": "Bor créer par Piwy#3333. \nPour reçevoir de l'aide, rejoingez le serveur d'aide: https://discord.gg/Myq4UjMrUq ou utilisez la commande *bug + la description du bug. \nPour voir ma liste des commandes, utilizez la commande *help."
+            "english": "Bot created by Piwy#3333. \nIf you need help with the bot, join the help server: https://discord.gg/PhCdM465np or uses the command bug + the description of the bug. \nTo see the commands list, uses the command help.",
+            "french": "Bor créer par Piwy#3333. \nPour reçevoir de l'aide, rejoingez le serveur d'aide: https://discord.gg/PhCdM465np ou utilisez la commande bug + la description du bug. \nPour voir ma liste des commandes, utilisez la commande help."
         },
         "INVITE": {
             "english": "There's the link to invite the bot on your server: \n",
             "french": "Voici le lien pour inviter le bot sur ton serveur: \n"
         },
         "BUG": {
-            "english": "The bug has been reported to the devlopper, thanks. \nContent: ",
-            "french": "Le bug a été rapporté au dévloppeur, merci. \nContenu: "
+            "english": "The bug has been reported to the developer, thanks. \nContent: ",
+            "french": "Le bug a été rapporté au développeur, merci. \nContenu: "
+        },
+        "TRUE": {
+            "english": "True",
+            "french": "Vrai",
+            "nederlands": "Niet waar"
+        },
+        "FALSE": {
+            "english": "False",
+            "french": "Faux",
+            "nederlands": "Waar"
         }
     }
-}
+ }

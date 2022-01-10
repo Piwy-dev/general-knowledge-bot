@@ -1,58 +1,86 @@
-const Discord = require('discord.js');
-const { Intents } = require('discord.js')
+const { Intents, Client, Collection } = require('discord.js')
 
-const path = require('path')
 const fs = require('fs')
+require('dotenv').config()
 
-const client = new Discord.Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS] },
-    { partials: ["MESSAGE", "CHANNEL", "REACTION", "USER", "GUILD_MEMBER"] });
+const { REST } = require("@discordjs/rest")
+const { Routes } = require("discord-api-types/v9")
 
-const {token} = require("./keys.json")
+const client = new Client({
+    intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MESSAGE_REACTIONS"]
+});
+
+const config = require("./keys.json")
 
 const mongo = require("./bdd/mongo");
 
 const { loadLanguages } = require('./language')
 
 // Laisse le bot en ligne
-var http = require('http');  
-http.createServer(function (req, res) {   
-  res.write("I'm alive");   
-  res.end(); 
+var http = require('http');
+http.createServer(function (req, res) {
+    res.write("I'm alive");
+    res.end();
 }).listen(8080);
 
-client.on('ready', async () =>{
-    console.log(`Currently in ${client.guilds.cache.size} servers`);    
-    
-    // Charge toutes les commandes
-    const baseFile = 'command-base.js'
-    const commandBase = require(`./commands/${baseFile}`)
-    const readCommands = dir => {
-        const files = fs.readdirSync(path.join(__dirname, dir))
-        for(const file of files){
-            const stat = fs.lstatSync(path.join(__dirname, dir, file))
-            if(stat.isDirectory()) {
-                readCommands(path.join(dir, file))
-            } else if (file !== baseFile) {
-                const option = require(path.join(__dirname, dir, file))
-                commandBase(client, option)
-            }
-        }
-    }
-    readCommands('commands')
+const commandFiles = fs.readdirSync('./slashcommands').filter(file => file.endsWith('.js'));
+const commands = [];
+client.commands = new Collection();
+for (const file of commandFiles) {
+    const command = require(`./slashcommands/${file}`)
+    commands.push(command.data.toJSON())
+    client.commands.set(command.data.name, command)
+}
+
+client.on('ready', async () => {
+
+    // Charge la langue du serveur
+    await loadLanguages(client)
+
+    // Charge les commandes
+    const clientID = client.user.id;
+    const rest = new REST({
+        version: '9'
+    }).setToken(config.token);
+
+    (async () => {
+        await rest.put(Routes.applicationGuildCommands(clientID, config.GuildID), {
+            body: commands
+        })
+        console.log("Les commandes ont été chargées localement correctement.")
+    })()
 
     // Connecte à la bdd
-    await mongo().then(mongoose => { 
+    await mongo().then(mongoose => {
         try {
             console.log('Base de donnée connectée');
-        } finally{
+        } finally {
             mongoose.connection.close();
         }
     })
 
-    // Charge la langue du serveur
-    loadLanguages(client)
-
-    client.user.setActivity(`Currently in ${client.guilds.cache.size} servers`, {type: "WATCHING"})
+    console.log(`Currently in ${client.guilds.cache.size} servers`);
+    client.user.setActivity(`Currently in ${client.guilds.cache.size} servers`, { type: "WATCHING" })
 });
 
-client.login(token)
+client.on('interactionCreate', async interaction => {
+    if (!interaction.isCommand()) return
+
+    const command = client.commands.get(interaction.commandName)
+
+    if (!command) return
+
+    try {
+        await command.execute(interaction, client)
+    }
+    catch (err) {
+        if (err) console.error(err)
+
+        await interaction.reply({
+            content: "An error occured while executing this command. Please try again or repport a bug.",
+            ephemeral: true
+        })
+    }
+})
+
+client.login(config.token)
