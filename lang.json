@@ -157,6 +157,10 @@
             "english": "There's the link to invite the bot on your server: \n",
             "french": "Voici le lien pour inviter le bot sur ton serveur: \n"
         },
+        "INVITE_BUT": {
+            "english": "Invite the bot",
+            "french": "Invite le bot"
+        },
         "BUG": {
             "english": "The bug has been reported to the developer, thanks. \nContent: ",
             "french": "Le bug a été rapporté au développeur, merci. \nContenu: "
@@ -170,6 +174,16 @@
             "english": "False",
             "french": "Faux",
             "nederlands": "Waar"
+        },
+        "THX_ANSW": {
+            "english": "Thank you for answering.",
+            "french": "Merci d'avoir répondu.",
+            "nederlands": "Dank u voor uw antwoord."
+        },
+        "CANT_ANSW": {
+            "english": "You cannot answer this question. Execute the command yourself to be able to answer.",
+            "french": "Tu ne peux pas répondre à cette question. Effectue la commande toi-même pour pouvoir répondre.",
+            "nederlands": "Je kan niet antworden aan deze vraag. Maak de command zelf zodat u deze kunt beantwoorden."
         }
     }
  }

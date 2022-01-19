@@ -8,13 +8,13 @@ module.exports = {
         .setDescription("Create an invitation link for the bot."),
 
     async execute(interaction, client) {
-        const { guild } = message
+        const { guild } = interaction
         const invite = client.generateInvite({ scopes: ['bot', 'applications.commands'], permissions: [Permissions.FLAGS.ADMINISTRATOR] })
 
         const inviteButton = new MessageActionRow()
         .addComponents(
             new MessageButton()
-                .setLabel('Invite the bot')
+                .setLabel(`${language(guild, "INVITE_BUT")}`)
                 .setStyle('LINK')
                 .setURL(`${invite}`)
         )

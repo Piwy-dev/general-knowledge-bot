@@ -37,3 +37,4 @@ module.exports = (guild, textId) => {
 }
 module.exports.loadLanguages = loadLanguages
 module.exports.setLanguage = setLanguage
+module.exports.guildLanguages = guildLanguages

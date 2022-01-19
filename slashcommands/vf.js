@@ -1,9 +1,7 @@
 const profile = require('../bdd/profile')
 const language = require('../language')
 
-const { questions } = require('../Json FILES/questions.json');
-const { answers } = require('../Json FILES/answers.json');
-const { informations } = require('../Json FILES/informations.json');
+const truefalse = require('../Json FILES/truefalse.json')
 
 const { MessageActionRow, MessageButton, Permissions } = require('discord.js')
 const { SlashCommandBuilder } = require('@discordjs/builders')
@@ -15,9 +13,10 @@ module.exports = {
 
     async execute(interaction, client) {
         const { guild, user } = interaction
+
         await interaction.deferReply()
 
-        var i = Math.floor(Math.random() * Math.floor(questions.length));
+        var i = 1 + Math.floor(Math.random() * 57);
 
         const buttons = new MessageActionRow()
             .addComponents(
@@ -35,8 +34,10 @@ module.exports = {
 
         const target = user
 
+        const selectedLanguage = await language.guildLanguages[guild.id]
+
         await interaction.editReply({
-            content: questions[i],
+            content: truefalse.questions[i][`qst_${selectedLanguage}`],
             components: [buttons]
         });
 
@@ -48,48 +49,48 @@ module.exports = {
             if (interaction.customId === `true${i}`) {
                 // Si quelqu'un d'autre essaye de répondre
                 if (user !== target) return interaction.reply({
-                    content: "Tu ne peux pas répondre à cette question effectue la comande toi-même pour pouvoir répondre.",
+                    content: `${language(guild, "CANT_ANSW")}`, 
                     ephemeral: true
                 })
 
-                if (answers[i] === "vrai") {
+                if (truefalse.questions[i]["answer"] === "true") {
                     await interaction.update({
-                        content: "Merci d'avoir répondu.", // a traduire
+                        content: `${language(guild, "THX_ANSW")}`, 
                         components: []
                     })
-                    await message.reply(`${user} ${language(guild, "WIN_XP")} 5 points! ${informations[i]}`)
+                    await message.reply(`${user} ${language(guild, "WIN_XP")} 5 points! ${truefalse.questions[i][`info_${selectedLanguage}`]}`)
                     profile.addxp(guild.id, user.id, 5)
                 }
                 else {
                     await interaction.update({
-                        content: "Merci d'avoir répondu.",
+                        content: `${language(guild, "THX_ANSW")}`,
                         components: []
                     })
-                    await message.reply(`${user} ${language(guild, "LOSE_XP")} 5 points. ${informations[i]}`)
+                    await message.reply(`${user} ${language(guild, "LOSE_XP")} 5 points. ${truefalse.questions[i][`info_${selectedLanguage}`]}`)
                     profile.addxp(guild.id, user.id, -5)
                 }
             }
             else if (interaction.customId === `false${i}`) {
                 // Si quelqu'un d'autre essaye de répondre
                 if (user !== target) return interaction.reply({
-                    content: "Tu ne peux pas répondre à cette question effectue la comande toi-même pour pouvoir répondre.",
+                    content: `${language(guild, "CANT_ANSW")}`, 
                     ephemeral: true
                 })
 
-                if (answers[i] === "faux") {
+                if (truefalse.questions[i]["answer"] === "false") {
                     await interaction.update({
-                        content: "Merci d'avoir répondu.",
+                        content: `${language(guild, "THX_ANSW")}`,
                         components: []
                     })
-                    await message.reply(`${user} ${language(guild, "WIN_XP")} 5 points! ${informations[i]}`)
+                    await message.reply(`${user} ${language(guild, "WIN_XP")} 5 points! ${truefalse.questions[i][`info_${selectedLanguage}`]}`)
                     profile.addxp(guild.id, user.id, 5)
                 }
                 else {
                     await interaction.update({
-                        content: "Merci d'avoir répondu.",
+                        content: `${language(guild, "THX_ANSW")}`,
                         components: []
                     })
-                    await message.reply(`${user} ${language(guild, "LOSE_XP")} 5 points. ${informations[i]}`)
+                    await message.reply(`${user} ${language(guild, "LOSE_XP")} 5 points. ${truefalse.questions[i][`info_${selectedLanguage}`]}`)
                     profile.addxp(guild.id, user.id, -5)
                 }
             }
