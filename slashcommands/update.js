@@ -19,11 +19,9 @@ module.exports = {
             .setTitle('Bot updated (version 1.3.3)')
             .setThumbnail('https://pbs.twimg.com/profile_images/1480638649008066569/ZYdgTYU-_400x400.jpg')
             .setColor('#7dffa0')
-            .addField("Changes", "→ Modification in the verifying system for the true or false and adding of the translations in English. \n→ Update of the questions of the true or false. \n→ New informations after the answers of the true or false. \n→ Correction of bugs.")
-            .addField("Coming next", "→ Translations in English of countries and capitals. \n→ Modification of the verifying system for countries flags and capitals tests")
+            .addField("New", "→ A message is send to a specific channel when the bot is added to a server. \n→ Setup of a time of 15 seconds limit to answer for the flags, capitals and logos tests. \n→ Adding of English translations to some countries and capitals.")
+            .addField("Coming next", "→ Change to the right countries and capitals translations when the language is changed. \n→ Dutch translation (commands only).")
             .setFooter("Bot updated by Piwy#2703")
-
-        interaction.reply({ content: '<@&905094492074438676>' });
 
         channel.send({
             embeds: [updateEmbed]

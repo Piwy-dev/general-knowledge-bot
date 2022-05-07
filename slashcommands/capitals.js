@@ -11,49 +11,63 @@ module.exports = {
         .setName("capitals")
         .setDescription("Test out your knowledge in capitals"),
 
-    async execute(interaction, client) {
+    async execute(interaction) {
         const { guild, member, channel } = interaction
 
         await interaction.deferReply()
 
         var i = Math.floor(Math.random() * Math.floor(contries.length));
 
-        interaction.editReply({ content: `${member} ${language(guild, "CAPITAL")}${contries[i]} ?` });
+        interaction.editReply({ content: `${member} ${language(guild, "CAPITAL")} ${contries[i]} ?` });
 
-        var canAnswer = true
+        const filter = m => m.author.id === member.id
 
-        client.on("messageCreate", msg => {
-            if (msg.member.id !== member.id) return;  // Verifie que ce sois le bon auteur
-            if (msg.author.id === "803979491373219840") return; // Verifie qeu ce ne sois pas le bot qui réponde
-            if (!canAnswer) return
+        const collector = interaction.channel.createMessageCollector({
+            max: 1,
+            filter,
+            time: 15 * 1000
+        });
 
-            function Compare(strA, strB) {
-                for (var result = 0, i = strA.length; i--;) {
-                    if (typeof strB[i] == 'undefined' || strA[i] == strB[i]);
-                    else if (strA[i].toLowerCase() == strB[i].toLowerCase())
-                        result++;
-                    else
-                        result += 4;
+        collector.on('end', collected => {
+            const collectedMessage = collected.first()
+
+            // Si l'utilisateur a écrit un message avant 15s
+            if (collectedMessage) {
+                function Compare(strA, strB) {
+                    for (var result = 0, i = strA.length; i--;) {
+                        if (typeof strB[i] == 'undefined' || strA[i] == strB[i]);
+                        else if (strA[i].toLowerCase() == strB[i].toLowerCase())
+                            result++;
+                        else
+                            result += 4;
+                    }
+                    return 1 - (result + 4 * Math.abs(strA.length - strB.length)) / (2 * (strA.length + strB.length));
                 }
-                return 1 - (result + 4 * Math.abs(strA.length - strB.length)) / (2 * (strA.length + strB.length));
-            }
 
-            var similarity = Compare(capitals[i].toLowerCase(), msg.content.toLowerCase());
+                var similarity = Compare(capitals[i].toLowerCase(), collectedMessage.content.toLowerCase());
 
-            if (similarity > 0.5) {
-                msg.reply({ 
-                    content: `${member} ${language(guild, "WIN_XP")} 8 points!` 
-                });
-                profile.addxp(guild.id, member.id, 8)
-                canAnswer = false
+                // Si la réponse est bonne
+                if (similarity > 0.5) {
+                    collectedMessage.reply({
+                        content: `${member} ${language(guild, "WIN_XP")} 8 points!`
+                    });
+                    profile.addxp(guild.id, member.id, 8)
+                }
+                // Si la réponse est fausee
+                else {
+                    collectedMessage.reply({
+                        content: `${member} ${language(guild, "LOSE_XP")} 3 points! ${language(guild, "ANSWER_WAS")} ${capitals[i]}`
+                    });
+                    profile.addxp(guild.id, member.id, -3)
+                }
             }
+            // Si il n'a écrit aucun message avant 15s
             else {
-                msg.reply({
-                    content: `${member} ${language(guild, "LOSE_XP")} 3 points! ${language(guild, "ANSWER_WAS")} ${capitals[i]}`
+                channel.send({
+                    content: `${member}, ${language(guild, "QST_OUTDATED_1")} 5 ${language(guild, "QST_OUTDATED_2")} ${capitals[i]}`
                 });
-                profile.addxp(guild.id, member.id, -3)
-                canAnswer = false
+                profile.addxp(guild.id, member.id, -5)
             }
-        })
+        });
     }
 }

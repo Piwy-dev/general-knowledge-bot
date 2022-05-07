@@ -29,77 +29,77 @@
             "english": "What is the name of the company that belong to this logo:",
             "french": "Quel est le nom de la société à qui appartient ce logo:"
         },
+        "INFO_THANKS": {
+            "english": "Thanks for using the General Knowledge bot! Learn hier how to use it. For more informations please refer to our **terms of services**: https://byp-studio.pyhaubruge.repl.co/terms-of-services.html.",
+            "french": "Merci d'utiliser le bot de Culture générale! Apprenez ici comment l'utiliser. Pour plus d'informations merci de vous referer à nos **conditions d'utilisation**: https://byp-studio.pyhaubruge.repl.co/terms-of-services.html."
+        },
         "GEN_INFO": {
             "english": "General informations",
             "french": "Informations Générales"
         },
         "GEN_INFO_VALUE": {
-            "english": "This bot uses a connection to a database to save different data from the users, like their points. Each time you use a test command, you earn points if you answer correctly and lose it in the opposite case.",
-            "french": "Ce bot utilise une connexion à une base de données qui sauvegarde les différentes données des utilisateurs, comme leurs points. Chaque fois que vous utilisez une commande de test vous gagnez des points si vous répondez correctement et vous en perdez dans le cas contraire."
-        },
-        "INFO_THANKS": {
-            "english": "Thanks for using the General Knowledge bot! Learn hier how to use it.",
-            "french": "Merci d'utiliser le bot de Culture générale! Apprenez ici comment l'utiliser."
+            "english": "This bot uses a connection to a database to save different data from the users, like their points. Each time you use a test command, you earn points if you answer correctly and lose it in the opposite case. For more informations please read our **privacy policy**: https://byp-studio.pyhaubruge.repl.co/privacy-policy.html.",
+            "french": "Ce bot utilise une connexion à une base de données qui sauvegarde les différentes données des utilisateurs, comme leurs points. Chaque fois que vous utilisez une commande de test vous gagnez des points si vous répondez correctement et vous en perdez dans le cas contraire. Pour plus d'information veuillez lire notre politique de confidentialité: https://byp-studio.pyhaubruge.repl.co/privacy-policy.html."
         },
         "INFO_FOOTER": {
             "english": "Bot created by Piwy#2703. See more informations using *credits",
-            "french": "Bot créer par Piwy#2703. Pour plus d'information utilises *credits."
+            "french": "Bot crée par Piwy#2703. Pour plus d'information utilises *credits."
         },
         "TEST_CMD": {
             "english": "Tests commands",
             "french": "Commandes de tests"
         },
         "TEST_CMD_DESCR": {
-            "english": "They're multiple tests available. See hier the difference tests available.",
-            "french": "Il y a plusieurs sortes de tests disponibles. Voyez ici la liste des différents tests."
+            "english": "They're multiple tests available. See the list hier.",
+            "french": "Il y a plusieurs sortes de tests disponibles. Voyez la liste ici."
         },
         "TRUE_FALSE": {
             "english": "True or false test",
             "french": "Test de vrai ou faux"
         },
         "TRUE_FALSE_DESCR": {
-            "english": "In order to have a true or false question, uses the *tf or *truefalse commands, then react with ✅ if it's true or ❌ it it's false.",
-            "french": "Pour avoir une question de vrai ou faux, utilises la commande *vf ou *vraifaux, ensuite réagissez avec ✅ si c'est vrai ou ❌ si c'est faux."
+            "english": "In order to have a true or false question, uses the `/truefalse` commands, then click on the apropriate button depanding if the statement is true or false.",
+            "french": "Pour avoir une question de vrai ou faux, utilises la commande `/truefalse`, ensuite réagissez avec le bon boutton en fonction de si la proposition est vraie ou fausse."
         },
         "FLAG_TEST": {
             "english": "Flag test",
             "french": "Test des drapeaux"
         },
         "FLAG_TEST_DESCR": {
-            "english": "Uses the command *f or *flag for testing your knowledge in flags. The first message you send after it will be considered as your answer.",
-            "french": "Utilises la commande *f, ou *flag pour tester tes connaissances en drapeaux. Le premier message que tu envoies par après sera considéré comme ta réponse."
+            "english": "Uses the command `/flag` for testing your knowledge in flags. The first message you send after it will be considered as your answer.",
+            "french": "Utilises la commande `/flag` pour tester tes connaissances en drapeaux. Le premier message que tu envoies par après sera considéré comme ta réponse."
         },
         "CAPITAL_TEST": {
             "english": "Capitals test",
             "french": "Test des capitales"
         },
         "CAPITAL_TEST_DESCR": {
-            "english": "Uses the *c or *capital for testing your knowledge in capitals. The first message you send after it will be considered as your answer.",
-            "french": "Utilises la commande *c, ou *capital pour tester tes connaissances en capitales. Le premier message que tu envoies par après sera considéré comme ta réponse."
+            "english": "Uses the `/capital` command for testing your knowledge in capitals. The first message you send after it will be considered as your answer.",
+            "french": "Utilises la commande `/capital` pour tester tes connaissances en capitales. Le premier message que tu envoies par après sera considéré comme ta réponse."
         },
         "LOGO_TEST": {
             "english": "Logos test",
             "french": "Test des logos"
         },
         "LOGO_TEST_DESCR": {
-            "english": "Uses the *logo command to test your knowledge in logos. The first message you send after it will be considered as your answer.",
-            "french": "Utilises la commande *logo pour tester tes connaissances en logos. Le premier message que tu envoies par après sera considéré comme ta réponse."
+            "english": "Uses the `/logo` command to test your knowledge in logos. The first message you send after it will be considered as your answer.",
+            "french": "Utilises la commande `/logo` pour tester tes connaissances en logos. Le premier message que tu envoies par après sera considéré comme ta réponse."
         },
         "CONFIG_CMD": {
             "english": "Configuration commands",
             "french": "Commandes de configuration"
         },
         "CONFIG_CMD_DESCR": {
-            "english": "The configuration commands allows to configure the differents parameters of the bot and are only available for the administrators.",
-            "french": "Les commandes de configuration permettent de configurer les paramètres du bot ne sont disponibles que pour les administrateurs."
+            "english": "The configuration commands allows to configure the differents settings of the bot and are __only available for the administrators__.",
+            "french": "Les commandes de configuration permettent de configurer les paramètres du bot ne sont __disponibles que pour les administrateurs__."
         },
         "SETLANG_CMD": {
             "english": "Language setting",
             "french": "Configuration de la langue"
         },
         "SETLANG_DESCR": {
-            "english": "Set up the bot language with the command *setlang",
-            "french": "Configurez la langue du bot avec la commande *setlang"
+            "english": "Set up the bot language with the command `/setlang`.",
+            "french": "Configurez la langue du bot avec la commande `/setlang`."
         },
         "POINT_CMD": {
             "english": "Points commands",
@@ -114,24 +114,24 @@
             "french": "Profile"
         },
         "PROFILE_CMD_DESCR": {
-            "english": "The *profile commands show the points you have. You can tag someone after the command to see his points.",
-            "french": "La commande *profile te montre tes points. Tu peux taguer quelqu'un après la commande pour voir ses points."
+            "english": "The `/profile` command shows the points of the user that you select.",
+            "french": "La commande `/profile` te montre les points de l'utilisateur que tu selectionne."
         },
         "LEAD_CMD": {
             "english": "Leaderboard",
             "french": "Classement"
         },
         "LEAD_CMD_DESCR": {
-            "english": "To see the server's leaderboard type *l or *leaderboard. This command only show the 20 first of the server.",
-            "french": "Pour voir le classement de serveur tapes *l ou *leaderboard. Cette commande ne montre que les 20 premiers du serveur."
+            "english": "To see the server's leaderboard use the `/leaderboard` command. This command only show the 20 first of the server.",
+            "french": "Pour voir le classement de serveur utilises la commande `/leaderboard`. Cette commande ne montre que les 20 premiers du serveur."
         },
         "ADMINXP_CMD": {
             "english": "Change the points",
             "french": "Changer les points"
         },
         "ADMINXP_CMD_DESCR": {
-            "english": "If you want to change the points of a member, type *adminxp. This command is only available for administrators.",
-            "french": "Si tu veux changer les points d'un membre, tapes *adminxp. Cette commande est uniquement disponible pour les administrateurs."
+            "english": "If you want to change the points of a member, use the `/adminxp` command. This command is only available for administrators.",
+            "french": "Si tu veux changer les points d'un membre, ultilises la commande `/adminxp`. Cette commande est uniquement disponible pour les administrateurs."
         },
         "VALID_NUMBER": {
             "english": "Please enter a valid number.",
@@ -145,7 +145,7 @@
             "english": "he now has:",
             "french": "il a maintenant:"
         },
-         "HAS": {
+        "HAS": {
             "english": "has:",
             "french": "as:"
         },
@@ -184,6 +184,16 @@
             "english": "You cannot answer this question. Execute the command yourself to be able to answer.",
             "french": "Tu ne peux pas répondre à cette question. Effectue la commande toi-même pour pouvoir répondre.",
             "nederlands": "Je kan niet antworden aan deze vraag. Maak de command zelf zodat u deze kunt beantwoorden."
+        },
+        "QST_OUTDATED_1": {
+            "english": "Your time to answer is up. You've lost:",
+            "french": "ton temps pour répondre est dépasé. Tu as perdu:",
+            "nederlands": "Jouw antwoordtijd is over. Je hebt:"
+        },
+        "QST_OUTDATED_2": {
+            "english": "points. The right answer was: ",
+            "french": "points. La bonne réponse était: ",
+            "nederlands": "punten. Het goed antwoord was: "
         }
     }
- }
+}

@@ -1,4 +1,4 @@
-const { Intents, Client, Collection } = require('discord.js')
+const { Intents, Client, Collection, MessageEmbed } = require('discord.js')
 
 const fs = require('fs')
 require('dotenv').config()
@@ -81,6 +81,24 @@ client.on('interactionCreate', async interaction => {
             ephemeral: true
         })
     }
+})
+
+client.on('guildCreate', async guild => {
+    // Trouve le channel
+    const logChannel = client.guilds.cache.get('791608838209142796').channels.cache.get('943968391323066418')
+    if(!logChannel) return console.log("Le channel de logs des nouveaux serveur n'existe pas.")
+
+    // Crée l'embed
+    const guildOwner = await guild.fetchOwner()
+    const newServerEmbed = new MessageEmbed()
+        .setTitle('New server !')
+        .setColor("#03fc7b")
+        .setDescription("The bot was added on the `" + `${guild.name}` + "` server. \n Server led by : `" + `${guildOwner.displayName}` + "`. They are **" + `${guild.memberCount}` + "** members on it.")
+        .setFooter(`The bot is now on ${client.guilds.cache.size} servers`)
+
+    logChannel.send({
+        embeds: [newServerEmbed]
+    })
 })
 
 client.login(config.token)
