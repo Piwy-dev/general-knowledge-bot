@@ -7,7 +7,7 @@ require('dotenv').config()
 
 const client = new d.Client({ intents: [d.GatewayIntentBits.Guilds, d.GatewayIntentBits.GuildMessages, d.GatewayIntentBits.GuildMessageReactions, d.GatewayIntentBits.Guilds] });
 
-const mongo = require("./bdd/mongo");
+const mongo = require("./db/mongo");
 
 const { loadLanguages } = require('./language')
 
@@ -103,8 +103,6 @@ client.once(d.Events.ClientReady, async () => {
 
 client.on(d.Events.InteractionCreate, async interaction => {
     if (!interaction.isChatInputCommand()) return
-    console.log(interaction.commandName)
-
     const command = interaction.client.commands.get(interaction.commandName)
 
     if (!command) return console.log("Unkonwn command.")

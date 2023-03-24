@@ -1,5 +1,5 @@
-const mongo = require('./bdd/mongo')
-const languageSchema = require('./bdd/language-schema')
+const mongo = require('./db/mongo')
+const languageSchema = require('./db/language-schema')
 const lang = require('./lang.json')
 
 const guildLanguages = {}
