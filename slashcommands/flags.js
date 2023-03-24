@@ -49,11 +49,9 @@ module.exports = {
 
         // Reply to the interaction
         await interaction.reply({
+            content: `${flags[i]}`,
             components: [flagButton],
         })
-
-        // Send the message
-        await channel.send({content: `${flags[i]}`})
 
         // Get the Modal Submit Interaction that is emitted once the User submits the Modal
         const submitted = await interaction.awaitModalSubmit({

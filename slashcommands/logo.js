@@ -45,15 +45,13 @@ module.exports = {
             .setStyle(d.ButtonStyle.Success)
         )
 
-        // Reply to the interaction
+        const attachement = new d.AttachmentBuilder(logos[rd]["image"])
+
         await interaction.reply({
             content: `${language(guild, "LOGO")}`,
+            files: [attachement],
             components: [logoButton],
         })
-
-        // Send the message
-        const attachement = new d.AttachmentBuilder(logos[rd]["image"])
-        await channel.send({ files: [attachement] })
 
         // Get the Modal Submit Interaction that is emitted once the User submits the Modal
         const submitted = await interaction.awaitModalSubmit({
