@@ -1,0 +1,323 @@
+{
+    "languages": ["english", "french"],
+    "translations": {
+        "WIN_XP": {
+            "english": "well done good answer, you win",
+            "french": "bravo bonne réponse, tu gagnes"
+        },
+        "LOSE_XP": {
+            "english": "bad answer, you loses",
+            "french": "mauvaise réponse, tu perds"
+        },
+        "ANSWER_WAS": {
+            "english": "The good answer was:",
+            "french": "La bonne réponse était:"
+        },
+        "CONTRY_NAME": {
+            "english": "Give the name of the country",
+            "french": "Donne le nom du pays",
+            "nederlands": "Geef de naam van het land"
+        },
+        "CAPITAL": {
+            "english": "What is the capital of:  ",
+            "french": "Quelle est la capital de/du:"
+        },
+        "WITH": {
+            "english": "with",
+            "french": "avec"
+        },
+        "LOGO": {
+            "english": "What is the name of the company that belong to this logo:",
+            "french": "Quel est le nom de la société à qui appartient ce logo:",
+            "nederlands": "Wat is de naam van het bedrijf dat dit logo heeft:"
+        },
+        "LOGO_BUTTON": {
+            "english": "Give the name",
+            "french": "Donne le nom",
+            "nederlands": "Geef de naam"
+        },
+        "INFO_THANKS": {
+            "english": "Thanks for using the General Knowledge bot! Learn hier how to use it. For more informations please refer to our **terms of services**: https://byp-studio.pyhaubruge.repl.co/terms-of-services.html.",
+            "french": "Merci d'utiliser le bot de Culture générale! Apprenez ici comment l'utiliser. Pour plus d'informations merci de vous referer à nos **conditions d'utilisation**: https://byp-studio.pyhaubruge.repl.co/terms-of-services.html."
+        },
+        "GEN_INFO": {
+            "english": "General informations",
+            "french": "Informations Générales",
+            "nederlands": "Generaal informatie"
+        },
+        "GEN_INFO_VALUE": {
+            "english": "This bot uses a connection to a database to save different data from the users, like their points. Each time you use a test command, you earn points if you answer correctly and lose it in the opposite case. For more informations please read our **privacy policy**: https://byp-studio.pyhaubruge.repl.co/privacy-policy.html.",
+            "french": "Ce bot utilise une connexion à une base de données qui sauvegarde les différentes données des utilisateurs, comme leurs points. Chaque fois que vous utilisez une commande de test vous gagnez des points si vous répondez correctement et vous en perdez dans le cas contraire. Pour plus d'information veuillez lire notre politique de confidentialité: https://byp-studio.pyhaubruge.repl.co/privacy-policy.html."
+        },
+        "INFO_FOOTER": {
+            "english": "Bot created by Piwy#2703. See more informations using *credits",
+            "french": "Bot crée par Piwy#2703. Pour plus d'information utilises *credits."
+        },
+        "TEST_CMD": {
+            "english": "Tests commands",
+            "french": "Commandes de tests"
+        },
+        "TEST_CMD_DESCR": {
+            "english": "They're multiple tests available. See the list hier.",
+            "french": "Il y a plusieurs sortes de tests disponibles. Voyez la liste ici."
+        },
+        "TRUE_FALSE": {
+            "english": "True or false test",
+            "french": "Test de vrai ou faux"
+        },
+        "TRUE_FALSE_DESCR": {
+            "english": "In order to have a true or false question, uses the `/truefalse` commands, then click on the apropriate button depanding if the statement is true or false.",
+            "french": "Pour avoir une question de vrai ou faux, utilises la commande `/truefalse`, ensuite réagissez avec le bon boutton en fonction de si la proposition est vraie ou fausse."
+        },
+        "FLAG_TEST": {
+            "english": "Flag test",
+            "french": "Test des drapeaux"
+        },
+        "FLAG_TEST_DESCR": {
+            "english": "Uses the command `/flag` for testing your knowledge in flags. The first message you send after it will be considered as your answer.",
+            "french": "Utilises la commande `/flag` pour tester tes connaissances en drapeaux. Le premier message que tu envoies par après sera considéré comme ta réponse."
+        },
+        "CAPITAL_TEST": {
+            "english": "Capitals test",
+            "french": "Test des capitales"
+        },
+        "CAPITAL_TEST_DESCR": {
+            "english": "Uses the `/capital` command for testing your knowledge in capitals. The first message you send after it will be considered as your answer.",
+            "french": "Utilises la commande `/capital` pour tester tes connaissances en capitales. Le premier message que tu envoies par après sera considéré comme ta réponse."
+        },
+        "LOGO_TEST": {
+            "english": "Logos test",
+            "french": "Test des logos"
+        },
+        "LOGO_TEST_DESCR": {
+            "english": "Uses the `/logo` command to test your knowledge in logos. The first message you send after it will be considered as your answer.",
+            "french": "Utilises la commande `/logo` pour tester tes connaissances en logos. Le premier message que tu envoies par après sera considéré comme ta réponse."
+        },
+        "CONFIG_CMD": {
+            "english": "Configuration commands",
+            "french": "Commandes de configuration"
+        },
+        "CONFIG_CMD_DESCR": {
+            "english": "The configuration commands allows to configure the differents settings of the bot and are __only available for the administrators__.",
+            "french": "Les commandes de configuration permettent de configurer les paramètres du bot ne sont __disponibles que pour les administrateurs__."
+        },
+        "SETLANG_CMD": {
+            "english": "Language setting",
+            "french": "Configuration de la langue"
+        },
+        "SETLANG_DESCR": {
+            "english": "Set up the bot language with the command `/setlang`.",
+            "french": "Configurez la langue du bot avec la commande `/setlang`."
+        },
+        "POINT_CMD": {
+            "english": "Points commands",
+            "french": "Commandes des points"
+        },
+        "POINT_CMD_DESCR": {
+            "english": "With these commands you can see all things related to points.",
+            "french": "Avec ces commandes tu peux voir toutes les choses liées aux points."
+        },
+        "PROFILE_CMD": {
+            "english": "Profile",
+            "french": "Profile"
+        },
+        "PROFILE_CMD_DESCR": {
+            "english": "The `/profile` command shows the points of the user that you select.",
+            "french": "La commande `/profile` te montre les points de l'utilisateur que tu selectionne."
+        },
+        "LEAD_CMD": {
+            "english": "Leaderboard",
+            "french": "Classement"
+        },
+        "LEAD_CMD_DESCR": {
+            "english": "To see the server's leaderboard use the `/leaderboard` command. This command only show the 20 first of the server.",
+            "french": "Pour voir le classement de serveur utilises la commande `/leaderboard`. Cette commande ne montre que les 20 premiers du serveur."
+        },
+        "ADMINXP_CMD": {
+            "english": "Change the points",
+            "french": "Changer les points"
+        },
+        "ADMINXP_CMD_DESCR": {
+            "english": "If you want to change the points of a member, use the `/adminxp` command. This command is only available for administrators.",
+            "french": "Si tu veux changer les points d'un membre, ultilises la commande `/adminxp`. Cette commande est uniquement disponible pour les administrateurs."
+        },
+        "VALID_NUMBER": {
+            "english": "Please enter a valid number.",
+            "french": "Merci de rentrer un nombre valide."
+        },
+        "HAS_RECIVED": {
+            "english": "has received",
+            "french": "as reçu"
+        },
+        "NOW_HAS": {
+            "english": "he now has:",
+            "french": "il a maintenant:",
+            "nederlands": "hij heeft nu:"
+        },
+        "HAS": {
+            "english": "has:",
+            "french": "as:",
+            "nederlands": "heefts:"
+        },
+        "CREDITS": {
+            "english": "Bot created by Piwy#2703. \nIf you need help with the bot, join the help server: https://discord.gg/PhCdM465np or uses the command bug + the description of the bug. \nTo see the commands list, uses the command help.",
+            "french": "Bot créer par Piwy#2703. \nPour reçevoir de l'aide, rejoingez le serveur d'aide: https://discord.gg/PhCdM465np ou utilisez la commande bug + la description du bug. \nPour voir ma liste des commandes, utilisez la commande help.",
+            "nederlands": "Bot gemaakt door Piwy#2703. \nAls je hulp nodig hebt met de bot, join dan de help server: https://discord.gg/PhCdM465np of gebruik de bug command + de beschrijving van de bug. \nOm de commando lijst te zien, gebruik de help command."
+        },
+        "INVITE": {
+            "english": "There's the link to invite the bot on your server: \n",
+            "french": "Voici le lien pour inviter le bot sur ton serveur: \n",
+            "nederlands": "Hier is de link om de bot op je server te zetten: \n"
+        },
+        "INVITE_BUT": {
+            "english": "Invite the bot",
+            "french": "Invite le bot",
+            "nederlands": "Nodig de bot uit"
+        },
+        "BUG": {
+            "english": "The bug has been reported to the developer, thanks. \nContent: ",
+            "french": "Le bug a été rapporté au développeur, merci. \nContenu: ",
+            "nederlands": "De bug is gerapporteerd aan de ontwikkelaar, dankjewel. \nInhoud: "
+        },
+        "TRUE": {
+            "english": "True",
+            "french": "Vrai",
+            "nederlands": "Niet waar"
+        },
+        "FALSE": {
+            "english": "False",
+            "french": "Faux",
+            "nederlands": "Waar"
+        },
+        "THX_ANSW": {
+            "english": "Thank you for answering.",
+            "french": "Merci d'avoir répondu.",
+            "nederlands": "Dank u voor uw antwoord."
+        },
+        "CANT_ANSW": {
+            "english": "You cannot answer this question. Execute the command yourself to be able to answer.",
+            "french": "Tu ne peux pas répondre à cette question. Effectue la commande toi-même pour pouvoir répondre.",
+            "nederlands": "Je kan niet antworden aan deze vraag. Maak de command zelf zodat u deze kunt beantwoorden."
+        },
+        "QST_OUTDATED_1": {
+            "english": "Your time to answer is up. You've lost:",
+            "french": "Ton temps pour répondre est dépasé. Tu as perdu:",
+            "nederlands": "Jouw antwoordtijd is over. Je hebt:"
+        },
+        "QST_OUTDATED_2": {
+            "english": "points. The right answer was: ",
+            "french": "points. La bonne réponse était: ",
+            "nederlands": "punten. Het goed antwoord was: "
+        },
+        "UPD_TITLE": {
+            "english": "New update : version ",
+            "french": "Nouvelle mise à jour : version ",
+            "nederlands": "Nieuwe update: versie "
+        },
+        "UPD_NEWS": {
+            "english": "News",
+            "french": "Nouveautés",
+            "nederlands": "Nieuws"
+        },
+        "UPD_NEWS_VALUE": {
+            "english": "→ Adding the update logs translations. \n→ Translation of the name and description of the flags and capitals command `/flags` `/capitals`. \n→ Reinstatement of the bot's presence message.",
+            "french": "→ Ajout des traduction des logs de mise à jour. \n→ Traduction du nom et de la description de la commande des drapeaux et des capitales `/drapeaux` `/capitales`. \n→ Remise en place du message de présence du bot.",
+            "nederlands": "→ Toevoegen van de update logs vertalingen. \n→ Vertaling van de naam en beschrijving van de vlaggen en hoofdsteden commando `/vlaggen` `/hoofdsteden`. \n→ Herstel van de bot's aanwezigheid bericht."
+        },
+        "UPD_FIXES": {
+            "english": "Fixes",
+            "french": "Corrections",
+            "nederlands": "Verbeteringen"
+        },
+        "UPD_FIXES_VALUE": {
+            "english": "→ Fixing the system of correction of the test of flags, logos and capitals /flags /logos /capitals",
+			"french": "→  Correction du système de correction du test des drapeaux , des logos, et des capitales /drapeaux /logos /capitales",
+            "nederlands": "→ Verbetering van het systeem van de correctie van de test van de vlaggen, logo's en hoofdsteden /vlaggen /logo's /hoofdsteden"
+        },
+        "UPD_IMP": {
+            "english": "Important",
+            "french": "Important",
+            "nederlands": "Belangrijk"
+        },
+        "UPD_IMP_VALUE": {
+            "english": "→ The commands for testing by writing are currently not working because of the modification of the MessageIntent of Discord.",
+            "french": "→ Les commandes de test par écrit sont actuellement infonctionnelles à cause de la modification du MessageIntent de Discord.",
+            "nederlands": "→"
+        },
+        "UPD_COMMING": {
+            "english": "Comming soon",
+            "french": "A venir",
+            "nederlands": "Binnenkort"
+        },
+        "UPD_COMMING_VALUE": {
+            "english": "→ Translation of the capitals and countries into English. \n→ Command to test the infinitives, imperfects and past participles. \n→ Sending a message when adding to a new server.",
+            "french": "→ Traduction des capitale et des pays en anglais. \n→ Commande de test des infinitifs, impartaits et participe passé. \n→ Envois d’un message lors de l’ajout sur un nouveau serveur.",
+            "nederlands": "→ Vertaling van de hoofdsteden en landen in het Engels. \n→ Commando om de infinitieven, imperfecten en participia te testen."
+        },
+        "UPD_CREDITS": {
+            "english": "Bot updated by Piwy#2703",
+            "french": "Bot mis à jour par Piwy#2703",
+            "nederlands": "Bot geupdate door Piwy#2703"
+        },
+        "UPD_SENT": {
+            "english": "The update logs have been sent.",
+            "french": "Les logs de mise à jour ont été envoyés.",
+            "nederlands": "De update logs zijn verzonden."
+        },
+        "HAS_ANSWERED": {
+            "english": "You have not answered the previous question.",
+            "french": "Tu n'a pas encore répondu à la question précédente.",
+            "nederlands": "Je hebt het vorige vraag niet beantwoord."
+        },
+        "CAN_ANSW": {
+            "english": "You can answer.",
+            "french": "Tu peux répondre.",
+            "nederlands": "Je mag antwoorden."
+        },
+        "GIVE_ANSW": {
+            "english": "Give the answer",
+            "french": "Donne la réponse",
+            "nederlands": "Geef het antwoord"
+        },
+        "PARTICIPLE": {
+            "english": "Give the answer",
+            "french": "Donne la réponse",
+            "nederlands": "Geef het antwoord"
+        },
+        "IMPERFECT": {
+            "english": "Give the answer",
+            "french": "Donne la réponse",
+            "nederlands": "Geef het antwoord"
+        },
+        "VERB_ANSW": {
+            "english": "Give the answer",
+            "french": "Donne {0} de **{1}**",
+            "nederlands": "Geef het antwoord"
+        },
+        "INFINITIVE": {
+            "english": "What is the translation in {0} of {1}?",
+            "french": "Quelle est la traduction en {0} de {1} ?",
+            "nederlands": "Wat is de vertaling in {0} van {1}?"
+        },
+        "LANGTRAD": {
+            "english": "Do you want to translate in {0} or in {1 }?",
+            "french": "Veux-tu traduire en {0} ou en {1} ?",
+            "nederlands": "Wil je vertalen in {0} of in {1} ?"
+        },
+        "ENGLISH": {
+            "english": "English",
+            "french": "Anglais",
+            "nederlands": "Engels"
+        },
+        "DUTCH": {
+            "english": "Dutch",
+            "french": "Néerlandais",
+            "nederlands": "Nederlands"
+        },
+        "FRENCH": {
+            "english": "French",
+            "french": "Français",
+            "nederlands": "Frans"
+        }
+    }
+}

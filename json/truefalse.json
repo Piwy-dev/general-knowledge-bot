@@ -1,0 +1,403 @@
+{
+    "questions": {
+        "1": {
+            "qst_french": "La révolution française à eu lieu en 1775",
+            "qst_english": "The French Revolution happened in 1775.",
+            "info_french": "La révolution française à eu lieu en 1789",
+            "info_english": "The French Revolution happened in 1779.",
+            "answer": "false"
+        },
+        "2": {
+            "qst_french": "Le dieu du vin dan la mythologie grecque s'appelle Dionysos",
+            "qst_english": "The wine's god in the Greeks mythology is called Dionysos.",
+            "info_french": "Le dieu du vin dan la mythologie grecque s'appelle Dionysos",
+            "info_english": "The wine's god in the Greeks mythology is called Dionysos.",
+            "answer": "true"
+        },
+        "3": {
+            "qst_french": "Il y a 52 pays avec l'anglais comme langue officielle",
+            "qst_english": "They are 52 countries with English as official language.",
+            "info_french": "Il y a 54 pays avec l'anglais comme langue officielle",
+            "info_english": "They are 54 countries with English as official language.",
+            "answer": "false"
+        },
+        "4": {
+            "qst_french": "Il y a 9 planètes dans les système solaire",
+            "qst_english": "They are 9 planets in the solar system.",
+            "info_french": "Il y a 8 planètes dans le système solaire",
+            "info_english": "They are 8 planets in the solar system.",
+            "answer": "false"
+        },
+        "5": {
+            "qst_french": "Selon la légende, Romulus et Rémus ont été recueillit par une louve.",
+            "qst_english": "According to the legend Romulus and Remus were adopted by a wolf.",
+            "info_french": "Selon la légende, Romulus et Rémus ont été recueillit par une louve",
+            "info_english": "According to the legend Romulus and Remus were adopted by a wolf.",
+            "answer": "true"
+        },
+        "6": {
+            "qst_french": "Les trois couleurs primaires sont le jaune, le vert, et le bleu.",
+            "qst_english": "The three primary colours are yellow, green and blue.",
+            "info_french": "Les trois couleurs primaires sont le jaune, le rouge, et le bleu",
+            "info_english": "The three primary colours are yellow, red and blue.",
+            "answer": "false"
+        },
+        "7": {
+            "qst_french": "Google a été créé en 1998.",
+            "qst_english": "Google was created in 1998.",
+            "info_french": "Google a été créé en 1998.",
+            "info_english": "Google was created in 1998.",
+            "answer": "true"
+        },
+        "8": {
+            "qst_french": "Le big ban a eu lieu il y a 15 million d'années",
+            "qst_english": "The big bang took place 15 million years ago.",
+            "info_french": "Le big ban a eu lieu il y a 13,8 milliard d'années.",
+            "info_english": "The big bang took place 13,8 billion years ago.",
+            "answer": "false"
+        },
+        "9": {
+            "qst_french": "Christophe Colomb a découvert l'Amérique en 1492",
+            "qst_english": "Christopher Columbus has reached America in 1492.",
+            "info_french": "Il a d'abord pensé avoir atteint l'Inde, c'est pourquoi les natifs ont été appelés les indiens.",
+            "info_english": "He first thought that he had arrived in India. That's why the natives where called indians.",
+            "answer": "true"
+        },
+        "10": {
+            "qst_french": "Le fondateur de youtube est Larry Page.",
+            "qst_english": "The fondator of YouTube is Larry Page.",
+            "info_french": "Le fondateur de youtube est San Mateo.",
+            "info_english": "The fondator of YouTube is San Mateo.",
+            "answer": "false"
+        },
+        "11": {
+            "qst_french": "Le premier homme à avoir marché sur la lune est Neil Armstrong.",
+            "qst_english": "The first men that have stepped on the moon was Neil Armstrong.",
+            "info_french": "Le premier homme à avoir marché sur la lune est Neil Armstrong.",
+            "info_english": "The first men that have stepped on the moon was Neil Armstrong.",
+            "answer": "true"
+        },
+        "12": {
+            "qst_french": "Isaac Newton a découvert la formule E = m.c^2",
+            "qst_english": "Isaac Newton has discussed the formula E = m.c^2. ",
+            "info_french": "Albert Einstein a découvert la formule E = mc^2",
+            "info_english": "Albert Einstein has discussed the formula E = m.c^2. ",
+            "answer": "false"
+        },
+        "13": {
+            "qst_french": "Le roumain est une langue romane.",
+            "qst_english": "Roumain is a roman language.",
+            "info_french": "Le roumain est une langue romane.",
+            "info_english": "Roumain is a roman language.",
+            "answer": "true"
+        },
+        "14": {
+            "qst_french": "Le Moyen-âge s'étend de 1000 à 1512.",
+            "qst_english": "The Middle-Ages started in 1000 and finished in 1512.",
+            "info_french": "Le Moyen-âge s'étend de 476 à 1492.",
+            "info_english": "The Middle-Ages started in 476 and finished in 1492.",
+            "answer": "false"
+        },
+        "15": {
+            "qst_french": "Le squelette du plus vieil être humain découvert s'appelle Adrien",
+            "qst_english": "The name of the oldest human skeleton ever discovered is Adrien.",
+            "info_french": "Le squelette du plus vieil être humain découvert s'appelle Lucy",
+            "info_english": "The name of the oldest human skeleton ever discovered is Lucy",
+            "answer": "false"
+        },
+        "16": {
+            "qst_french": "La religion ayant le plus d'adeptes en 2022 est le catholicisme.",
+            "qst_english": "The religion that have the most adepts in 2022 is Catholics.",
+            "info_french": "La religion ayant le plus d'adeptes en 2021 est le catholicisme.",
+            "info_english": "The religion that have the most adepts in 2022 is Catholics.",
+            "answer": "true"
+        },
+        "17": {
+            "qst_french": "Les premiers jeux olympiques modernes ont eu lieu en 1896.",
+            "qst_english": "The first modern Olympic games happened in 1896.",
+            "info_french": "Les premiers jeux olympiques modernes ont eu lieu en 1894.",
+            "info_english": "The first modern Olympic games happened in 1894.",
+            "answer": "true"
+        },
+        "18": {
+            "qst_french": "Dans l'Egypte antique, le dieu Râ était le dieu de la mort.",
+            "qst_english": "In ancient Egypt the god Ra was the god of death.",
+            "info_french": "Dans l'Egypte antique, le dieu Râ était le dieu du soleil.",
+            "info_english": "In ancient Egypt the god Ra was the god of the sun.",
+            "answer": "false"
+        },
+        "19": {
+            "qst_french": "La terre est ronde.",
+            "qst_english": "Earth is round.",
+            "info_french": "La terre est légèrement ovale.",
+            "info_english": "Earth slightly oval shaped.",
+            "answer": "false"
+        },
+        "20": {
+            "qst_french": "La mission qui a envoyé le premier homme sur la Lune était Apollo 11.",
+            "qst_english": "The mission that send the first men on the moon was called Apollo 11.",
+            "info_french": "La mission qui a envoyé le premier homme sur la Lune était Apollo 11.",
+            "info_english": "The mission that landed the first men on the moon was called Apollo 11.",
+            "answer": "true"
+        },
+        "21": {
+            "qst_french": "L'Afrique est le continent le plus petit.",
+            "qst_english": "Africa is the smallest continent.",
+            "info_french": "L'Amérique du Sud est le continent le plus petit.",
+            "info_english": "South America is the smallest continent.",
+            "answer": "false"
+        },
+        "22": {
+            "qst_french": "L'ouganda se trouve en Amérique du Sud.",
+            "qst_english": "Ouganda is in South America.",
+            "info_french": "L'ouganda se trouve en Afrique",
+            "info_english": "Ouganda is in South America.",
+            "answer": "false"
+        },
+        "23": {
+            "qst_french": "Il y a 5 océans sur Terre",
+            "qst_english": "They are 5 oceans on earth.",
+            "info_french": "Océan Atlantique, Pacifique, Indien, Austral et Arctique.",
+            "info_english": "Atlantic, Pacific, Indian, Austral and Artic Ocean.",
+            "answer": "true"
+        },
+        "24": {
+            "qst_french": "Le canal du Mexique relie l'Océan Atlantique à l'Océan Pacifique",
+            "qst_english": "The Mexican canal bind the Atlantic Ocean with the Pacific Ocean.",
+            "info_french": "Le canal de Panama relie l'Océan Atlantique à l'Océan Pacifique",
+            "info_english": "The Panama canal bond the Atlantic Ocean with the Pacific Ocean.",
+            "answer": "false"
+        },
+        "25": {
+            "qst_french": "Il y a 5 continents habités.",
+            "qst_english": "They are 5 inhabited continents.",
+            "info_french": "Europe, Asie, Afrique, Océanie, Amérique",
+            "info_english": "Europe, Asia, Africa, Oceania, America",
+            "answer": "true"
+        },
+        "26": {
+            "qst_french": "Le détroit entre l'Espagne et le Maroc s'appelle le détroit Méditéranéen.",
+            "qst_english": "The detroy between Spain and Morocco is called the Mediterranean detroy.",
+            "info_french": "Le détroit entre l'Espagne et le Maroc s'appelle le détroit de Gibraltar.",
+            "info_english": "The detroy between Spain and Morocco is called the detroy of Gibraltar.",
+            "answer": "false"
+        },
+        "27": {
+            "qst_french": "Il y a 186 pays reconnus par l'Onu",
+            "qst_english": "They are 186 countries recognised by the UN.",
+            "info_french": "Il y a 186 pays reconnus par l'Onu",
+            "info_english": "They are 186 countries recognised by the UN.",
+            "answer": "false"
+        },
+        "28": {
+            "qst_french": "La projection de Mercator a été créée en 1569.",
+            "qst_english": "The Mercator projection was created in 1569.",
+            "info_french": "La projection de Mercator a été créée en 1569.",
+            "info_english": "The Mercator projection was created in 1569.",
+            "answer": "true"
+        },
+        "29": {
+            "qst_french": "New York est la capitale des Etats-Unis",
+            "qst_english": "New York is the capital of the United States.",
+            "info_french": "Washington est la capitale des Etats-Unis",
+            "info_english": "Washington is the capital of the United States.",
+            "answer": "false"
+        },
+        "30": {
+            "qst_french": "La plus grande île du monde est le Groenland.",
+            "qst_english": "The biggest island of the world is Greenland.",
+            "info_french": "La plus grande île du monde est le Groenland.",
+            "info_english": "The biggest island of the world is Greenland.",
+            "answer": "true"
+        },
+        "31": {
+            "qst_french": "Bruxelles est la capitale de l'Union Européenne.",
+            "qst_english": "Brussels is the capital of the European Union.",
+            "info_french": "Bruxelles est aussi la capitale de la Belgique et de la Flandre.",
+            "info_english": "Brussels is also the capital of Belgium and Flanders.",
+            "answer": "true"
+        },
+        "32": {
+            "qst_french": "La montagne la plus haute du monde est L'Etna",
+            "qst_english": "The highest mountain of the world is Ethna.",
+            "info_french": "La montagne la plus haute du monde est L'Everest",
+            "info_english": "The highest mountain of the world is Everest.",
+            "answer": "false"
+        },
+        "33": {
+            "qst_french": "Le lac navigable le plus haut du monde est le lac Titicaca.",
+            "qst_english": "Titicaca lake is the highest navigable lake of the world.",
+            "info_french": "Le lac navigable le plus haut du monde est le lac Titicaca.",
+            "info_english": "Titicaca lake is the highest navigable lake of the world.",
+            "answer": "true"
+        },
+        "34": {
+            "qst_french": "La capitale de Brunei est Bangui.",
+            "qst_english": "The capital of Brunei is Bangui.",
+            "info_french": "La capitale de Brunei est Bandar Seri Begawan.",
+            "info_english": "The capital of Brunei is Bandar Seri Begawan.",
+            "answer": "false"
+        },
+        "35": {
+            "qst_french": "Il y a 54 pays reconnus par l'Onu en Afrique",
+            "qst_english": "They are 54 countries recognised by the UN in Africa.",
+            "info_french": "Il y a 54 pays reconnus par l'Onu en Afrique",
+            "info_english": "They are 54 countries recognised by the UN in Africa.",
+            "answer": "true"
+        },
+        "36": {
+            "qst_french": "Le lac Victoria fait partie des Grands-Lacs.",
+            "qst_english": "Victoria Lake is a part of the Great lakes.",
+            "info_french": "Le lac Victoria est un lac en Afrique.",
+            "info_english": "Victoria Lake is lake in Africa.",
+            "answer": "false"
+        },
+        "37": {
+            "qst_french": "La plus longue rivière du monde est l'Amazonie.",
+            "qst_english": "Amazonie is the longest river of the world.",
+            "info_french": "La plus longue rivière du monde est l'Amazonie avec 6 400 km.",
+            "info_english": "Amazonie is the longest river of the world with 6400 km.",
+            "answer": "true"
+        },
+        "38": {
+            "qst_french": "Le Mauna Loa est un volcan éteint.",
+            "qst_english": "Mauna Loa is an extinct volcano.",
+            "info_french": "Le Mauna Loa est un volcan d'Hawaï.",
+            "info_english": "Mauna Loa is an active Hawaiian volcano.",
+            "answer": "false"
+        },
+        "39": {
+            "qst_french": "Il y a 3 zones climatiques dans le monde",
+            "qst_english": "They are 3 different climate zones in the world.",
+            "info_french": "Il y a 3 zones climatiques dans le monde",
+            "info_english": "They are 3 different climate zones in the world.",
+            "answer": "true"
+        },
+        "40": {
+            "qst_french": "La civilisation des Mayas se trouvait au Japon.",
+            "qst_english": "The Mayan civilization was in Japan.",
+            "info_french": "La civilisation des Mayas se trouvait en Amérique centrale.",
+            "info_english": "The Mayan civilization was in Central America.",
+            "answer": "false"
+        },
+        "41": {
+            "qst_french": "Vladimir Poutine est le président de la Russie. (2022)",
+            "qst_english": "Vladimir Putin is the president of Russia in 2022.",
+            "info_french": "Vladimir poutine est le président de la Russie (2022)",
+            "info_english": "Vladimir Putin is the president of Russia in 2022.",
+            "answer": "true"
+        },
+        "42": {
+            "qst_french": "Le premier président des Etats-Unis était Théodore Roosevelt",
+            "qst_english": "Theodore Roosevelt was the first US president.",
+            "info_french": "Le premier président des Etats-Unis était Georges Washington",
+            "info_english": "George Washington was the first US president.",
+            "answer": "false"
+        },
+        "43": {
+            "qst_french": "L'actuel président de la Colombie est Ivan Druque (2022)",
+            "qst_english": "The president of Columbia in 2021 was Ivan Druque.",
+            "info_french": "L'actuel président de la Colombie est Ivan Druque.",
+            "info_english": "The president of Columbia in 2022 was Ivan Druque.",
+            "answer": "true"
+        },
+        "44": {
+            "qst_french": "Louis XIV a régné 72 ans",
+            "qst_english": "Louis XIV has ruled 72 year.",
+            "info_french": "Louis XIV a régné 72 ans.",
+            "info_english": "Louis XIV has ruled 72 year.",
+            "answer": "true"
+        },
+        "45": {
+            "qst_french": "Le premier empereur romian était Jules César",
+            "qst_english": "Jules Cesar was the first Roman emperor.",
+            "info_french": "Le premier empereur romian était Auguste",
+            "info_english": "Jules Cesar was the first Roman emperor.",
+            "answer": "false"
+        },
+        "46": {
+            "qst_french": "Elizabeth II a eu 94 ans en 2020.",
+            "qst_english": "Elizabeth II has got 94 years in 2020.",
+            "info_french": "Elizabeth II a eu 94 ans en 2020.",
+            "info_english": "Elizabeth II has got 94 years in 2020.",
+            "answer": "true"
+        },
+        "47": {
+            "qst_french": "Akihito était le 125ème empereur du Japon.",
+            "qst_english": "Akihito was the 125th emperor of Japan.",
+            "info_french": "Akihito était le 126ème souverain du Japon.",
+            "info_english": "Akihito was the 126th emperor of Japan.",
+            "answer": "false"
+        },
+        "48": {
+            "qst_french": "Donald Trump était le 45ème président des Etats-Unis",
+            "qst_english": "Donald Trump was the 45th president of the United States.",
+            "info_french": "Donald Trump était le 45ème président des Etats-Unis",
+            "info_english": "Donald Trump was the 45th president of the United States.",
+            "answer": "true"
+        },
+        "49": {
+            "qst_french": "Charles Quint était le roi d'Angleterre.",
+            "qst_english": "Charles Quint was the king of England.",
+            "info_french": "Charles Quint était les roi d'Espagne du 14 mars 15162 au 16 janvier 1556.",
+            "info_english": "Charles Quint was king of Spain from 1516 to 1556. He was born in Belgium that was onder spanish control at this time.",
+            "answer": "false"
+        },
+        "50": {
+            "qst_french": "Philippe I est le roi de Belgique (2022).",
+            "qst_english": "Philippe I is the king of Belgium. (2022)",
+            "info_french": "Philippe I est le roi de Belgique (2022).",
+            "info_english": "Philippe I is the king of Belgium (2022).",
+            "answer": "true"
+        },
+        "51": {
+            "qst_french": "Le premier roi de Suède était Edmund de Suède.",
+            "qst_english": "The first king of Sweden was Edmund of Sweden.",
+            "info_french": "Le premier roi de Suède était Éric VI « le Victorieux »",
+            "info_english": "The first king of Sweden was Eric VI.",
+            "answer": "false"
+        },
+        "52": {
+            "qst_french": "Le président de l'Afrique du Sud est Cyril Ramaphosa (2022).",
+            "qst_english": "The president of South Africa is Cyril Ramaphosa (2022).",
+            "info_french": "Le président de l'Afrique du Sud est Cyril Ramaphosa (2022).",
+            "info_english": "The president of South Africa is Cyril Ramaphosa (2022).",
+            "answer": "true"
+        },
+        "53": {
+            "qst_french": "François Hollande était le président de la France en 2014.",
+            "qst_english": "François Hollande was the president of France in 2014.",
+            "info_french": "François Hollande était le président de la France en 2014.",
+            "info_english": "François Hollande was the president of France in 2014.",
+            "answer": "true"
+        },
+        "54": {
+            "qst_french": "Alexander de Croo est devenu premier ministre de Belgique en 2020.",
+            "qst_english": "Alexandre de Croo became the Belgian prime minister in 2020.",
+            "info_french": "Alexander de Croo est devenu premier ministre de Belgique en 2020.",
+            "info_english": "Alexandre de Croo became the Belgian prime minister in 2020.",
+            "answer": "true"
+        },
+        "55": {
+            "qst_french": "Le gouverneur général d'Australie est Justin Trudeau",
+            "qst_english": "The general governor of Australia is Justin Trudeau.",
+            "info_french": "Le gouverneur général d'Australie est David Hurley",
+            "info_english": "The general governor of Australia is David Hurley.",
+            "answer": "false"
+        },
+        "56": {
+            "qst_french": "Le premier pharaon de la XXXIIe dynastie de l'Egypte était Cléopâtre",
+            "qst_english": "The first pharaoh of the XXXII th dynasty of Egypt was Cleopatra.",
+            "info_french": "Le premier pharaon de la XXXIIe dynastie de l'Egypte était Alexandre le Grand",
+            "info_english": "The first farao of the XXXII th dynasty of Egypt was Alexender the Great.",
+            "answer": "false"
+        },
+        "57": {
+            "qst_french": "Leonidas était un roi de Sparte qui s'est battu contre les Perses aux Thermopyles.",
+            "qst_english": "Leonidas was a Spartan king that fought against the Persian in the Termopiles.",
+            "info_french": "Leonidas était un roi de Sparte qui s'est battu contre les Perses aux Thermopyles.",
+            "info_english": "Leonidas was a Spartan king that fought against the Persian in the Termopiles.",
+            "answer": "true"
+        }
+    }
+}

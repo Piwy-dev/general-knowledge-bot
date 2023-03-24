@@ -1,0 +1,287 @@
+{
+    "logos": {
+        "1": {
+            "name": "Youtube",
+            "image": "https://media.graphiline.com/graphiline/26441/graphiste-youtube-2.jpg"
+        },
+        "2": {
+            "name": "Twitter",
+            "image": "https://f.hellowork.com/blogdumoderateur/2019/11/twitter-logo.jpg"
+        },
+        "3": {
+            "name": "Facebook",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Facebook_logo_36x36.svg/2048px-Facebook_logo_36x36.svg.png"
+        },
+        "4": {
+            "name": "Snapshat",
+            "image": "https://f.hellowork.com/blogdumoderateur/2016/04/snapchat-logo-600x315.jpg"
+        },
+        "5": {
+            "name": "Instagram",
+            "image": "http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png"
+        },
+        "6": {
+            "name": "Tik Tok",
+            "image": "https://logos-marques.com/wp-content/uploads/2021/03/TikTok-Logo-2016.png"
+        },
+        "7": {
+            "name": "Quick",
+            "image": "https://i1.wp.com/www.grapheine.com/wp-content/uploads/2015/01/icon-new-logo-quick.gif?resize=300%2C184&quality=90&strip=all&ssl=1"
+        },
+        "8": {
+            "name": "Mc Donald's",
+            "image": "https://upload.wikimedia.org/wikipedia/fr/thumb/e/ea/Mcdonalds_France_2009_logo.svg/1138px-Mcdonalds_France_2009_logo.svg.png"
+        },
+        "9": {
+            "name": "Google",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png"
+        },
+        "10": {
+            "name": "Epic Games",
+            "image": "https://thumbor.sd-cdn.fr/WfdqsFvF8Ww3v9nr8Nd4dBkEpwE=/1200x630/cdn.sd-cdn.fr/wp-content/uploads/2021/01/epic-games.jpg"
+        },
+        "11": {
+            "name": "Burger King",
+            "image": "https://cdn.1min30.com/wp-content/uploads/2018/07/Burger-King-2021-1.jpg"
+        },
+        "12": {
+            "name": "Nike",
+            "image": "https://upload.wikimedia.org/wikipedia/fr/thumb/8/8e/Swoosh.svg/1200px-Swoosh.svg.png"
+        },
+        "13": {
+            "name": "Nasa",
+            "image": "https://i1.wp.com/www.grapheine.com/wp-content/uploads/2013/10/US-NASA-Seal-logo.jpg?quality=90&strip=all&ssl=1"
+        },
+        "14": {
+            "name": "Wikipédia",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Wikipedia_logo_%28svg%29.svg/1250px-Wikipedia_logo_%28svg%29.svg.png"
+        },
+        "15": {
+            "name": "Supercell",
+            "image": "https://stock.wikimini.org/w/images/2/22/Logo_Supercell.png"
+        },
+        "16": {
+            "name": "Byp Studio",
+            "image": "https://pbs.twimg.com/profile_images/1385506435086360576/CddTHAVf_400x400.png"
+        },
+        "17": {
+            "name": "Steam",
+            "image": "https://www.actugaming.net/wp-content/uploads/2020/01/steam-logo-889x500.jpg"
+        },
+        "18": {
+            "name": "Unity",
+            "image": "https://logos-world.net/wp-content/uploads/2021/11/Unity-New-Logo.png"
+        },
+        "19": {
+            "name": "Unreal Engine",
+            "image": "https://i.pinimg.com/originals/04/a3/8d/04a38dfde722674dc1d33e57f6ff9505.png"
+        },
+        "20": {
+            "name": "Godot",
+            "image": "https://iconape.com/wp-content/png_logo_vector/godot-logo.png"
+        },
+        "21": {
+            "name": "Microsoft",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/480px-Microsoft_logo.svg.png"
+        },
+        "22": {
+            "name": "Discord",
+            "image": "https://logo-marque.com/wp-content/uploads/2020/11/Discord-Embleme.png"
+        },
+        "23": {
+            "name": "Teams",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_Teams_%282018%E2%80%93present%29.svg.png"
+        },
+        "24": {
+            "name": "Zoom",
+            "image": "http://assets.stickpng.com/images/5e8ce318664eae0004085461.png"
+        },
+        "25": {
+            "name": "Whatsapp",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/langfr-220px-WhatsApp_logo-color-vertical.svg.png"
+        },
+        "26": {
+            "name": "Skype",
+            "image": "https://cdn.1min30.com/wp-content/uploads/2017/06/Symbole-Skype.jpg"
+        },
+        "27": {
+            "name": "Spotify",
+            "image": "https://i.pinimg.com/originals/93/46/53/934653214719cf630e0f5cf9c746b364.png"
+        },
+        "28": {
+            "name": "Deezer",
+            "image": "https://e-cdns-files.dzcdn.net/img/common/opengraph-logo.png"
+        },
+        "29": {
+            "name": "Apple",
+            "image": "https://cdn.1min30.com/wp-content/uploads/2019/05/Apple-logo-1.jpg"
+        },
+        "30": {
+            "name": "One Plus",
+            "image": "https://img2.freepng.fr/20180518/tlb/kisspng-oneplus-3t-logo-oneplus-5t-sketch-5aff92cb67b257.5493455915266986994248.jpg"
+        },
+        "31": {
+            "name": "Huawei",
+            "image": "https://cdn.1min30.com/wp-content/uploads/2018/11/Logo-Huawei-1.jpg"
+        },
+        "32": {
+            "name": "Samsung",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/1200px-Samsung_Logo.svg.png"
+        },
+        "33": {
+            "name": "Xiaomi",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Xiaomi_logo_%282021-%29.svg/1200px-Xiaomi_logo_%282021-%29.svg.png"
+        },
+        "34": {
+            "name": "Wiley Fox",
+            "image": "https://s3-eu-west-1.amazonaws.com/tpd/logos/586bbb880000ff00059a20b2/0x0.png"
+        },
+        "35": {
+            "name": "FireFox",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1200px-Firefox_logo%2C_2019.svg.png"
+        },
+        "36": {
+            "name": "Chrome",
+            "image": "https://f.hellowork.com/blogdumoderateur/2013/01/logo-google-chrome.png"
+        },
+        "37": {
+            "name": "Safari",
+            "image": "https://cdn-icons-png.flaticon.com/512/668/668290.png"
+        },
+        "38": {
+            "name": "Edge",
+            "image": "https://images.frandroid.com/wp-content/uploads/2019/11/microsoft-edge-logo.jpg"
+        },
+        "39": {
+            "name": "Brave",
+            "image": "https://img.icons8.com/ios/452/brave-web-browser.png"
+        },
+        "40": {
+            "name": "Tripadvisor",
+            "image": "https://image.flaticon.com/icons/png/512/48/48942.png"
+        },
+        "41": {
+            "name": "Ubisoft",
+            "image": "https://logos-marques.com/wp-content/uploads/2021/03/Ubisoft-Embleme.png"
+        },
+        "42": {
+            "name": "Git Hub",
+            "image": "https://image.flaticon.com/icons/png/512/25/25231.png"
+        },
+        "43": {
+            "name": "Gmail",
+            "image": "https://logo-marque.com/wp-content/uploads/2020/11/Gmail-Logo.png"
+        },
+        "44": {
+            "name": "Click up",
+            "image": "https://clickup.com/landing/images/clickup-logo-gradient.png"
+        },
+        "45": {
+            "name": "Trello",
+            "image": "http://assets.stickpng.com/images/58482beecef1014c0b5e4a36.png"
+        },
+        "46": {
+            "name": "Dior",
+            "image": "https://logos-marques.com/wp-content/uploads/2020/01/embl%C3%A8me-Christian-Dior.jpeg"
+        },
+        "47": {
+            "name": "Adidas",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/1200px-Adidas_Logo.svg.png"
+        },
+        "48": {
+            "name": "Zara",
+            "image": "https://www.retaildetail.be/sites/default/files/styles/news/public/news/zara%20new%20logo%20retail.jpg?itok=hdlk5UKv"
+        },
+        "49": {
+            "name": "Delhaize",
+            "image": "https://jobs.delhaize.be/content/uploads/2018/01/logo_delhaize_socialmedia-1.png"
+        },
+        "50": {
+            "name": "Colruyt",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Colruyt_%28France%29_Prix_Qualit%C3%A9.pdf/page1-443px-Colruyt_%28France%29_Prix_Qualit%C3%A9.pdf.jpg"
+        },
+        "51": {
+            "name": "Carrefour",
+            "image": "http://assets.stickpng.com/images/5842906ca6515b1e0ad75abb.png"
+        },
+        "52": {
+            "name": "Intermarché",
+            "image": "https://www.intermarche.be/sites/default/files/logo_mousquetaires.jpg"
+        },
+        "53": {
+            "name": "Audi",
+            "image": "https://cdn.1min30.com/wp-content/uploads/2017/08/Logo-Audi-1.jpg"
+        },
+        "54": {
+            "name": "Citroën",
+            "image": "https://cdn.1min30.com/wp-content/uploads/2017/08/Logo-Citro%C3%ABn-1.jpg"
+        },
+        "55": {
+            "name": "Xiaomi",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Xiaomi_logo_%282021-%29.svg/1200px-Xiaomi_logo_%282021-%29.svg.png"
+        },
+        "56": {
+            "name": "Porsche",
+            "image": "https://upload.wikimedia.org/wikipedia/fr/5/55/Porsche_logo.png"
+        },"57": {
+            "name": "BMW",
+            "image": "http://marque-voiture.com/wp-content/uploads/2015/09/BMW-Logo.png"
+        },
+        "58": {
+            "name": "Hyundai",
+            "image": "https://cdn.1min30.com/wp-content/uploads/2019/02/Symbole-Hyundai.jpg"
+        },
+        "59": {
+            "name": "Mercedes-Benz",
+            "image": "https://logo-marque.com/wp-content/uploads/2020/05/Mercedes-Benz-Logo.png"
+        },
+        "60": {
+            "name": "VolksWagen",
+            "image": "http://marque-voiture.com/wp-content/uploads/2015/10/Nouveau-logo-Volkswagen.jpg"
+        },
+        "61": {
+            "name": "Ford",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Ford_logo.svg/800px-Ford_logo.svg.png"
+        },
+        "62": {
+            "name": "Mazda",
+            "image": "http://marque-voiture.com/wp-content/uploads/2015/10/Mazda-Logo.jpg"
+        },
+        "63": {
+            "name": "Jaguar",
+            "image": "https://sptairbagshop.com/img/cms/Jaguar-logo.png"
+        },
+        "64": {
+            "name": "Tec",
+            "image": "https://chartegraphique.letec.be/build/img/content/logo-tec.png"
+        },
+        "65": {
+            "name": "Stib",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/MIVB_STIB_Logo.svg/1515px-MIVB_STIB_Logo.svg.png"
+        },
+        "66": {
+            "name": "De Lijn",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/De_Lijn.svg/1200px-De_Lijn.svg.png"
+        },
+        "67": {
+            "name": "RATP",
+            "image": "https://upload.wikimedia.org/wikipedia/fr/thumb/0/01/RATP.svg/1698px-RATP.svg.png"
+        },
+        "68": {
+            "name": "Visual Studio",
+            "image": "https://logos-marques.com/wp-content/uploads/2021/03/Visual-Studio-Logo.png"
+        },
+        "69": {
+            "name": "Mongo DB",
+            "image": "https://e1.pngegg.com/pngimages/711/379/png-clipart-green-grass-mongodb-base-de-donnees-base-de-donnees-orientee-document-tableau-de-bord-nosql-bson-javascript.png"
+        },
+        "70": {
+            "name": "Twitch",
+            "image": "https://fr.blog.twitch.tv/assets/uploads/03-glitch.jpg"
+        },
+        "71": {
+            "name": "Byp Quiz",
+            "image": "https://static-s.aa-cdn.net/img/gp/20600014438155/EPSs6ziM8R48_ipS_jAQG9KhqTjPzWlb-520vYeuC7PtRQ4MQuubu7RJ5tfBmZdZytE=s300?v=1"
+        }
+    }
+}
