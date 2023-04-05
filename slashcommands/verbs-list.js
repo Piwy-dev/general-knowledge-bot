@@ -1,10 +1,10 @@
-const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+const d = require('discord.js');
 
 const verbsEn = require('../json/verbs-english.json')
 const verbsNl = require('../json/verbs-dutch.json')
 
 module.exports = {
-    data: new SlashCommandBuilder()
+    data: new d.SlashCommandBuilder()
         .setName("verbs-list")
         .setDescription("Shows all the verbs in the list.")
         .setDescriptionLocalizations({
@@ -102,12 +102,12 @@ module.exports = {
                 partpas_2 += `\n${verbList.verbs[v][2]}`;
             }
 
-            const listEmbed_1 = new EmbedBuilder()
+            const listEmbed_1 = new d.EmbedBuilder()
                 .setColor("BLURPLE")
                 .setTitle(`Liste des verbes irréguliers - ${selectLang}`)
                 .addFields({ name: "Infinitif", value: `${infinitifs_1}`, inline: true }, { name: "Imparfait", value: `${imaparfait_1}`, inline: true }, { name: "Participe Passé", value: `${partpas_1}`, inline: true }, )
 
-            const listEmbed_2 = new EmbedBuilder()
+            const listEmbed_2 = new d.EmbedBuilder()
                 .setColor("BLURPLE")
                 .setTitle(`Liste des verbes irréguliers - ${selectLang}`)
                 .addFields({ name: "Infinitif", value: `${infinitifs_2}`, inline: true }, { name: "Imparfait", value: `${imaparfait_2}`, inline: true }, { name: "Participe Passé", value: `${partpas_2}`, inline: true }, )
@@ -140,12 +140,12 @@ module.exports = {
                 traductions_2 += `\n${verbList.verbs[v][3]}`;
             }
 
-            const infEmbed_1 = new EmbedBuilder()
+            const infEmbed_1 = new d.EmbedBuilder()
                 .setColor("BLURPLE")
                 .setTitle(`Liste des verbes irréguliers - ${selectLang}`)
                 .addFields({ name: "Infinitif", value: `${infinitifs_1}`, inline: true }, { name: "Traduction", value: `${traductions_1}`, inline: true }, )
 
-            const infEmbed_2 = new EmbedBuilder()
+            const infEmbed_2 = new d.EmbedBuilder()
                 .setColor("BLURPLE")
                 .addFields({ name: "Infinitif", value: `${infinitifs_2}`, inline: true }, { name: "Traduction", value: `${traductions_2}`, inline: true }, )
 

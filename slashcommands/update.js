@@ -1,9 +1,8 @@
-const discord = require('discord.js');
-const { PermissionsBitField, EmbedBuilder, SlashCommandBuilder } = require('discord.js');
+const d = require('discord.js');
 const language = require('../language')
 
 module.exports = {
-    data: new SlashCommandBuilder()
+    data: new d.SlashCommandBuilder()
         .setName("update")
         .setNameLocalizations({
             fr: "mise-à-jour",
@@ -14,12 +13,12 @@ module.exports = {
             fr: "Affiche les logs de mise à jour.",
             nl: 'Toont de update logs.',
         })
-        .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
+        .setDefaultMemberPermissions(d.PermissionsBitField.Flags.Administrator),
 
     async execute(interaction, client) {
         const { guild, channel } = interaction
 
-        const updateEmbed = new EmbedBuilder()
+        const updateEmbed = new d.EmbedBuilder()
             .setTitle(`${language(guild, "UPD_TITLE")} 1.3.6`)
             .setThumbnail('https://pbs.twimg.com/profile_images/1480638649008066569/ZYdgTYU-_400x400.jpg')
             .setColor('#7dffa0')
@@ -38,13 +37,13 @@ module.exports = {
             })
             .setFooter({ text: "Bot mis à jour by Piwy#2703" })
 
-        const invite = client.generateInvite({ scopes: ['bot', 'applications.commands'], permissions: [discord.PermissionsBitField.Flags.Administrator] })
+        const invite = client.generateInvite({ scopes: ['bot', 'applications.commands'], permissions: [d.PermissionsBitField.Flags.Administrator] })
 
-        const buttons = new discord.ActionRowBuilder()
+        const buttons = new d.ActionRowBuilder()
             .addComponents(
-                new discord.ButtonBuilder()
+                new d.ButtonBuilder()
                 .setLabel(`${language(guild, "INVITE_BUT")}`)
-                .setStyle(discord.ButtonStyle.Link)
+                .setStyle(d.ButtonStyle.Link)
                 .setURL(`${invite}`)
             )
 

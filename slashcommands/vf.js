@@ -28,15 +28,15 @@ module.exports = {
         const buttons = new ActionRowBuilder()
             .addComponents(
                 new ButtonBuilder() // Création du bouton correct
-                .setCustomId(`true${i}`)
-                .setLabel(`${language(guild, "TRUE")}`) // ajouter la traduction
-                .setStyle('Success')
+                    .setCustomId(`true${i}`)
+                    .setLabel(`${language(guild, "TRUE")}`) // ajouter la traduction
+                    .setStyle('Success')
             )
             .addComponents(
                 new ButtonBuilder() // Création du bouton incorrect
-                .setCustomId(`false${i}`)
-                .setLabel(`${language(guild, "FALSE")}`) // ajouter la traduction
-                .setStyle('Danger')
+                    .setCustomId(`false${i}`)
+                    .setLabel(`${language(guild, "FALSE")}`) // ajouter la traduction
+                    .setStyle('Danger')
             )
 
         const target = user
@@ -48,60 +48,60 @@ module.exports = {
             components: [buttons]
         });
 
-        client.on('interactionCreate', async(interaction) => {
-                    const { user, message } = interaction
+        client.on('interactionCreate', async (interaction) => {
+            const { user, message } = interaction
 
-                    if (!interaction.isButton()) return;
+            if (!interaction.isButton()) return;
 
-                    if (interaction.customId === `true${i}`) {
-                        // Si quelqu'un d'autre essaye de répondre
-                        if (user !== target) return interaction.reply({
-                            content: `${language(guild, "CANT_ANSW")}`,
-                            ephemeral: true
-                        })
-
-                        if (truefalse.questions[i]["answer"] === "true") {
-                            await interaction.update({
-                                content: `${language(guild, "THX_ANSW")}`,
-                                components: []
-                            })
-                            await message.reply(`${user} ${language(guild, "WIN_XP")} 5 points! ${truefalse.questions[i][`info_${selectedLanguage}`]}`)
-                profile.addxp(guild.id, user.id, 5)
-            }
-            else {
-                await interaction.update({
-                    content: `${language(guild, "THX_ANSW")}`,
-                    components: []
+            if (interaction.customId === `true${i}`) {
+                // Si quelqu'un d'autre essaye de répondre
+                if (user !== target) return interaction.reply({
+                    content: `${language(guild, "CANT_ANSW")}`,
+                    ephemeral: true
                 })
-                await message.reply(`${user} ${language(guild, "LOSE_XP")} 5 points. ${truefalse.questions[i][`info_${selectedLanguage}`]}`)
-                profile.addxp(guild.id, user.id, -5)
-            }
-        }
-        else if (interaction.customId === `false${i}`) {
-            // Si quelqu'un d'autre essaye de répondre
-            if (user !== target) return interaction.reply({
-                content: `${language(guild, "CANT_ANSW")}`, 
-                ephemeral: true
-            })
 
-            if (truefalse.questions[i]["answer"] === "false") {
-                await interaction.update({
-                    content: `${language(guild, "THX_ANSW")}`,
-                    components: []
-                })
-                await message.reply(`${user} ${language(guild, "WIN_XP")} 5 points! ${truefalse.questions[i][`info_${selectedLanguage}`]}`)
-                profile.addxp(guild.id, user.id, 5)
+                if (truefalse.questions[i]["answer"] === "true") {
+                    await interaction.update({
+                        content: `${language(guild, "THX_ANSW")}`,
+                        components: []
+                    })
+                    await message.reply(`${user} ${language(guild, "WIN_XP")} 5 points! ${truefalse.questions[i][`info_${selectedLanguage}`]}`)
+                    profile.addxp(guild.id, user.id, 5)
+                }
+                else {
+                    await interaction.update({
+                        content: `${language(guild, "THX_ANSW")}`,
+                        components: []
+                    })
+                    await message.reply(`${user} ${language(guild, "LOSE_XP")} 5 points. ${truefalse.questions[i][`info_${selectedLanguage}`]}`)
+                    profile.addxp(guild.id, user.id, -5)
+                }
             }
-            else {
-                await interaction.update({
-                    content: `${language(guild, "THX_ANSW")}`,
-                    components: []
+            else if (interaction.customId === `false${i}`) {
+                // Si quelqu'un d'autre essaye de répondre
+                if (user !== target) return interaction.reply({
+                    content: `${language(guild, "CANT_ANSW")}`,
+                    ephemeral: true
                 })
-                await message.reply(`${user} ${language(guild, "LOSE_XP")} 5 points. ${truefalse.questions[i][`info_${selectedLanguage}`]}`)
-                profile.addxp(guild.id, user.id, -5)
+
+                if (truefalse.questions[i]["answer"] === "false") {
+                    await interaction.update({
+                        content: `${language(guild, "THX_ANSW")}`,
+                        components: []
+                    })
+                    await message.reply(`${user} ${language(guild, "WIN_XP")} 5 points! ${truefalse.questions[i][`info_${selectedLanguage}`]}`)
+                    profile.addxp(guild.id, user.id, 5)
+                }
+                else {
+                    await interaction.update({
+                        content: `${language(guild, "THX_ANSW")}`,
+                        components: []
+                    })
+                    await message.reply(`${user} ${language(guild, "LOSE_XP")} 5 points. ${truefalse.questions[i][`info_${selectedLanguage}`]}`)
+                    profile.addxp(guild.id, user.id, -5)
+                }
             }
-        }
-        else return;
-    })
-}
+            else return;
+        })
+    }
 }

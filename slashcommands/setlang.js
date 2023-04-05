@@ -3,10 +3,10 @@ const mongo = require('../db/mongo')
 const languageSchema = require('../db/language-schema');
 const { setLanguage } = require('../language')
 
-const { SlashCommandBuilder, PermissionsBitField } = require('discord.js');
+const d = require('discord.js')
 
 module.exports = {
-    data: new SlashCommandBuilder()
+    data: new d.SlashCommandBuilder()
         .setName("setlang")
         .setDescription("Change the language used by the bot.")
         .addStringOption((option) => option
@@ -14,7 +14,7 @@ module.exports = {
             .setDescription("The new language name")
             .setRequired(true)
         )
-        .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
+        .setDefaultMemberPermissions(d.PermissionsBitField.Flags.Administrator),
 
     async execute(interaction, client) {
         const { guild } = interaction

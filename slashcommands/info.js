@@ -1,8 +1,8 @@
-const discord = require('discord.js');
+const d = require('discord.js');
 const language = require('../language')
 
 module.exports = {
-    data: new discord.SlashCommandBuilder()
+    data: new d.SlashCommandBuilder()
         .setName("info")
         .setDescription("shows how to use the bot")
         .setDescriptionLocalizations({
@@ -13,7 +13,7 @@ module.exports = {
     async execute(interaction, client) {
         const { guild } = interaction;
 
-        const mainEmbed = new discord.EmbedBuilder()
+        const mainEmbed = new d.EmbedBuilder()
             .setColor('#3B5998')
             .setTitle('Informations')
             .setDescription(`${language(guild, "INFO_THANKS")}`)
@@ -23,7 +23,7 @@ module.exports = {
             });
         //.setFooter(`${language(guild, "INFO_FOOTER")}`);
 
-        const testEmbed = new discord.EmbedBuilder()
+        const testEmbed = new d.EmbedBuilder()
             .setColor('#61cdff')
             .setTitle(`${language(guild, "TEST_CMD")}`)
             .setDescription(`${language(guild, "TEST_CMD_DESCR")}`)
@@ -41,13 +41,13 @@ module.exports = {
                 value: `${language(guild, "LOGO_TEST_DESCR")}`
             });
 
-        const profileEmbed = new discord.EmbedBuilder()
+        const profileEmbed = new d.EmbedBuilder()
             .setColor('#ff6b61')
             .setTitle(`${language(guild, "POINT_CMD")}`)
             .setDescription(`${language(guild, "POINT_CMD_DESCR")}`)
             .addFields({ name: `${language(guild, "PROFILE_CMD")}`, value: `${language(guild, "PROFILE_CMD_DESCR")}` }, { name: `${language(guild, "LEAD_CMD")}`, value: `${language(guild, "LEAD_CMD_DESCR")}` }, { name: `${language(guild, "ADMINXP_CMD")}`, value: `${language(guild, "ADMINXP_CMD_DESCR")}` });
 
-        const configurationEmbed = new discord.EmbedBuilder()
+        const configurationEmbed = new d.EmbedBuilder()
             .setColor('#9861ff')
             .setTitle(`${language(guild, "CONFIG_CMD")}`)
             .setDescription(`${language(guild, "CONFIG_CMD_DESCR")}`)
@@ -56,18 +56,18 @@ module.exports = {
                 value: `${language(guild, "SETLANG_DESCR")}`
             });
 
-        const invite = client.generateInvite({ scopes: ['bot', 'applications.commands'], permissions: [discord.PermissionsBitField.Flags.Administrator] });
-        const invitesButton = new discord.ActionRowBuilder()
+        const invite = client.generateInvite({ scopes: ['bot', 'applications.commands'], permissions: [d.PermissionsBitField.Flags.Administrator] });
+        const invitesButton = new d.ActionRowBuilder()
             .addComponents(
-                new discord.ButtonBuilder() // Création du bouton d'invitation
+                new d.ButtonBuilder() // Création du bouton d'invitation
                     .setLabel('Invite the bot')
-                    .setStyle(discord.ButtonStyle.Link)
+                    .setStyle(d.ButtonStyle.Link)
                     .setURL(`${invite}`)
             )
             .addComponents(
-                new discord.ButtonBuilder() // Création du bouton pour recevoir le lien du serv de support
+                new d.ButtonBuilder() // Création du bouton pour recevoir le lien du serv de support
                     .setLabel('Join support server')
-                    .setStyle(discord.ButtonStyle.Link)
+                    .setStyle(d.ButtonStyle.Link)
                     .setURL('https://discord.gg/PhCdM465np')
             );
 

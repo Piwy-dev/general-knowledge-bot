@@ -1,10 +1,10 @@
 const profile = require('../db/profile')
 const language = require('../language')
 
-const { SlashCommandBuilder } = require('discord.js')
+const d = require('discord.js')
 
 module.exports = {
-    data: new SlashCommandBuilder()
+    data: new d.SlashCommandBuilder()
         .setName("profile")
         .setNameLocalizations({
             fr: "profil",

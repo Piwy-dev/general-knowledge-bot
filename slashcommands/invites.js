@@ -1,8 +1,8 @@
-const discord = require('discord.js');
+const d = require('discord.js');
 const language = require('../language')
 
 module.exports = {
-    data: new discord.SlashCommandBuilder()
+    data: new d.SlashCommandBuilder()
         .setName("invite")
         .setDescription("Create an invitation link for the bot.")
         .setDescriptionLocalizations({
@@ -12,13 +12,13 @@ module.exports = {
 
     async execute(interaction, client) {
         const { guild } = interaction
-        const invite = client.generateInvite({ scopes: ['bot', 'applications.commands'], permissions: [discord.PermissionsBitField.Flags.Administrator] })
+        const invite = client.generateInvite({ scopes: ['bot', 'applications.commands'], permissions: [d.PermissionsBitField.Flags.Administrator] })
 
-        const inviteButton = new discord.ActionRowBuilder()
+        const inviteButton = new d.ActionRowBuilder()
             .addComponents(
-                new discord.ButtonBuilder()
+                new d.ButtonBuilder()
                 .setLabel(`${language(guild, "INVITE_BUT")}`)
-                .setStyle(discord.ButtonStyle.Link)
+                .setStyle(d.ButtonStyle.Link)
                 .setURL(`${invite}`)
             )
 

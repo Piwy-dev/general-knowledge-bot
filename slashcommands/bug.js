@@ -1,8 +1,8 @@
 const language = require('../language')
-const { SlashCommandBuilder } = require('discord.js')
+const d = require('discord.js')
 
 module.exports = {
-    data: new SlashCommandBuilder()
+    data: new d.SlashCommandBuilder()
         .setName("bug")
         .setDescription("repport a bug to the bot's creator")
         .setDescriptionLocalizations({
