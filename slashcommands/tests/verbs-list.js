@@ -1,7 +1,7 @@
 const d = require('discord.js');
 
-const verbsEn = require('../json/verbs-english.json')
-const verbsNl = require('../json/verbs-dutch.json')
+const verbsEn = require('../../json/verbs-english.json')
+const verbsNl = require('../../json/verbs-dutch.json')
 
 module.exports = {
     data: new d.SlashCommandBuilder()

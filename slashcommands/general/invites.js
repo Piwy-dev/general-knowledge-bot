@@ -1,5 +1,5 @@
 const d = require('discord.js');
-const language = require('../language')
+const language = require('../../language')
 
 module.exports = {
     data: new d.SlashCommandBuilder()

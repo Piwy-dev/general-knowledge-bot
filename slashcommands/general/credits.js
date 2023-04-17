@@ -1,4 +1,4 @@
-const language = require('../language')
+const language = require('../../language')
 
 const d = require('discord.js')
 

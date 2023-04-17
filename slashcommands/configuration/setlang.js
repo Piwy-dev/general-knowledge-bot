@@ -1,7 +1,7 @@
-const { languages } = require('../lang.json');
-const mongo = require('../db/mongo')
-const languageSchema = require('../db/language-schema');
-const { setLanguage } = require('../language')
+const { languages } = require('../../lang.json');
+const mongo = require('../../db/mongo')
+const languageSchema = require('../../db/language-schema');
+const { setLanguage } = require('../../language')
 
 const d = require('discord.js')
 

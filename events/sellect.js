@@ -1,7 +1,7 @@
 const d = require('discord.js');
 
 const modules = require('../modules.js');
-const { verbList } = require('../slashcommands/study-infintive.js');
+const { verbList } = require('../slashcommands/tests/study-infintive.js');
 
 let langTradResult = undefined
 

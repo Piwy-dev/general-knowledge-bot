@@ -1,13 +1,13 @@
 const d = require('discord.js')
 
-const modules = require('../modules.js')
+const modules = require('../../modules.js')
 
-const verbsEn = require('../json/verbs-english.json')
-const verbsNl = require('../json/verbs-dutch.json')
+const verbsEn = require('../../json/verbs-english.json')
+const verbsNl = require('../../json/verbs-dutch.json')
 
-const language = require('../language.js')
+const language = require('../../language.js')
 
-const profile = require('../db/profile.js')
+const profile = require('../../db/profile.js')
 
 module.exports = {
     data: new d.SlashCommandBuilder()

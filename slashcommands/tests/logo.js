@@ -1,10 +1,10 @@
-const profile = require('../db/profile')
+const profile = require('../../db/profile')
 
-const { logos } = require('../json/logo.json')
+const { logos } = require('../../json/logo.json')
 
-const language = require('../language')
+const language = require('../../language')
 
-const modules = require('../modules.js')
+const modules = require('../../modules.js')
 
 const d = require('discord.js')
 

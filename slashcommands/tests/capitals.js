@@ -1,12 +1,12 @@
-const language = require('../language')
-const profile = require('../db/profile')
+const language = require('../../language')
+const profile = require('../../db/profile')
 
-const { contries } = require('../json/capContries.json');
-const { capitals } = require('../json/capitals.json');
+const { contries } = require('../../json/capContries.json');
+const { capitals } = require('../../json/capitals.json');
 
 const d = require('discord.js')
 
-const modules = require('../modules')
+const modules = require('../../modules')
 
 let has_answered = true;
 

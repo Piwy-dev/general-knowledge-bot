@@ -1,12 +1,12 @@
-const profile = require('../db/profile')
-const language = require('../language')
+const d = require('discord.js');
 
-const truefalse = require('../json/truefalse.json')
+const profile = require('../../db/profile')
+const language = require('../../language')
 
-const { ActionRowBuilder, ButtonBuilder, SlashCommandBuilder } = require('discord.js')
+const truefalse = require('../../json/capContries.json')
 
 module.exports = {
-    data: new SlashCommandBuilder()
+    data: new d.SlashCommandBuilder()
         .setName("trueorfalse")
         .setNameLocalizations({
             fr: "vraioufaux",
@@ -25,18 +25,18 @@ module.exports = {
 
         var i = 1 + Math.floor(Math.random() * 57);
 
-        const buttons = new ActionRowBuilder()
+        const buttons = new d.ActionRowBuilder()
             .addComponents(
-                new ButtonBuilder() // Création du bouton correct
+                new d.ButtonBuilder() // Création du bouton correct
                     .setCustomId(`true${i}`)
                     .setLabel(`${language(guild, "TRUE")}`) // ajouter la traduction
-                    .setStyle('Success')
+                    .setStyle(d.ButtonStyle.Success)
             )
             .addComponents(
-                new ButtonBuilder() // Création du bouton incorrect
+                new d.ButtonBuilder() // Création du bouton incorrect
                     .setCustomId(`false${i}`)
                     .setLabel(`${language(guild, "FALSE")}`) // ajouter la traduction
-                    .setStyle('Danger')
+                    .setStyle(d.ButtonStyle.Danger)
             )
 
         const target = user
@@ -48,7 +48,7 @@ module.exports = {
             components: [buttons]
         });
 
-        client.on('interactionCreate', async (interaction) => {
+        client.on(d.Events.InteractionCreate, async (interaction) => {
             const { user, message } = interaction
 
             if (!interaction.isButton()) return;

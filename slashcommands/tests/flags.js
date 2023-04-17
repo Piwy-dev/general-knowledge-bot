@@ -1,12 +1,12 @@
-const profile = require('../db/profile')
-const language = require('../language')
-
-const { flags } = require('../json/flags.json');
-const { contries } = require('../json/contries.json');
-
 const d = require('discord.js')
 
-const modules = require('../modules.js')
+const profile = require('../../db/profile')
+const language = require('../../language')
+
+const { flags } = require('../../json/flags.json');
+const { contries } = require('../../json/contries.json');
+
+const modules = require('../../modules.js')
 
 let has_answered = true;
 

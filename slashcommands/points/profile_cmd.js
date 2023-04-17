@@ -1,5 +1,5 @@
-const profile = require('../db/profile')
-const language = require('../language')
+const profile = require('../../db/profile')
+const language = require('../../language')
 
 const d = require('discord.js')
 
