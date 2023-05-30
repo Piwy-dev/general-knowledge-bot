@@ -11,7 +11,7 @@ module.exports = {
         }),
 
     async execute(interaction, client) {
-        const { guild } = interaction;
+        const { guild, channel } = interaction;
 
         const mainEmbed = new d.EmbedBuilder()
             .setColor('#3B5998')
@@ -56,13 +56,15 @@ module.exports = {
                 value: `${language(guild, "SETLANG_DESCR")}`
             });
 
-        const invite = client.generateInvite({ scopes: ['bot', 'applications.commands'], permissions: [d.PermissionsBitField.Flags.Administrator] });
         const invitesButton = new d.ActionRowBuilder()
             .addComponents(
                 new d.ButtonBuilder() // Création du bouton d'invitation
                     .setLabel('Invite the bot')
                     .setStyle(d.ButtonStyle.Link)
-                    .setURL(`${invite}`)
+                    // Test
+                    .setURL(`https://discord.com/api/oauth2/authorize?client_id=987825895899275304&permissions=8&scope=bot%20applications.commands`)
+                    // Production
+                    //.setURL(`https://discord.com/api/oauth2/authorize?client_id=803979491373219840&permissions=8&scope=applications.commands%20bot`)
             )
             .addComponents(
                 new d.ButtonBuilder() // Création du bouton pour recevoir le lien du serv de support
