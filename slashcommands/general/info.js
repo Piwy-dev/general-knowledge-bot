@@ -41,6 +41,23 @@ module.exports = {
                 value: `${language(guild, "LOGO_TEST_DESCR")}`
             });
 
+        const irrverbsEmbed = new d.EmbedBuilder()
+            .setColor('#69c280')
+            .setTitle(`${language(guild, "IRREGUAR_VERBS_CMD")}`)
+            .addFields({
+                name: `${language(guild, "VERBS_LIST")}`,
+                value: `${language(guild, "VERBS_LIST_DESCR")}`
+            }, {
+                name: `${language(guild, "STUDY_INF")}`,
+                value: `${language(guild, "STUDY_INF_DESCR")}`
+            }, {
+                name: `${language(guild, "STUDY_IMPERF")}`,
+                value: `${language(guild, "STUDY_IMPERF_DESCR")}`
+            }, {
+                name: `${language(guild, "STUDY_PAST_PART")}`,
+                value: `${language(guild, "STUDY_PAST_PART_DESCR")}`
+            });
+
         const profileEmbed = new d.EmbedBuilder()
             .setColor('#ff6b61')
             .setTitle(`${language(guild, "POINT_CMD")}`)
@@ -61,10 +78,7 @@ module.exports = {
                 new d.ButtonBuilder() // Création du bouton d'invitation
                     .setLabel('Invite the bot')
                     .setStyle(d.ButtonStyle.Link)
-                    // Test
-                    .setURL(`https://discord.com/api/oauth2/authorize?client_id=987825895899275304&permissions=8&scope=bot%20applications.commands`)
-                    // Production
-                    //.setURL(`https://discord.com/api/oauth2/authorize?client_id=803979491373219840&permissions=8&scope=applications.commands%20bot`)
+                    .setURL(`https://discord.com/api/oauth2/authorize?client_id=803979491373219840&permissions=2147601472&scope=bot%20applications.commands`)
             )
             .addComponents(
                 new d.ButtonBuilder() // Création du bouton pour recevoir le lien du serv de support
@@ -74,7 +88,7 @@ module.exports = {
             );
 
         interaction.reply({
-            embeds: [mainEmbed, testEmbed, profileEmbed, configurationEmbed],
+            embeds: [mainEmbed, testEmbed, irrverbsEmbed,profileEmbed, configurationEmbed],
             components: [invitesButton],
         })
     }

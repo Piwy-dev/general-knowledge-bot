@@ -62,36 +62,89 @@
             "french": "Il y a plusieurs sortes de tests disponibles. Voyez la liste ici."
         },
         "TRUE_FALSE": {
-            "english": "True or false test",
-            "french": "Test de vrai ou faux"
+            "english": "True or false question",
+            "french": "Question \"vrai ou faux\"",
+            "nederlands": "Waar of niet waar vraag"
         },
         "TRUE_FALSE_DESCR": {
-            "english": "In order to have a true or false question, uses the `/truefalse` commands, then click on the apropriate button depanding if the statement is true or false.",
-            "french": "Pour avoir une question de vrai ou faux, utilises la commande `/truefalse`, ensuite réagissez avec le bon boutton en fonction de si la proposition est vraie ou fausse."
+            "english": "`/truefalse` send you a message containing a proposition. Once done you can click on the apropriate button depanding if you think the proposition is true or false.",
+            "french": "`/truefalse` envoie un message contenant une proposition. Une fois fait tu peux cliquer sur le bouton approprié en fonction de si tu penses que la proposition est vraie ou fausse.",
+            "nederlands": "`/truefalse` stuurt je een bericht met een voorstel. Eens dit gemaakt is, kun je op de juiste knop klikken, afhankelijk van of je denkt dat het voorstel waar of onwaar is."
         },
         "FLAG_TEST": {
-            "english": "Flag test",
-            "french": "Test des drapeaux"
+            "english": "Flags test",
+            "french": "Test des drapeaux",
+            "nederlands": "Vlaggen test"
         },
         "FLAG_TEST_DESCR": {
-            "english": "Uses the command `/flag` for testing your knowledge in flags. The first message you send after it will be considered as your answer.",
-            "french": "Utilises la commande `/flag` pour tester tes connaissances en drapeaux. Le premier message que tu envoies par après sera considéré comme ta réponse."
+            "english": "`/flag` sends you a message containing a flag. Once done you can enter the name of the country that correspond to the flag by clicking on the button at the bottom of the message.",
+            "french": "`/flag` envoie un message contenant un drapeau. Une fois fait tu peux entrer le nom du pays correspondant au drapeau en cliquant sur le bouton en bas du message.",
+            "nederlands": "`/flag` stuurt je een bericht met een vlag. Eens dit gemaakt is, kun je de naam van het land dat overeenkomt met de vlag invoeren door op de knop onderaan het bericht te klikken."
         },
         "CAPITAL_TEST": {
             "english": "Capitals test",
-            "french": "Test des capitales"
+            "french": "Test des capitales",
+            "nederlands": "Hoofdsteden test"
         },
         "CAPITAL_TEST_DESCR": {
-            "english": "Uses the `/capital` command for testing your knowledge in capitals. The first message you send after it will be considered as your answer.",
-            "french": "Utilises la commande `/capital` pour tester tes connaissances en capitales. Le premier message que tu envoies par après sera considéré comme ta réponse."
+            "english": "`/capital` sends you a message containing a contry name. Once done you can enter the name of the country's capital by clicking on the button at the bottom of the message.",
+            "french": "`/capital` envoie un message contenant un nom de pays. Une fois fait tu peux entrer le nom de la capitale du pays en cliquant sur le bouton en bas du message.",
+            "nederlands": "`/capital` stuurt je een bericht met een landnaam. Eens dit gemaakt is, kun je de naam van de hoofdstad van het land invoeren door op de knop onderaan het bericht te klikken."
         },
         "LOGO_TEST": {
             "english": "Logos test",
-            "french": "Test des logos"
+            "french": "Test des logos",
+            "nederlands": "Logo's test"
         },
         "LOGO_TEST_DESCR": {
-            "english": "Uses the `/logo` command to test your knowledge in logos. The first message you send after it will be considered as your answer.",
-            "french": "Utilises la commande `/logo` pour tester tes connaissances en logos. Le premier message que tu envoies par après sera considéré comme ta réponse."
+            "english": "`/logo` sends you a message containing a logo. Once done you can enter the name of the company that has this logo by clicking on the button at the bottom of the message.",
+            "french": "`/logo` envoie un message contenant un logo. Une fois fait tu peux entrer le nom de l'entreprise qui possède ce logo en cliquant sur le bouton en bas du message.",
+            "nederlands": "`/logo` stuurt je een bericht met een logo. Eens dit gemaakt is, kun je de naam van het bedrijf dat dit logo heeft invoeren door op de knop onderaan het bericht te klikken."
+        },
+        "IRREGUAR_VERBS_CMD": {
+            "english": "Irregular verbs commands",
+            "french": "Commandes des verbes irréguliers",
+            "nederlands": "Onregelmatige werkwoorden commando's"
+        },
+        "VERBS_LIST": {
+            "english": "Verbs list",
+            "french": "Liste des verbes",
+            "nederlands": "Werkwoorden lijst"
+        },
+        "VERBS_LIST_DESCR": {
+            "english": "`/verbs-list` send a message containing the list off all verbs in function of the following options : \n- `language` the language of the verbs list (English or Dutch)\n- `showtrad` if True display the infinitive of the verb and its translation in French ; else display the infinitive, the imperfect and the past participle.",
+            "french": "`/verbs-list` envoie un message contenant la liste de tous les verbes en fonction des options suivantes : \n- `language` la langue de la liste des verbes (Anglais ou Néerlandais)\n- `showtrad` si True affiche l'infinitif du verbe et sa traduction en Français ; sinon affiche l'infinitif, l'imparfait et le participe passé.",
+            "nederlands": "`/verbs-list` stuurt een bericht met de lijst van alle werkwoorden in functie van de volgende opties : \n- `language` de taal van de lijst met werkwoorden (Engels of Nederlands)\n- `showtrad` als True toon de infinitief van het werkwoord en de vertaling in het Frans ; anders toon de infinitief, de imperfectum en de voltooid deelwoord."
+        },
+        "STUDY_INF": {
+            "english": "Study infinitive",
+            "french": "Étudier les infinitifs",
+            "nederlands": "Bestudeer infinitief"
+        },
+        "STUDY_INF_DESCR": {
+            "english": "`/study-infinitive` documentation to comme...",
+            "french": "`/study-infinitive` documentation à venir...",
+            "nederlands": "`/study-infinitive` documentatie om te komen..."
+        },
+        "STUDY_IMPERF": {
+            "english": "Study imperfect",
+            "french": "Étudier les imparfaits",
+            "nederlands": "Bestudeer imperfectum"
+        },
+        "STUDY_IMPERF_DESCR" : {
+            "english": "`/study-imperfect` documentation to comme...",
+            "french": "`/study-imperfect` documentation à venir...",
+            "nederlands": "`/study-imperfect` documentatie om te komen..."
+        },
+        "STUDY_PAST_PART": {
+            "english": "Study past participle",
+            "french": "Étudier les participes passés",
+            "nederlands": "Bestudeer voltooid deelwoord"
+        },
+        "STUDY_PAST_PART_DESCR": {
+            "english": "`/study-participle` documentation to comme...",
+            "french": "`/study-participle` documentation à venir...",
+            "nederlands": "`/study-participle` documentatie om te komen..."
         },
         "CONFIG_CMD": {
             "english": "Configuration commands",
