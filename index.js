@@ -11,13 +11,6 @@ const mongo = require("./db/mongo");
 
 const { loadLanguages } = require('./language')
 
-// Laisse le bot en ligne
-var http = require('http');
-http.createServer(function (req, res) {
-    res.write("I'm alive");
-    res.end();
-}).listen(8080);
-
 
 const commands = [];
 client.commands = new d.Collection();
@@ -45,7 +38,7 @@ for (const folder of commandFolders) {
 
 /* Construct and prepare an instance of the REST module */
 // Test
-const rest = new d.REST().setToken(process.env.TEST_TOKEN);
+const rest = new d.REST({ version: '10' }).setToken(process.env.TEST_TOKEN);
 // Production
 //const rest = new d.REST().setToken(process.env.TOKEN);
 

@@ -371,6 +371,36 @@
             "english": "French",
             "french": "Français",
             "nederlands": "Frans"
+        },
+        "QUESTIONS": {
+            "english": "Questions",
+            "french": "Questions",
+            "nederlands": "Vragen"
+        },
+        "QST_SELECT": {
+            "english": "Select a theme to get a question",
+            "french": "Sélectionne un thème pour avoir une question",
+            "nederlands": "Selecteer een thema om een vraag te krijgen"
+        },
+        "THEME_SELECT": {
+            "english": "Select a theme",
+            "french": "Sélectionne un thème",
+            "nederlands": "Selecteer een thema"
+        },
+        "PHILOSOPHY": {
+            "english": "Philosophy",
+            "french": "Philosophie",
+            "nederlands": "Filosofie"
+        },
+        "NEW_QST": {
+            "english": "If you want a new question, select a theme below.",
+            "french": "Si tu veux une nouvelle question, sélectionne un thème ci-dessous.",
+            "nederlands": "Als je een nieuwe vraag wilt, selecteer dan een thema hieronder."
+        },
+        "ANSWER": {
+            "english": "\n||Answer : ",
+            "french": "\n||Réponse : ",
+            "nederlands": "\n||Antwoord : "
         }
     }
 }
