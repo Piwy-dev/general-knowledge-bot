@@ -79,9 +79,9 @@ client.once(d.Events.ClientReady, async () => {
 
     // Charge les events
     const testAnswers = require('./events/testAnswers')
-    const sellect = require('./events/sellect')
+    const select = require('./events/select')
     testAnswers(client)
-    sellect(client)
+    select(client)
 
     console.log(`Currently in ${client.guilds.cache.size} servers`);
 

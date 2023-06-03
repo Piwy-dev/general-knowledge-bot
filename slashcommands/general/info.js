@@ -7,7 +7,6 @@ module.exports = {
         .setDescription("shows how to use the bot")
         .setDescriptionLocalizations({
             fr: 'Montre comment utiliser le bot.',
-            nl: 'Toont hoe de bot te gebruiken',
         }),
 
     async execute(interaction, client) {
