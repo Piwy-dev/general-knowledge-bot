@@ -1,0 +1,284 @@
+{
+    "algebra": {
+        "matrices": {
+            "matrice échelonée": {
+                "color": "0x3b8bc4",
+                "title": "Matrice échelonée",
+                "description": "Une matrice est dite échelonnée si le nombre de zéros précédant la première valeur non nulle d'une ligne augmente strictement ligne par ligne jusqu'à ce qu'il ne reste éventuellement plus que des zéros.",
+                "fields": [
+                    {
+                        "name": "Exemple",
+                        "value": "```0 | 1 | 2 | 3 | 4\n0 | 0 | 5 | 8 | 7\n0 | 0 | 0 | 9 | 10\n0 | 0 | 0 | 0 | 0\n0 | 0 | 0 | 0 | 0```"
+                    }
+                ]
+            }, 
+            "forme réduite de gauss-jordan": {
+                "color": "0x3b8bc4",
+                "title": "Forme réduite de Gauss-Jordan",
+                "description": "Une matrice est dite en forme réduite de Gauss-Jordan si elle est échelonnée et si toutes les valeurs non nulles sont égales à 1.",
+                "fields": [
+                    {
+                        "name": "Exemple",
+                        "value": "```1 | 0 | 0 | 0 | 0\n0 | 1 | 0 | 0 | 0\n0 | 0 | 1 | 0 | 0\n0 | 0 | 0 | 1 | 0\n0 | 0 | 0 | 0 | 1```"
+                    }
+                ]
+            },
+            "matrice carrée": {
+                "color": "0x3b8bc4",
+                "title": "Matrice carrée",
+                "description": "Une matrice est dite carrée si elle possède le même nombre de lignes et de colonnes.",
+                "fields": [
+                    {
+                        "name": "Exemple",
+                        "value": "```0 | 1 | 2\n3 | 4 | 5\n6 | 7 | 8```"
+                    }
+                ]
+            },
+            "produit matriciel": {
+                "color": "0x3b8bc4",
+                "title": "Produit matriciel",
+                "description": "Le produit matriciel de deux matrices `A` et `B` est une matrice `C` telle que `C = AB`.",
+                "fields": [
+                    {
+                        "name": "Condition de résolution",
+                        "value": "Le nombre de colonnes de la première matrice doit être égal au nombre de lignes de la deuxième matrice. \nSi `A` est une matrice de dimention `m x n` et `B` une matrice `n x k`, alors il est possible de réaliser le produit `AB` mais pas le produit `BA`."
+                    },
+                    {
+                        "name": "Methode de résolution",
+                        "value": "Pour chaque élément de la matrice résultat, on calcule la somme des produits des éléments de la ligne de la première matrice et de la colonne de la deuxième matrice. \nPour rendre cela plus facile on peut placer les matrices du produit de manière à ce que la matrice résultat se trouve à droite de la première matrice et en dessous de la seconde."
+                    },
+                    {
+                        "name": "Exemple",
+                        "value": "```          b  |  b  |  b \n          b  |  b  |  b\na | a    2ab | 2ab | 2ab  \na | a    2ab | 2ab | 2ab```"
+                    }
+                ]
+            }
+        }
+    },
+    "algorithmics": {
+
+    },
+    "electronics": {
+        "fonctions booléennes": {
+            "not": {
+                "color": "0x5834eb",
+                "title": "Not",
+                "description": "La porte logique **NOT** retourne l'inverse de son entrée.",
+                "fields": [
+                    {
+                        "name": "Table de vérité",
+                        "value": "```\nin | out\n0  | 1\n1  | 0\n```"
+                    }
+                ],
+                "thumbnail": { 
+                    "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097089814840496188/not.png"
+                }
+            },
+            "and": {
+                "color": "0x5834eb",
+                "title": "And",
+                "description": "La porte logique **AND** retourne 1 si les deux entrées sont à 1, 0 sinon.",
+                "fields": [
+                    {
+                        "name": "Table de vérité",
+                        "value": "```\nA | B | out\n0 | 0 | 0\n0 | 1 | 0\n1 | 0 | 0\n1 | 1 | 1\n```"
+                    }
+                ],
+                "thumbnail": {
+                    "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097117357576568883/and.png"
+                }
+            },
+            "or": {
+                "color": "0x5834eb",
+                "title": "Or",
+                "description": "La porte logique **OR** retourne 1 si au moins une des deux entrées est à 1, 0 sinon.",
+                "fields": [
+                    {
+                        "name": "Table de vérité",
+                        "value": "```\nA | B | out\n0 | 0 | 0\n0 | 1 | 1\n1 | 0 | 1\n1 | 1 | 1\n```"
+                    }
+                ],
+                "thumbnail": {
+                    "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097266856865321080/or.png"
+                }
+            },
+            "nand": {
+                "color": "0x5834eb",
+                "title": "Nand",
+                "description": "La porte logique **NAND** retourne 1 si au moins une des deux entrées est à 0, et 0 sinon.",
+                "fields": [
+                    {
+                        "name": "Table de vérité",
+                        "value": "```\nA | B | out\n0 | 0 | 1\n0 | 1 | 1\n1 | 0 | 1\n1 | 1 | 0\n```"
+                    }
+                ],
+                "thumbnail": {
+                    "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097267029477707816/nand.png"
+                }
+            },
+            "nor": {
+                "color": "0x5834eb",
+                "title": "Nor",
+                "description": "La porte logique **NOR** retourne 1 si les deux entrées sont 0, 0 sinon.",
+                "fields": [
+                    {
+                        "name": "Table de vérité",
+                        "value": "```\nA | B | out\n0 | 0 | 1\n0 | 1 | 0\n1 | 0 | 0\n1 | 1 | 0\n```"
+                    }
+                ],
+                "thumbnail": {
+                    "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097267140735815771/nor.png"
+                }
+            },
+            "xor": {
+                "color": "0x5834eb",
+                "title": "Xor",
+                "description": "La porte logique **XOR** retourne 1 si les deux entrées sont différentes, 0 sinon.",
+                "fields": [
+                    {
+                        "name": "Table de vérité",
+                        "value": "```\nA | B | out\n0 | 0 | 0\n0 | 1 | 1\n1 | 0 | 1\n1 | 1 | 0\n```"
+                    }
+                ],
+                "thumbnail": {
+                    "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097267300492640256/xor.png"
+                }
+            },
+            "xnor": {
+                "color": "0x5834eb",
+                "title": "Xnor",
+                "description": "La porte logique **XNOR** retourne 1 si les deux entrées sont identiques, 0 sinon.",
+                "fields": [
+                    {
+                        "name": "Table de vérité",
+                        "value": "```\nA | B | out\n0 | 0 | 1\n0 | 1 | 0\n1 | 0 | 0\n1 | 1 | 1\n```"
+                    }
+                ],
+                "thumbnail": {
+                    "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097089814840496188/xnor.png"
+                }
+            },
+            "mux": {
+                "color": "0x5834eb",
+                "title": "Mux",
+                "description": "La porte logique **MUX** (Multiplexer) permet de choisir entre deux entrées selon la valeur d'une troisième entrée (sel).",
+                "fields": [
+                    {
+                        "name": "Table de vérité",
+                        "value": "```\nA | B | sel | out\n0 | 0 | 0 | 0\n0 | 0 | 1 | 0\n0 | 1 | 0 | 0\n0 | 1 | 1 | 1\n1 | 0 | 0 | 1\n1 | 0 | 1 | 0\n1 | 1 | 0 | 1\n1 | 1 | 1 | 1\n```"
+                    }
+                ],
+                "thumbnail": {
+                    "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097267398266073168/mux.png"
+                }
+            },
+            "dmux": {
+                "color": "0x5834eb",
+                "title": "Dmux",
+                "description": "La porte logique **DMUX** (Demultiplexer) retourne les valeurs de A et B selon la valeur de in et sel.",
+                "fields": [
+                    {
+                        "name": "Table de vérité",
+                        "value": "```\nin | sel | A | B\n0 | 0 | 0 | 0\n0 | 1 | 0 | 0\n1 | 0 | 1 | 0\n1 | 1 | 0 | 1\n```"
+                    }
+                ],
+                "thumbnail": {
+                    "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097267480638005371/dmux.png"
+                }
+            }
+        },
+        "language d'assemblage": {
+            "instructions de type A": {
+                "color": "0xd99241",
+                "title": "Instructions de type A",
+                "description": "Les instructions de type A (A = adresse) permettent de charger des information de 15 bits (avec le bits de poid fort mit à 0 pour faire 16 bits en tout) dans le registre A. Elles permetent aussi d’accéder à l’information qui se trouve en mémoire à l’adresse spécifiée dans le registre A.",
+                "fields": [
+                    {
+                        "name": "Exemple",
+                        "value": "```as\n@12 // Charge la valeur 12 dans A et permet d'accéder là l'information contenue dans la mémoire à l'adresse 12.\n```"
+                    }
+                ]
+            },
+            "instructions de type C": {
+                "color": "0xd99241",
+                "title": "Instructions de type C",
+                "description": "Les instructions de type C (C = calculer) permettent d’effectuer toutes les autres opérations permisent par l’ALU. Elles ont donc plusieurs fonctionalités différentes. Il y a deux sortes d’instructions  différentes : Les instructions d’accès et @."
+            },
+            "saut non-conditionel": {
+                "color": "0xd99241",
+                "title": "Saut non-conditionel",
+                "description": "L’instruction **0;JMP**© permet de faire un saut non-conditionel (sera toujours effectué si l’instruction est lue) vers l’adresse indiquée.",
+                "fields": [
+                    {
+                        "name": "Exemple",
+                        "value": "```as\n(DEBUT) // Début de la boucle\n@x\nM=M+1 // Ajoute 1 à la valeur de x\n0;JMP // Saut vers le début de la boucle\n```"
+                    },
+                    {
+                        "name": "Code python correspondant",
+                        "value": "```py\nx = 0\nwhile True:\n    x += 1\n```"
+                    }
+                ]
+            },
+            "saut conditionel": {
+                "color": "0xd99241",
+                "title": "Saut conditionel",
+                "description": "Il existe plusieurs instructions qui permettent d’effectuer un saut seulement si la condition attendue est respectée. La condition peut être imposée sur n’importe quelle variable exitante. Dans les exemple ci-dessus c’est le registre `D` qui est utilisé :\n\n1. `D;JEQ` (Jump if EQual to 0) → Saute si la variable vaut 0. (`D == 0`)\n2. `D;JNE` (Jump if Not Equal to 0) → Saute si la variable est différente de 0. (`D != 0`)\n3. `D;JGT` (Jump if Greater Than 0) → Saute si la variable est strictement positive. (`D > 0`)\n4. `D;JLT` (Jump if Lower Than 0) → Saute si la variable est strictement négative. (`D < 0`)\n5. `D;JGE` (Jump if Greater than or Equal to 0) → Saute si la variable est positive. (`D >= 0`)\n6. `D;JLE` (Jump if Lower than or Equal to 0) → Saute si la variable est négative. (`D <= 0`)",
+                "fields": [
+                    {
+                        "name": "Exemple",
+                        "value": "```as\n@x\nD=M // Assigne la valeur de x à D\n\n@COND\nD;JGT // Saute si x > 0\n@x\nM=1 // Assigne la valeur 1 à x\n@FIN\n0;JMP // Saute à le fin pour ne pas effectuer le rest du code\n(COND)\n\n@x\nM=-1 // Assigne la valeur -1 à x\n(FIN)\n```"
+                    },
+                    {
+                        "name": "Code python correspondant",
+                        "value": "```py\nif x > 0:\n    x = 1\nelse:\n    x = -1\n```"
+                    }
+                ]
+            },
+            "boucles": {
+                "color": "0xd99241",
+                "title": "Boucles",
+                "description": "Les boucles peuvent être implémentée en utilisant des instruction de saut.",
+                "fields": [
+                    {
+                        "name": "Exemple",
+                        "value": "```as\n@x\nM=1 // Assigne la valeur 1 à x\n@n\nM=1 // Assigne la valeur 1 à n\n\n(DBOUCLE) // Début de la boucle\n@10\nD=A // Assigne la valeur 10 à D\n@n\nD=M-D // Assigne la valeur de (n - 10) à D -> Si n >= 10 (inverse de la condition de la boucle), D >= 0\n@FBOUCLE\nD;JGE // Saute vers la fin si D >= 0 (condition de la boucle n'est plus respectée)\n@x\nD=M // Assigne la valeur de x à D\n@x\nM=D+M // Assigne la valeur de (x + x) à x\n@n\nM=M+1 // Ajoute 1 à la valeur de n\n@DBOUCLE\n0;JMP // Saute vers le début de la boucle\n(FBOUCLE) // Fin de la boucle\n```"
+                    },
+                    {
+                        "name": "Code python correspondant",
+                        "value": "```py\nx = 1\nn = 1\nwhile n < 10:\n    x += x\n    n += 1\n```"
+                    }
+                ]
+            },
+            "break": {
+                "color": "0xd99241",
+                "title": "Break",
+                "description": "Il possible d’impléménter l’instuction `break` grâce aux sauts, en language assembleur.",
+                "fields": [
+                    {
+                        "name": "Exemple",
+                        "value": "```as\n// Assigne la valeur 0 à x\n@x\nM=0\n\n// Assigne la valeur 0 à y\n@y\nM=0\n\n(DBOUCLE)\n// Saute vers la fin si x != 0\n@x\nD=M\n@FBOUCLE\nD;JNE\n\n// Ajoute 1 à la valeur de y\n@y\nM=M+1\n\n// Saute vers le début si y != 2\n@2\nD=A\n@y\nD=M-D // y-2 -> si y != 2, D != 0\n@DBOUCLE\nD;DNE\n\n// Termine la boucle si y == 2 -> break\n@FBOUCLE\n0;JMP\n(FBOUCLE)\n```"
+                    },
+                    {
+                        "name": "Code python correspondant",
+                        "value": "```py\nx = 0\ny = 0\nwhile x==0: # sera toujours vrai\n    y += 1\n    if y == 2:\n        break # y vaudra 2 à la fin\n```"
+                    }
+                ]
+            },
+            "continue": {
+                "color": "0xd99241",
+                "title": "Continue",
+                "description": "Il possible d’impléménter l’instuction `continue` grâce aux sauts, en language assembleur.",
+                "fields": [
+                    {
+                        "name": "Exemple",
+                        "value": "```as\n// Assigne la valeur 0 à x\n@x\nM=0\n\n(DBOUCLE)\n// Retourne au début de la boucle -> continue\n@DBOUCLE\n0;JMP\n\n// Ajoute 1 à la valeur de x\n@x\nM=M+1```"
+                    },
+                    {
+                        "name": "Code python correspondant",
+                        "value": "```py\nx = 0\nwhile True:\n   continue # La boucle infie va continuer sans rien faire\n   x += 1 # Cette ligne ne sera jamais lue\n```"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -387,6 +387,21 @@
             "french": "Sélectionne un thème",
             "nederlands": "Selecteer een thema"
         },
+        "ALGEBRA": {
+            "english": "Algebra",
+            "french": "Algèbre",
+            "nederlands": "Algebra"
+        },
+        "ALGORITHMICS": {
+            "english": "Algorithmics",
+            "french": "Algorithmiques",
+            "nederlands": "Algoritmiek"
+        },
+        "ELECTRONICS": {
+            "english": "Electronics",
+            "french": "Electronique",
+            "nederlands": "Elektronica"
+        },
         "PHILOSOPHY": {
             "english": "Philosophy",
             "french": "Philosophie",
@@ -401,6 +416,51 @@
             "english": "\n||Answer : ",
             "french": "\n||Réponse : ",
             "nederlands": "\n||Antwoord : "
+        },
+        "COURSES": {
+            "english": "Courses",
+            "french": "Cours",
+            "nederlands": "Cursussen"
+        },
+        "COURSES_DESC": {
+            "english": "Select a course to get access to its subjects.",
+            "french": "Selectionne un cours pour avoir accès à ses sujets.",
+            "nederlands": "Selecteer een cursus om toegang aan de onderwerpen te krijgen."
+        },
+        "COURSES_SELECT": {
+            "english": "Select a course",
+            "french": "Sélectionne un cours",
+            "nederlands": "Selecteer een cursus"
+        },
+        "SUBJECTS": {
+            "english": "Subjects",
+            "french": "Sujets",
+            "nederlands": "Onderwerpen"
+        },
+        "SUBJECTS_DESC": {
+            "english": "Select a subject to get access to its cards.",
+            "french": "Selectionne un sujet pour avoir accès à ses fiches.",
+            "nederlands": "Selecteer een onderwerp om toegang aan de kaarten te krijgen."
+        },
+        "SUBJECTS_SELECT": {
+            "english": "Select a subject",
+            "french": "Selectionne un sujet",
+            "nederlands": "Selecteer een onderwerp"
+        },
+        "CARDS": {
+            "english": "Cards",
+            "french": "Fiches",
+            "nederlands": "Kaarten"
+        },
+        "CARDS_DESC": {
+            "english": "Select a card to get access to its content.",
+            "french": "Selectionne une fiche pour avoir accès à son contenu.",
+            "nederlands": "Selecteer een kaart om toegang aan de inhoud te krijgen."
+        },
+        "CARDS_SELECT": {
+            "english": "Select a card",
+            "french": "Selectionne une fiche",
+            "nederlands": "Selecteer een kaart"
         }
     }
 }

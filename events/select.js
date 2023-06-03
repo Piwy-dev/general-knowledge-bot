@@ -15,6 +15,10 @@ fs.readFile('./csv/qst_philo.csv', 'utf8', (err, data) => {
     qst_philo = csv.toArrays(data)
 })
 
+let previousSubjects = undefined
+let previousCards = undefined
+const cards = require('../json/cards.json')
+
 module.exports = (client) => {
     client.on(d.Events.InteractionCreate, async interaction => {
 
@@ -25,14 +29,12 @@ module.exports = (client) => {
 
         await interaction.deferReply({ephemeral: true})
 
-        // Verify if the sellect menu is the menu for sellecting the language of translation
         if(interaction.customId === 'langTrad') {
             values = interaction.values[0]
             langTradResult = modules.SendVerbMessage(guild, channel, verbList, values)
         }
 
-        // Verify if the sellect menu is the menu for sellecting the theme of the question
-        if(interaction.customId === 'questiontheme') {
+        else if(interaction.customId === 'questiontheme') {
             // Get the selected theme
             const selectedTheme = interaction.values[0]
             let theme = undefined
@@ -76,6 +78,99 @@ module.exports = (client) => {
                 .addComponents(themeMenu)
 
             await interaction.editReply({ embeds: [questionEmbed], components: [row] })
+        }
+
+        else if(interaction.customId === 'cardtheme') {
+            // Get the selected theme
+            const theme = interaction.values[0] 
+            
+            // Get the subjects of the theme
+            let subjects = []
+            switch(theme) {
+                case 'algebra': subjects = cards.algebra;  break;
+                case 'algorithmics': subjects = cards.algorithmics; break;
+                case 'electronics': subjects = cards.electronics; break;
+            }
+            previousSubjects = subjects
+
+            // Create a select menu with the subjects
+            const subjectsMenu = new d.StringSelectMenuBuilder()
+                .setCustomId('cardsubject')
+                .setPlaceholder(language(guild, 'SUBJECTS_SELECT'))
+                .setMinValues(1)
+                .setMaxValues(1)
+
+
+            // Transform the obejct into an array
+            let subjectNames = Object.keys(subjects)
+
+            subjectNames.forEach(subject => {
+                subjectsMenu.addOptions(
+                    new d.StringSelectMenuOptionBuilder()
+                        .setLabel(subject)
+                        .setValue(subject),
+                )
+            })
+
+            const row = new d.ActionRowBuilder()
+                .addComponents(subjectsMenu)
+
+            
+            const cardEmbed = new d.EmbedBuilder()
+                .setColor('#51e8ca')
+                .setTitle(language(guild, 'SUBJECTS'))
+                .setDescription(language(guild, 'SUBJECTS_DESC'))
+
+
+            await interaction.editReply({ embeds: [cardEmbed], components: [row] })
+        }
+
+        else if(interaction.customId === 'cardsubject') {
+            // Get the selected subject
+            const subject = interaction.values[0] 
+
+            // Create a select menu with the cards
+            const cardsMenu = new d.StringSelectMenuBuilder()
+                .setCustomId('card')
+                .setPlaceholder(language(guild, 'CARDS_SELECT'))
+                .setMinValues(1)
+                .setMaxValues(1)
+
+            // Get the cards of the subject
+            const cards = previousSubjects[subject]
+            previousCards = cards
+            let cardNames = Object.keys(cards)  
+
+            cardNames.forEach(card => {
+                cardsMenu.addOptions(
+                    new d.StringSelectMenuOptionBuilder()
+                        .setLabel(card)
+                        .setValue(card),
+                )
+            })
+
+            const row = new d.ActionRowBuilder()
+                .addComponents(cardsMenu) 
+
+            const cardEmbed = new d.EmbedBuilder()
+                .setColor('#51e8ca')
+                .setTitle(language(guild, 'CARDS'))
+                .setDescription(language(guild, 'CARDS_DESC'))
+
+            await interaction.editReply({ embeds: [cardEmbed], components: [row] })
+        }
+
+        else if(interaction.customId === 'card') {
+            const selcetedCard = interaction.values[0]
+
+            const card = previousCards[selcetedCard]
+
+            // Convert the color to an integer
+            card.color = parseInt(card.color)
+
+            interaction.editReply({
+                embeds: [card]
+            })
         }
     });
 }
