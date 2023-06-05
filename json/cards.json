@@ -5,8 +5,7 @@
                 "color": "0x3b8bc4",
                 "title": "Matrice échelonée",
                 "description": "Une matrice est dite échelonnée si le nombre de zéros précédant la première valeur non nulle d'une ligne augmente strictement ligne par ligne jusqu'à ce qu'il ne reste éventuellement plus que des zéros.",
-                "fields": [
-                    {
+                "fields": [{
                         "name": "Exemple",
                         "value": "```0 | 1 | 2 | 3 | 4\n0 | 0 | 5 | 8 | 7\n0 | 0 | 0 | 9 | 10\n0 | 0 | 0 | 0 | 0\n0 | 0 | 0 | 0 | 0```"
                     }
@@ -16,8 +15,7 @@
                 "color": "0x3b8bc4",
                 "title": "Forme réduite de Gauss-Jordan",
                 "description": "Une matrice est dite en forme réduite de Gauss-Jordan si elle est échelonnée et si toutes les valeurs non nulles sont égales à 1.",
-                "fields": [
-                    {
+                "fields": [{
                         "name": "Exemple",
                         "value": "```1 | 0 | 0 | 0 | 0\n0 | 1 | 0 | 0 | 0\n0 | 0 | 1 | 0 | 0\n0 | 0 | 0 | 1 | 0\n0 | 0 | 0 | 0 | 1```"
                     }
@@ -27,8 +25,7 @@
                 "color": "0x3b8bc4",
                 "title": "Matrice carrée",
                 "description": "Une matrice est dite carrée si elle possède le même nombre de lignes et de colonnes.",
-                "fields": [
-                    {
+                "fields": [{
                         "name": "Exemple",
                         "value": "```0 | 1 | 2\n3 | 4 | 5\n6 | 7 | 8```"
                     }
@@ -38,16 +35,13 @@
                 "color": "0x3b8bc4",
                 "title": "Produit matriciel",
                 "description": "Le produit matriciel de deux matrices `A` et `B` est une matrice `C` telle que `C = AB`.",
-                "fields": [
-                    {
+                "fields": [{
                         "name": "Condition de résolution",
                         "value": "Le nombre de colonnes de la première matrice doit être égal au nombre de lignes de la deuxième matrice. \nSi `A` est une matrice de dimention `m x n` et `B` une matrice `n x k`, alors il est possible de réaliser le produit `AB` mais pas le produit `BA`."
-                    },
-                    {
+                    }, {
                         "name": "Methode de résolution",
                         "value": "Pour chaque élément de la matrice résultat, on calcule la somme des produits des éléments de la ligne de la première matrice et de la colonne de la deuxième matrice. \nPour rendre cela plus facile on peut placer les matrices du produit de manière à ce que la matrice résultat se trouve à droite de la première matrice et en dessous de la seconde."
-                    },
-                    {
+                    }, {
                         "name": "Exemple",
                         "value": "```          b  |  b  |  b \n          b  |  b  |  b\na | a    2ab | 2ab | 2ab  \na | a    2ab | 2ab | 2ab```"
                     }
@@ -56,7 +50,153 @@
         }
     },
     "algorithmics": {
-
+        "Général": {
+            "Définition d'un algorithme": {
+                "color": "0xebc034",
+                "title": "Définition d'un algorithme",
+                "description": "Un algorithme est l’idée derrière un programme. C’est une suite finie d’opérations élémentaires qui permet de résoudre un problème donné. \n- Un algorithme est indépendant du langage de programmation, du système d’exploitation et de la machine sur laquelle s’exécute le programme qui implémente l’algorithme. \n- Pour certains problèmes (même très courants et simples à énoncer), iln’existe pas d’algorithme exact et efficace. \n- Pour d’autres problèmes, il existe plusieurs algorithmes exacts (certains sont plus efficaces que d’autres).",
+                "fields": [{
+                        "name": "Propriétés d'un algorithme",
+                        "value": "- Avoir une portée suffisamment large. \n- Etre exact : un algorithme doit donner le résultat exact attendu. \n- Etre fini : un algorithme doit se terminer après un nombre fini d’étapes. \n- Etre efficace : il doit se terminer en un temps raisonnable et utiliser une quantité raisonnable de mémoire."
+                    }
+                ]
+            }
+        },
+        "Complexité caluclatoire": {
+            "Complexité temporelle": {
+                "color": "0xebc034",
+                "title": "Complexité temporelle",
+                "description": "La complexité temporelle d’un algorithme est le nombre d’opérations élémentaires effectuées par l’algorithme pour résoudre un problème de taille `n`. Cette donnée est importante car, si on connait le temps nécessaire pour une opération primitive, elle permet de déterminer la taille maximale du problème que l'on peut traiter sur un interval de temps donné.",
+                "fields": [{
+                        "name": "Notation",
+                        "value": "La complexité temporelle d’un algorithme est notée `T(n)`  et représente donc le nombre d’opérations élémentaires effectuées par l’algorithme pour résoudre un problème de taille `n`."
+                    }
+                ]
+            },
+            "Complexité spaciale": {
+                "color": "0xebc034",
+                "title": "Complexité spaciale",
+                "description": "La complexité spaciale d’un algorithme est la quantité de mémoire utilisée par l’algorithme pour résoudre un problème de taille `n`. Cette donnée est importante car, si on connait la quantité de mémoire disponible, elle permet de déterminer la taille maximale du problème que l'on peut traiter.",
+                "fields": [{
+                        "name": "Notation",
+                        "value": "La complexité spaciale d’un algorithme est notée `S(n)` et représente donc la quantité de mémoire utilisée par l’algorithme pour résoudre un problème de taille `n`."
+                    }
+                ]
+            }
+        },
+        "Types abstraits de données": {
+            "Description générale des TAD": {
+                "color": "0xebc034",
+                "title": "Description générale des TAD",
+                "description": "**Structure de données :** une organisation particulière des données d’un programme (int, str, list…). \n\nType abstrait de données (TAD) : une spécification abstraite d’une structure de données qui décrit : \n1. Ce qui peut être mémorisé dans le TAD, mais pas comment cette information est mémorisée (organisation dans la mémoire). \n2. Quelles opérations peuvent être effectuées sur le TAD, mais pas comment ces opérations doivent être effectuées."                
+            },
+            "TAD pile": {
+                "color": "0xebc034",
+                "title": "TAD pile",
+                "description": "Le TAD pile est une collection d’éléments ordonnés selon le principe LIFO (Last In First Out). Il est possible d’ajouter un élément au sommet de la pile, de retirer l’élément au sommet de la pile et de savoir si la pile est vide ou non. \nLes TAD piles permentent d’implémenter des tableaux (souvent dynamiques) ou des listes chaînées. \n**Analogie :** une pile d’assiettes.",
+                "fields": [{
+                        "name": "Opérations principales",
+                        "value": "- `push(x)` Ajoute l’élément `x` au sommet de la pile. \n- `pop()` Retire l’élément au sommet de la pile. \n- `isEmpty()` Retourne `vrai` si la pile est vide, `faux` sinon."
+                    }, {
+                        "name": "Exemple",
+                        "value": "```p = [1, 2, 3]```"
+                    }
+                ]
+            },
+            "TAD file": {
+                "color": "0xebc034",
+                "title": "TAD file",
+                "description": "Le TAD file est une collection d’éléments ordonnés selon le principe FIFO (First In First Out). Il est possible d’ajouter un élément à la fin de la file, de retirer l’élément au début de la file et de savoir si la file est vide ou non. \nLes TAD files permetent d’implémenter des tableaux (souvent dynamiques) circulaires ou des listes chaînées. \n**Analogie :** une file d’attente.",
+                "fields": [{
+                        "name": "Opérations principales",
+                        "value": "- `enqueue(x)` Ajoute l’élément `x` à la fin de la file. \n- `dequeue()` Retire l’élément au début de la file. \n- `isEmpty()` Retourne `vrai` si la file est vide, `faux` sinon."
+                    }, {
+                        "name": "Exemple",
+                        "value": "```f = [1, 2, 3]```"
+                    }
+                ]
+            },
+            "TAD liste": {
+                "color": "0xebc034",
+                "title": "TAD liste",
+                "description": "Une Liste est un TAD qui décrit une collection d’éléments auxquels on accède via les méthodes `head()` (le premier élément) et `tail()` (une sous-liste). \nCe TAD à une implémentation [récursive](https://www.notion.so/Introduction-l-algorithmique-c23fafa64c8948f48a4594eeaf12699f?pvs=21). Pour accéder à un élement spécifique dans la liste, on va utliser une fonction dont le cas de base est une liste vide et l’appel récusif, lancé si l’élément ne correspond pas à la valeur actuelle, se fait sur la sous-liste."
+            },
+            "TAD dictionaire": {
+                "color": "0xebc034",
+                "title": "TAD dictionaire",
+                "description": "Le TAD dictionaire est une collection d’entrées pour laquelle on accède à chaque entrée par une clé. Il contient donc des couples (clé, valeur). Il est à clés multiples si plusieurs entrées présentes sont référencées par la même clé et il est ordonné si un ordre est défini sur les clés.",
+                "fields": [{
+                        "name": "Exemple",
+                        "value": "```d = {\"a\": 1, \"b\": 2, \"c\": 3}```"
+                    }
+                ]
+            }
+        },
+        "Arbre binaire de recherche": {
+            "Description générale des ABR": {
+                "color": "0xebc034",
+                "title": "Description générale des ABR",
+                "description": "Un arbre binaire de recherche (ABR) est une implémentation d’un TAD dictionaire qui respecte les propriétés suivantes : \n- Les noeuds de gauche sont plus petits que la racine \n- Les noeuds de droite sont plus grands que la racine \n- Les sous-arbres gauches et droits sont eux-mêmes des ABR",
+                "fields": [
+                    {
+                        "name": "Exemple",
+                        "value": "```          8\n        /   \\\n       3     10\n      / \\      \\\n     1   6      14\n        / \\    /\n       4   7  13```"
+                    }
+                ]
+            },
+            "Parcours d'un ABR": {
+                "color": "0xebc034",
+                "title": "Parcours d’un ARB",
+                "description": "Pour effectuer des actions dans un ABR, il est nécessaire de pouvoir le parcourir. Il existe différentes manière de parcourir un ABR, toutes sont récursives.",
+                "fields": [{
+                        "name": "Parcours préfixe",
+                        "value": "Le parcours préfixe visite d’abords la racine puis les sous-arbres gauches et droits."
+                    }, {
+                        "name": "Parcours infixe",
+                        "value": "Le parcours infixe visite d’abords le sous-arbre gauche puis la racine et enfin le sous-arbre droit."
+                    }, {
+                        "name": "Parcours postfixe",
+                        "value": "Le parcours postfixe visite d’abords les sous-arbres gauches et droits puis la racine."
+                    }, {
+                        "name": "Parcours eulerien",
+                        "value": "Les trois parcours réalisent en réalité tous le même trajet en commençant par la racine, et en visitant chaque neud 3 fois, mais en récupérant l’information du noeud à un passage différent à chaque fois. \nIl existe un parcous appelé parcours eurélien qui généralise ces trois parcours en un algorithme."
+                    }
+                ]
+            },
+            "Opérations dans un ABR": {
+                "color": "0xebc034",
+                "title": "Opérations dans un ARB",
+                "fields": [
+                    {
+                        "name": "Insertion d’une clé",
+                        "value": "Pour insérer une clé dans l’ARB, on va parcourrir l’arbre par la méthode préfixe, jusqu’à se qu’on se trouve à un endroit ou le noeud de gauche est plus petit ou églal à la clé et le noeud de droite plus grand. On doit alors insérer cette clé dans l’arbre par la même méthode que pour l’insersion dans une liste chaînée. "
+                    },
+                    {
+                        "name": "Recherche d’une clé",
+                        "value": "La recherche d’une clé dans un ARB dépend de sa hauteur et donc aussi son organisation.\n- Si l’arbre est équilibré sa hauteur `h ∈ Θ(log_2 n)`. La recherche se fait donc en `O(log_2 n)` (meilleur cas `Θ(1)`, pire cas `Θ(log_2 n)`).\n- Sinon sa hauteur `h ∈ Θ(n)`. La recherche se fait donc en `O(n)` (meilleur cas `Θ(1)`, pire cas `Θ(n)`)."
+                    },
+                    {
+                        "name": "Supression d’une clé",
+                        "value": "Pour la supression d’une clé on va d’abords rechecher cette clé dans l’arbre. Une fois trouvée, on la supprime aussi en suivant une méthode analogue aux listes chaînées mais il faut aussi faire attention de remonter les clés appartenant aux sous-arbres de la clé qu’on supprime qui ne seraient plus dans l’odre."
+                    }
+                ]
+            },
+            "Implémentation d'un ABR": {
+                "color": "0xebc034",
+                "title": "Implémentation d'un ABR",
+                "description": "Dans la pratique les méthodes les plus courrante pour implémenter un ARB sont soit via une structure chaînée soit un tableau dynamique. Les deux méthodes ont leurs avantages et inconvénients.",
+                "fields": [
+                    {
+                        "name": "Structure chaînée",
+                        "value": "- Accès à n’importe quel noeud à partir de la racine en `O(n)`.\n- Complexité spatiale en `Θ(n)`."
+                    },
+                    {
+                        "name": "Tableau dynamique",
+                        "value": "- Accès à n’importe quel noeud en `Θ(1)` par un calcul d’indice dans le tableau.\n- La complexité spatiale peut être exponentielle dans le pire cas : `O(2^n)`, où `n` est le nombre de noeuds présents dans l’arbre. Si l’arbre est strictement complet, c’est-à-dire si tous les niveaux sont remplis, alors la complexité spatiale est en `Θ(n)`."
+                    }
+                ]
+            }
+        }
     },
     "electronics": {
         "fonctions booléennes": {
