@@ -1,481 +1,504 @@
 {
-    "languages": ["english", "french"],
     "translations": {
         "WIN_XP": {
             "english": "well done good answer, you win",
-            "french": "bravo bonne réponse, tu gagnes"
+            "french": "bravo bonne réponse, tu gagnes",
+            "dutch": "goed gedaan goed antwoord, je wint"
         },
         "LOSE_XP": {
             "english": "bad answer, you loses",
-            "french": "mauvaise réponse, tu perds"
+            "french": "mauvaise réponse, tu perds",
+            "dutch": "slecht antwoord, je verliest"
         },
         "ANSWER_WAS": {
             "english": "The good answer was:",
-            "french": "La bonne réponse était:"
+            "french": "La bonne réponse était:",
+            "dutch": "Het juiste antwoord was:"
         },
         "CONTRY_NAME": {
             "english": "Give the name of the country",
             "french": "Donne le nom du pays",
-            "nederlands": "Geef de naam van het land"
+            "dutch": "Geef de naam van het land"
         },
         "CAPITAL": {
             "english": "What is the capital of:  ",
-            "french": "Quelle est la capital de/du:"
+            "french": "Quelle est la capital de/du:",
+            "dutch": "Wat is de hoofdstad van:"
         },
         "WITH": {
             "english": "with",
-            "french": "avec"
+            "french": "avec",
+            "dutch": "met"
         },
         "LOGO": {
             "english": "What is the name of the company that belong to this logo:",
             "french": "Quel est le nom de la société à qui appartient ce logo:",
-            "nederlands": "Wat is de naam van het bedrijf dat dit logo heeft:"
+            "dutch": "Wat is de naam van het bedrijf dat dit logo heeft:"
         },
         "LOGO_BUTTON": {
             "english": "Give the name",
             "french": "Donne le nom",
-            "nederlands": "Geef de naam"
+            "dutch": "Geef de naam"
         },
         "INFO_THANKS": {
             "english": "Thanks for using the General Knowledge bot! Learn hier how to use it. For more informations please refer to our **terms of services**: https://byp-studio.pyhaubruge.repl.co/terms-of-services.html.",
-            "french": "Merci d'utiliser le bot de Culture générale! Apprenez ici comment l'utiliser. Pour plus d'informations merci de vous referer à nos **conditions d'utilisation**: https://byp-studio.pyhaubruge.repl.co/terms-of-services.html."
+            "french": "Merci d'utiliser le bot de Culture générale! Apprenez ici comment l'utiliser. Pour plus d'informations merci de vous referer à nos **conditions d'utilisation**: https://byp-studio.pyhaubruge.repl.co/terms-of-services.html.",
+            "dutch": "Bedankt voor het gebruik van de Algemene Kennis bot! Leer hier hoe je het moet gebruiken. Voor meer informatie verwijzen wij u naar onze **gebruiksvoorwaarden**: https://byp-studio.pyhaubruge.repl.co/terms-of-services.html."
         },
         "GEN_INFO": {
             "english": "General informations",
             "french": "Informations Générales",
-            "nederlands": "Generaal informatie"
+            "dutch": "Generaal informatie"
         },
         "GEN_INFO_VALUE": {
             "english": "This bot uses a connection to a database to save different data from the users, like their points. Each time you use a test command, you earn points if you answer correctly and lose it in the opposite case. For more informations please read our **privacy policy**: https://byp-studio.pyhaubruge.repl.co/privacy-policy.html.",
-            "french": "Ce bot utilise une connexion à une base de données qui sauvegarde les différentes données des utilisateurs, comme leurs points. Chaque fois que vous utilisez une commande de test vous gagnez des points si vous répondez correctement et vous en perdez dans le cas contraire. Pour plus d'information veuillez lire notre politique de confidentialité: https://byp-studio.pyhaubruge.repl.co/privacy-policy.html."
+            "french": "Ce bot utilise une connexion à une base de données qui sauvegarde les différentes données des utilisateurs, comme leurs points. Chaque fois que vous utilisez une commande de test vous gagnez des points si vous répondez correctement et vous en perdez dans le cas contraire. Pour plus d'information veuillez lire notre politique de confidentialité: https://byp-studio.pyhaubruge.repl.co/privacy-policy.html.",
+            "dutch": "Deze bot maakt verbinding met een database die de verschillende gegevens van de gebruikers opslaat, zoals hun punten. Elke keer dat u een testopdracht gebruikt, verdient u punten als u het juiste antwoord geeft en verliest u deze in het tegenovergestelde geval. Voor meer informatie lees onze **privacy policy**: https://byp-studio.pyhaubruge.repl.co/privacy-policy.html."
         },
         "INFO_FOOTER": {
             "english": "Bot created by Piwy#2703. See more informations using *credits",
-            "french": "Bot crée par Piwy#2703. Pour plus d'information utilises *credits."
+            "french": "Bot crée par Piwy#2703. Pour plus d'information utilises *credits.",
+            "dutch": "..."
         },
         "TEST_CMD": {
             "english": "Tests commands",
-            "french": "Commandes de tests"
+            "french": "Commandes de tests",
+            "dutch": "Test commando's"
         },
         "TEST_CMD_DESCR": {
             "english": "They're multiple tests available. See the list hier.",
-            "french": "Il y a plusieurs sortes de tests disponibles. Voyez la liste ici."
+            "french": "Il y a plusieurs sortes de tests disponibles. Voyez la liste ici.",
+            "dutch": "Er zijn meerdere soorten tests beschikbaar. Zie de lijst hier."
         },
         "TRUE_FALSE": {
             "english": "True or false question",
             "french": "Question \"vrai ou faux\"",
-            "nederlands": "Waar of niet waar vraag"
+            "dutch": "Waar of niet waar vraag"
         },
         "TRUE_FALSE_DESCR": {
             "english": "`/truefalse` send you a message containing a proposition. Once done you can click on the apropriate button depanding if you think the proposition is true or false.",
             "french": "`/truefalse` envoie un message contenant une proposition. Une fois fait tu peux cliquer sur le bouton approprié en fonction de si tu penses que la proposition est vraie ou fausse.",
-            "nederlands": "`/truefalse` stuurt je een bericht met een voorstel. Eens dit gemaakt is, kun je op de juiste knop klikken, afhankelijk van of je denkt dat het voorstel waar of onwaar is."
+            "dutch": "`/truefalse` stuurt je een bericht met een voorstel. Eens dit gemaakt is, kun je op de juiste knop klikken, afhankelijk van of je denkt dat het voorstel waar of onwaar is."
         },
         "FLAG_TEST": {
             "english": "Flags test",
             "french": "Test des drapeaux",
-            "nederlands": "Vlaggen test"
+            "dutch": "Vlaggen test"
         },
         "FLAG_TEST_DESCR": {
             "english": "`/flag` sends you a message containing a flag. Once done you can enter the name of the country that correspond to the flag by clicking on the button at the bottom of the message.",
             "french": "`/flag` envoie un message contenant un drapeau. Une fois fait tu peux entrer le nom du pays correspondant au drapeau en cliquant sur le bouton en bas du message.",
-            "nederlands": "`/flag` stuurt je een bericht met een vlag. Eens dit gemaakt is, kun je de naam van het land dat overeenkomt met de vlag invoeren door op de knop onderaan het bericht te klikken."
+            "dutch": "`/flag` stuurt je een bericht met een vlag. Eens dit gemaakt is, kun je de naam van het land dat overeenkomt met de vlag invoeren door op de knop onderaan het bericht te klikken."
         },
         "CAPITAL_TEST": {
             "english": "Capitals test",
             "french": "Test des capitales",
-            "nederlands": "Hoofdsteden test"
+            "dutch": "Hoofdsteden test"
         },
         "CAPITAL_TEST_DESCR": {
             "english": "`/capital` sends you a message containing a contry name. Once done you can enter the name of the country's capital by clicking on the button at the bottom of the message.",
             "french": "`/capital` envoie un message contenant un nom de pays. Une fois fait tu peux entrer le nom de la capitale du pays en cliquant sur le bouton en bas du message.",
-            "nederlands": "`/capital` stuurt je een bericht met een landnaam. Eens dit gemaakt is, kun je de naam van de hoofdstad van het land invoeren door op de knop onderaan het bericht te klikken."
+            "dutch": "`/capital` stuurt je een bericht met een landnaam. Eens dit gemaakt is, kun je de naam van de hoofdstad van het land invoeren door op de knop onderaan het bericht te klikken."
         },
         "LOGO_TEST": {
             "english": "Logos test",
             "french": "Test des logos",
-            "nederlands": "Logo's test"
+            "dutch": "Logo's test"
         },
         "LOGO_TEST_DESCR": {
             "english": "`/logo` sends you a message containing a logo. Once done you can enter the name of the company that has this logo by clicking on the button at the bottom of the message.",
             "french": "`/logo` envoie un message contenant un logo. Une fois fait tu peux entrer le nom de l'entreprise qui possède ce logo en cliquant sur le bouton en bas du message.",
-            "nederlands": "`/logo` stuurt je een bericht met een logo. Eens dit gemaakt is, kun je de naam van het bedrijf dat dit logo heeft invoeren door op de knop onderaan het bericht te klikken."
+            "dutch": "`/logo` stuurt je een bericht met een logo. Eens dit gemaakt is, kun je de naam van het bedrijf dat dit logo heeft invoeren door op de knop onderaan het bericht te klikken."
         },
         "IRREGUAR_VERBS_CMD": {
             "english": "Irregular verbs commands",
             "french": "Commandes des verbes irréguliers",
-            "nederlands": "Onregelmatige werkwoorden commando's"
+            "dutch": "Onregelmatige werkwoorden commando's"
         },
         "VERBS_LIST": {
             "english": "Verbs list",
             "french": "Liste des verbes",
-            "nederlands": "Werkwoorden lijst"
+            "dutch": "Werkwoorden lijst"
         },
         "VERBS_LIST_DESCR": {
             "english": "`/verbs-list` send a message containing the list off all verbs in function of the following options : \n- `language` the language of the verbs list (English or Dutch)\n- `showtrad` if True display the infinitive of the verb and its translation in French ; else display the infinitive, the imperfect and the past participle.",
             "french": "`/verbs-list` envoie un message contenant la liste de tous les verbes en fonction des options suivantes : \n- `language` la langue de la liste des verbes (Anglais ou Néerlandais)\n- `showtrad` si True affiche l'infinitif du verbe et sa traduction en Français ; sinon affiche l'infinitif, l'imparfait et le participe passé.",
-            "nederlands": "`/verbs-list` stuurt een bericht met de lijst van alle werkwoorden in functie van de volgende opties : \n- `language` de taal van de lijst met werkwoorden (Engels of Nederlands)\n- `showtrad` als True toon de infinitief van het werkwoord en de vertaling in het Frans ; anders toon de infinitief, de imperfectum en de voltooid deelwoord."
+            "dutch": "`/verbs-list` stuurt een bericht met de lijst van alle werkwoorden in functie van de volgende opties : \n- `language` de taal van de lijst met werkwoorden (Engels of Nederlands)\n- `showtrad` als True toon de infinitief van het werkwoord en de vertaling in het Frans ; anders toon de infinitief, de imperfectum en de voltooid deelwoord."
         },
         "STUDY_INF": {
             "english": "Study infinitive",
             "french": "Étudier les infinitifs",
-            "nederlands": "Bestudeer infinitief"
+            "dutch": "Bestudeer infinitief"
         },
         "STUDY_INF_DESCR": {
             "english": "`/study-infinitive` documentation to comme...",
             "french": "`/study-infinitive` documentation à venir...",
-            "nederlands": "`/study-infinitive` documentatie om te komen..."
+            "dutch": "`/study-infinitive` documentatie om te komen..."
         },
         "STUDY_IMPERF": {
             "english": "Study imperfect",
             "french": "Étudier les imparfaits",
-            "nederlands": "Bestudeer imperfectum"
+            "dutch": "Bestudeer imperfectum"
         },
         "STUDY_IMPERF_DESCR" : {
             "english": "`/study-imperfect` documentation to comme...",
             "french": "`/study-imperfect` documentation à venir...",
-            "nederlands": "`/study-imperfect` documentatie om te komen..."
+            "dutch": "`/study-imperfect` documentatie om te komen..."
         },
         "STUDY_PAST_PART": {
             "english": "Study past participle",
             "french": "Étudier les participes passés",
-            "nederlands": "Bestudeer voltooid deelwoord"
+            "dutch": "Bestudeer voltooid deelwoord"
         },
         "STUDY_PAST_PART_DESCR": {
             "english": "`/study-participle` documentation to comme...",
             "french": "`/study-participle` documentation à venir...",
-            "nederlands": "`/study-participle` documentatie om te komen..."
+            "dutch": "`/study-participle` documentatie om te komen..."
         },
         "CONFIG_CMD": {
             "english": "Configuration commands",
-            "french": "Commandes de configuration"
+            "french": "Commandes de configuration",
+            "dutch": "Configuratie commando's"
         },
         "CONFIG_CMD_DESCR": {
             "english": "The configuration commands allows to configure the differents settings of the bot and are __only available for the administrators__.",
-            "french": "Les commandes de configuration permettent de configurer les paramètres du bot ne sont __disponibles que pour les administrateurs__."
+            "french": "Les commandes de configuration permettent de configurer les paramètres du bot ne sont __disponibles que pour les administrateurs__.",
+            "dutch": "De configuratie commando's laten toe om de verschillende instellingen van de bot te configureren en zijn __alleen beschikbaar voor de beheerders__."
         },
         "SETLANG_CMD": {
             "english": "Language setting",
-            "french": "Configuration de la langue"
+            "french": "Configuration de la langue",
+            "dutch": "Taal instelling"
         },
         "SETLANG_DESCR": {
             "english": "Set up the bot language with the command `/setlang`.",
-            "french": "Configurez la langue du bot avec la commande `/setlang`."
+            "french": "Configurez la langue du bot avec la commande `/setlang`.",
+            "dutch": "Stel de taal van de bot in met het commando `/setlang`."
         },
         "POINT_CMD": {
             "english": "Points commands",
-            "french": "Commandes des points"
+            "french": "Commandes des points",
+            "dutch": "Punten commando's"
         },
         "POINT_CMD_DESCR": {
             "english": "With these commands you can see all things related to points.",
-            "french": "Avec ces commandes tu peux voir toutes les choses liées aux points."
+            "french": "Avec ces commandes tu peux voir toutes les choses liées aux points.",
+            "dutch": "Met deze commando's kun je alle dingen zien die met punten te maken hebben."
         },
         "PROFILE_CMD": {
             "english": "Profile",
-            "french": "Profile"
+            "french": "Profile",
+            "dutch": "Profiel"
         },
         "PROFILE_CMD_DESCR": {
             "english": "The `/profile` command shows the points of the user that you select.",
-            "french": "La commande `/profile` te montre les points de l'utilisateur que tu selectionne."
+            "french": "La commande `/profile` te montre les points de l'utilisateur que tu selectionne.",
+            "dutch": "Het `/profile` commando toont de punten van de gebruiker die je selecteert."
         },
         "LEAD_CMD": {
             "english": "Leaderboard",
-            "french": "Classement"
+            "french": "Classement",
+            "dutch": "Leaderboard"
         },
         "LEAD_CMD_DESCR": {
             "english": "To see the server's leaderboard use the `/leaderboard` command. This command only show the 20 first of the server.",
-            "french": "Pour voir le classement de serveur utilises la commande `/leaderboard`. Cette commande ne montre que les 20 premiers du serveur."
+            "french": "Pour voir le classement de serveur utilises la commande `/leaderboard`. Cette commande ne montre que les 20 premiers du serveur.",
+            "dutch": "Om het leaderboard van de server te zien, gebruik het commando `/leaderboard`. Dit commando toont alleen de eerste 20 van de server."
         },
         "ADMINXP_CMD": {
             "english": "Change the points",
-            "french": "Changer les points"
+            "french": "Changer les points",
+            "dutch": "Verander de punten"
         },
         "ADMINXP_CMD_DESCR": {
             "english": "If you want to change the points of a member, use the `/adminxp` command. This command is only available for administrators.",
-            "french": "Si tu veux changer les points d'un membre, ultilises la commande `/adminxp`. Cette commande est uniquement disponible pour les administrateurs."
+            "french": "Si tu veux changer les points d'un membre, ultilises la commande `/adminxp`. Cette commande est uniquement disponible pour les administrateurs.",
+            "nederdutchlands": "Als je de punten van een lid wilt veranderen, gebruik dan het commando `/adminxp`. Dit commando is alleen beschikbaar voor beheerders."
         },
         "VALID_NUMBER": {
             "english": "Please enter a valid number.",
-            "french": "Merci de rentrer un nombre valide."
+            "french": "Merci de rentrer un nombre valide.",
+            "dutch": "Voer een geldig nummer in."
         },
         "HAS_RECIVED": {
             "english": "has received",
-            "french": "as reçu"
+            "french": "as reçu",
+            "dutch": "heeft ontvangen"
         },
         "NOW_HAS": {
             "english": "he now has:",
             "french": "il a maintenant:",
-            "nederlands": "hij heeft nu:"
+            "dutch": "hij heeft nu:"
         },
         "HAS": {
             "english": "has:",
             "french": "as:",
-            "nederlands": "heefts:"
+            "dutch": "heefts:"
         },
         "CREDITS": {
             "english": "Bot created by Piwy#2703. \nIf you need help with the bot, join the help server: https://discord.gg/PhCdM465np or uses the command bug + the description of the bug. \nTo see the commands list, uses the command help.",
             "french": "Bot créer par Piwy#2703. \nPour reçevoir de l'aide, rejoingez le serveur d'aide: https://discord.gg/PhCdM465np ou utilisez la commande bug + la description du bug. \nPour voir ma liste des commandes, utilisez la commande help.",
-            "nederlands": "Bot gemaakt door Piwy#2703. \nAls je hulp nodig hebt met de bot, join dan de help server: https://discord.gg/PhCdM465np of gebruik de bug command + de beschrijving van de bug. \nOm de commando lijst te zien, gebruik de help command."
+            "dutch": "Bot gemaakt door Piwy#2703. \nAls je hulp nodig hebt met de bot, join dan de help server: https://discord.gg/PhCdM465np of gebruik de bug command + de beschrijving van de bug. \nOm de commando lijst te zien, gebruik de help command."
         },
         "INVITE": {
             "english": "There's the link to invite the bot on your server: \n",
             "french": "Voici le lien pour inviter le bot sur ton serveur: \n",
-            "nederlands": "Hier is de link om de bot op je server te zetten: \n"
+            "dutch": "Hier is de link om de bot op je server te zetten: \n"
         },
         "INVITE_BUT": {
             "english": "Invite the bot",
             "french": "Invite le bot",
-            "nederlands": "Nodig de bot uit"
+            "dutch": "Nodig de bot uit"
         },
         "BUG": {
             "english": "The bug has been reported to the developer, thanks. \nContent: ",
             "french": "Le bug a été rapporté au développeur, merci. \nContenu: ",
-            "nederlands": "De bug is gerapporteerd aan de ontwikkelaar, dankjewel. \nInhoud: "
+            "dutch": "De bug is gerapporteerd aan de ontwikkelaar, dankjewel. \nInhoud: "
         },
         "TRUE": {
             "english": "True",
             "french": "Vrai",
-            "nederlands": "Niet waar"
+            "dutch": "Niet waar"
         },
         "FALSE": {
             "english": "False",
             "french": "Faux",
-            "nederlands": "Waar"
+            "dutch": "Waar"
         },
         "THX_ANSW": {
             "english": "Thank you for answering.",
             "french": "Merci d'avoir répondu.",
-            "nederlands": "Dank u voor uw antwoord."
+            "dutch": "Dank u voor uw antwoord."
         },
         "CANT_ANSW": {
             "english": "You cannot answer this question. Execute the command yourself to be able to answer.",
             "french": "Tu ne peux pas répondre à cette question. Effectue la commande toi-même pour pouvoir répondre.",
-            "nederlands": "Je kan niet antworden aan deze vraag. Maak de command zelf zodat u deze kunt beantwoorden."
+            "dutch": "Je kan niet antworden aan deze vraag. Maak de command zelf zodat u deze kunt beantwoorden."
         },
         "QST_OUTDATED_1": {
             "english": "Your time to answer is up. You've lost:",
             "french": "Ton temps pour répondre est dépasé. Tu as perdu:",
-            "nederlands": "Jouw antwoordtijd is over. Je hebt:"
+            "dutch": "Jouw antwoordtijd is over. Je hebt:"
         },
         "QST_OUTDATED_2": {
             "english": "points. The right answer was: ",
             "french": "points. La bonne réponse était: ",
-            "nederlands": "punten. Het goed antwoord was: "
+            "dutch": "punten. Het goed antwoord was: "
         },
         "UPD_TITLE": {
             "english": "New update : version ",
             "french": "Nouvelle mise à jour : version ",
-            "nederlands": "Nieuwe update: versie "
+            "dutch": "Nieuwe update: versie "
         },
         "UPD_NEWS": {
             "english": "News",
             "french": "Nouveautés",
-            "nederlands": "Nieuws"
+            "dutch": "Nieuws"
         },
         "UPD_NEWS_VALUE": {
             "english": "→ Adding the update logs translations. \n→ Translation of the name and description of the flags and capitals command `/flags` `/capitals`. \n→ Reinstatement of the bot's presence message.",
             "french": "→ Ajout des traduction des logs de mise à jour. \n→ Traduction du nom et de la description de la commande des drapeaux et des capitales `/drapeaux` `/capitales`. \n→ Remise en place du message de présence du bot.",
-            "nederlands": "→ Toevoegen van de update logs vertalingen. \n→ Vertaling van de naam en beschrijving van de vlaggen en hoofdsteden commando `/vlaggen` `/hoofdsteden`. \n→ Herstel van de bot's aanwezigheid bericht."
+            "dutch": "→ Toevoegen van de update logs vertalingen. \n→ Vertaling van de naam en beschrijving van de vlaggen en hoofdsteden commando `/vlaggen` `/hoofdsteden`. \n→ Herstel van de bot's aanwezigheid bericht."
         },
         "UPD_FIXES": {
             "english": "Fixes",
             "french": "Corrections",
-            "nederlands": "Verbeteringen"
+            "dutch": "Verbeteringen"
         },
         "UPD_FIXES_VALUE": {
             "english": "→ Fixing the system of correction of the test of flags, logos and capitals /flags /logos /capitals",
 			"french": "→  Correction du système de correction du test des drapeaux , des logos, et des capitales /drapeaux /logos /capitales",
-            "nederlands": "→ Verbetering van het systeem van de correctie van de test van de vlaggen, logo's en hoofdsteden /vlaggen /logo's /hoofdsteden"
+            "dutch": "→ Verbetering van het systeem van de correctie van de test van de vlaggen, logo's en hoofdsteden /vlaggen /logo's /hoofdsteden"
         },
         "UPD_IMP": {
             "english": "Important",
             "french": "Important",
-            "nederlands": "Belangrijk"
+            "dutch": "Belangrijk"
         },
         "UPD_IMP_VALUE": {
             "english": "→ The commands for testing by writing are currently not working because of the modification of the MessageIntent of Discord.",
             "french": "→ Les commandes de test par écrit sont actuellement infonctionnelles à cause de la modification du MessageIntent de Discord.",
-            "nederlands": "→"
+            "dutch": "→"
         },
         "UPD_COMMING": {
             "english": "Comming soon",
             "french": "A venir",
-            "nederlands": "Binnenkort"
+            "dutch": "Binnenkort"
         },
         "UPD_COMMING_VALUE": {
             "english": "→ Translation of the capitals and countries into English. \n→ Command to test the infinitives, imperfects and past participles. \n→ Sending a message when adding to a new server.",
             "french": "→ Traduction des capitale et des pays en anglais. \n→ Commande de test des infinitifs, impartaits et participe passé. \n→ Envois d’un message lors de l’ajout sur un nouveau serveur.",
-            "nederlands": "→ Vertaling van de hoofdsteden en landen in het Engels. \n→ Commando om de infinitieven, imperfecten en participia te testen."
+            "dutch": "→ Vertaling van de hoofdsteden en landen in het Engels. \n→ Commando om de infinitieven, imperfecten en participia te testen."
         },
         "UPD_CREDITS": {
             "english": "Bot updated by Piwy#2703",
             "french": "Bot mis à jour par Piwy#2703",
-            "nederlands": "Bot geupdate door Piwy#2703"
+            "dutch": "Bot geupdate door Piwy#2703"
         },
         "UPD_SENT": {
             "english": "The update logs have been sent.",
             "french": "Les logs de mise à jour ont été envoyés.",
-            "nederlands": "De update logs zijn verzonden."
+            "dutch": "De update logs zijn verzonden."
         },
         "HAS_ANSWERED": {
             "english": "You have not answered the previous question.",
             "french": "Tu n'a pas encore répondu à la question précédente.",
-            "nederlands": "Je hebt het vorige vraag niet beantwoord."
+            "dutch": "Je hebt het vorige vraag niet beantwoord."
         },
         "CAN_ANSW": {
             "english": "You can answer.",
             "french": "Tu peux répondre.",
-            "nederlands": "Je mag antwoorden."
+            "dutch": "Je mag antwoorden."
         },
         "GIVE_ANSW": {
             "english": "Give the answer",
             "french": "Donne la réponse",
-            "nederlands": "Geef het antwoord"
+            "dutch": "Geef het antwoord"
         },
         "PARTICIPLE": {
             "english": "Give the answer",
             "french": "Donne la réponse",
-            "nederlands": "Geef het antwoord"
+            "dutch": "Geef het antwoord"
         },
         "IMPERFECT": {
             "english": "Give the answer",
             "french": "Donne la réponse",
-            "nederlands": "Geef het antwoord"
+            "dutch": "Geef het antwoord"
         },
         "VERB_ANSW": {
             "english": "Give the answer",
             "french": "Donne {0} de **{1}**",
-            "nederlands": "Geef het antwoord"
+            "dutch": "Geef het antwoord"
         },
         "INFINITIVE": {
             "english": "What is the translation in {0} of {1}?",
             "french": "Quelle est la traduction en {0} de {1} ?",
-            "nederlands": "Wat is de vertaling in {0} van {1}?"
+            "dutch": "Wat is de vertaling in {0} van {1}?"
         },
         "LANGTRAD": {
             "english": "Do you want to translate in {0} or in {1 }?",
             "french": "Veux-tu traduire en {0} ou en {1} ?",
-            "nederlands": "Wil je vertalen in {0} of in {1} ?"
+            "dutch": "Wil je vertalen in {0} of in {1} ?"
         },
         "ENGLISH": {
             "english": "English",
             "french": "Anglais",
-            "nederlands": "Engels"
+            "dutch": "Engels"
         },
         "DUTCH": {
             "english": "Dutch",
             "french": "Néerlandais",
-            "nederlands": "Nederlands"
+            "dutch": "Nederlands"
         },
         "FRENCH": {
             "english": "French",
             "french": "Français",
-            "nederlands": "Frans"
+            "dutch": "Frans"
         },
         "QUESTIONS": {
             "english": "Questions",
             "french": "Questions",
-            "nederlands": "Vragen"
+            "dutch": "Vragen"
         },
         "QST_SELECT": {
             "english": "Select a theme to get a question",
             "french": "Sélectionne un thème pour avoir une question",
-            "nederlands": "Selecteer een thema om een vraag te krijgen"
+            "dutch": "Selecteer een thema om een vraag te krijgen"
         },
         "THEME_SELECT": {
             "english": "Select a theme",
             "french": "Sélectionne un thème",
-            "nederlands": "Selecteer een thema"
+            "dutch": "Selecteer een thema"
         },
         "ALGEBRA": {
             "english": "Algebra",
             "french": "Algèbre",
-            "nederlands": "Algebra"
+            "dutch": "Algebra"
         },
         "ALGORITHMICS": {
             "english": "Algorithmics",
             "french": "Algorithmique",
-            "nederlands": "Algoritmiek"
+            "dutch": "Algoritmiek"
         },
         "ELECTRONICS": {
             "english": "Electronics",
             "french": "Electronique",
-            "nederlands": "Elektronica"
+            "dutch": "Elektronica"
         },
         "PHILOSOPHY": {
             "english": "Philosophy",
             "french": "Philosophie",
-            "nederlands": "Filosofie"
+            "dutch": "Filosofie"
         },
         "NEW_QST": {
             "english": "If you want a new question, select a theme below.",
             "french": "Si tu veux une nouvelle question, sélectionne un thème ci-dessous.",
-            "nederlands": "Als je een nieuwe vraag wilt, selecteer dan een thema hieronder."
+            "dutch": "Als je een nieuwe vraag wilt, selecteer dan een thema hieronder."
         },
         "ANSWER": {
             "english": "\n||Answer : ",
             "french": "\n||Réponse : ",
-            "nederlands": "\n||Antwoord : "
+            "dutch": "\n||Antwoord : "
         },
         "COURSES": {
             "english": "Courses",
             "french": "Cours",
-            "nederlands": "Cursussen"
+            "dutch": "Cursussen"
         },
         "COURSES_DESC": {
             "english": "Select a course to get access to its subjects.",
             "french": "Selectionne un cours pour avoir accès à ses sujets.",
-            "nederlands": "Selecteer een cursus om toegang aan de onderwerpen te krijgen."
+            "dutch": "Selecteer een cursus om toegang aan de onderwerpen te krijgen."
         },
         "COURSES_SELECT": {
             "english": "Select a course",
             "french": "Sélectionne un cours",
-            "nederlands": "Selecteer een cursus"
+            "dutch": "Selecteer een cursus"
         },
         "SUBJECTS": {
             "english": "Subjects",
             "french": "Sujets",
-            "nederlands": "Onderwerpen"
+            "dutch": "Onderwerpen"
         },
         "SUBJECTS_DESC": {
             "english": "Select a subject to get access to its cards.",
             "french": "Selectionne un sujet pour avoir accès à ses fiches.",
-            "nederlands": "Selecteer een onderwerp om toegang aan de kaarten te krijgen."
+            "dutch": "Selecteer een onderwerp om toegang aan de kaarten te krijgen."
         },
         "SUBJECTS_SELECT": {
             "english": "Select a subject",
             "french": "Selectionne un sujet",
-            "nederlands": "Selecteer een onderwerp"
+            "dutch": "Selecteer een onderwerp"
         },
         "CARDS": {
             "english": "Cards",
             "french": "Fiches",
-            "nederlands": "Kaarten"
+            "dutch": "Kaarten"
         },
         "CARDS_DESC": {
             "english": "Select a card to get access to its content.",
             "french": "Selectionne une fiche pour avoir accès à son contenu.",
-            "nederlands": "Selecteer een kaart om toegang aan de inhoud te krijgen."
+            "dutch": "Selecteer een kaart om toegang aan de inhoud te krijgen."
         },
         "CARDS_SELECT": {
             "english": "Select a card",
             "french": "Selectionne une fiche",
-            "nederlands": "Selecteer een kaart"
+            "dutch": "Selecteer een kaart"
         }, 
         "INVITE_TITLE": {
             "english": "Thanks !",
             "french": "Merci !",
-            "nederlands": "Bedankt !"
+            "dutch": "Bedankt !"
         },
         "INVITE_DESCR": {
             "english": "Thanks for inviting me on your server ! The following embeds will explain you all the commands I have. Before using me you will have to register your language with the command `/language`.",
             "french": "Merci de m'avoir invité sur ton serveur ! Les embeds suivants vont t'expliquer toutes les commandes que j'ai. Avant de m'utiliser tu devras enregistrer ta langue avec la commande `/language`.",
-            "nederlands": "Bedankt om me op je server uit te nodigen ! De volgende embeds zullen je alle command's die ik heb uitleggen. Voordat je me gebruikt, moet je jouw taal registreren met het command `/language`."
+            "dutch": "Bedankt om me op je server uit te nodigen ! De volgende embeds zullen je alle command's die ik heb uitleggen. Voordat je me gebruikt, moet je jouw taal registreren met het command `/language`."
         },
         "INVITE_FOOTER": {
             "english": "If you have any question, you can join the support server with the button below.",
             "french": "Si tu as des questions, tu peux rejoindre le serveur de support avec le bouton ci-desous.",
-            "nederlands": "Als je vragen hebt, kun je de support server met de knop hieronder joinen."
+            "dutch": "Als je vragen hebt, kun je de support server met de knop hieronder joinen."
         }
     }
 }

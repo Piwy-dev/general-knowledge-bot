@@ -9,11 +9,6 @@ module.exports = {
     data: new d.SlashCommandBuilder()
         .setName("setlang")
         .setDescription("Change the language used by the bot.")
-        .addStringOption((option) => option
-            .setName("language")
-            .setDescription("The new language name")
-            .setRequired(true)
-        )
         .setDefaultMemberPermissions(d.PermissionsBitField.Flags.Administrator),
 
     async execute(interaction, client) {
@@ -21,27 +16,25 @@ module.exports = {
 
         await interaction.deferReply({ ephemeral: true })
 
-        const targetLanguage = interaction.options.getString("language").toLowerCase()
-        if (!languages.includes(targetLanguage)) return interaction.editReply("That language is not supported. Supported languages: english, french")
+        // Create a string sellection menu with all the languages
+        const l = new d.StringSelectMenuBuilder()
+            .setCustomId("language")
+            .setPlaceholder("Select a language")
+            .addOptions([
+                new d.StringSelectMenuOptionBuilder()
+                    .setLabel("English 🇬🇧")
+                    .setValue("english"),
+                new d.StringSelectMenuOptionBuilder()
+                    .setLabel("Français 🇫🇷")
+                    .setValue("french"),
+                new d.StringSelectMenuOptionBuilder()
+                    .setLabel("Nederlands 🇳🇱")
+                    .setValue("dutch")
+            ])
 
-        setLanguage(guild, targetLanguage)
+        const row = new d.ActionRowBuilder()
+            .addComponents(l)
 
-        await mongo().then(async(mongoose) => {
-            try {
-                await languageSchema.findOneAndUpdate({
-                    _id: guild.id
-                }, {
-                    _id: guild.id,
-                    language: targetLanguage
-                }, {
-                    upsert: true
-                })
-
-                interaction.editReply(`The language has been changed to ${targetLanguage}`)
-
-            } finally {
-                mongoose.connection.close()
-            }
-        })
+        await interaction.editReply({ components: [row] })
     }
 }

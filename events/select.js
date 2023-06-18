@@ -7,6 +7,11 @@ const { verbList } = require('../slashcommands/tests/study-infintive.js');
 
 const language = require('../language.js')
 
+const { languages } = require('../lang.json');
+const mongo = require('../db/mongo')
+const languageSchema = require('../db/language-schema');
+const { setLanguage } = require('../language')
+
 let langTradResult = undefined
 
 let qst_philo = []
@@ -170,6 +175,30 @@ module.exports = (client) => {
 
             interaction.editReply({
                 embeds: [card]
+            })
+        }
+
+        else if(interaction.customId === 'language') {
+            const targetLanguage = interaction.values[0]
+
+            setLanguage(guild, targetLanguage)
+
+            await mongo().then(async(mongoose) => {
+                try {
+                    await languageSchema.findOneAndUpdate({
+                        _id: guild.id
+                    }, {
+                        _id: guild.id,
+                        language: targetLanguage
+                    }, {
+                        upsert: true
+                    })
+
+                    interaction.editReply(`The language has been changed to ${targetLanguage}.`)
+
+                } finally {
+                    mongoose.connection.close()
+                }
             })
         }
     });

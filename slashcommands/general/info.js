@@ -89,6 +89,7 @@ module.exports = {
         interaction.reply({
             embeds: [mainEmbed, testEmbed, irrverbsEmbed,profileEmbed, configurationEmbed],
             components: [invitesButton],
+            ephemeral: true
         })
     }
 }
