@@ -461,6 +461,21 @@
             "english": "Select a card",
             "french": "Selectionne une fiche",
             "nederlands": "Selecteer een kaart"
+        }, 
+        "INVITE_TITLE": {
+            "english": "Thanks !",
+            "french": "Merci !",
+            "nederlands": "Bedankt !"
+        },
+        "INVITE_DESCR": {
+            "english": "Thanks for inviting me on your server ! The following embeds will explain you all the commands I have. Before using me you will have to register your language with the command `/language`.",
+            "french": "Merci de m'avoir invité sur ton serveur ! Les embeds suivants vont t'expliquer toutes les commandes que j'ai. Avant de m'utiliser tu devras enregistrer ta langue avec la commande `/language`.",
+            "nederlands": "Bedankt om me op je server uit te nodigen ! De volgende embeds zullen je alle command's die ik heb uitleggen. Voordat je me gebruikt, moet je jouw taal registreren met het command `/language`."
+        },
+        "INVITE_FOOTER": {
+            "english": "If you have any question, you can join the support server with the button below.",
+            "french": "Si tu as des questions, tu peux rejoindre le serveur de support avec le bouton ci-desous.",
+            "nederlands": "Als je vragen hebt, kun je de support server met de knop hieronder joinen."
         }
     }
 }

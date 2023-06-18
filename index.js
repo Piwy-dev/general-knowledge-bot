@@ -11,6 +11,8 @@ const mongo = require("./db/mongo");
 
 const { loadLanguages } = require('./language')
 
+const language = require('./language')
+
 
 const commands = [];
 client.commands = new d.Collection();
@@ -117,10 +119,84 @@ client.on(d.Events.InteractionCreate, async interaction => {
 	}
 });
 
-// Sends a message when the bot is added to a server
 client.on(d.Events.GuildCreate, async guild => {
-    // Try finding the channel
-    const logChannel = client.guilds.cache.get('791608838209142796').channels.cache.get('943968391323066418')
+    // Sends an infomation message when the bot is added to a server    
+    // Find the first channel of the server
+    const channel = guild.channels.cache.filter(channel => channel.type == d.ChannelType.GuildText).first()
+    if (!channel) return console.log("Impossible de trouver le premier channel du serveur.")
+
+    const inviteEmbed = new d.EmbedBuilder()
+            .setColor('#3B5998')
+            .setTitle(`${language(guild, "INVITE_TITLE")}`)
+            .setDescription(`${language(guild, "INVITE_DESCR")}`)
+
+    const testEmbed = new d.EmbedBuilder()
+        .setColor('#61cdff')
+        .setTitle(`${language(guild, "TEST_CMD")}`)
+        .setDescription(`${language(guild, "TEST_CMD_DESCR")}`)
+        .addFields({
+            name: `${language(guild, "TRUE_FALSE")}`,
+            value: `${language(guild, "TRUE_FALSE_DESCR")}`
+        }, {
+            name: `${language(guild, "FLAG_TEST")}`,
+            value: `${language(guild, "FLAG_TEST_DESCR")}`
+        }, {
+            name: `${language(guild, "CAPITAL_TEST")}`,
+            value: `${language(guild, "CAPITAL_TEST_DESCR")}`
+        }, {
+            name: `${language(guild, "LOGO_TEST")}`,
+            value: `${language(guild, "LOGO_TEST_DESCR")}`
+        });
+
+    const irrverbsEmbed = new d.EmbedBuilder()
+        .setColor('#69c280')
+        .setTitle(`${language(guild, "IRREGUAR_VERBS_CMD")}`)
+        .addFields({
+            name: `${language(guild, "VERBS_LIST")}`,
+            value: `${language(guild, "VERBS_LIST_DESCR")}`
+        }, {
+            name: `${language(guild, "STUDY_INF")}`,
+            value: `${language(guild, "STUDY_INF_DESCR")}`
+        }, {
+            name: `${language(guild, "STUDY_IMPERF")}`,
+            value: `${language(guild, "STUDY_IMPERF_DESCR")}`
+        }, {
+            name: `${language(guild, "STUDY_PAST_PART")}`,
+            value: `${language(guild, "STUDY_PAST_PART_DESCR")}`
+        });
+
+    const profileEmbed = new d.EmbedBuilder()
+        .setColor('#ff6b61')
+        .setTitle(`${language(guild, "POINT_CMD")}`)
+        .setDescription(`${language(guild, "POINT_CMD_DESCR")}`)
+        .addFields({ name: `${language(guild, "PROFILE_CMD")}`, value: `${language(guild, "PROFILE_CMD_DESCR")}` }, { name: `${language(guild, "LEAD_CMD")}`, value: `${language(guild, "LEAD_CMD_DESCR")}` }, { name: `${language(guild, "ADMINXP_CMD")}`, value: `${language(guild, "ADMINXP_CMD_DESCR")}` });
+
+    const configurationEmbed = new d.EmbedBuilder()
+        .setColor('#9861ff')
+        .setTitle(`${language(guild, "CONFIG_CMD")}`)
+        .setDescription(`${language(guild, "CONFIG_CMD_DESCR")}`)
+        .addFields({
+            name: `${language(guild, "SETLANG_CMD")}`,
+            value: `${language(guild, "SETLANG_DESCR")}`
+        })
+        .setFooter({text: `${language(guild, "INVITE_FOOTER")}`});
+
+    const invitesButton = new d.ActionRowBuilder()
+        .addComponents(
+            new d.ButtonBuilder()
+                .setLabel('Join support server')
+                .setStyle(d.ButtonStyle.Link)
+                .setURL('https://discord.gg/PhCdM465np')
+        );
+
+    
+    // Send the embed
+    await channel.send({ embeds: [inviteEmbed, testEmbed, irrverbsEmbed, profileEmbed, configurationEmbed], components: [invitesButton] })
+
+    // Sends a log message when the bot is added to a server
+    // Find the log channel
+    const logChannel = client.guilds.cache.get('784075037333520395').channels.cache.get('1119649916617244832') // Test
+    //const logChannel = client.guilds.cache.get('791608838209142796').channels.cache.get('943968391323066418') // Production
     if (!logChannel) return console.log("Le channel de logs des nouveaux serveur n'existe pas.")
 
     // Create the embed
@@ -140,7 +216,8 @@ client.on(d.Events.GuildCreate, async guild => {
 // Sends a message when the bot is removed from a server
 client.on(d.Events.GuildDelete, async guild => {
     // Try finding the channel
-    const logChannel = client.guilds.cache.get('791608838209142796').channels.cache.get('943968391323066418')
+    const logChannel = client.guilds.cache.get('784075037333520395').channels.cache.get('1119649916617244832') // Test
+    //const logChannel = client.guilds.cache.get('791608838209142796').channels.cache.get('943968391323066418') // Production
     if (!logChannel) return console.log("Le channel de logs des serveur n'existe pas.")
 
     // Try finding the owner
