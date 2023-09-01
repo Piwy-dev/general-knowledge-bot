@@ -40,6 +40,11 @@
             "french": "Donne le nom",
             "dutch": "Geef de naam"
         },
+        "INFO_TITLE": {
+            "english": "Informations",
+            "french": "Informations",
+            "dutch": "Informatie"
+        },
         "INFO_THANKS": {
             "english": "Thanks for using the General Knowledge bot! Learn hier how to use it. For more informations please refer to our **terms of services**: https://byp-studio.pyhaubruge.repl.co/terms-of-services.html.",
             "french": "Merci d'utiliser le bot de Culture générale! Apprenez ici comment l'utiliser. Pour plus d'informations merci de vous referer à nos **conditions d'utilisation**: https://byp-studio.pyhaubruge.repl.co/terms-of-services.html.",
@@ -55,10 +60,10 @@
             "french": "Ce bot utilise une connexion à une base de données qui sauvegarde les différentes données des utilisateurs, comme leurs points. Chaque fois que vous utilisez une commande de test vous gagnez des points si vous répondez correctement et vous en perdez dans le cas contraire. Pour plus d'information veuillez lire notre politique de confidentialité: https://byp-studio.pyhaubruge.repl.co/privacy-policy.html.",
             "dutch": "Deze bot maakt verbinding met een database die de verschillende gegevens van de gebruikers opslaat, zoals hun punten. Elke keer dat u een testopdracht gebruikt, verdient u punten als u het juiste antwoord geeft en verliest u deze in het tegenovergestelde geval. Voor meer informatie lees onze **privacy policy**: https://byp-studio.pyhaubruge.repl.co/privacy-policy.html."
         },
-        "INFO_FOOTER": {
-            "english": "Bot created by Piwy#2703. See more informations using *credits",
-            "french": "Bot crée par Piwy#2703. Pour plus d'information utilises *credits.",
-            "dutch": "..."
+        "CREDIT_FOOTER": {
+            "english": "Bot created by piwy_.",
+            "french": "Bot crée par piwy_.",
+            "dutch": "Bot gemaakt door piwy_."
         },
         "TEST_CMD": {
             "english": "Tests commands",
@@ -131,7 +136,7 @@
             "dutch": "Bestudeer infinitief"
         },
         "STUDY_INF_DESCR": {
-            "english": "`/study-infinitive` documentation to comme...",
+            "english": "`/study-infinitive` documentation to come...",
             "french": "`/study-infinitive` documentation à venir...",
             "dutch": "`/study-infinitive` documentatie om te komen..."
         },
@@ -141,7 +146,7 @@
             "dutch": "Bestudeer imperfectum"
         },
         "STUDY_IMPERF_DESCR" : {
-            "english": "`/study-imperfect` documentation to comme...",
+            "english": "`/study-imperfect` documentation to come...",
             "french": "`/study-imperfect` documentation à venir...",
             "dutch": "`/study-imperfect` documentatie om te komen..."
         },
@@ -151,9 +156,39 @@
             "dutch": "Bestudeer voltooid deelwoord"
         },
         "STUDY_PAST_PART_DESCR": {
-            "english": "`/study-participle` documentation to comme...",
+            "english": "`/study-participle` documentation to come...",
             "french": "`/study-participle` documentation à venir...",
             "dutch": "`/study-participle` documentatie om te komen..."
+        },
+        "STUDY_CMD": {
+            "english": "Study commands",
+            "french": "Commandes d'étude",
+            "dutch": "Studie commando's"
+        },
+        "STUDY_CMD_DESCR": {
+            "english": "The study commands allows to study different subjects.",
+            "french": "Les commandes d'étude permettent d'étudier différentes matières.",
+            "dutch": "De studie commando's laten toe om verschillende onderwerpen te bestuderen."
+        },
+        "QUESTIONS_CMD": {
+            "english": "Questions commands",
+            "french": "Commandes des questions",
+            "dutch": "Vragen commando's"
+        },
+        "QUESTIONS_CMD_DESCR": {
+            "english": "The `/questions` command displays a question about a subject. \n__Available subjects__ \n- Philosophy : 65 questions",
+            "french": "La commande `/questions` affiche une question sur une matière. \n__Matières disponibles__ \n- Philosophie : 65 questions",
+            "dutch": "De `/vragen` commando toont een vraag over een onderwerp. \n__Beschikbare onderwerpen__ \n- Filosofie : 65 vragen"
+        },
+        "CARDS_CMD": {
+            "english": "Cards commands",
+            "french": "Commandes des fiches",
+            "dutch": "Kaarten commando's"
+        },
+        "CARDS_CMD_DESCR": {
+            "english": "The `/cards` command displays a card about a topic in a subject. \n__Available subjects__ \n- Algebra : 1 topic, 4 cards \n- Algorithmics : 4 topic, 12 cards \n- Electronics : 2 topics, 10 cards",
+            "french": "La commande `/fiches` affiche une fiche sur un sujet dans une matière. \n__Matières disponibles__ \n- Algèbre : 1 sujet, 4 fiches \n- Algorithmique : 4 sujets, 12 fiches \n- Electronique : 2 sujets, 10 fiches",
+            "dutch": "De `/kaarten` commando toont een kaart over een thema in een onderwerp. \n__Beschikbare onderwerpen__ \n- Algebra : 1 thema, 4 kaarten \n- Algoritmiek : 4 themas, 12 kaarten \n- Elektronica : 2 themas, 10 kaarten"
         },
         "CONFIG_CMD": {
             "english": "Configuration commands",
@@ -170,7 +205,7 @@
             "french": "Configuration de la langue",
             "dutch": "Taal instelling"
         },
-        "SETLANG_DESCR": {
+        "SETLANG_CMD_DESCR": {
             "english": "Set up the bot language with the command `/setlang`.",
             "french": "Configurez la langue du bot avec la commande `/setlang`.",
             "dutch": "Stel de taal van de bot in met het commando `/setlang`."

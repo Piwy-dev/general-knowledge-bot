@@ -12,12 +12,12 @@ const languageSchema = require('./db/language-schema');
 const { loadLanguages, setLanguage } = require('./language')
 const language = require('./language')
 
-
 const commands = [];
 client.commands = new d.Collection();
-// Grab all the command files from the commands directory you created earlier
 const foldersPath = path.join(__dirname, 'slashcommands');
 const commandFolders = fs.readdirSync(foldersPath);
+
+const { mainEmbed, testEmbed, irrverbsEmbed, studyEmbed, profileEmbed, configurationEmbed, inviteButtons } = require('./builders')
 
 
 for (const folder of commandFolders) {
@@ -38,10 +38,8 @@ for (const folder of commandFolders) {
 }
 
 /* Construct and prepare an instance of the REST module */
-// Test
-const rest = new d.REST({ version: '10' }).setToken(process.env.TEST_TOKEN);
-// Production
-//const rest = new d.REST().setToken(process.env.TOKEN);
+const rest = new d.REST({ version: '10' }).setToken(process.env.TEST_TOKEN); // Test
+//const rest = new d.REST().setToken(process.env.TOKEN); // Production
 
 // and deploy your commands!
 (async () => {
@@ -50,10 +48,8 @@ const rest = new d.REST({ version: '10' }).setToken(process.env.TEST_TOKEN);
 
 		// The put method is used to fully refresh all commands in the guild with the current set
 		const data = await rest.put(
-            // Test
-			d.Routes.applicationGuildCommands(process.env.TEST_CLIENT_ID, process.env.GUILD_ID),
-            // Production
-            //d.Routes.applicationCommands(process.env.CLIENT_ID),
+			d.Routes.applicationGuildCommands(process.env.TEST_CLIENT_ID, process.env.GUILD_ID), // Test
+            //d.Routes.applicationCommands(process.env.CLIENT_ID), // Production
 			{ body: commands },
 		);
 
@@ -142,87 +138,21 @@ client.on(d.Events.GuildCreate, async guild => {
     if (!channel) return console.log("Impossible de trouver le premier channel du serveur.")
 
     const inviteEmbed = new d.EmbedBuilder()
-            .setColor('#3B5998')
-            .setTitle(`${language(guild, "INVITE_TITLE")}`)
-            .setDescription(`${language(guild, "INVITE_DESCR")}`)
-
-    const testEmbed = new d.EmbedBuilder()
-        .setColor('#61cdff')
-        .setTitle(`${language(guild, "TEST_CMD")}`)
-        .setDescription(`${language(guild, "TEST_CMD_DESCR")}`)
-        .addFields({
-            name: `${language(guild, "TRUE_FALSE")}`,
-            value: `${language(guild, "TRUE_FALSE_DESCR")}`
-        }, {
-            name: `${language(guild, "FLAG_TEST")}`,
-            value: `${language(guild, "FLAG_TEST_DESCR")}`
-        }, {
-            name: `${language(guild, "CAPITAL_TEST")}`,
-            value: `${language(guild, "CAPITAL_TEST_DESCR")}`
-        }, {
-            name: `${language(guild, "LOGO_TEST")}`,
-            value: `${language(guild, "LOGO_TEST_DESCR")}`
-        });
-
-    const irrverbsEmbed = new d.EmbedBuilder()
-        .setColor('#69c280')
-        .setTitle(`${language(guild, "IRREGUAR_VERBS_CMD")}`)
-        .addFields({
-            name: `${language(guild, "VERBS_LIST")}`,
-            value: `${language(guild, "VERBS_LIST_DESCR")}`
-        }, {
-            name: `${language(guild, "STUDY_INF")}`,
-            value: `${language(guild, "STUDY_INF_DESCR")}`
-        }, {
-            name: `${language(guild, "STUDY_IMPERF")}`,
-            value: `${language(guild, "STUDY_IMPERF_DESCR")}`
-        }, {
-            name: `${language(guild, "STUDY_PAST_PART")}`,
-            value: `${language(guild, "STUDY_PAST_PART_DESCR")}`
-        });
-
-    const profileEmbed = new d.EmbedBuilder()
-        .setColor('#ff6b61')
-        .setTitle(`${language(guild, "POINT_CMD")}`)
-        .setDescription(`${language(guild, "POINT_CMD_DESCR")}`)
-        .addFields({ name: `${language(guild, "PROFILE_CMD")}`, value: `${language(guild, "PROFILE_CMD_DESCR")}` }, { name: `${language(guild, "LEAD_CMD")}`, value: `${language(guild, "LEAD_CMD_DESCR")}` }, { name: `${language(guild, "ADMINXP_CMD")}`, value: `${language(guild, "ADMINXP_CMD_DESCR")}` });
-
-    const configurationEmbed = new d.EmbedBuilder()
-        .setColor('#9861ff')
-        .setTitle(`${language(guild, "CONFIG_CMD")}`)
-        .setDescription(`${language(guild, "CONFIG_CMD_DESCR")}`)
-        .addFields({
-            name: `${language(guild, "SETLANG_CMD")}`,
-            value: `${language(guild, "SETLANG_DESCR")}`
-        })
-        .setFooter({text: `${language(guild, "INVITE_FOOTER")}`});
-
-    const invitesButton = new d.ActionRowBuilder()
-        .addComponents(
-            new d.ButtonBuilder()
-                .setLabel(`${language(guild, "INVITE_BUT")}`)
-                .setStyle(d.ButtonStyle.Link)
-                .setURL('https://discord.com/api/oauth2/authorize?client_id=987825895899275304&permissions=8&scope=bot%20applications.commands') // Test
-                //.setURL('https://discord.com/api/oauth2/authorize?client_id=803979491373219840&permissions=8&scope=bot%20applications.commands') // Production
-        )
-        .addComponents(
-            new d.ButtonBuilder()
-                .setLabel(`${language(guild, "SUPPORT_BUT")}`)
-                .setStyle(d.ButtonStyle.Link)
-                .setURL('https://discord.gg/PhCdM465np')
-        );
-
+        .setColor('#3B5998')
+        .setTitle(`${language(guild, "INVITE_TITLE")}`)
+        .setDescription(`${language(guild, "INVITE_DESCR")}`)
+        .setFooter({ text: `${language(guild, "INVITE_FOOTER")}` })
     
-    // Send the embed
-    await channel.send({ embeds: [inviteEmbed, testEmbed, irrverbsEmbed, profileEmbed, configurationEmbed], components: [invitesButton] })
+    await channel.send({ 
+        embeds: [inviteEmbed, testEmbed(guild), irrverbsEmbed(guild), studyEmbed(guild), profileEmbed(guild), configurationEmbed(guild)],
+        components: [inviteButtons(guild)]
+    })
 
     // Sends a log message when the bot is added to a server
-    // Find the log channel
     const logChannel = client.guilds.cache.get('784075037333520395').channels.cache.get('1119649916617244832') // Test
     //const logChannel = client.guilds.cache.get('791608838209142796').channels.cache.get('943968391323066418') // Production
     if (!logChannel) return console.log("Le channel de logs des nouveaux serveur n'existe pas.")
 
-    // Create the embed
     const guildOwner = await guild.fetchOwner()
     const newServerEmbed = new d.EmbedBuilder()
         .setTitle('New server !')
@@ -230,7 +160,6 @@ client.on(d.Events.GuildCreate, async guild => {
         .setDescription("The bot was added on the `" + `${guild.name}` + "` server. \n Server led by : `" + `${guildOwner.displayName}` + "`. They are **" + `${guild.memberCount}` + "** members on it.")
         .setFooter({ text: `The bot is now on ${client.guilds.cache.size} servers` })
 
-    // Send the embed
     logChannel.send({
         embeds: [newServerEmbed]
     })
@@ -238,7 +167,6 @@ client.on(d.Events.GuildCreate, async guild => {
 
 // Sends a message when the bot is removed from a server
 client.on(d.Events.GuildDelete, async guild => {
-    // Try finding the channel
     const logChannel = client.guilds.cache.get('784075037333520395').channels.cache.get('1119649916617244832') // Test
     //const logChannel = client.guilds.cache.get('791608838209142796').channels.cache.get('943968391323066418') // Production
     if (!logChannel) return console.log("Le channel de logs des serveur n'existe pas.")

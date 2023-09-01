@@ -7,7 +7,8 @@ const { verbList } = require('../slashcommands/tests/study-infintive.js');
 
 const mongo = require('../db/mongo')
 const languageSchema = require('../db/language-schema');
-const { language, setLanguage } = require('../language')
+const { setLanguage } = require('../language')
+const language = require('../language')
 
 let langTradResult = undefined
 
