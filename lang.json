@@ -250,6 +250,11 @@
             "french": "Invite le bot",
             "dutch": "Nodig de bot uit"
         },
+        "SUPPORT_BUT": {
+            "english": "Join the support server",
+            "french": "Rejoindre le serveur de support",
+            "dutch": "Join de support server"
+        },
         "BUG": {
             "english": "The bug has been reported to the developer, thanks. \nContent: ",
             "french": "Le bug a été rapporté au développeur, merci. \nContenu: ",

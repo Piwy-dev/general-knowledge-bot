@@ -5,12 +5,9 @@ const csv = require('jquery-csv')
 const modules = require('../modules.js');
 const { verbList } = require('../slashcommands/tests/study-infintive.js');
 
-const language = require('../language.js')
-
-const { languages } = require('../lang.json');
 const mongo = require('../db/mongo')
 const languageSchema = require('../db/language-schema');
-const { setLanguage } = require('../language')
+const { language, setLanguage } = require('../language')
 
 let langTradResult = undefined
 

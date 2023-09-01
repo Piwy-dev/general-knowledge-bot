@@ -8,9 +8,8 @@ require('dotenv').config()
 const client = new d.Client({ intents: [d.GatewayIntentBits.Guilds, d.GatewayIntentBits.GuildMessages, d.GatewayIntentBits.GuildMessageReactions, d.GatewayIntentBits.Guilds] });
 
 const mongo = require("./db/mongo");
-
-const { loadLanguages } = require('./language')
-
+const languageSchema = require('./db/language-schema');
+const { loadLanguages, setLanguage } = require('./language')
 const language = require('./language')
 
 
@@ -120,6 +119,23 @@ client.on(d.Events.InteractionCreate, async interaction => {
 });
 
 client.on(d.Events.GuildCreate, async guild => {
+    // By default sets the bot language to english
+    setLanguage(guild, "english")
+    await mongo().then(async(mongoose) => {
+        try {
+            await languageSchema.findOneAndUpdate({
+                _id: guild.id
+            }, {
+                _id: guild.id,
+                language: "english"
+            }, {
+                upsert: true
+            })
+        } finally {
+            mongoose.connection.close()
+        }
+    })
+
     // Sends an infomation message when the bot is added to a server    
     // Find the first channel of the server
     const channel = guild.channels.cache.filter(channel => channel.type == d.ChannelType.GuildText).first()
@@ -184,7 +200,14 @@ client.on(d.Events.GuildCreate, async guild => {
     const invitesButton = new d.ActionRowBuilder()
         .addComponents(
             new d.ButtonBuilder()
-                .setLabel('Join support server')
+                .setLabel(`${language(guild, "INVITE_BUT")}`)
+                .setStyle(d.ButtonStyle.Link)
+                .setURL('https://discord.com/api/oauth2/authorize?client_id=987825895899275304&permissions=8&scope=bot%20applications.commands') // Test
+                //.setURL('https://discord.com/api/oauth2/authorize?client_id=803979491373219840&permissions=8&scope=bot%20applications.commands') // Production
+        )
+        .addComponents(
+            new d.ButtonBuilder()
+                .setLabel(`${language(guild, "SUPPORT_BUT")}`)
                 .setStyle(d.ButtonStyle.Link)
                 .setURL('https://discord.gg/PhCdM465np')
         );

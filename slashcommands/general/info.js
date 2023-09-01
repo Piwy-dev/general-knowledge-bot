@@ -75,13 +75,14 @@ module.exports = {
         const invitesButton = new d.ActionRowBuilder()
             .addComponents(
                 new d.ButtonBuilder() // Création du bouton d'invitation
-                    .setLabel('Invite the bot')
+                    .setLabel(`${language(guild, "INVITE_BUT")}`)
                     .setStyle(d.ButtonStyle.Link)
-                    .setURL(`https://discord.com/api/oauth2/authorize?client_id=803979491373219840&permissions=2147601472&scope=bot%20applications.commands`)
+                    .setURL('https://discord.com/api/oauth2/authorize?client_id=987825895899275304&permissions=8&scope=bot%20applications.commands') // Test
+                    //.setURL('https://discord.com/api/oauth2/authorize?client_id=803979491373219840&permissions=8&scope=bot%20applications.commands') // Production
             )
             .addComponents(
                 new d.ButtonBuilder() // Création du bouton pour recevoir le lien du serv de support
-                    .setLabel('Join support server')
+                    .setLabel(`${language(guild, "SUPPORT_BUT")}`)
                     .setStyle(d.ButtonStyle.Link)
                     .setURL('https://discord.gg/PhCdM465np')
             );
