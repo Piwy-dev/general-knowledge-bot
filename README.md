@@ -24,9 +24,11 @@ Add the bot to your server : [link](https://discord.com/api/oauth2/authorize?cli
 
 ### Study commands
 1. `/questions` displays a question about a subject.
+
     __Available subjects__
     - Philosophy : 65 questions
-2. `/cards` displays a card about a topic in a subject.
+3. `/cards` displays a card about a topic in a subject.
+   
     __Available subjects__
     - Algebra : 1 topic, 4 cards
     - Algorithmics : 5 topic, 18 cards
@@ -45,4 +47,6 @@ Add the bot to your server : [link](https://discord.com/api/oauth2/authorize?cli
 
 
 Bot created by : piwy_
+
+
 Current version : 1.3.7
