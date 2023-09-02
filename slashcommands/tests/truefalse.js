@@ -3,7 +3,7 @@ const d = require('discord.js');
 const profile = require('../../db/profile')
 const language = require('../../language')
 
-const truefalse = require('../../json/capContries.json')
+const truefalse = require('../../json/truefalse.json')
 
 module.exports = {
     data: new d.SlashCommandBuilder()

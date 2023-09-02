@@ -1,7 +1,7 @@
 {
     "algebra": {
-        "matrices": {
-            "matrice échelonée": {
+        "Matrices": {
+            "Matrice échelonée": {
                 "color": "0x3b8bc4",
                 "title": "Matrice échelonée",
                 "description": "Une matrice est dite échelonnée si le nombre de zéros précédant la première valeur non nulle d'une ligne augmente strictement ligne par ligne jusqu'à ce qu'il ne reste éventuellement plus que des zéros.",
@@ -11,7 +11,7 @@
                     }
                 ]
             }, 
-            "forme réduite de gauss-jordan": {
+            "Forme réduite de gauss-jordan": {
                 "color": "0x3b8bc4",
                 "title": "Forme réduite de Gauss-Jordan",
                 "description": "Une matrice est dite en forme réduite de Gauss-Jordan si elle est échelonnée et si toutes les valeurs non nulles sont égales à 1.",
@@ -21,7 +21,7 @@
                     }
                 ]
             },
-            "matrice carrée": {
+            "Matrice carrée": {
                 "color": "0x3b8bc4",
                 "title": "Matrice carrée",
                 "description": "Une matrice est dite carrée si elle possède le même nombre de lignes et de colonnes.",
@@ -31,7 +31,7 @@
                     }
                 ]
             },
-            "produit matriciel": {
+            "Produit matriciel": {
                 "color": "0x3b8bc4",
                 "title": "Produit matriciel",
                 "description": "Le produit matriciel de deux matrices `A` et `B` est une matrice `C` telle que `C = AB`.",
@@ -66,141 +66,209 @@
             "Complexité temporelle": {
                 "color": "0xebc034",
                 "title": "Complexité temporelle",
-                "description": "La complexité temporelle d’un algorithme est le nombre d’opérations élémentaires effectuées par l’algorithme pour résoudre un problème de taille `n`. Cette donnée est importante car, si on connait le temps nécessaire pour une opération primitive, elle permet de déterminer la taille maximale du problème que l'on peut traiter sur un interval de temps donné.",
-                "fields": [{
-                        "name": "Notation",
-                        "value": "La complexité temporelle d’un algorithme est notée `T(n)`  et représente donc le nombre d’opérations élémentaires effectuées par l’algorithme pour résoudre un problème de taille `n`."
-                    }
-                ]
+                "description": "La complexité temporelle d’un algorithme, notée `T(n)`,  représente le nombre d’opérations primitives effectuées par l’algorithme pour résoudre un problème de taille `n`. \nCette donnée est importante car si on connait le temps nécessaire pour une opération primitive, elle permet de déterminer la taille maximale du problème que l'on peut traiter sur un intervalle de temps donné."
             },
             "Complexité spaciale": {
                 "color": "0xebc034",
                 "title": "Complexité spaciale",
-                "description": "La complexité spaciale d’un algorithme est la quantité de mémoire utilisée par l’algorithme pour résoudre un problème de taille `n`. Cette donnée est importante car, si on connait la quantité de mémoire disponible, elle permet de déterminer la taille maximale du problème que l'on peut traiter.",
+                "description": "La complexité spatiale d’un algorithme, notée `S(n)`, représente la quantité de mémoire utilisée par l’algorithme pour résoudre un problème de taille `n`. \nCette donnée est importante car si on connait la quantité de mémoire disponible, elle permet de déterminer la taille maximale du problème que l'on peut traiter."
+            }
+        },
+        "Types Abstraits de Données": {
+            "Généralités": {
+                "color": "0x3b8bc4",
+                "title": "Types abstraits de données",
+                "description": "Un type abstrait de données (TAD) est une spécification abstraite d’une structure de données qui décrit : \n1. Ce qui peut être mémorisé dans le TAD, mais pas comment cette information est mémorisée (organisation dans la mémoire). \n2. Quelles opérations peuvent être effectuées sur le TAD, mais pas comment ces opérations doivent être effectuées. \n\nUne structure de données : une organisation particulière des données d’un programme (int, str, list…)"
+            },
+            "TAD Pile": {
+                "color": "0x3b8bc4",
+                "title": "Pile",
+                "description": "Une pile (Stack) est une collection d’éléments qui peuvent être ajoutés ou retirés selon le principe LIFO (Last In First Out) : \n- Le premier objet à pouvoir être retiré (*pop*) est le dernier qui a été inséré (*push*). \n- On ne peut pas retirer d’objet si la pile est vide.",
                 "fields": [{
-                        "name": "Notation",
-                        "value": "La complexité spaciale d’un algorithme est notée `S(n)` et représente donc la quantité de mémoire utilisée par l’algorithme pour résoudre un problème de taille `n`."
+                        "name": "Analogie",
+                        "value": "Une pile d’assiettes."
+                    }, {
+                        "name": "Opérations principales",
+                        "value": "- `push(e)` : ajoute l'élément `e` au sommet de la pile. \n- `pop()` : retire et renvoie l’élément au sommet de la pile. \n- `is_empty()` : renvoie `True` si la pile est vide, `False` sinon."
+                    }, {
+                        "name": "Méthodes d'implémentation",
+                        "value": "- Listes chaînées \n- Tableaux dynamiques"
+                    }, {
+                        "name": "Exemple",
+                        "value": "```py\npile = Stack() \npile.push(1) \npile.push(2) \n\nprint(pile.pop())\n>>> 2\nprint(pile.pop()) \n>>> 1```"
+                    }
+                ]
+            },
+            "TAD File": {
+                "color": "0x3b8bc4",
+                "title": "File",
+                "description": "Une file (Queue) est une collection d’éléments qui peuvent être ajoutés ou retirés selon le principe FIFO (First In First Out) : \n- Le premier objet à pouvoir être retiré est le plus ancien à avoir été inséré et qui n’a pas encore été retiré. \n- On ne peut retirer aucun objet si la file est vide.",
+                "fields": [{
+                        "name": "Analogie",
+                        "value": "Une file d’attente."
+                    }, {
+                        "name": "Opérations principales",
+                        "value": "- `enqueue(e)` : ajoute l'élément `e` à la fin de la file. \n- `dequeue()` : retire et renvoie l’élément au début de la file. \n- `is_empty()` : renvoie `True` si la file est vide, `False` sinon."
+                    }, {
+                        "name": "Méthodes d'implémentation",
+                        "value": "- Listes chaînées \n- Tableaux dynamiques circulaires"
+                    }, {
+                        "name": "Exemple",
+                        "value": "```py\nfile = Queue() \nfile.enqueue(1) \nfile.enqueue(2) \n\nprint(file.dequeue())\n>>> 1\nprint(file.dequeue()) \n>>> 2```"
+                    }
+                ]
+            },
+            "TAD Liste": {
+                "color": "0x3b8bc4",
+                "title": "Liste",
+                "description": "Une Liste est un TAD qui décrit une collection d’éléments auxquels on accède via les méthodes `head()` (le premier élément) et `tail()` (une sous-liste). \n\nCe TAD à une implémentation récursive. Pour accéder à un élément spécifique dans la liste, on va utiliser une fonction dont le cas de base est une liste vide et l’appel récursif éventuel se fait sur la sous-liste.",
+                "fields": [{
+                        "name": "Exemple",
+                        "value": "```py\nl = List() # creation d'une liste vide \nl = l.concat(1) # ajoute 1 en tête de la liste \nl = l.concat(2) # ajoute 2 en tête de la liste \nprint(l.head()) \n>>> 2 \nprint(l) \n>>> \"[2[1[]]]\" \nprint(l.tail()) \n>>> \"[1[]]\"```"
+                    }
+                ]
+            },
+            "TAD Dictionnaire": {
+                "color": "0x3b8bc4",
+                "title": "Dictionnaire",
+                "description": "Le TAD dictionnaire est une collection d’entrées pour laquelle on accède à chaque entrée par une clé. Il contient donc des couples (clé, valeur).",
+                "fields": [{
+                        "name": "Propriété additionnelle possibles",
+                        "value": "- **Clés multiples** : plusieurs entrées sont référencées par la même clé \n- **Ordonné** : un ordre est défini sur les clés."
+                    }
+                ]
+            },
+            "TAD Arbre": {
+                "color": "0x3b8bc4",
+                "title": "Arbre",
+                "description": "Le TAD arbre permet de représenter une structure hiérarchique (table des matières, système de fichiers…). C’est un type abstrait récursif composé de différents noeuds (il peut aussi être vide). Un noeud se trouve à la racine et les autres dans les sous-arbres. \n\nUn arbre est binaire si pour chaque noeud il y a au maximum deux sous arbres (gauche et droit).",
+                "fields": [{
+                        "name": "Exemple",
+                        "value": "```      a       \n    /   \\    \n   b     c   \n  / \\   / \\ \n d   e f   g\n```"
                     }
                 ]
             }
         },
-        "Types abstraits de données": {
-            "Description générale des TAD": {
-                "color": "0xebc034",
-                "title": "Description générale des TAD",
-                "description": "**Structure de données :** une organisation particulière des données d’un programme (int, str, list…). \n\nType abstrait de données (TAD) : une spécification abstraite d’une structure de données qui décrit : \n1. Ce qui peut être mémorisé dans le TAD, mais pas comment cette information est mémorisée (organisation dans la mémoire). \n2. Quelles opérations peuvent être effectuées sur le TAD, mais pas comment ces opérations doivent être effectuées."                
-            },
-            "TAD pile": {
-                "color": "0xebc034",
-                "title": "TAD pile",
-                "description": "Le TAD pile est une collection d’éléments ordonnés selon le principe LIFO (Last In First Out). Il est possible d’ajouter un élément au sommet de la pile, de retirer l’élément au sommet de la pile et de savoir si la pile est vide ou non. \nLes TAD piles permentent d’implémenter des tableaux (souvent dynamiques) ou des listes chaînées. \n**Analogie :** une pile d’assiettes.",
+        "Arbre Binaire de Recherche": {
+            "Généralités": {
+                "color": "0xf0a573",
+                "title": "Arbres binaires de recherche",
+                "description": "Un arbre binaire de recherche (ABR) est une implémentation d’un TAD dictionnaire dans sous forme d’arbre binaire. Dans un ABR, pour chaque noeud, l’élément qui se trouve à gauche de celui-ci doit-être plus petit et l’élément à droite doit être plus grand."
+            }, 
+            "Parcours": {
+                "color": "0xf0a573",
+                "title": "Parcours d'un ABR",
+                "description": "Il y a trois opérations possible dans un ABR : l’insertion, la suppression ou la recherche d’une clé. \nPour effectuer ces actions, il est nécessaire de parcourir l’arbre. Il existe différentes manière de parcourir un ABR, toutes sont récursives.",
                 "fields": [{
-                        "name": "Opérations principales",
-                        "value": "- `push(x)` Ajoute l’élément `x` au sommet de la pile. \n- `pop()` Retire l’élément au sommet de la pile. \n- `isEmpty()` Retourne `vrai` si la pile est vide, `faux` sinon."
-                    }, {
-                        "name": "Exemple",
-                        "value": "```p = [1, 2, 3]```"
-                    }
-                ]
-            },
-            "TAD file": {
-                "color": "0xebc034",
-                "title": "TAD file",
-                "description": "Le TAD file est une collection d’éléments ordonnés selon le principe FIFO (First In First Out). Il est possible d’ajouter un élément à la fin de la file, de retirer l’élément au début de la file et de savoir si la file est vide ou non. \nLes TAD files permetent d’implémenter des tableaux (souvent dynamiques) circulaires ou des listes chaînées. \n**Analogie :** une file d’attente.",
-                "fields": [{
-                        "name": "Opérations principales",
-                        "value": "- `enqueue(x)` Ajoute l’élément `x` à la fin de la file. \n- `dequeue()` Retire l’élément au début de la file. \n- `isEmpty()` Retourne `vrai` si la file est vide, `faux` sinon."
-                    }, {
-                        "name": "Exemple",
-                        "value": "```f = [1, 2, 3]```"
-                    }
-                ]
-            },
-            "TAD liste": {
-                "color": "0xebc034",
-                "title": "TAD liste",
-                "description": "Une Liste est un TAD qui décrit une collection d’éléments auxquels on accède via les méthodes `head()` (le premier élément) et `tail()` (une sous-liste). \nCe TAD à une implémentation [récursive](https://www.notion.so/Introduction-l-algorithmique-c23fafa64c8948f48a4594eeaf12699f?pvs=21). Pour accéder à un élement spécifique dans la liste, on va utliser une fonction dont le cas de base est une liste vide et l’appel récusif, lancé si l’élément ne correspond pas à la valeur actuelle, se fait sur la sous-liste."
-            },
-            "TAD dictionaire": {
-                "color": "0xebc034",
-                "title": "TAD dictionaire",
-                "description": "Le TAD dictionaire est une collection d’entrées pour laquelle on accède à chaque entrée par une clé. Il contient donc des couples (clé, valeur). Il est à clés multiples si plusieurs entrées présentes sont référencées par la même clé et il est ordonné si un ordre est défini sur les clés.",
-                "fields": [{
-                        "name": "Exemple",
-                        "value": "```d = {\"a\": 1, \"b\": 2, \"c\": 3}```"
-                    }
-                ]
-            }
-        },
-        "Arbre binaire de recherche": {
-            "Description générale des ABR": {
-                "color": "0xebc034",
-                "title": "Description générale des ABR",
-                "description": "Un arbre binaire de recherche (ABR) est une implémentation d’un TAD dictionaire qui respecte les propriétés suivantes : \n- Les noeuds de gauche sont plus petits que la racine \n- Les noeuds de droite sont plus grands que la racine \n- Les sous-arbres gauches et droits sont eux-mêmes des ABR",
-                "fields": [
-                    {
-                        "name": "Exemple",
-                        "value": "```          8\n        /   \\\n       3     10\n      / \\      \\\n     1   6      14\n        / \\    /\n       4   7  13```"
-                    }
-                ]
-            },
-            "Parcours d'un ABR": {
-                "color": "0xebc034",
-                "title": "Parcours d’un ARB",
-                "description": "Pour effectuer des actions dans un ABR, il est nécessaire de pouvoir le parcourir. Il existe différentes manière de parcourir un ABR, toutes sont récursives.",
-                "fields": [{
-                        "name": "Parcours préfixe",
-                        "value": "Le parcours préfixe visite d’abords la racine puis les sous-arbres gauches et droits."
-                    }, {
                         "name": "Parcours infixe",
-                        "value": "Le parcours infixe visite d’abords le sous-arbre gauche puis la racine et enfin le sous-arbre droit."
+                        "value": "On parcourt l’arbre en commençant par le sous-arbre gauche, puis la racine et enfin le sous-arbre droit."
+                    }, {
+                        "name": "Parcours préfixe",
+                        "value": "On parcourt l’arbre en commençant par la racine, puis le sous-arbre gauche et enfin le sous-arbre droit."
                     }, {
                         "name": "Parcours postfixe",
-                        "value": "Le parcours postfixe visite d’abords les sous-arbres gauches et droits puis la racine."
+                        "value": "On parcourt l’arbre en commençant par le sous-arbre gauche, puis le sous-arbre droit et enfin la racine."
                     }, {
-                        "name": "Parcours eulerien",
-                        "value": "Les trois parcours réalisent en réalité tous le même trajet en commençant par la racine, et en visitant chaque neud 3 fois, mais en récupérant l’information du noeud à un passage différent à chaque fois. \nIl existe un parcous appelé parcours eurélien qui généralise ces trois parcours en un algorithme."
+                        "name": "Exemple",
+                        "value": "```       0       \n     /   \\    \n   -3     6   \n   / \\   / \\ \n -7  -1 4   9\n``` \nParcours infixe: ```-7 -3 -1 0 4 6 9``` \nParcours préfixe: ```0 -3 -7 -1 6 4 9``` \nParcours postfixe: ```-7 -1 -3 4 9 6 0```"
                     }
                 ]
             },
-            "Opérations dans un ABR": {
-                "color": "0xebc034",
-                "title": "Opérations dans un ARB",
-                "fields": [
-                    {
-                        "name": "Insertion d’une clé",
-                        "value": "Pour insérer une clé dans l’ARB, on va parcourrir l’arbre par la méthode préfixe, jusqu’à se qu’on se trouve à un endroit ou le noeud de gauche est plus petit ou églal à la clé et le noeud de droite plus grand. On doit alors insérer cette clé dans l’arbre par la même méthode que pour l’insersion dans une liste chaînée. "
-                    },
-                    {
-                        "name": "Recherche d’une clé",
-                        "value": "La recherche d’une clé dans un ARB dépend de sa hauteur et donc aussi son organisation.\n- Si l’arbre est équilibré sa hauteur `h ∈ Θ(log_2 n)`. La recherche se fait donc en `O(log_2 n)` (meilleur cas `Θ(1)`, pire cas `Θ(log_2 n)`).\n- Sinon sa hauteur `h ∈ Θ(n)`. La recherche se fait donc en `O(n)` (meilleur cas `Θ(1)`, pire cas `Θ(n)`)."
-                    },
-                    {
-                        "name": "Supression d’une clé",
-                        "value": "Pour la supression d’une clé on va d’abords rechecher cette clé dans l’arbre. Une fois trouvée, on la supprime aussi en suivant une méthode analogue aux listes chaînées mais il faut aussi faire attention de remonter les clés appartenant aux sous-arbres de la clé qu’on supprime qui ne seraient plus dans l’odre."
-                    }
-                ]
+            "Opérations": {
+                "color": "0xf0a573",
+                "title": "Opérations sur un ABR",
+                "fields": [{
+                    "name": "Insertion d'une clé",
+                    "value": "Pour insérer une clé dans l’ABR, on va parcourir l’arbre par la méthode préfixe, jusqu’à se qu’on se trouve à un endroit ou le noeud de gauche est plus petit ou égal à la clé et le noeud de droite plus grand. On doit alors insérer cette clé dans l’arbre par la même méthode que pour l’insertion dans une liste chaînée."
+                }, {
+                    "name": "Recherche d'une clé",
+                    "value": "La recherche d’une clé dans un ABR dépend de sa hauteur `h`, et celle si dépend de si l’arbre est équilibré ou non. \n- Arbre équilibré : `h ∈ Θ(log_2 n)` → Recherche en `O(log_2 n)` (meilleur cas `Θ(1)`, pire cas $Θ(log_2 n)$). \n- Arbre déséquilibré : `h ∈ Θ(n)` → Recherche en `O(n)` (meilleur cas `Θ(1)`, pire cas `Θ(n)`)."
+                }, {
+                    "name": "Suppression d'une clé",
+                    "value": "Pour la suppression d’une clé on va d’abords rechercher cette clé dans l’arbre. Une fois trouvée, on la supprime en suivant une méthode analogue aux listes chaînées mais il faut aussi faire attention de remonter les clés appartenant aux sous-arbres de la clé qu’on supprime qui ne seraient plus dans l’ordre."
+                }]
             },
-            "Implémentation d'un ABR": {
-                "color": "0xebc034",
+            "Implémentation": {
+                "color": "0xf0a573",
                 "title": "Implémentation d'un ABR",
-                "description": "Dans la pratique les méthodes les plus courrante pour implémenter un ARB sont soit via une structure chaînée soit un tableau dynamique. Les deux méthodes ont leurs avantages et inconvénients.",
-                "fields": [
-                    {
-                        "name": "Structure chaînée",
-                        "value": "- Accès à n’importe quel noeud à partir de la racine en `O(n)`.\n- Complexité spatiale en `Θ(n)`."
-                    },
-                    {
-                        "name": "Tableau dynamique",
-                        "value": "- Accès à n’importe quel noeud en `Θ(1)` par un calcul d’indice dans le tableau.\n- La complexité spatiale peut être exponentielle dans le pire cas : `O(2^n)`, où `n` est le nombre de noeuds présents dans l’arbre. Si l’arbre est strictement complet, c’est-à-dire si tous les niveaux sont remplis, alors la complexité spatiale est en `Θ(n)`."
-                    }
-                ]
+                "description": "Un ABR peut être implémenté de deux manières différentes : \n\n**Liste chaînée** \nChaque noeud est représenté par un objet contenant la clé, la valeur et les sous-arbres gauche et droit. \n- Accès à n’importe quel noeud à partir de la racine en `O(n)`. \n- Complexité spatiale en `Θ(n)`. \n\n**Tableau dynamique** \nChaque noeud est représenté par un objet contenant la clé, la valeur et l’indice des sous-arbres gauche et droit dans le tableau. \n- Accès à n’importe quel noeud en `Θ(1)` par un calcul d’indice dans le tableau. \n- La complexité spatiale peut être exponentielle dans le pire cas : `O(2^n)`, où `n` est le nombre de noeuds présents dans l’arbre. Si l’arbre est strictement complet, c’est-à-dire si tous les niveaux sont remplis, alors la complexité spatiale est en `Θ(n)`."
+            }
+        },
+        "Algorithmes de tri": {
+            "Tri à bulles": {
+                "color": "0xd573f0",
+                "title": "Tri à bulles",
+                "description": "Inverser toute paire d’éléments adjacents qui sont désordonnés. Un plus grand élément est comme une bulle remontant vers la fin, et un plus petit élément une bulle descendant vers le début.",
+                "fields": [{
+                    "name": "Propriétés",
+                    "value": "- Complexité temporelle globale : `Theta(n^2)` \n    - `Theta(n^2)` comparaisons \n     - `O(n^2)` échanges \n- Stable \n- En place : espace additionnel `Theta(1)`"
+                }, {
+                    "name": "Code",
+                    "value": "```py\ndef bubble_sort(l: list): \n    \"\"\"\n    Retourne la liste `l` triée par ordre croissant.\n    \"\"\"\n    for i in range(len(l) - 1, 0, -1): \n        for j in range(1, i+1): \n            if l[j-1] > l[j]: \n                l[j-1], l[j] = l[j], l[j-1] \n    return l\n```"
+                }, {
+                    "name": "Variante pour le rendre adaptatif",
+                    "value": "On ajoute une vérification qui coupe la boucle si il n’y a pas eu d’échange lors de cette itération (et donc que la liste est déjà triée). \n- Complexité temporelle globale : `O(n^2)` \n- `O(n^2)` comparaisons \n- `O(n^2)` échanges"
+                }, {
+                    "name": "Code",
+                    "value": "```py\ndef bubble_sort(l: list): \n    \"\"\"\n    Retourne la liste `l` triée par ordre croissant.\n    \"\"\"\n    for i in range(len(l) - 1, 0, -1): \n        swap = False \n        for j in range(1, i+1): \n            if l[j-1] > l[j]: \n                l[j-1], l[j] = l[j], l[j-1] \n                swap = True \n        if not swap: \n            break \n    return l\n```"
+                }]
+            },
+            "Tri par sélection": {
+                "color": "0xd573f0",
+                "title": "Tri par sélection",
+                "description": "Sélectionner de façon répétée le plus petit élément restant et le mettre au début.",
+                "fields": [{
+                    "name": "Propriétés",
+                    "value": "- Complexité temporelle globale : `Theta(n^2)` \n    - `Theta(n^2)` comparaisons \n    - `Theta(n)` échanges → marginalement interessant si on veut minimiser les échanges. Ò\n- En place : espace additionnel `Theta(1)`"
+                }, {
+                    "name": "Code",
+                    "value": "```py\ndef selection_sort(l: list): \n    \"\"\"\n    Retourne la liste `l` triée par ordre croissant.\n    \"\"\"\n    for i in range(len(l)): \n        min_index = i \n        for j in range(i+1, len(l)): \n            if l[min_index] > l[j]: \n                min_index = j \n        l[i], l[min_index] = l[min_index], l[i] \n    return l\n```"
+                }]
+            },
+            "Tri par insertion": {
+                "color": "0xd573f0",
+                "title": "Tri par insertion",
+                "description": "Insérer de façon répétée chaque élément dans la partie déjà triée de la liste.",
+                "fields": [{
+                    "name": "Propriétés",
+                    "value": "- Complexité temporelle globale : `O(n^2)` \n    - `O(n^2)` comparaisons \n    - `O(n^2)` échanges \n- Stable \n- En place : espace additionnel `Theta(1)` \n- Adaptatif"
+                }, {
+                    "name": "Code",
+                    "value": "```py\ndef insertion_sort(l: list): \n    \"\"\"\n    Retourne la liste `l` triée par ordre croissant.\n    \"\"\"\n    for i in range(1, len(l)): \n        j = i \n        while j > 0 and l[j-1] > l[j]: \n            l[j-1], l[j] = l[j], l[j-1] \n            j -= 1 \n    return l\n```"
+                }]
+            },
+            "Tri fusion": {
+                "color": "0xd573f0",
+                "title": "Tri fusion",
+                "description": "Diviser la liste en deux sous-listes de taille égale, trier chacune des sous-listes, puis fusionner les deux sous-listes triées en une seule liste triée. La première étape est récursive, le cas de base étant une liste de taille 0 ou 1 -> forcément triée.",
+                "fields": [{
+                    "name": "Propriétés",
+                    "value": "- Complexité temporelle globale : `Theta(n log n)` \n- Stable \n- En place : espace additionnel `Theta(n)`"
+                }, {
+                    "name": "Code",
+                    "value": "```py\ndef merge_sort(l: list) -> list: \n    \"\"\" \n    Retourne la liste `l` triée par ordre croissant. \n    \"\"\"\n    def merge(l1: list, l2:list) -> list:\n        \"\"\" \n        Fusionne deux sous tableaux `l1` et `l2` triés.\n        \"\"\"\n        res = []\n        while len(l1) != 0 and len(l2) != 0:\n            if l1[0] <= l2[0]:\n                res.append(l1[0])\n                l1.pop(0)\n            else:\n                res.append(l2[0])\n                l2.pop(0)\n        while len(l1) != 0:\n            res.append(l1[0])\n            l1.pop(0)\n        while len(l2) != 0:\n            res.append(l2[0])\n            l2.pop(0)\n        return res\n    n = len(l)\n    if n == 1:\n        return l\n    return merge(merge_sort(l[:n//2]), merge_sort(l[n//2:]))\n```"
+                }]
+            },
+            "Tri linéaire": {
+                "color": "0xd573f0",
+                "title": "Tri linéaire",
+                "description": "Le tri linéaire est un tri qui s’effectue en temps linéaire. Il est possible de trier une liste en temps linéaire si on sait que les éléments de la liste sont des entiers compris entre 0 et `n` (ou `n-1`).",
+                "fields": [{
+                    "name": "Principe",
+                    "value": "On va créer une liste de taille `n` remplie de 0. On va ensuite parcourir la liste à trier et incrémenter la valeur de la liste aux indices correspondant aux valeurs de la liste à trier. On va ensuite parcourir la liste de comptage et ajouter à la liste à trier autant de fois la valeur de l’indice que la valeur de l’indice. \n\nExemple : \n\n`[2, 5, 3, 0, 2, 3, 0, 3]` \n\n`[2, 0, 2, 1, 0, 1, 3, 0, 0, 0]` \n\n`[0, 0, 2, 2, 3, 3, 3, 5]`"
+                }, {
+                    "name": "Propriétés",
+                    "value": "- Complexité temporelle globale : `Theta(n)` \n- Stable \n- En place : espace additionnel `Theta(n)`"
+                }, {
+                    "name": "Code",
+                    "value": "```py\ndef counting_sort(l: list) -> list: \n    \"\"\" \n    Retourne la liste `l` triée par ordre croissant. \n    \"\"\"\n    n = len(l)\n    res = [0] * n\n    for i in range(n):\n        res[l[i]] += 1\n    j = 0\n    for i in range(n):\n        while res[i] != 0:\n            l[j] = i\n            j += 1\n            res[i] -= 1\n    return l\n```"
+                }]
             }
         }
     },
     "electronics": {
-        "fonctions booléennes": {
-            "not": {
+        "Fonctions booléennes": {
+            "Not": {
                 "color": "0x5834eb",
                 "title": "Not",
                 "description": "La porte logique **NOT** retourne l'inverse de son entrée.",
@@ -214,7 +282,7 @@
                     "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097089814840496188/not.png"
                 }
             },
-            "and": {
+            "And": {
                 "color": "0x5834eb",
                 "title": "And",
                 "description": "La porte logique **AND** retourne 1 si les deux entrées sont à 1, 0 sinon.",
@@ -228,7 +296,7 @@
                     "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097117357576568883/and.png"
                 }
             },
-            "or": {
+            "Or": {
                 "color": "0x5834eb",
                 "title": "Or",
                 "description": "La porte logique **OR** retourne 1 si au moins une des deux entrées est à 1, 0 sinon.",
@@ -242,7 +310,7 @@
                     "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097266856865321080/or.png"
                 }
             },
-            "nand": {
+            "Nand": {
                 "color": "0x5834eb",
                 "title": "Nand",
                 "description": "La porte logique **NAND** retourne 1 si au moins une des deux entrées est à 0, et 0 sinon.",
@@ -256,7 +324,7 @@
                     "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097267029477707816/nand.png"
                 }
             },
-            "nor": {
+            "Nor": {
                 "color": "0x5834eb",
                 "title": "Nor",
                 "description": "La porte logique **NOR** retourne 1 si les deux entrées sont 0, 0 sinon.",
@@ -270,7 +338,7 @@
                     "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097267140735815771/nor.png"
                 }
             },
-            "xor": {
+            "Xor": {
                 "color": "0x5834eb",
                 "title": "Xor",
                 "description": "La porte logique **XOR** retourne 1 si les deux entrées sont différentes, 0 sinon.",
@@ -284,7 +352,7 @@
                     "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097267300492640256/xor.png"
                 }
             },
-            "xnor": {
+            "Xnor": {
                 "color": "0x5834eb",
                 "title": "Xnor",
                 "description": "La porte logique **XNOR** retourne 1 si les deux entrées sont identiques, 0 sinon.",
@@ -298,7 +366,7 @@
                     "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097089814840496188/xnor.png"
                 }
             },
-            "mux": {
+            "Mux": {
                 "color": "0x5834eb",
                 "title": "Mux",
                 "description": "La porte logique **MUX** (Multiplexer) permet de choisir entre deux entrées selon la valeur d'une troisième entrée (sel).",
@@ -312,7 +380,7 @@
                     "url": "https://cdn.discordapp.com/attachments/1097089532601565296/1097267398266073168/mux.png"
                 }
             },
-            "dmux": {
+            "Dmux": {
                 "color": "0x5834eb",
                 "title": "Dmux",
                 "description": "La porte logique **DMUX** (Demultiplexer) retourne les valeurs de A et B selon la valeur de in et sel.",
@@ -327,8 +395,8 @@
                 }
             }
         },
-        "language d'assemblage": {
-            "instructions de type A": {
+        "Language d'assemblage": {
+            "Instructions de type A": {
                 "color": "0xd99241",
                 "title": "Instructions de type A",
                 "description": "Les instructions de type A (A = adresse) permettent de charger des information de 15 bits (avec le bits de poid fort mit à 0 pour faire 16 bits en tout) dans le registre A. Elles permetent aussi d’accéder à l’information qui se trouve en mémoire à l’adresse spécifiée dans le registre A.",
@@ -339,12 +407,12 @@
                     }
                 ]
             },
-            "instructions de type C": {
+            "Instructions de type C": {
                 "color": "0xd99241",
                 "title": "Instructions de type C",
                 "description": "Les instructions de type C (C = calculer) permettent d’effectuer toutes les autres opérations permisent par l’ALU. Elles ont donc plusieurs fonctionalités différentes. Il y a deux sortes d’instructions  différentes : Les instructions d’accès et @."
             },
-            "saut non-conditionel": {
+            "Saut non-conditionel": {
                 "color": "0xd99241",
                 "title": "Saut non-conditionel",
                 "description": "L’instruction **0;JMP**© permet de faire un saut non-conditionel (sera toujours effectué si l’instruction est lue) vers l’adresse indiquée.",
@@ -359,7 +427,7 @@
                     }
                 ]
             },
-            "saut conditionel": {
+            "Saut conditionel": {
                 "color": "0xd99241",
                 "title": "Saut conditionel",
                 "description": "Il existe plusieurs instructions qui permettent d’effectuer un saut seulement si la condition attendue est respectée. La condition peut être imposée sur n’importe quelle variable exitante. Dans les exemple ci-dessus c’est le registre `D` qui est utilisé :\n\n1. `D;JEQ` (Jump if EQual to 0) → Saute si la variable vaut 0. (`D == 0`)\n2. `D;JNE` (Jump if Not Equal to 0) → Saute si la variable est différente de 0. (`D != 0`)\n3. `D;JGT` (Jump if Greater Than 0) → Saute si la variable est strictement positive. (`D > 0`)\n4. `D;JLT` (Jump if Lower Than 0) → Saute si la variable est strictement négative. (`D < 0`)\n5. `D;JGE` (Jump if Greater than or Equal to 0) → Saute si la variable est positive. (`D >= 0`)\n6. `D;JLE` (Jump if Lower than or Equal to 0) → Saute si la variable est négative. (`D <= 0`)",
@@ -374,7 +442,7 @@
                     }
                 ]
             },
-            "boucles": {
+            "Boucles": {
                 "color": "0xd99241",
                 "title": "Boucles",
                 "description": "Les boucles peuvent être implémentée en utilisant des instruction de saut.",
@@ -389,7 +457,7 @@
                     }
                 ]
             },
-            "break": {
+            "Break": {
                 "color": "0xd99241",
                 "title": "Break",
                 "description": "Il possible d’impléménter l’instuction `break` grâce aux sauts, en language assembleur.",
@@ -404,7 +472,7 @@
                     }
                 ]
             },
-            "continue": {
+            "Continue": {
                 "color": "0xd99241",
                 "title": "Continue",
                 "description": "Il possible d’impléménter l’instuction `continue` grâce aux sauts, en language assembleur.",
