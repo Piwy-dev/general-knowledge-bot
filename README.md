@@ -22,6 +22,16 @@ Add the bot to your server : [link](https://discord.com/api/oauth2/authorize?cli
 3. `/study-imperfect` documentation to come ...
 4. `/study-participle` documentation to come ...
 
+### Study commands
+1. `/questions` displays a question about a subject.
+    __Available subjects__
+    - Philosophy : 65 questions
+2. `/cards` displays a card about a topic in a subject.
+    __Available subjects__
+    - Algebra : 1 topic, 4 cards
+    - Algorithmics : 5 topic, 18 cards
+    - Electronics : 2 topics, 16 cards
+
 ### Points commands
 1. `/profile` shows the points of the sellected `user`
     - `user` a sever's member
@@ -32,3 +42,7 @@ Add the bot to your server : [link](https://discord.com/api/oauth2/authorize?cli
 ### Configuration commands
 1. `/setlang` change the bot's language to the selected `language`
     - `language` a supported language (French, English, Dutch)
+
+
+Bot created by : piwy_
+Current version : 1.3.7

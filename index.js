@@ -136,15 +136,9 @@ client.on(d.Events.GuildCreate, async guild => {
     // Find the first channel of the server
     const channel = guild.channels.cache.filter(channel => channel.type == d.ChannelType.GuildText).first()
     if (!channel) return console.log("Impossible de trouver le premier channel du serveur.")
-
-    const inviteEmbed = new d.EmbedBuilder()
-        .setColor('#3B5998')
-        .setTitle(`${language(guild, "INVITE_TITLE")}`)
-        .setDescription(`${language(guild, "INVITE_DESCR")}`)
-        .setFooter({ text: `${language(guild, "INVITE_FOOTER")}` })
     
     await channel.send({ 
-        embeds: [inviteEmbed, testEmbed(guild), irrverbsEmbed(guild), studyEmbed(guild), profileEmbed(guild), configurationEmbed(guild)],
+        embeds: [mainEmbed(guild), testEmbed(guild), irrverbsEmbed(guild), studyEmbed(guild), profileEmbed(guild), configurationEmbed(guild)],
         components: [inviteButtons(guild)]
     })
 

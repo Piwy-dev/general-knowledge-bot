@@ -89,7 +89,7 @@ module.exports = {
                 name: `${language(guild, "SETLANG_CMD")}`,
                 value: `${language(guild, "SETLANG_CMD_DESCR")}`
             })
-            .setFooter({text: `${language(guild, "INVITE_FOOTER")}`});
+            .setFooter({text: `${language(guild, "INFO_FOOTER")}`});
     },
     inviteButtons: function (guild) {
         return new d.ActionRowBuilder()

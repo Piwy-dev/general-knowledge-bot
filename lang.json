@@ -46,9 +46,9 @@
             "dutch": "Informatie"
         },
         "INFO_THANKS": {
-            "english": "Thanks for using the General Knowledge bot! Learn hier how to use it. For more informations please refer to our **terms of services**: https://byp-studio.pyhaubruge.repl.co/terms-of-services.html.",
-            "french": "Merci d'utiliser le bot de Culture générale! Apprenez ici comment l'utiliser. Pour plus d'informations merci de vous referer à nos **conditions d'utilisation**: https://byp-studio.pyhaubruge.repl.co/terms-of-services.html.",
-            "dutch": "Bedankt voor het gebruik van de Algemene Kennis bot! Leer hier hoe je het moet gebruiken. Voor meer informatie verwijzen wij u naar onze **gebruiksvoorwaarden**: https://byp-studio.pyhaubruge.repl.co/terms-of-services.html."
+            "english": "Thanks for using the General Knowledge bot! Learn hier how to use it. For more informations please refer to our **terms of services** : https://byp-studio.pyhaubruge.repl.co/terms-of-services.html.",
+            "french": "Merci d'utiliser le bot de Culture générale! Apprenez ici comment l'utiliser. Pour plus d'informations merci de vous referer à nos **conditions d'utilisation** : https://byp-studio.pyhaubruge.repl.co/terms-of-services.html.",
+            "dutch": "Bedankt voor het gebruik van de Algemene Kennis bot! Leer hier hoe je het moet gebruiken. Voor meer informatie verwijzen wij u naar onze **gebruiksvoorwaarden** : https://byp-studio.pyhaubruge.repl.co/terms-of-services.html."
         },
         "GEN_INFO": {
             "english": "General informations",
@@ -56,14 +56,14 @@
             "dutch": "Generaal informatie"
         },
         "GEN_INFO_VALUE": {
-            "english": "This bot uses a connection to a database to save different data from the users, like their points. Each time you use a test command, you earn points if you answer correctly and lose it in the opposite case. For more informations please read our **privacy policy**: https://byp-studio.pyhaubruge.repl.co/privacy-policy.html.",
-            "french": "Ce bot utilise une connexion à une base de données qui sauvegarde les différentes données des utilisateurs, comme leurs points. Chaque fois que vous utilisez une commande de test vous gagnez des points si vous répondez correctement et vous en perdez dans le cas contraire. Pour plus d'information veuillez lire notre politique de confidentialité: https://byp-studio.pyhaubruge.repl.co/privacy-policy.html.",
-            "dutch": "Deze bot maakt verbinding met een database die de verschillende gegevens van de gebruikers opslaat, zoals hun punten. Elke keer dat u een testopdracht gebruikt, verdient u punten als u het juiste antwoord geeft en verliest u deze in het tegenovergestelde geval. Voor meer informatie lees onze **privacy policy**: https://byp-studio.pyhaubruge.repl.co/privacy-policy.html."
+            "english": "This bot uses a connection to a database to save different data from the users, like their points. Each time you use a test command, you earn points if you answer correctly and lose it in the opposite case. For more informations please read our **privacy policy** : https://byp-studio.pyhaubruge.repl.co/privacy-policy.html.",
+            "french": "Ce bot utilise une connexion à une base de données qui sauvegarde les différentes données des utilisateurs, comme leurs points. Chaque fois que vous utilisez une commande de test vous gagnez des points si vous répondez correctement et vous en perdez dans le cas contraire. Pour plus d'information veuillez lire notre politique de confidentialité : https://byp-studio.pyhaubruge.repl.co/privacy-policy.html.",
+            "dutch": "Deze bot maakt verbinding met een database die de verschillende gegevens van de gebruikers opslaat, zoals hun punten. Elke keer dat u een testopdracht gebruikt, verdient u punten als u het juiste antwoord geeft en verliest u deze in het tegenovergestelde geval. Voor meer informatie lees onze **privacy policy** : https://byp-studio.pyhaubruge.repl.co/privacy-policy.html."
         },
-        "CREDIT_FOOTER": {
-            "english": "Bot created by piwy_.",
-            "french": "Bot crée par piwy_.",
-            "dutch": "Bot gemaakt door piwy_."
+        "INFO_FOOTER": {
+            "english": "Bot created by piwy_ \nCurrent version : 1.3.7",
+            "french": "Bot crée par piwy_ \nVersion actuelle : 1.3.7",
+            "dutch": "Bot gemaakt door piwy_ \nHuidige versie : 1.3.7"
         },
         "TEST_CMD": {
             "english": "Tests commands",
@@ -136,9 +136,9 @@
             "dutch": "Bestudeer infinitief"
         },
         "STUDY_INF_DESCR": {
-            "english": "`/study-infinitive` documentation to come...",
-            "french": "`/study-infinitive` documentation à venir...",
-            "dutch": "`/study-infinitive` documentatie om te komen..."
+            "english": "`/study-infinitive` currently not working properly.",
+            "french": "`/study-infinitive` ne fonctionne pas correctement actuellement.",
+            "dutch": "`/study-infinitive` werkt momenteel niet goed."
         },
         "STUDY_IMPERF": {
             "english": "Study imperfect",
@@ -146,9 +146,9 @@
             "dutch": "Bestudeer imperfectum"
         },
         "STUDY_IMPERF_DESCR" : {
-            "english": "`/study-imperfect` documentation to come...",
-            "french": "`/study-imperfect` documentation à venir...",
-            "dutch": "`/study-imperfect` documentatie om te komen..."
+            "english": "`/study-imperfect` currently not working properly.",
+            "french": "`/study-imperfect` ne fonctionne pas correctement actuellement.",
+            "dutch": "`/study-imperfect` werkt momenteel niet goed."
         },
         "STUDY_PAST_PART": {
             "english": "Study past participle",
@@ -156,9 +156,9 @@
             "dutch": "Bestudeer voltooid deelwoord"
         },
         "STUDY_PAST_PART_DESCR": {
-            "english": "`/study-participle` documentation to come...",
-            "french": "`/study-participle` documentation à venir...",
-            "dutch": "`/study-participle` documentatie om te komen..."
+            "english": "`/study-participle` currently not working properly.",
+            "french": "`/study-participle` ne fonctionne pas correctement actuellement.",
+            "dutch": "`/study-participle` werkt momenteel niet goed."
         },
         "STUDY_CMD": {
             "english": "Study commands",
@@ -186,7 +186,7 @@
             "dutch": "Kaarten commando's"
         },
         "CARDS_CMD_DESCR": {
-            "english": "The `/cards` command displays a card about a topic in a subject. \n__Available subjects__ \n- Algebra : 1 topic, 4 cards \n- Algorithmics : 4 topic, 12 cards \n- Electronics : 2 topics, 10 cards",
+            "english": "The `/cards` command displays a card about a topic in a subject. \n__Available subjects__ \n- Algebra : 1 topic, 4 cards \n- Algorithmics : 5 topic, 18 cards \n- Electronics : 2 topics, 16 cards",
             "french": "La commande `/fiches` affiche une fiche sur un sujet dans une matière. \n__Matières disponibles__ \n- Algèbre : 1 sujet, 4 fiches \n- Algorithmique : 4 sujets, 12 fiches \n- Electronique : 2 sujets, 10 fiches",
             "dutch": "De `/kaarten` commando toont een kaart over een thema in een onderwerp. \n__Beschikbare onderwerpen__ \n- Algebra : 1 thema, 4 kaarten \n- Algoritmiek : 4 themas, 12 kaarten \n- Elektronica : 2 themas, 10 kaarten"
         },
@@ -524,21 +524,6 @@
             "english": "Select a card",
             "french": "Selectionne une fiche",
             "dutch": "Selecteer een kaart"
-        }, 
-        "INVITE_TITLE": {
-            "english": "Thanks !",
-            "french": "Merci !",
-            "dutch": "Bedankt !"
-        },
-        "INVITE_DESCR": {
-            "english": "Thanks for inviting me on your server ! The following embeds will explain you all the commands I have. Before using me you will have to register your language with the command `/language`.",
-            "french": "Merci de m'avoir invité sur ton serveur ! Les embeds suivants vont t'expliquer toutes les commandes que j'ai. Avant de m'utiliser tu devras enregistrer ta langue avec la commande `/language`.",
-            "dutch": "Bedankt om me op je server uit te nodigen ! De volgende embeds zullen je alle command's die ik heb uitleggen. Voordat je me gebruikt, moet je jouw taal registreren met het command `/language`."
-        },
-        "INVITE_FOOTER": {
-            "english": "If you have any question, you can join the support server with the button below.",
-            "french": "Si tu as des questions, tu peux rejoindre le serveur de support avec le bouton ci-desous.",
-            "dutch": "Als je vragen hebt, kun je de support server met de knop hieronder joinen."
         }
     }
 }
