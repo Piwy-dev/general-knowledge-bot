@@ -2,8 +2,8 @@ const d = require('discord.js')
 
 const profile = require('../../db/profile')
 const language = require('../../language')
+const guildLanguages = require('../../language').guildLanguages
 
-const { flags } = require('../../json/flags.json');
 const { contries } = require('../../json/contries.json');
 
 const modules = require('../../modules.js')
@@ -23,8 +23,13 @@ module.exports = {
             nl: "Test uw kennis van vlaggen",
         }),
 
-    async execute(interaction, client) {
-        const { guild, member, channel } = interaction
+    async execute(interaction) {
+        const { guild, member } = interaction
+
+        await interaction.deferReply({ ephemeral: true })
+
+        // Get the language used by the guild
+        const lang = guildLanguages[guild.id]
 
         if (!has_answered) {
             await interaction.reply({
@@ -36,7 +41,7 @@ module.exports = {
 
         has_answered = false;
 
-        let i = Math.floor(Math.random() * Math.floor(flags.length));
+        const i = Math.floor(Math.random() * contries.length)
 
         // Create the flag button
         const flagButton = new d.ActionRowBuilder()
@@ -47,9 +52,8 @@ module.exports = {
                 .setStyle(d.ButtonStyle.Success)
             )
 
-        // Reply to the interaction
-        await interaction.reply({
-            content: `${flags[i]}`,
+        await interaction.editReply({
+            content: `${contries[i]["flag"]}`,
             components: [flagButton],
         })
 
@@ -71,12 +75,15 @@ module.exports = {
 
             const flag = submitted.fields.getTextInputValue('flagsInput');
 
-            let propositions = contries[i].split(", ");
-            for (var prop = 0, p = propositions.length; p--;) {
+            let propositions = contries[i.toString()][lang].split(", ")
+            for (let p = 0; p < propositions.length; p++) {
                 let similarity = modules.CompareStrings(propositions[p].toLocaleLowerCase(), flag.toLowerCase())
                 // If an answer is correct
                 if (similarity > 0.5) {
-                    submitted.reply(`${member} ${language(guild, "WIN_XP")} 10 points!`);
+                    submitted.reply({
+                        content: `${member} ${language(guild, "WIN_XP")} 10 points!`,
+                        ephemeral: true
+                    });
                     interaction.editReply({
                         content: `${language(guild, "THX_ANSW")}`,
                         components: [],
@@ -86,7 +93,10 @@ module.exports = {
                 }
                 // If no answer is correct
                 else if (similarity <= 0.5 && p == 0) {
-                    submitted.reply(`${member} ${language(guild, "LOSE_XP")} 5 points ! ${language(guild, "ANSWER_WAS")} ${propositions[prop]}`);
+                    submitted.reply({
+                        content: `${member} ${language(guild, "LOSE_XP")} 5 points ! ${language(guild, "ANSWER_WAS")} ${propositions[0]}`,
+                        ephemeral: true
+                    });
                     interaction.editReply({
                         content: `${language(guild, "THX_ANSW")}`,
                         components: [],
