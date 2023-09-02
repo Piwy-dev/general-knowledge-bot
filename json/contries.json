@@ -3,682 +3,1320 @@
             "french": "Île de l'assantion",
             "english": "Ascension Island",
             "dutch": "Ascension Island",
-            "flag": ":flag_ac:"
+            "flag": ":flag_ac:",
+            "capital": {
+                "french": "Georgetown",
+                "english": "Georgetown",
+                "dutch": "Georgetown"
+            }
         }, {
             "french": "Andorre",
             "english": "Andorra",
             "dutch": "Andorra",
-            "flag": ":flag_ad:"
+            "flag": ":flag_ad:",
+            "capital": {
+                "french": "Andorre-la-Vieille",
+                "english": "Andorra la Vella",
+                "dutch": "Andorra la Vella"
+            }
         }, {
             "french": "Emirats Arabes Unis, EAU",
             "english": "United Arab Emirates, UAE",
             "dutch": "Verenigde Arabische Emiraten, VAE",
-            "flag": ":flag_ae:"
+            "flag": ":flag_ae:",
+            "capital": {
+                "french": "Abou Dabi",
+                "english": "Abu Dhabi",
+                "dutch": "Abu Dhabi"
+            }
         }, {
             "french": "Afghanistan",
             "english": "Afghanistan",
             "dutch": "Afghanistan",
-            "flag": ":flag_af:"
+            "flag": ":flag_af:",
+            "capital": {
+                "french": "Kaboul",
+                "english": "Kabul",
+                "dutch": "Kabul"
+            }
         }, {
             "french": "Antigua et Barbuda",
             "english": "Antigua and Barbuda",
             "dutch": "Antigua en Barbuda",
-            "flag": ":flag_ag:"
+            "flag": ":flag_ag:",
+            "capital": {
+                "french": "Saint John's",
+                "english": "Saint John's",
+                "dutch": "Saint John's"
+            }
         }, {
             "french": "Anguilla",
             "english": "Anguilla",
             "dutch": "Anguilla",
-            "flag": ":flag_ai:"
+            "flag": ":flag_ai:",
+            "capital": {
+                "french": "The Valley",
+                "english": "The Valley",
+                "dutch": "The Valley"
+            }
         }, {
             "french": "Albanie",
             "english": "Albania",
             "dutch": "Albanië",
-            "flag": ":flag_al:"
+            "flag": ":flag_al:",
+            "capital": {
+                "french": "Tirana",
+                "english": "Tirana",
+                "dutch": "Tirana"
+            }
         }, {
             "french": "Arménie",
             "english": "Armenia",
             "dutch": "Armenië",
-            "flag": ":flag_am:"
+            "flag": ":flag_am:",
+            "capital": {
+                "french": "Erevan",
+                "english": "Yerevan",
+                "dutch": "Yerevan"
+            }
         }, {
             "french": "Angola",
             "english": "Angola",
             "dutch": "Angola",
-            "flag": ":flag_ao:"
+            "flag": ":flag_ao:",
+            "capital": {
+                "french": "Luanda",
+                "english": "Luanda",
+                "dutch": "Luanda"
+            }
         }, {
             "french": "Antarctique",
             "english": "Antarctica",
             "dutch": "Antarctica",
-            "flag": ":flag_aq:"
+            "flag": ":flag_aq:",
+            "capital": null
         }, {
             "french": "Argentine",
             "english": "Argentina",
             "dutch": "Argentinië",
-            "flag": ":flag_ar:"
+            "flag": ":flag_ar:",
+            "capital": {
+                "french": "Buenos Aires",
+                "english": "Buenos Aires",
+                "dutch": "Buenos Aires"
+            }
         }, {
             "french": "Samoa Américaines",
             "english": "American Samoa",
             "dutch": "Amerikaans Samoa",
-            "flag": ":flag_as:"
+            "flag": ":flag_as:",
+            "capital": {
+                "french": "Pago Pago",
+                "english": "Pago Pago",
+                "dutch": "Pago Pago"
+            }
         }, {
             "french": "Autriche",
             "english": "Austria",
             "dutch": "Oostenrijk",
-            "flag": ":flag_at:"
+            "flag": ":flag_at:",
+            "capital": {
+                "french": "Vienne",
+                "english": "Vienna",
+                "dutch": "Wenen"
+            }
         }, {
             "french": "Australie",
             "english": "Australia",
             "dutch": "Australië",
-            "flag": ":flag_au:"
+            "flag": ":flag_au:",
+            "capital": {
+                "french": "Canberra",
+                "english": "Canberra",
+                "dutch": "Canberra"
+            }
         }, {
             "french": "Aruba",
             "english": "Aruba",
             "dutch": "Aruba",
-            "flag": ":flag_aw:"
+            "flag": ":flag_aw:",
+            "capital": {
+                "french": "Oranjestad",
+                "english": "Oranjestad",
+                "dutch": "Oranjestad"
+            }
         }, {
             "french": "Azerbaïdjan",
             "english": "Azerbaijan",
             "dutch": "Azerbeidzjan",
-            "flag": ":flag_az:"
+            "flag": ":flag_az:",
+            "capital": {
+                "french": "Bakou",
+                "english": "Baku",
+                "dutch": "Bakoe"
+            }
         }, {
             "french": "Bosnie-Herzégovine, Bosnie",
             "english": "Bosnia and Herzegovina, Bosnia",
             "dutch": "Bosnië en Herzegovina, Bosnië",
-            "flag": ":flag_ba:"
+            "flag": ":flag_ba:",
+            "capital": {
+                "french": "Sarajevo",
+                "english": "Sarajevo",
+                "dutch": "Sarajevo"
+            }
         }, {
             "french": "Barbade",
             "english": "Barbados",
             "dutch": "Barbados",
-            "flag": ":flag_bb:"
+            "flag": ":flag_bb:",
+            "capital": {
+                "french": "Bridgetown",
+                "english": "Bridgetown",
+                "dutch": "Bridgetown"
+            }
         }, {
             "french": "Bangladesh",
             "english": "Bangladesh",
             "dutch": "Bangladesh",
-            "flag": ":flag_bd:"
+            "flag": ":flag_bd:",
+            "capital": {
+                "french": "Dacca",
+                "english": "Dhaka",
+                "dutch": "Dhaka"
+            }
         }, {
             "french": "Belgique",
             "english": "Belgium",
             "dutch": "België",
-            "flag": ":flag_be:"
+            "flag": ":flag_be:",
+            "capital": {
+                "french": "Bruxelles",
+                "english": "Brussels",
+                "dutch": "Brussel"
+            }
         }, {
             "french": "Burkina Faso",
             "english": "Burkina Faso",
             "dutch": "Burkina Faso",
-            "flag": ":flag_bf:"
+            "flag": ":flag_bf:",
+            "capital": {
+                "french": "Ouagadougou",
+                "english": "Ouagadougou",
+                "dutch": "Ouagadougou"
+            }
         }, {
             "french": "Bulgarie",
             "english": "Bulgaria",
             "dutch": "Bulgarije",
-            "flag": ":flag_bg:"
+            "flag": ":flag_bg:",
+            "capital": {
+                "french": "Sofia",
+                "english": "Sofia",
+                "dutch": "Sofia"
+            }
         }, {
             "french": "Bahreïn",
             "english": "Bahrain",
             "dutch": "Bahrein",
-            "flag": ":flag_bh:"
+            "flag": ":flag_bh:",
+            "capital": {
+                "french": "Manama",
+                "english": "Manama",
+                "dutch": "Manama"
+            }
         }, {
             "french": "Burundi",
             "english": "Burundi",
             "dutch": "Burundi",
-            "flag": ":flag_bi:"
+            "flag": ":flag_bi:",
+            "capital": {
+                "french": "Bujumbura",
+                "english": "Bujumbura",
+                "dutch": "Bujumbura"
+            }
         }, {
             "french": "Bénin",
             "english": "Benin",
             "dutch": "Benin",
-            "flag": ":flag_bj:"
+            "flag": ":flag_bj:",
+            "capital": {
+                "french": "Porto-Novo",
+                "english": "Porto-Novo",
+                "dutch": "Porto-Novo"
+            }
         }, {
             "french": "Saint-Barthélemy",
             "english": "Saint Barthélemy",
             "dutch": "Saint Barthélemy",
-            "flag": ":flag_bl:"
+            "flag": ":flag_bl:",
+            "capital": {
+                "french": "Gustavia",
+                "english": "Gustavia",
+                "dutch": "Gustavia"
+            }
         }, {
             "french": "Bermudes",
             "english": "Bermuda",
             "dutch": "Bermuda",
-            "flag": ":flag_bm:"
+            "flag": ":flag_bm:",
+            "capital": {
+                "french": "Hamilton",
+                "english": "Hamilton",
+                "dutch": "Hamilton"
+            }
         }, {
             "french": "Brunei",
             "english": "Brunei",
             "dutch": "Brunei",
-            "flag": ":flag_bn:"
+            "flag": ":flag_bn:",
+            "capital": {
+                "french": "Bandar Seri Begawan",
+                "english": "Bandar Seri Begawan",
+                "dutch": "Bandar Seri Begawan"
+            }
         }, {
             "french": "Bolivie",
             "english": "Bolivia",
             "dutch": "Bolivia",
-            "flag": ":flag_bo:"
+            "flag": ":flag_bo:",
+            "capital": {
+                "french": "Sucre",
+                "english": "Sucre",
+                "dutch": "Sucre"
+            }
         }, {
             "french": "Caraïbes Pays-Bas",
             "english": "Caribbean Netherlands",
             "dutch": "Caribisch Nederland",
-            "flag": ":flag_bq:"
+            "flag": ":flag_bq:",
+            "capital": {
+                "french": "Kralendijk",
+                "english": "Kralendijk",
+                "dutch": "Kralendijk"
+            }
         }, {
             "french": "Brésil",
             "english": "Brazil",
             "dutch": "Brazilië",
-            "flag": ":flag_br:"
+            "flag": ":flag_br:",
+            "capital": {
+                "french": "Brasilia",
+                "english": "Brasilia",
+                "dutch": "Brasilia"
+            }
         }, {
             "french": "Bahamas",
             "english": "Bahamas",
             "dutch": "Bahama's",
-            "flag": ":flag_bs:"
+            "flag": ":flag_bs:",
+            "capital": {
+                "french": "Nassau",
+                "english": "Nassau",
+                "dutch": "Nassau"
+            }
         }, {
             "french": "Bhoutan",
             "english": "Bhutan",
             "dutch": "Bhutan",
-            "flag": ":flag_bt:"
+            "flag": ":flag_bt:",
+            "capital": {
+                "french": "Thimphou",
+                "english": "Thimphu",
+                "dutch": "Thimphu"
+            }
         }, {
             "french": "Botswana",
             "english": "Botswana",
             "dutch": "Botswana",
-            "flag": ":flag_bw:"
+            "flag": ":flag_bw:",
+            "capital": {
+                "french": "Gaborone",
+                "english": "Gaborone",
+                "dutch": "Gaborone"
+            }
         }, {
             "french": "Biélorussie",
             "english": "Belarus",
             "dutch": "Wit-Rusland",
-            "flag": ":flag_by:"
+            "flag": ":flag_by:",
+            "capital": {
+                "french": "Minsk",
+                "english": "Minsk",
+                "dutch": "Minsk"
+            }
         }, {
             "french": "Belize",
             "english": "Belize",
             "dutch": "Belize",
-            "flag": ":flag_bz:"
+            "flag": ":flag_bz:",
+            "capital": {
+                "french": "Belmopan",
+                "english": "Belmopan",
+                "dutch": "Belmopan"
+            }
         }, {
             "french": "Canada",
             "english": "Canada",
             "dutch": "Canada",
-            "flag": ":flag_ca:"
+            "flag": ":flag_ca:",
+            "capital": {
+                "french": "Ottawa",
+                "english": "Ottawa",
+                "dutch": "Ottawa"
+            }
         }, {
             "french": "Îles Cocos, Îles Keeling",
             "english": "Cocos Islands, Keeling Islands",
             "dutch": "Cocoseilanden, Keelingeilanden",
-            "flag": ":flag_cc:"
+            "flag": ":flag_cc:",
+            "capital": {
+                "french": "West Island",
+                "english": "West Island",
+                "dutch": "West Island"
+            }
         }, {
             "french": "République Démocratique du Congo, RDC",
             "english": "Democratic Republic of the Congo, DRC",
             "dutch": "Congo-Kinshasa, DRC",
-            "flag": ":flag_cd:"
+            "flag": ":flag_cd:",
+            "capital": {
+                "french": "Kinshasa",
+                "english": "Kinshasa",
+                "dutch": "Kinshasa"
+            }
         }, {
             "french": "République Centrafricaine, RCA",
             "english": "Central African Republic, CAR",
             "dutch": "Centraal-Afrikaanse Republiek, CAR",
-            "flag": ":flag_cf:"
+            "flag": ":flag_cf:",
+            "capital": {
+                "french": "Bangui",
+                "english": "Bangui",
+                "dutch": "Bangui"
+            }
         }, {
             "french": "Congo",
             "english": "Republic of the Congo, Congo-Brazzaville, Congo",
             "dutch": "Congo-Brazzaville, Congo",
-            "flag": ":flag_cg:"
+            "flag": ":flag_cg:",
+            "capital": {
+                "french": "Brazzaville",
+                "english": "Brazzaville",
+                "dutch": "Brazzaville"
+            }
         }, {
             "french": "Suisse",
             "english": "Switzerland",
             "dutch": "Zwitserland",
-            "flag": ":flag_ch:"
+            "flag": ":flag_ch:",
+            "capital": {
+                "french": "Berne",
+                "english": "Bern",
+                "dutch": "Bern"
+            }
         }, {
             "french": "Côte d’Ivoire",
             "english": "Ivory Coast",
             "dutch": "Ivoorkust",
-            "flag": ":flag_ci:"
+            "flag": ":flag_ci:",
+            "capital": {
+                "french": "Yamoussoukro",
+                "english": "Yamoussoukro",
+                "dutch": "Yamoussoukro"
+            }
         }, {
             "french": "Îles cook",
             "english": "Cook Islands",
             "dutch": "Cookeilanden",
-            "flag": ":flag_ck:"
+            "flag": ":flag_ck:",
+            "capital": {
+                "french": "Avarua",
+                "english": "Avarua",
+                "dutch": "Avarua"
+            }
         }, {
             "french": "Chili",
             "english": "Chile",
             "dutch": "Chili",
-            "flag": ":flag_cl:"
+            "flag": ":flag_cl:",
+            "capital": {
+                "french": "Santiago",
+                "english": "Santiago",
+                "dutch": "Santiago"
+            }
         }, {
             "french": "Cameroun",
             "english": "Cameroon",
             "dutch": "Kameroen",
-            "flag": ":flag_cm:"
+            "flag": ":flag_cm:",
+            "capital": {
+                "french": "Yaoundé",
+                "english": "Yaoundé",
+                "dutch": "Yaoundé"
+            }
         }, {
             "french": "Chine",
             "english": "China",
             "dutch": "China",
-            "flag": ":flag_cn:"
+            "flag": ":flag_cn:",
+            "capital": {
+                "french": "Pékin",
+                "english": "Beijing",
+                "dutch": "Peking"
+            }
         }, {
             "french": "Colombie",
             "english": "Colombia",
             "dutch": "Colombia",
-            "flag": ":flag_co:"
+            "flag": ":flag_co:",
+            "capital": {
+                "french": "Bogota",
+                "english": "Bogota",
+                "dutch": "Bogota"
+            }
         }, {
             "french": "Costa Rica",
             "english": "Costa Rica",
             "dutch": "Costa Rica",
-            "flag": ":flag_cr:"
+            "flag": ":flag_cr:",
+            "capital": {
+                "french": "San José",
+                "english": "San José",
+                "dutch": "San José"
+            }
         }, {
             "french": "Cuba",
             "english": "Cuba",
             "dutch": "Cuba",
-            "flag": ":flag_cu:"
+            "flag": ":flag_cu:",
+            "capital": {
+                "french": "La Havane",
+                "english": "Havana",
+                "dutch": "Havana"
+            }
         }, {
             "french": "Cap-Vert",
             "english": "Cape Verde",
             "dutch": "Kaapverdië",
-            "flag": ":flag_cv:"
+            "flag": ":flag_cv:",
+            "capital": {
+                "french": "Praia",
+                "english": "Praia",
+                "dutch": "Praia"
+            }
         }, {
             "french": "Curaçao",
             "english": "Curacao",
             "dutch": "Curaçao",
-            "flag": ":flag_cw:"
+            "flag": ":flag_cw:",
+            "capital": {
+                "french": "Willemstad",
+                "english": "Willemstad",
+                "dutch": "Willemstad"
+            }
         }, {
             "french": "Île Christmas",
             "english": "Christmas Island",
             "dutch": "Christmaseiland",
-            "flag": ":flag_cx:"
+            "flag": ":flag_cx:",
+            "capital": {
+                "french": "Flying Fish Cove",
+                "english": "Flying Fish Cove",
+                "dutch": "Flying Fish Cove"
+            }
         }, {
             "french": "Chypre",
             "english": "Cyprus",
             "dutch": "Cyprus",
-            "flag": ":flag_cy:"
+            "flag": ":flag_cy:",
+            "capital": {
+                "french": "Nicosie",
+                "english": "Nicosia",
+                "dutch": "Nicosia"
+            }
         }, {
             "french": "Tchéquie",
             "english": "Czech Republic",
             "dutch": "Tsjechië",
-            "flag": ":flag_cz:"
+            "flag": ":flag_cz:",
+            "capital": {
+                "french": "Prague",
+                "english": "Prague",
+                "dutch": "Praag"
+            }
         }, {
             "french": "Allemagne",
             "english": "Germany",
             "dutch": "Duitsland",
-            "flag": ":flag_de:"
+            "flag": ":flag_de:",
+            "capital": {
+                "french": "Berlin",
+                "english": "Berlin",
+                "dutch": "Berlijn"
+            }
         }, {
             "french": "Diego Garcia",
             "english": "Diego Garcia",
             "dutch": "Diego Garcia",
-            "flag": ":flag_dg:"
+            "flag": ":flag_dg:",
+            "capital": null
         }, {
             "french": "Djibouti",
             "english": "Djibouti",
             "dutch": "Djibouti",
-            "flag": ":flag_dj:"
+            "flag": ":flag_dj:",
+            "capital": {
+                "french": "Djibouti",
+                "english": "Djibouti",
+                "dutch": "Djibouti"
+            }
         }, {
             "french": "Danemark",
             "english": "Denmark",
             "dutch": "Denemarken",
-            "flag": ":flag_dk:"
+            "flag": ":flag_dk:",
+            "capital": {
+                "french": "Copenhague",
+                "english": "Copenhagen",
+                "dutch": "Kopenhagen"
+            }
         }, {
             "french": "Dominique",
             "english": "Dominica",
             "dutch": "Dominica",
-            "flag": ":flag_dm:"
+            "flag": ":flag_dm:",
+            "capital": {
+                "french": "Roseau",
+                "english": "Roseau",
+                "dutch": "Roseau"
+            }
         }, {
             "french": "République dominicaine",
             "english": "Dominican Republic",
             "dutch": "Dominicaanse Republiek",
-            "flag": ":flag_do:"
+            "flag": ":flag_do:",
+            "capital": {
+                "french": "Saint-Domingue",
+                "english": "Santo Domingo",
+                "dutch": "Santo Domingo"
+            }
         }, {
             "french": "Algérie",
             "english": "Algeria",
             "dutch": "Algerije",
-            "flag": ":flag_dz:"
+            "flag": ":flag_dz:",
+            "capital": {
+                "french": "Alger",
+                "english": "Algiers",
+                "dutch": "Algiers"
+            }
         }, {
             "french": "Équateur",
             "english": "Ecuador",
             "dutch": "Ecuador",
-            "flag": ":flag_ec:"
+            "flag": ":flag_ec:",
+            "capital": {
+                "french": "Quito",
+                "english": "Quito",
+                "dutch": "Quito"
+            }
         }, {
             "french": "Estonie",
             "english": "Estonia",
             "dutch": "Estland",
-            "flag": ":flag_ee:"
+            "flag": ":flag_ee:",
+            "capital": {
+                "french": "Tallinn",
+                "english": "Tallinn",
+                "dutch": "Tallinn"
+            }
         }, {
             "french": "Égypte",
             "english": "Egypt",
             "dutch": "Egypte",
-            "flag": ":flag_eg:"
+            "flag": ":flag_eg:",
+            "capital": {
+                "french": "Le Caire",
+                "english": "Cairo",
+                "dutch": "Caïro"
+            }
         }, {
             "french": "Sahara occidental",
             "english": "Western Sahara",
             "dutch": "Westelijke Sahara",
-            "flag": ":flag_eh:"
+            "flag": ":flag_eh:",
+            "capital": {
+                "french": "El Aaiún",
+                "english": "El Aaiún",
+                "dutch": "El Aaiún"
+            }
         }, {
             "french": "Érythrée",
             "english": "Eritrea",
             "dutch": "Eritrea",
-            "flag": ":flag_er:"
+            "flag": ":flag_er:",
+            "capital": {
+                "french": "Asmara",
+                "english": "Asmara",
+                "dutch": "Asmara"
+            }
         }, {
             "french": "Espagne",
             "english": "Spain",
             "dutch": "Spanje",
-            "flag": ":flag_es:"
+            "flag": ":flag_es:",
+            "capital": {
+                "french": "Madrid",
+                "english": "Madrid",
+                "dutch": "Madrid"
+            }
         }, {
             "french": "Éthiopie",
             "english": "Ethiopia",
             "dutch": "Ethiopië",
-            "flag": ":flag_et:"
+            "flag": ":flag_et:",
+            "capital": {
+                "french": "Addis-Abeba",
+                "english": "Addis Ababa",
+                "dutch": "Addis Abeba"
+            }
         }, {
             "french": "Union européenne",
             "english": "European Union",
             "dutch": "Europese Unie",
-            "flag": ":flag_eu:"
+            "flag": ":flag_eu:",
+            "capital": {
+                "french": "Bruxelles, Luxembourg, Strasbourg, Francfort",
+                "english": "Brussels, Luxembourg, Strasbourg, Frankfurt",
+                "dutch": "Brussel, Luxemburg, Straatsburg, Frankfurt"
+            }
         }, {
             "french": "Finlande",
             "english": "Finland",
             "dutch": "Finland",
-            "flag": ":flag_fi:"
+            "flag": ":flag_fi:",
+            "capital": {
+                "french": "Helsinki",
+                "english": "Helsinki",
+                "dutch": "Helsinki"
+            }
         }, {
             "french": "Fidji",
             "english": "Fiji",
             "dutch": "Fiji",
-            "flag": ":flag_fj:"
+            "flag": ":flag_fj:",
+            "capital": {
+                "french": "Suva",
+                "english": "Suva",
+                "dutch": "Suva"
+            }
         }, {
             "french": "Îles Falkland",
             "english": "Falkland Islands",
             "dutch": "Falklandeilanden",
-            "flag": ":flag_fk:"
+            "flag": ":flag_fk:",
+            "capital": {
+                "french": "Stanley",
+                "english": "Stanley",
+                "dutch": "Stanley"
+            }
         }, {
             "french": "Micronésie",
             "english": "Micronesia",
             "dutch": "Micronesia",
-            "flag": ":flag_fm:"
+            "flag": ":flag_fm:",
+            "capital": {
+                "french": "Palikir",
+                "english": "Palikir",
+                "dutch": "Palikir"
+            }
         }, {
             "french": "Îles Féroé",
             "english": "Faroe Islands",
             "dutch": "Faeröer",
-            "flag": ":flag_fo:"
+            "flag": ":flag_fo:",
+            "capital": {
+                "french": "Tórshavn",
+                "english": "Tórshavn",
+                "dutch": "Tórshavn"
+            }
         }, {
             "french": "France",
             "english": "France",
             "dutch": "Frankrijk",
-            "flag": ":flag_fr:"
+            "flag": ":flag_fr:",
+            "capital": {
+                "french": "Paris",
+                "english": "Paris",
+                "dutch": "Parijs"
+            }
         }, {
             "french": "Gabon",
             "english": "Gabon",
             "dutch": "Gabon",
-            "flag": ":flag_ga:"
+            "flag": ":flag_ga:",
+            "capital": {
+                "french": "Libreville",
+                "english": "Libreville",
+                "dutch": "Libreville"
+            }
         }, {
             "french": "Royaume-Uni, RU",
             "english": "United Kingdom, UK",
             "dutch": "Verenigd Koninkrijk, VK",
-            "flag": ":flag_gb:"
+            "flag": ":flag_gb:",
+            "capital": {
+                "french": "Londres",
+                "english": "London",
+                "dutch": "Londen"
+            }
         }, {
             "french": "Grenade",
             "english": "Grenada",
             "dutch": "Grenada",
-            "flag": ":flag_gd:"
+            "flag": ":flag_gd:",
+            "capital": {
+                "french": "Saint-Georges",
+                "english": "Saint George's",
+                "dutch": "Saint George's"
+            }
         }, {
             "french": "Géorgie",
             "english": "Georgia",
             "dutch": "Georgië",
-            "flag": ":flag_ge:"
+            "flag": ":flag_ge:",
+            "capital": {
+                "french": "Tbilissi",
+                "english": "Tbilisi",
+                "dutch": "Tbilisi"
+            }
         }, {
             "french": "Guyane française",
             "english": "French Guiana",
             "dutch": "Frans-Guyana",
-            "flag": ":flag_gf:"
+            "flag": ":flag_gf:",
+            "capital": {
+                "french": "Cayenne",
+                "english": "Cayenne",
+                "dutch": "Cayenne"
+            }
         }, {
             "french": "Guernesey",
             "english": "Guernsey",
             "dutch": "Guernsey",
-            "flag": ":flag_gg:"
+            "flag": ":flag_gg:",
+            "capital": {
+                "french": "Saint-Pierre-Port",
+                "english": "Saint Peter Port",
+                "dutch": "Saint Peter Port"
+            }
         }, {
             "french": "Ghana",
             "english": "Ghana",
             "dutch": "Ghana",
-            "flag": ":flag_gh:"
+            "flag": ":flag_gh:",
+            "capital": {
+                "french": "Accra",
+                "english": "Accra",
+                "dutch": "Accra"
+            }
         }, {
             "french": "Gibraltar",
             "english": "Gibraltar",
             "dutch": "Gibraltar",
-            "flag": ":flag_gi:"
+            "flag": ":flag_gi:",
+            "capital": {
+                "french": "Gibraltar",
+                "english": "Gibraltar",
+                "dutch": "Gibraltar"
+            }
         }, {
             "french": "Groenland",
             "english": "Greenland",
             "dutch": "Groenland",
-            "flag": ":flag_gl:"
+            "flag": ":flag_gl:",
+            "capital": {
+                "french": "Nuuk",
+                "english": "Nuuk",
+                "dutch": "Nuuk"
+            }
         }, {
             "french": "Gambie",
             "english": "Gambia",
             "dutch": "Gambia",
-            "flag": ":flag_gm:"
+            "flag": ":flag_gm:",
+            "capital": {
+                "french": "Banjul",
+                "english": "Banjul",
+                "dutch": "Banjul"
+            }
         }, {
             "french": "Guinée",
             "english": "Guinea",
             "dutch": "Guinee",
-            "flag": ":flag_gn:"
+            "flag": ":flag_gn:",
+            "capital": {
+                "french": "Conakry",
+                "english": "Conakry",
+                "dutch": "Conakry"
+            }
         }, {
             "french": "Guadeloupe",
             "english": "Guadeloupe",
             "dutch": "Guadeloupe",
-            "flag": ":flag_gp:"
+            "flag": ":flag_gp:",
+            "capital": {
+                "french": "Basse-Terre",
+                "english": "Basse-Terre",
+                "dutch": "Basse-Terre"
+            }
         }, {
             "french": "Guinée équatoriale",
             "english": "Equatorial Guinea",
             "dutch": "Equatoriaal-Guinea",
-            "flag": ":flag_gq:"
+            "flag": ":flag_gq:",
+            "capital": {
+                "french": "Malabo",
+                "english": "Malabo",
+                "dutch": "Malabo"
+            }
         }, {
             "french": "Grèce",
             "english": "Greece",
             "dutch": "Griekenland",
-            "flag": ":flag_gr:"
+            "flag": ":flag_gr:",
+            "capital": {
+                "french": "Athènes",
+                "english": "Athens",
+                "dutch": "Athene"
+            }
         }, {
             "french": "Géorgie du Sud et îles Sandwich du Sud, Géorgie du Sud, îles Sandwich du Sud",
             "english": "South Georgia and the South Sandwich Islands, South Georgia, South Sandwich Islands",
             "dutch": "Zuid-Georgia en de Zuidelijke Sandwicheilanden, Zuid-Georgia, Zuidelijke Sandwicheilanden",
-            "flag": ":flag_gs:"
+            "flag": ":flag_gs:",
+            "capital": {
+                "french": "Grytviken",
+                "english": "Grytviken",
+                "dutch": "Grytviken"
+            }
         },
         {
             "french": "Guatemala",
             "english": "Guatemala",
             "dutch": "Guatemala",
-            "flag": ":flag_gt:"
+            "flag": ":flag_gt:",
+            "capital": {
+                "french": "Guatemala",
+                "english": "Guatemala City",
+                "dutch": "Guatemala-Stad"
+            }
         },
         {
             "french": "Guam",
             "english": "Guam",
             "dutch": "Guam",
-            "flag": ":flag_gu:"
+            "flag": ":flag_gu:",
+            "capital": {
+                "french": "Hagåtña",
+                "english": "Hagåtña",
+                "dutch": "Hagåtña"
+            }
         },
         {
             "french": "Guinée-Bissau",
             "english": "Guinea-Bissau",
             "dutch": "Guinee-Bissau",
-            "flag": ":flag_gw:"
+            "flag": ":flag_gw:",
+            "capital": {
+                "french": "Bissau",
+                "english": "Bissau",
+                "dutch": "Bissau"
+            }
         },
         {
             "french": "Guyane",
             "english": "Guyana",
             "dutch": "Guyana",
-            "flag": ":flag_gy:"
+            "flag": ":flag_gy:",
+            "capital": {
+                "french": "Georgetown",
+                "english": "Georgetown",
+                "dutch": "Georgetown"
+            }
         },
         {
             "french": "Hong Kong",
             "english": "Hong Kong",
             "dutch": "Hongkong",
-            "flag": ":flag_hk:"
+            "flag": ":flag_hk:",
+            "capital": {
+                "french": "Hong Kong",
+                "english": "Hong Kong",
+                "dutch": "Hongkong"
+            }
         },
         {
             "french": "Îles Heard et McDonald, Îles Heard, Îles McDonald",
             "english": "Heard Island and McDonald Islands, Heard Island, McDonald Islands",
             "dutch": "Heard- en McDonaldeilanden, Heard-eiland, McDonaldeilanden",
-            "flag": ":flag_hm:"
+            "flag": ":flag_hm:",
+            "capital": null
         },
         {
             "french": "Honduras",
             "english": "Honduras",
             "dutch": "Honduras",
-            "flag": ":flag_hn:"
+            "flag": ":flag_hn:",
+            "capital": {
+                "french": "Tegucigalpa",
+                "english": "Tegucigalpa",
+                "dutch": "Tegucigalpa"
+            }
         },
         {
             "french": "Croatie",
             "english": "Croatia",
             "dutch": "Kroatië",
-            "flag": ":flag_hr:"
+            "flag": ":flag_hr:",
+            "capital": {
+                "french": "Zagreb",
+                "english": "Zagreb",
+                "dutch": "Zagreb"
+            }
         },
         {
             "french": "Haïti",
             "english": "Haiti",
             "dutch": "Haïti",
-            "flag": ":flag_ht:"
+            "flag": ":flag_ht:",
+            "capital": {
+                "french": "Port-au-Prince",
+                "english": "Port-au-Prince",
+                "dutch": "Port-au-Prince"
+            }
         },
         {
             "french": "Hongrie",
             "english": "Hungary",
             "dutch": "Hongarije",
-            "flag": ":flag_hu:"
+            "flag": ":flag_hu:",
+            "capital": {
+                "french": "Budapest",
+                "english": "Budapest",
+                "dutch": "Boedapest"
+            }
         },
         {
             "french": "Canaries",
             "english": "Canary Islands",
             "dutch": "Canarische Eilanden",
-            "flag": ":flag_ic:"
+            "flag": ":flag_ic:",
+            "capital": {
+                "french": "Santa Cruz de Tenerife",
+                "english": "Santa Cruz de Tenerife",
+                "dutch": "Santa Cruz de Tenerife"
+            }
         },
         {
             "french": "Indonésie",
             "english": "Indonesia",
             "dutch": "Indonesië",
-            "flag": ":flag_id:"
+            "flag": ":flag_id:",
+            "capital": {
+                "french": "Jakarta",
+                "english": "Jakarta",
+                "dutch": "Jakarta"
+            }
         },
         {
             "french": "Irlande",
             "english": "Ireland",
             "dutch": "Ierland",
-            "flag": ":flag_ie:"
+            "flag": ":flag_ie:",
+            "capital": {
+                "french": "Dublin",
+                "english": "Dublin",
+                "dutch": "Dublin"
+            }
         },
         {
             "french": "Israël",
             "english": "Israel",
             "dutch": "Israël",
-            "flag": ":flag_il:"
+            "flag": ":flag_il:",
+            "capital": {
+                "french": "Jérusalem",
+                "english": "Jerusalem",
+                "dutch": "Jeruzalem"
+            }
         },
         {
             "french": "Île de Man",
             "english": "Man Island",
             "dutch": "Maneiland",
-            "flag": ":flag_im:"
+            "flag": ":flag_im:",
+            "capital": {
+                "french": "Douglas",
+                "english": "Douglas",
+                "dutch": "Douglas"
+            }
         },
         {
             "french": "Inde",
             "english": "India",
             "dutch": "India",
-            "flag": ":flag_in:"
+            "flag": ":flag_in:",
+            "capital": {
+                "french": "New Delhi",
+                "english": "New Delhi",
+                "dutch": "New Delhi"
+            }
         }, {
             "french": "Territoire britannique de l’océan Indien",
             "english": "British Indian Ocean Territory",
             "dutch": "Britse Gebieden in de Indische Oceaan",
-            "flag": ":flag_io:"
+            "flag": ":flag_io:",
+            "capital": {
+                "french": "Diego Garcia",
+                "english": "Diego Garcia",
+                "dutch": "Diego Garcia"
+            }
         },
         {
             "french": "Irak",
             "english": "Iraq",
             "dutch": "Irak",
-            "flag": ":flag_iq:"
+            "flag": ":flag_iq:",
+            "capital": {
+                "french": "Bagdad",
+                "english": "Baghdad",
+                "dutch": "Bagdad"
+            }
         }, {
             "french": "Iran",
             "english": "Iran",
             "dutch": "Iran",
-            "flag": ":flag_ir:"
+            "flag": ":flag_ir:",
+            "capital": {
+                "french": "Téhéran",
+                "english": "Tehran",
+                "dutch": "Teheran"
+            }
         }, {
             "french": "Islande",
             "english": "Iceland",
             "dutch": "IJsland",
-            "flag": ":flag_is:"
+            "flag": ":flag_is:",
+            "capital": {
+                "french": "Reykjavik",
+                "english": "Reykjavik",
+                "dutch": "Reykjavik"
+            }
         }, {
             "french": "Italie",
             "english": "Italy",
             "dutch": "Italië",
-            "flag": ":flag_it:"
+            "flag": ":flag_it:",
+            "capital": {
+                "french": "Rome",
+                "english": "Rome",
+                "dutch": "Rome"
+            }
         }, {
             "french": "Jersey",
             "english": "Jersey",
             "dutch": "Jersey",
-            "flag": ":flag_je:"
+            "flag": ":flag_je:",
+            "capital": {
+                "french": "Saint-Hélier",
+                "english": "Saint Helier",
+                "dutch": "Saint Helier"
+            }
         },
         {
             "french": "Jamaïque",
             "english": "Jamaica",
             "dutch": "Jamaica",
-            "flag": ":flag_jm:"
+            "flag": ":flag_jm:",
+            "capital": {
+                "french": "Kingston",
+                "english": "Kingston",
+                "dutch": "Kingston"
+            }
         },
         {
             "french": "Jordanie",
             "english": "Jordan",
             "dutch": "Jordanië",
-            "flag": ":flag_jo:"
+            "flag": ":flag_jo:",
+            "capital": {
+                "french": "Amman",
+                "english": "Amman",
+                "dutch": "Amman"
+            }
         },
         {
             "french": "Japon",
             "english": "Japan",
             "dutch": "Japan",
-            "flag": ":flag_jp:"
+            "flag": ":flag_jp:",
+            "capital": {
+                "french": "Tokyo",
+                "english": "Tokyo",
+                "dutch": "Tokio"
+            }
         },
         {
             "french": "Kenya",
             "english": "Kenya",
             "dutch": "Kenia",
-            "flag": ":flag_ke:"
+            "flag": ":flag_ke:",
+            "capital": {
+                "french": "Nairobi",
+                "english": "Nairobi",
+                "dutch": "Nairobi"
+            }
         }, {
             "french": "Kirghizistan",
             "english": "Kyrgyzstan",
             "dutch": "Kirgizië",
-            "flag": ":flag_kg:"
+            "flag": ":flag_kg:",
+            "capital": {
+                "french": "Bichkek",
+                "english": "Bishkek",
+                "dutch": "Bisjkek"
+            }
         }, {
             "french": "Cambodge",
             "english": "Cambodia",
             "dutch": "Cambodja",
-            "flag": ":flag_kh:"
+            "flag": ":flag_kh:",
+            "capital": {
+                "french": "Phnom Penh",
+                "english": "Phnom Penh",
+                "dutch": "Phnom-Penh"
+            }
         },
         {
             "french": "Kiribati",
             "english": "Kiribati",
             "dutch": "Kiribati",
-            "flag": ":flag_ki:"
+            "flag": ":flag_ki:",
+            "capital": {
+                "french": "Tarawa-Sud",
+                "english": "Tarawa-Sud",
+                "dutch": "Tarawa-Zuid"
+            }
         },
         {
             "french": "Comores",
             "english": "Comoros",
             "dutch": "Comoren",
-            "flag": ":flag_km:"
+            "flag": ":flag_km:",
+            "capital": {
+                "french": "Moroni",
+                "english": "Moroni",
+                "dutch": "Moroni"
+            }
         },
         {
             "french": "Saint-Kitts-et-Nevis, Saint-Kitts, Nevis",
             "english": "Saint Kitts and Nevis, Saint Kitts, Nevis",
             "dutch": "Saint Kitts en Nevis, Saint Kitts, Nevis",
-            "flag": ":flag_kn:"
+            "flag": ":flag_kn:",
+            "capital": {
+                "french": "Basseterre",
+                "english": "Basseterre",
+                "dutch": "Basseterre"
+            }
         }, {
             "french": "Corée du Nord",
             "english": "North Korea",
             "dutch": "Noord-Korea",
-            "flag": ":flag_kp:"
+            "flag": ":flag_kp:",
+            "capital": {
+                "french": "Pyongyang",
+                "english": "Pyongyang",
+                "dutch": "Pyongyang"
+            }
         },
         {
             "french": "Corée du Sud",
             "english": "South Korea",
             "dutch": "Zuid-Korea",
-            "flag": ":flag_kr:"
+            "flag": ":flag_kr:",
+            "capital": {
+                "french": "Séoul",
+                "english": "Seoul",
+                "dutch": "Seoel"
+            }
         },
         {
             "french": "Koweït",
             "english": "Kuwait",
             "dutch": "Koeweit",
-            "flag": ":flag_kw:"
+            "flag": ":flag_kw:",
+            "capital": {
+                "french": "Koweït",
+                "english": "Kuwait City",
+                "dutch": "Koeweit-Stad"
+            }
         },
         {
             "french": "Îles Caïmans",
             "english": "Cayman Islands",
             "dutch": "Caymaneilanden",
-            "flag": ":flag_ky:"
+            "flag": ":flag_ky:",
+            "capital": {
+                "french": "George Town",
+                "english": "George Town",
+                "dutch": "George Town"
+            }
         }, {
             "french": "Kazakhstan",
             "english": "Kazakhstan",
             "dutch": "Kazachstan",
-            "flag": ":flag_kz:"
+            "flag": ":flag_kz:",
+            "capital": {
+                "french": "Astana",
+                "english": "Astana",
+                "dutch": "Astana"
+            }
         },
         {
             "french": "Laos",
             "english": "Laos",
             "dutch": "Laos",
-            "flag": ":flag_la:"
+            "flag": ":flag_la:",
+            "capital": {
+                "french": "Vientiane",
+                "english": "Vientiane",
+                "dutch": "Vientiane"
+            }
         },
         {
             "french": "Liban",
             "english": "Lebanon",
             "dutch": "Libanon",
-            "flag": ":flag_lb:"
+            "flag": ":flag_lb:",
+            "capital": {
+                "french": "Beyrouth",
+                "english": "Beirut",
+                "dutch": "Beiroet"
+            }
         },
         {
             "french": "Sainte-Lucie",
             "english": "Saint Lucia",
             "dutch": "Saint Lucia",
-            "flag": ":flag_lc:"
+            "flag": ":flag_lc:",
+            "capital": {
+                "french": "Castries",
+                "english": "Castries",
+                "dutch": "Castries"
+            }
         }, {
             "french": "Liechtenstein",
             "english": "Liechtenstein",
@@ -689,702 +1327,1246 @@
             "french": "Sri Lanka",
             "english": "Sri Lanka",
             "dutch": "Sri Lanka",
-            "flag": ":flag_lk:"
+            "flag": ":flag_lk:",
+            "capital": {
+                "french": "Sri Jayawardenapura Kotte",
+                "english": "Sri Jayawardenapura Kotte",
+                "dutch": "Sri Jayawardenapura Kotte"
+            }
         },
         {
             "french": "Libéria",
             "english": "Liberia",
             "dutch": "Liberia",
-            "flag": ":flag_lr:"
+            "flag": ":flag_lr:",
+            "capital": {
+                "french": "Monrovia",
+                "english": "Monrovia",
+                "dutch": "Monrovia"
+            }
         },
         {
             "french": "Lesotho",
             "english": "Lesotho",
             "dutch": "Lesotho",
-            "flag": ":flag_ls:"
+            "flag": ":flag_ls:",
+            "capital": {
+                "french": "Maseru",
+                "english": "Maseru",
+                "dutch": "Maseru"
+            }
         },
         {
             "french": "Lituanie",
             "english": "Lithuania",
             "dutch": "Litouwen",
-            "flag": ":flag_lt:"
+            "flag": ":flag_lt:",
+            "capital": {
+                "french": "Vilnius",
+                "english": "Vilnius",
+                "dutch": "Vilnius"
+            }
         },
         {
             "french": "Luxembourg",
             "english": "Luxembourg",
             "dutch": "Luxemburg",
-            "flag": ":flag_lu:"
+            "flag": ":flag_lu:",
+            "capital": {
+                "french": "Luxembourg",
+                "english": "Luxembourg",
+                "dutch": "Luxemburg"
+            }
         },
         {
             "french": "Lettonie",
             "english": "Latvia",
             "dutch": "Letland",
-            "flag": ":flag_lv:"
+            "flag": ":flag_lv:",
+            "capital": {
+                "french": "Riga",
+                "english": "Riga",
+                "dutch": "Riga"
+            }
         },
         {
             "french": "Libye",
             "english": "Libya",
             "dutch": "Libië",
-            "flag": ":flag_ly:"
+            "flag": ":flag_ly:",
+            "capital": {
+                "french": "Tripoli",
+                "english": "Tripoli",
+                "dutch": "Tripoli"
+            }
         },
         {
             "french": "Maroc",
             "english": "Morocco",
             "dutch": "Marokko",
-            "flag": ":flag_ma:"
+            "flag": ":flag_ma:",
+            "capital": {
+                "french": "Rabat",
+                "english": "Rabat",
+                "dutch": "Rabat"
+            }
         },
         {
             "french": "Monaco",
             "english": "Monaco",
             "dutch": "Monaco",
-            "flag": ":flag_mc:"
+            "flag": ":flag_mc:",
+            "capital": {
+                "french": "Monaco",
+                "english": "Monaco",
+                "dutch": "Monaco"
+            }
         },
         {
             "french": "Moldavie",
             "english": "Moldova",
             "dutch": "Moldavië",
-            "flag": ":flag_md:"
+            "flag": ":flag_md:",
+            "capital": {
+                "french": "Chișinău",
+                "english": "Chișinău",
+                "dutch": "Chisinau"
+            }
         },
         {
             "french": "Monténégro",
             "english": "Montenegro",
             "dutch": "Montenegro",
-            "flag": ":flag_me:"
+            "flag": ":flag_me:",
+            "capital": {
+                "french": "Podgorica",
+                "english": "Podgorica",
+                "dutch": "Podgorica"
+            }
         },
         {
             "french": "Madagascar",
             "english": "Madagascar",
             "dutch": "Madagaskar",
-            "flag": ":flag_mg:"
+            "flag": ":flag_mg:",
+            "capital": {
+                "french": "Antananarivo",
+                "english": "Antananarivo",
+                "dutch": "Antananarivo"
+            }
         },
         {
             "french": "Îles Marshall",
             "english": "Marshall Islands",
             "dutch": "Marshalleilanden",
-            "flag": ":flag_mh:"
+            "flag": ":flag_mh:",
+            "capital": {
+                "french": "Majuro",
+                "english": "Majuro",
+                "dutch": "Majuro"
+            }
         },
         {
             "french": "Macédoine",
             "english": "Macedonia",
             "dutch": "Macedonië",
-            "flag": ":flag_mk:"
+            "flag": ":flag_mk:",
+            "capital": {
+                "french": "Skopje",
+                "english": "Skopje",
+                "dutch": "Skopje"
+            }
         },
         {
             "french": "Mali",
             "english": "Mali",
             "dutch": "Mali",
-            "flag": ":flag_ml:"
+            "flag": ":flag_ml:",
+            "capital": {
+                "french": "Bamako",
+                "english": "Bamako",
+                "dutch": "Bamako"
+            }
         },
         {
             "french": "Birmanie, Myanmar",
             "english": "Myanmar, Burma",
             "dutch": "Myanmar, Birma",
-            "flag": ":flag_mm:"
+            "flag": ":flag_mm:",
+            "capital": {
+                "french": "Naypyidaw",
+                "english": "Naypyidaw",
+                "dutch": "Naypyidaw"
+            }
         },
         {
             "french": "Mongolie",
             "english": "Mongolia",
             "dutch": "Mongolië",
-            "flag": ":flag_mn:"
+            "flag": ":flag_mn:",
+            "capital": {
+                "french": "Oulan-Bator",
+                "english": "Ulaanbaatar",
+                "dutch": "Ulaanbaatar"
+            }
         },
         {
             "french": "Macao",
             "english": "Macao",
             "dutch": "Macao",
-            "flag": ":flag_mo:"
+            "flag": ":flag_mo:",
+            "capital": {
+                "french": "Macao",
+                "english": "Macao",
+                "dutch": "Macao"
+            }
         },
         {
             "french": "Îles Mariannes du Nord, Îles Mariannes",
             "english": "Northern Mariana Islands, Mariana Islands",
             "dutch": "Noordelijke Marianeneilanden, Marianeneilanden",
-            "flag": ":flag_mp:"
+            "flag": ":flag_mp:",
+            "capital": {
+                "french": "Saipan",
+                "english": "Saipan",
+                "dutch": "Saipan"
+            }
         },
         {
             "french": "Martinique",
             "english": "Martinique",
             "dutch": "Martinique",
-            "flag": ":flag_mq:"
+            "flag": ":flag_mq:",
+            "capital": {
+                "french": "Fort-de-France",
+                "english": "Fort-de-France",
+                "dutch": "Fort-de-France"
+            }
         },
         {
             "french": "Mauritanie",
             "english": "Mauritania",
             "dutch": "Mauritanië",
-            "flag": ":flag_mr:"
+            "flag": ":flag_mr:",
+            "capital": {
+                "french": "Nouakchott",
+                "english": "Nouakchott",
+                "dutch": "Nouakchott"
+            }
         },
         {
             "french": "Montserrat",
             "english": "Montserrat",
             "dutch": "Montserrat",
-            "flag": ":flag_ms:"
+            "flag": ":flag_ms:",
+            "capital": {
+                "french": "Plymouth",
+                "english": "Plymouth",
+                "dutch": "Plymouth"
+            }
         },
         {
             "french": "Malte",
             "english": "Malta",
             "dutch": "Malta",
-            "flag": ":flag_mt:"
+            "flag": ":flag_mt:",
+            "capital": {
+                "french": "La Valette",
+                "english": "Valletta",
+                "dutch": "Valletta"
+            }
         },
         {
             "french": "Maurice",
             "english": "Mauritius",
             "dutch": "Mauritius",
-            "flag": ":flag_mu:"
+            "flag": ":flag_mu:",
+            "capital": {
+                "french": "Port-Louis",
+                "english": "Port Louis",
+                "dutch": "Port Louis"
+            }
         },
         {
             "french": "Maldives",
             "english": "Maldives",
             "dutch": "Maldiven",
-            "flag": ":flag_mv:"
+            "flag": ":flag_mv:",
+            "capital": {
+                "french": "Malé",
+                "english": "Malé",
+                "dutch": "Malé"
+            }
         },
         {
             "french": "Malawi",
             "english": "Malawi",
             "dutch": "Malawi",
-            "flag": ":flag_mw:"
+            "flag": ":flag_mw:",
+            "capital": {
+                "french": "Lilongwe",
+                "english": "Lilongwe",
+                "dutch": "Lilongwe"
+            }
         },
         {
             "french": "Mexique",
             "english": "Mexico",
             "dutch": "Mexico",
-            "flag": ":flag_mx:"
+            "flag": ":flag_mx:",
+            "capital": {
+                "french": "Mexico",
+                "english": "Mexico City",
+                "dutch": "Mexico-Stad"
+            }
         },
         {
             "french": "Malaisie",
             "english": "Malaysia",
             "dutch": "Maleisië",
-            "flag": ":flag_my:"
+            "flag": ":flag_my:",
+            "capital": {
+                "french": "Kuala Lumpur",
+                "english": "Kuala Lumpur",
+                "dutch": "Kuala Lumpur"
+            }
         },
         {
             "french": "Mozambique",
             "english": "Mozambique",
             "dutch": "Mozambique",
-            "flag": ":flag_mz:"
+            "flag": ":flag_mz:",
+            "capital": {
+                "french": "Maputo",
+                "english": "Maputo",
+                "dutch": "Maputo"
+            }
         },
         {
             "french": "Namibie",
             "english": "Namibia",
             "dutch": "Namibië",
-            "flag": ":flag_na:"
+            "flag": ":flag_na:",
+            "capital": {
+                "french": "Windhoek",
+                "english": "Windhoek",
+                "dutch": "Windhoek"
+            }
         },
         {
             "french": "Nouvelle-Calédonie",
             "english": "New Caledonia",
             "dutch": "Nieuw-Caledonië",
-            "flag": ":flag_nc:"
+            "flag": ":flag_nc:",
+            "capital": {
+                "french": "Nouméa",
+                "english": "Nouméa",
+                "dutch": "Nouméa"
+            }
         },
         {
             "french": "Niger",
             "english": "Niger",
             "dutch": "Niger",
-            "flag": ":flag_ne:"
+            "flag": ":flag_ne:",
+            "capital": {
+                "french": "Niamey",
+                "english": "Niamey",
+                "dutch": "Niamey"
+            }
         },
         {
             "french": "Île Norfolk",
             "english": "Norfolk Island",
             "dutch": "Norfolkeiland",
-            "flag": ":flag_nf:"
+            "flag": ":flag_nf:",
+            "capital": {
+                "french": "Kingston",
+                "english": "Kingston",
+                "dutch": "Kingston"
+            }
         },
         {
             "french": "Nigéria",
             "english": "Nigeria",
             "dutch": "Nigeria",
-            "flag": ":flag_ng:"
+            "flag": ":flag_ng:",
+            "capital": {
+                "french": "Abuja",
+                "english": "Abuja",
+                "dutch": "Abuja"
+            }
         },
         {
             "french": "Nicaragua",
             "english": "Nicaragua",
             "dutch": "Nicaragua",
-            "flag": ":flag_ni:"
+            "flag": ":flag_ni:",
+            "capital": {
+                "french": "Managua",
+                "english": "Managua",
+                "dutch": "Managua"
+            }
         },
         {
             "french": "Pays-Bas",
             "english": "Netherlands",
             "dutch": "Nederland",
-            "flag": ":flag_nl:"
+            "flag": ":flag_nl:",
+            "capital": {
+                "french": "Amsterdam",
+                "english": "Amsterdam",
+                "dutch": "Amsterdam"
+            }
         },
         {
             "french": "Norvège",
             "english": "Norway",
             "dutch": "Noorwegen",
-            "flag": ":flag_no:"
+            "flag": ":flag_no:",
+            "capital": {
+                "french": "Oslo",
+                "english": "Oslo",
+                "dutch": "Oslo"
+            }
         },
         {
             "french": "Népal",
             "english": "Nepal",
             "dutch": "Nepal",
-            "flag": ":flag_np:"
+            "flag": ":flag_np:",
+            "capital": {
+                "french": "Katmandou",
+                "english": "Kathmandu",
+                "dutch": "Kathmandu"
+            }
         },
         {
             "french": "Nauru",
             "english": "Nauru",
             "dutch": "Nauru",
-            "flag": ":flag_nr:"
+            "flag": ":flag_nr:",
+            "capital": {
+                "french": "Yaren",
+                "english": "Yaren",
+                "dutch": "Yaren"
+            }
         },
         {
             "french": "Niue",
             "english": "Niue",
             "dutch": "Niue",
-            "flag": ":flag_nu:"
+            "flag": ":flag_nu:",
+            "capital": {
+                "french": "Alofi",
+                "english": "Alofi",
+                "dutch": "Alofi"
+            }
         },
         {
             "french": "Nouvelle-Zélande, NZ",
             "english": "New Zealand, NZ",
             "dutch": "Nieuw-Zeeland, NZ",
-            "flag": ":flag_nz:"
+            "flag": ":flag_nz:",
+            "capital": {
+                "french": "Wellington",
+                "english": "Wellington",
+                "dutch": "Wellington"
+            }
         },
         {
             "french": "Oman",
             "english": "Oman",
             "dutch": "Oman",
-            "flag": ":flag_om:"
+            "flag": ":flag_om:",
+            "capital": {
+                "french": "Mascate",
+                "english": "Muscat",
+                "dutch": "Muscat"
+            }
         },
         {
             "french": "Panama",
             "english": "Panama",
             "dutch": "Panama",
-            "flag": ":flag_pa:"
+            "flag": ":flag_pa:",
+            "capital": {
+                "french": "Panama",
+                "english": "Panama City",
+                "dutch": "Panama-Stad"
+            }
         },
         {
             "french": "Pérou",
             "english": "Peru",
             "dutch": "Peru",
-            "flag": ":flag_pe:"
+            "flag": ":flag_pe:",
+            "capital": {
+                "french": "Lima",
+                "english": "Lima",
+                "dutch": "Lima"
+            }
         },
         {
             "french": "Polynésie Française, Polynésie",
             "english": "French Polynesia, Polynesia",
             "dutch": "Frans-Polynesië, Polynesië",
-            "flag": ":flag_pf:"
+            "flag": ":flag_pf:",
+            "capital": {
+                "french": "Papeete",
+                "english": "Papeete",
+                "dutch": "Papeete"
+            }
         },
         {
             "french": "Papouasie-Nouvelle-Guinée, Papouasie",
             "english": "Papua New Guinea, Papua",
             "dutch": "Papoea-Nieuw-Guinea, Papoea",
-            "flag": ":flag_pg:"
+            "flag": ":flag_pg:",
+            "capital": {
+                "french": "Port Moresby",
+                "english": "Port Moresby",
+                "dutch": "Port Moresby"
+            }
         },
         {
             "french": "Philippines",
             "english": "Philippines",
             "dutch": "Filipijnen",
-            "flag": ":flag_ph:"
+            "flag": ":flag_ph:",
+            "capital": {
+                "french": "Manille",
+                "english": "Manila",
+                "dutch": "Manilla"
+            }
         },
         {
             "french": "Pakistan",
             "english": "Pakistan",
             "dutch": "Pakistan",
-            "flag": ":flag_pk:"
+            "flag": ":flag_pk:",
+            "capital": {
+                "french": "Islamabad",
+                "english": "Islamabad",
+                "dutch": "Islamabad"
+            }
         },
         {
             "french": "Pologne",
             "english": "Poland",
             "dutch": "Polen",
-            "flag": ":flag_pl:"
+            "flag": ":flag_pl:",
+            "capital": {
+                "french": "Varsovie",
+                "english": "Warsaw",
+                "dutch": "Warschau"
+            }
         },
         {
             "french": "St. Pierre & Miquelon, Saint-Pierre-et-Miquelon",
             "english": "Saint Pierre and Miquelon, St. Pierre and Miquelon",
             "dutch": "Saint-Pierre en Miquelon, St. Pierre en Miquelon",
-            "flag": ":flag_pm:"
+            "flag": ":flag_pm:",
+            "capital": {
+                "french": "Saint-Pierre",
+                "english": "Saint-Pierre",
+                "dutch": "Saint-Pierre"
+            }
         },
         {
             "french": "Îles Pitcairn",
             "english": "Pitcairn Islands",
             "dutch": "Pitcairneilanden",
-            "flag": ":flag_pn:"
-        },
-        {
+            "flag": ":flag_pn:",
+            "capital": {
+                "french": "Adamstown",
+                "english": "Adamstown",
+                "dutch": "Adamstown"
+            }
+        }, {
             "french": "Porto Rico",
             "english": "Puerto Rico",
             "dutch": "Puerto Rico",
-            "flag": ":flag_pr:"
+            "flag": ":flag_pr:",
+            "capital": {
+                "french": "San Juan",
+                "english": "San Juan",
+                "dutch": "San Juan"
+            }
         },
         {
             "french": "Portugal",
             "english": "Portugal",
             "dutch": "Portugal",
-            "flag": ":flag_pt:"
-        },
-        {
+            "flag": ":flag_pt:",
+            "capital": {
+                "french": "Lisbonne",
+                "english": "Lisbon",
+                "dutch": "Lissabon"
+            }
+        }, {
             "french": "Palaos",
             "english": "Palau",
             "dutch": "Palau",
-            "flag": ":flag_pw:"
+            "flag": ":flag_pw:",
+            "capital": {
+                "french": "Ngerulmud",
+                "english": "Ngerulmud",
+                "dutch": "Ngerulmud"
+            }
         },
         {
             "french": "Paraguay",
             "english": "Paraguay",
             "dutch": "Paraguay",
-            "flag": ":flag_py:"
+            "flag": ":flag_py:",
+            "capital": {
+                "french": "Asuncion",
+                "english": "Asuncion",
+                "dutch": "Asunción"
+            }
         },
         {
             "french": "Qatar",
             "english": "Qatar",
             "dutch": "Qatar",
-            "flag": ":flag_qa:"
+            "flag": ":flag_qa:",
+            "capital": {
+                "french": "Doha",
+                "english": "Doha",
+                "dutch": "Doha"
+            }
         },
         {
             "french": "La Réunion",
             "english": "Réunion",
             "dutch": "Réunion",
-            "flag": ":flag_re:"
+            "flag": ":flag_re:",
+            "capital": {
+                "french": "Saint-Denis",
+                "english": "Saint-Denis",
+                "dutch": "Saint-Denis"
+            }
         },
         {
             "french": "Roumanie",
             "english": "Romania",
             "dutch": "Roemenië",
-            "flag": ":flag_ro:"
+            "flag": ":flag_ro:",
+            "capital": {
+                "french": "Bucarest",
+                "english": "Bucharest",
+                "dutch": "Boekarest"
+            }
         },
         {
             "french": "Serbie",
             "english": "Serbia",
             "dutch": "Servië",
-            "flag": ":flag_rs:"
-        },
-        {
+            "flag": ":flag_rs:",
+            "capital": {
+                "french": "Belgrade",
+                "english": "Belgrade",
+                "dutch": "Belgrado"
+            }
+        }, {
             "french": "Russie",
             "english": "Russia",
             "dutch": "Rusland",
-            "flag": ":flag_ru:"
+            "flag": ":flag_ru:",
+            "capital": {
+                "french": "Moscou",
+                "english": "Moscow",
+                "dutch": "Moskou"
+            }
         },
         {
             "french": "Rwanda",
             "english": "Rwanda",
             "dutch": "Rwanda",
-            "flag": ":flag_rw:"
+            "flag": ":flag_rw:",
+            "capital": {
+                "french": "Kigali",
+                "english": "Kigali",
+                "dutch": "Kigali"
+            }
         },
         {
             "french": "Arabie Saoudite",
             "english": "Saudi Arabia",
             "dutch": "Saoedi-Arabië",
-            "flag": ":flag_sa:"
-        },
-        {
+            "flag": ":flag_sa:",
+            "capital": {
+                "french": "Riyad",
+                "english": "Riyadh",
+                "dutch": "Riyad"
+            }
+        }, {
             "french": "Îles Salomon",
             "english": "Solomon Islands",
             "dutch": "Salomonseilanden",
-            "flag": ":flag_sb:"
-        },
-        {
+            "flag": ":flag_sb:",
+            "capital": {
+                "french": "Honiara",
+                "english": "Honiara",
+                "dutch": "Honiara"
+            }
+        }, {
             "french": "Seychelles",
             "english": "Seychelles",
             "dutch": "Seychellen",
-            "flag": ":flag_sc:"
-        },
-        {
+            "flag": ":flag_sc:",
+            "capital": {
+                "french": "Victoria",
+                "english": "Victoria",
+                "dutch": "Victoria"
+            }
+        }, {
             "french": "Soudan",
             "english": "Sudan",
             "dutch": "Soedan",
-            "flag": ":flag_sd:"
+            "flag": ":flag_sd:",
+            "capital": {
+                "french": "Khartoum",
+                "english": "Khartoum",
+                "dutch": "Khartoum"
+            }
         },
         {
             "french": "Suède",
             "english": "Sweden",
             "dutch": "Zweden",
-            "flag": ":flag_se:"
-        },
-        {
+            "flag": ":flag_se:",
+            "capital": {
+                "french": "Stockholm",
+                "english": "Stockholm",
+                "dutch": "Stockholm"
+            }
+        }, {
             "french": "Singapour",
             "english": "Singapore",
             "dutch": "Singapore",
-            "flag": ":flag_sg:"
+            "flag": ":flag_sg:",
+            "capital": {
+                "french": "Singapour",
+                "english": "Singapore",
+                "dutch": "Singapore"
+            }
         },
         {
             "french": "Sainte-Hélène, Ascension et Tristan da Cunha, Ascension, Tristan da Cunha",
             "english": "Saint Helena, Ascension and Tristan da Cunha, Saint Helena, Ascension, Tristan da Cunha",
             "dutch": "Sint-Helena, Ascension en Tristan da Cunha, Ascension, Tristan da Cunha",
-            "flag": ":flag_sh:"
-        },
-        {
+            "flag": ":flag_sh:",
+            "capital": {
+                "french": "Jamestown",
+                "english": "Jamestown",
+                "dutch": "Jamestown"
+            }
+        }, {
             "french": "Slovénie",
             "english": "Slovenia",
             "dutch": "Slovenië",
-            "flag": ":flag_si:"
+            "flag": ":flag_si:",
+            "capital": {
+                "french": "Ljubljana",
+                "english": "Ljubljana",
+                "dutch": "Ljubljana"
+            }
         },
         {
             "french": "Slovaquie",
             "english": "Slovakia",
             "dutch": "Slowakije",
-            "flag": ":flag_sk:"
-        },
-        {
+            "flag": ":flag_sk:",
+            "capital": {
+                "french": "Bratislava",
+                "english": "Bratislava",
+                "dutch": "Bratislava"
+            }
+        }, {
             "french": "Sierra Leone",
             "english": "Sierra Leone",
             "dutch": "Sierra Leone",
-            "flag": ":flag_sl:"
+            "flag": ":flag_sl:",
+            "capital": {
+                "french": "Freetown",
+                "english": "Freetown",
+                "dutch": "Freetown"
+            }
         },
         {
             "french": "Saint-Marin",
             "english": "San Marino",
             "dutch": "San Marino",
-            "flag": ":flag_sm:"
-        },
-        {
+            "flag": ":flag_sm:",
+            "capital": {
+                "french": "Saint-Marin",
+                "english": "San Marino",
+                "dutch": "San Marino"
+            }
+        }, {
             "french": "Sénégal",
             "english": "Senegal",
             "dutch": "Senegal",
-            "flag": ":flag_sn:"
+            "flag": ":flag_sn:",
+            "capital": {
+                "french": "Dakar",
+                "english": "Dakar",
+                "dutch": "Dakar"
+            }
         },
         {
             "french": "Somalie",
             "english": "Somalia",
             "dutch": "Somalië",
-            "flag": ":flag_so:"
+            "flag": ":flag_so:",
+            "capital": {
+                "french": "Mogadiscio",
+                "english": "Mogadishu",
+                "dutch": "Mogadishu"
+            }
         },
         {
             "french": "Suriname",
             "english": "Suriname",
             "dutch": "Suriname",
-            "flag": ":flag_sr:"
-        },
-        {
+            "flag": ":flag_sr:",
+            "capital": {
+                "french": "Paramaribo",
+                "english": "Paramaribo",
+                "dutch": "Paramaribo"
+            }
+        }, {
             "french": "Soudan du Sud",
             "english": "South Sudan",
             "dutch": "Zuid-Soedan",
-            "flag": ":flag_ss:"
-        },
-        {
+            "flag": ":flag_ss:",
+            "capital": {
+                "french": "Djouba",
+                "english": "Juba",
+                "dutch": "Juba"
+            }
+        }, {
             "french": "Sao Tomé & Principe, Sao Tomé, Principe",
             "english": "Sao Tome and Principe, Sao Tome, Principe",
             "dutch": "Sao Tomé en Principe, Sao Tomé, Principe",
-            "flag": ":flag_st:"
-        },
-        {
+            "flag": ":flag_st:",
+            "capital": {
+                "french": "Sao Tomé",
+                "english": "Sao Tome",
+                "dutch": "Sao Tomé"
+            }
+        }, {
             "french": "El Salvador",
             "english": "El Salvador",
             "dutch": "El Salvador",
-            "flag": ":flag_sv:"
-        },
-        {
+            "flag": ":flag_sv:",
+            "capital": {
+                "french": "San Salvador",
+                "english": "San Salvador",
+                "dutch": "San Salvador"
+            }
+        }, {
             "french": "Saint-Martin",
             "english": "Saint Martin",
             "dutch": "Sint-Maarten",
-            "flag": ":flag_sx:"
-        },
-        {
+            "flag": ":flag_sx:",
+            "capital": {
+                "french": "Marigot",
+                "english": "Marigot",
+                "dutch": "Marigot"
+            }
+        }, {
             "french": "Syrie",
             "english": "Syria",
             "dutch": "Syrië",
-            "flag": ":flag_sy:"
-        },
-        {
+            "flag": ":flag_sy:",
+            "capital": {
+                "french": "Damas",
+                "english": "Damascus",
+                "dutch": "Damascus"
+            }
+        }, {
             "french": "Swaziland",
             "english": "Swaziland",
             "dutch": "Swaziland",
-            "flag": ":flag_sz:"
-        },
-        {
+            "flag": ":flag_sz:",
+            "capital": {
+                "french": "Mbabane",
+                "english": "Mbabane",
+                "dutch": "Mbabane"
+            }
+        }, {
             "french": "Tristan Da Cunha",
             "english": "Tristan da Cunha",
             "dutch": "Tristan da Cunha",
-            "flag": ":flag_ta:"
-        },
-        {
+            "flag": ":flag_ta:",
+            "capital": {
+                "french": "Edimbourg des Sept Mers",
+                "english": "Edinburgh of the Seven Seas",
+                "dutch": "Edinburgh van de Zeven Zeeën"
+            }
+        }, {
             "french": "Îles Turks et Caicos, Îles Turks, Caicos",
             "english": "Turks and Caicos Islands, Turks Islands, Caicos Islands",
             "dutch": "Turks- en Caicoseilanden, Turks-eilanden, Caicoseilanden",
-            "flag": ":flag_tc:"
-        },
-        {
+            "flag": ":flag_tc:",
+            "capital": {
+                "french": "Cockburn Town",
+                "english": "Cockburn Town",
+                "dutch": "Cockburn Town"
+            }
+        }, {
             "french": "Tchad",
             "english": "Chad",
             "dutch": "Tsjaad",
-            "flag": ":flag_td:"
-        },
-        {
+            "flag": ":flag_td:",
+            "capital": {
+                "french": "N'Djamena",
+                "english": "N'Djamena",
+                "dutch": "Ndjamena"
+            }
+        }, {
             "french": "Togo",
             "english": "Togo",
             "dutch": "Togo",
-            "flag": ":flag_tg:"
-        },
-        {
+            "flag": ":flag_tg:",
+            "capital": {
+                "french": "Lomé",
+                "english": "Lomé",
+                "dutch": "Lomé"
+            }
+        }, {
             "french": "Thaïlande",
             "english": "Thailand",
             "dutch": "Thailand",
-            "flag": ":flag_th:"
-        },
-        {
+            "flag": ":flag_th:",
+            "capital": {
+                "french": "Bangkok",
+                "english": "Bangkok",
+                "dutch": "Bangkok"
+            }
+        }, {
             "french": "Tadjikistan",
             "english": "Tajikistan",
             "dutch": "Tadzjikistan",
-            "flag": ":flag_tj:"
-        },
-        {
+            "flag": ":flag_tj:",
+            "capital": {
+                "french": "Douchanbé",
+                "english": "Dushanbe",
+                "dutch": "Doesjanbe"
+            }
+        }, {
             "french": "Tokélaou",
             "english": "Tokelau",
             "dutch": "Tokelau",
-            "flag": ":flag_tk:"
-        },
-        {
+            "flag": ":flag_tk:",
+            "capital": {
+                "french": "Atafu",
+                "english": "Atafu",
+                "dutch": "Atafu"
+            }
+        }, {
             "french": "Timor-Leste",
             "english": "Timor-Leste",
             "dutch": "Oost-Timor",
-            "flag": ":flag_tl:"
-        },
-        {
+            "flag": ":flag_tl:",
+            "capital": {
+                "french": "Dili",
+                "english": "Dili",
+                "dutch": "Dili"
+            }
+        }, {
             "french": "Turkménistan",
             "english": "Turkmenistan",
             "dutch": "Turkmenistan",
-            "flag": ":flag_tm:"
-        },
-        {
+            "flag": ":flag_tm:",
+            "capital": {
+                "french": "Achgabat",
+                "english": "Ashgabat",
+                "dutch": "Asjchabad"
+            }
+        }, {
             "french": "Tunisie",
             "english": "Tunisia",
             "dutch": "Tunesië",
-            "flag": ":flag_tn:"
-        },
-        {
+            "flag": ":flag_tn:",
+            "capital": {
+                "french": "Tunis",
+                "english": "Tunis",
+                "dutch": "Tunis"
+            }
+        }, {
             "french": "Tonga",
             "english": "Tonga",
             "dutch": "Tonga",
-            "flag": ":flag_to:"
-        },
-        {
+            "flag": ":flag_to:",
+            "capital": {
+                "french": "Nuku'alofa",
+                "english": "Nuku'alofa",
+                "dutch": "Nuku'alofa"
+            }
+        }, {
             "french": "Turquie",
             "english": "Turkey",
             "dutch": "Turkije",
-            "flag": ":flag_tr:"
-        },
-        {
+            "flag": ":flag_tr:",
+            "capital": {
+                "french": "Ankara",
+                "english": "Ankara",
+                "dutch": "Ankara"
+            }
+        }, {
             "french": "Trinité-et-Tobago",
             "english": "Trinidad and Tobago",
             "dutch": "Trinidad en Tobago",
-            "flag": ":flag_tt:"
-        },
-        {
+            "flag": ":flag_tt:",
+            "capital": {
+                "french": "Port-d'Espagne",
+                "english": "Port of Spain",
+                "dutch": "Port of Spain"
+            }
+        }, {
             "french": "Tuvalu",
             "english": "Tuvalu",
             "dutch": "Tuvalu",
-            "flag": ":flag_tv:"
-        },
-        {
+            "flag": ":flag_tv:",
+            "capital": {
+                "french": "Funafuti",
+                "english": "Funafuti",
+                "dutch": "Funafuti"
+            }
+        }, {
             "french": "Taïwan",
             "english": "Taiwan",
             "dutch": "Taiwan",
-            "flag": ":flag_tw:"
-        },
-        {
+            "flag": ":flag_tw:",
+            "capital": {
+                "french": "Taipei",
+                "english": "Taipei",
+                "dutch": "Taipei"
+            }
+        }, {
             "french": "Tanzanie",
             "english": "Tanzania",
             "dutch": "Tanzania",
-            "flag": ":flag_tz:"
-        },
-        {
+            "flag": ":flag_tz:",
+            "capital": {
+                "french": "Dodoma",
+                "english": "Dodoma",
+                "dutch": "Dodoma"
+            }
+        }, {
             "french": "Ukraine",
             "english": "Ukraine",
             "dutch": "Oekraïne",
-            "flag": ":flag_ua:"
-        },
-        {
+            "flag": ":flag_ua:",
+            "capital": {
+                "french": "Kiev",
+                "english": "Kiev",
+                "dutch": "Kiev"
+            }
+        }, {
             "french": "Ouganda",
             "english": "Uganda",
             "dutch": "Oeganda",
-            "flag": ":flag_ug:"
-        },
-        {
+            "flag": ":flag_ug:",
+            "capital": {
+                "french": "Kampala",
+                "english": "Kampala",
+                "dutch": "Kampala"
+            }
+        }, {
             "french": "Organisation des Nations Unies, Nations Unies, ONU",
             "english": "United Nations, UN",
             "dutch": "Verenigde Naties, VN",
-            "flag": ":flag_un:"
-        },
-        {
+            "flag": ":flag_un:",
+            "capital": {
+                "french": "New York",
+                "english": "New York",
+                "dutch": "New York"
+            }
+        }, {
             "french": "États-Unis, USA",
             "english": "United States, United States of America, USA",
             "dutch": "Verenigde Staten, Verenigde Staten van Amerika, VS, USA",
-            "flag": ":flag_us:"
-        },
-        {
+            "flag": ":flag_us:",
+            "capital": {
+                "french": "Washington",
+                "english": "Washington, D.C.",
+                "dutch": "Washington D.C."
+            }
+        }, {
             "french": "Uruguay",
             "english": "Uruguay",
             "dutch": "Uruguay",
-            "flag": ":flag_uy:"
-        },
-        {
+            "flag": ":flag_uy:",
+            "capital": {
+                "french": "Montevideo",
+                "english": "Montevideo",
+                "dutch": "Montevideo"
+            }
+        }, {
             "french": "Ouzbékistan",
             "english": "Uzbekistan",
             "dutch": "Oezbekistan",
-            "flag": ":flag_uz:"
-        },
-        {
+            "flag": ":flag_uz:",
+            "capital": {
+                "french": "Tachkent",
+                "english": "Tashkent",
+                "dutch": "Tasjkent"
+            }
+        }, {
             "french": "Vatican",
             "english": "Vatican City",
             "dutch": "Vaticaanstad",
-            "flag": ":flag_va:"
-        },
-        {
+            "flag": ":flag_va:",
+            "capital": {
+                "french": "Vatican",
+                "english": "Vatican",
+                "dutch": "Vaticaan"
+            }
+        }, {
             "french": "Saint-Vincent-et-les Grenadines, Saint-Vincent, Grenadines",
             "english": "Saint Vincent and the Grenadines, Saint Vincent, Grenadines",
             "dutch": "Saint Vincent en de Grenadines, Saint Vincent, Grenadines",
-            "flag": ":flag_vc:"
-        },
-        {
+            "flag": ":flag_vc:",
+            "capital": {
+                "french": "Kingstown",
+                "english": "Kingstown",
+                "dutch": "Kingstown"
+            }
+        }, {
             "french": "Venezuela",
             "english": "Venezuela",
             "dutch": "Venezuela",
-            "flag": ":flag_ve:"
-        },
-        {
+            "flag": ":flag_ve:",
+            "capital": {
+                "french": "Caracas",
+                "english": "Caracas",
+                "dutch": "Caracas"
+            }
+        }, {
             "french": "Îles Vierges britanniques",
             "english": "British Virgin Islands",
             "dutch": "Britse Maagdeneilanden",
-            "flag": ":flag_vg:"
-        },
-        {
+            "flag": ":flag_vg:",
+            "capital": {
+                "french": "Road Town",
+                "english": "Road Town",
+                "dutch": "Road Town"
+            }
+        }, {
             "french": "Îles Vierges américaines",
             "english": "U.S. Virgin Islands",
             "dutch": "Amerikaanse Maagdeneilanden",
-            "flag": ":flag_vi:"
-        },
-        {
+            "flag": ":flag_vi:",
+            "capital": {
+                "french": "Charlotte Amalie",
+                "english": "Charlotte Amalie",
+                "dutch": "Charlotte Amalie"
+            }
+        }, {
             "french": "Vietnam",
             "english": "Vietnam",
             "dutch": "Vietnam",
-            "flag": ":flag_vn:"
-        },
-        {
+            "flag": ":flag_vn:",
+            "capital": {
+                "french": "Hanoï",
+                "english": "Hanoi",
+                "dutch": "Hanoi"
+            }
+        }, {
             "french": "Vanuatu",
             "english": "Vanuatu",
             "dutch": "Vanuatu",
-            "flag": ":flag_vu:"
-        },
-        {
+            "flag": ":flag_vu:",
+            "capital": {
+                "french": "Port-Vila",
+                "english": "Port Vila",
+                "dutch": "Port Vila"
+            }
+        }, {
             "french": "Wallis et Futuna",
             "english": "Wallis and Futuna",
             "dutch": "Wallis en Futuna",
-            "flag": ":flag_wf:"
+            "flag": ":flag_wf:",
+            "capital": {
+                "french": "Mata-Utu",
+                "english": "Mata-Utu",
+                "dutch": "Mata-Utu"
+            }
         }, {
             "french": "Samoa",
             "english": "Samoa",
             "dutch": "Samoa",
-            "flag": ":flag_ws:"
+            "flag": ":flag_ws:",
+            "capital": {
+                "french": "Apia",
+                "english": "Apia",
+                "dutch": "Apia"
+            }
         }, {
             "french": "Kosovo",
             "english": "Kosovo",
             "dutch": "Kosovo",
-            "flag": ":flag_xk:"
+            "flag": ":flag_xk:",
+            "capital": {
+                "french": "Pristina",
+                "english": "Pristina",
+                "dutch": "Pristina"
+            }
         }, {
             "french": "Yémen",
             "english": "Yemen",
             "dutch": "Jemen",
-            "flag": ":flag_ye:"
+            "flag": ":flag_ye:",
+            "capital": {
+                "french": "Sanaa",
+                "english": "Sanaa",
+                "dutch": "Sanaa"
+            }
         }, {
             "french": "Mayotte",
             "english": "Mayotte",
             "dutch": "Mayotte",
-            "flag": ":flag_yt:"
+            "flag": ":flag_yt:",
+            "capital": {
+                "french": "Mamoudzou",
+                "english": "Mamoudzou",
+                "dutch": "Mamoudzou"
+            }
         }, {
             "french": "Afrique du Sud",
             "english": "South Africa",
             "dutch": "Zuid-Afrika",
-            "flag": ":flag_za:"
+            "flag": ":flag_za:",
+            "capital": {
+                "french": "Pretoria",
+                "english": "Pretoria",
+                "dutch": "Pretoria"
+            }
         }, {
             "french": "Zambie",
             "english": "Zambia",
             "dutch": "Zambia",
-            "flag": ":flag_zm:"
+            "flag": ":flag_zm:",
+            "capital": {
+                "french": "Lusaka",
+                "english": "Lusaka",
+                "dutch": "Lusaka"
+            }
         }, {
             "french": "Zimbabwe",
             "english": "Zimbabwe",
             "dutch": "Zimbabwe",
-            "flag": ":flag_zw:"
+            "flag": ":flag_zw:",
+            "capital": {
+                "french": "Harare",
+                "english": "Harare",
+                "dutch": "Harare"
+            }
         }
     ]
 }

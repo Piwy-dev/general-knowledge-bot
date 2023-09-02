@@ -1,8 +1,8 @@
 const language = require('../../language')
+const guildLanguages = require('../../language').guildLanguages
 const profile = require('../../db/profile')
 
-const { contries } = require('../../json/capContries.json');
-const { capitals } = require('../../json/capitals.json');
+const { contries } = require('../../json/contries.json');
 
 const d = require('discord.js')
 
@@ -24,7 +24,11 @@ module.exports = {
         }), 
 
     async execute(interaction) {
-        const { guild, member, channel } = interaction
+        const { guild, member } = interaction
+        const lang = guildLanguages[guild.id]
+       
+        await interaction.deferReply({ ephemeral: true })
+
 
         if (!has_answered) {
             await interaction.reply({
@@ -36,7 +40,10 @@ module.exports = {
 
         has_answered = false;
 
-        let i = Math.floor(Math.random() * Math.floor(contries.length));
+        let i = Math.floor(Math.random() * contries.length);
+
+        while (contries[i]["capital"][lang] == null)
+            i = Math.floor(Math.random() * contries.length);
 
         // Create the captitals button
         const capitalButton = new d.ActionRowBuilder()
@@ -48,8 +55,8 @@ module.exports = {
         )
 
         // Reply to the interaction
-        await interaction.reply({
-            content: `${language(guild, "CAPITAL")} ${contries[i]}`,
+        await interaction.editReply({
+            content: `${language(guild, "CAPITAL")} ${contries[i][lang]}`,
             components: [capitalButton],
         })
 
@@ -71,10 +78,13 @@ module.exports = {
 
             const capital = submitted.fields.getTextInputValue('capitalsInput');
 
-            let similarity = modules.CompareStrings(capitals[i].toLocaleLowerCase(), capital.toLowerCase())
+            let similarity = modules.CompareStrings(contries[i]["capital"][lang], capital.toLowerCase())
             // If answer is correct
             if (similarity > 0.5) {
-                submitted.reply(`${member} ${language(guild, "WIN_XP")} 8 points!`);
+                submitted.reply({
+                    content: `${member} ${language(guild, "WIN_XP")} 8 points!`,
+                    ephemeral: true
+                });
                 interaction.editReply({
                     content: `${language(guild, "THX_ANSW")}`,
                     components: [],
@@ -83,12 +93,15 @@ module.exports = {
             }
             // If answer is incorrect
             else if (similarity <= 0.5) {
-                submitted.reply(`${member} ${language(guild, "LOSE_XP")} 5 points ! ${language(guild, "ANSWER_WAS")} ${capitals[i]}`);
+                submitted.reply({
+                    content: `${member} ${language(guild, "LOSE_XP")} 3 points ! ${language(guild, "ANSWER_WAS")} ${contries[i]["capital"][lang]}`,
+                    ephemeral: true
+                });
                 interaction.editReply({
                     content: `${language(guild, "THX_ANSW")}`,
                     components: [],
                 })
-                profile.addxp(guild.id, member.id, -5)
+                profile.addxp(guild.id, member.id, -3)
             }
         }
         // If user doesn't answer
@@ -96,11 +109,11 @@ module.exports = {
             has_answered = true; 
 
             interaction.editReply({
-                content: `${member}, ${language(guild, "QST_OUTDATED_1")} 5 ${language(guild, "QST_OUTDATED_2")} ${capitals[i]}`,
+                content: `${member}, ${language(guild, "QST_OUTDATED_1")} 3 ${language(guild, "QST_OUTDATED_2")} ${capitals[i]}`,
                 components: [],
             })
 
-            profile.addxp(guild.id, member.id, -5)
+            profile.addxp(guild.id, member.id, -3)
         } 
     }
 }

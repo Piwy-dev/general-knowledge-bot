@@ -25,11 +25,9 @@ module.exports = {
 
     async execute(interaction) {
         const { guild, member } = interaction
+        const lang = guildLanguages[guild.id]
 
         await interaction.deferReply({ ephemeral: true })
-
-        // Get the language used by the guild
-        const lang = guildLanguages[guild.id]
 
         if (!has_answered) {
             await interaction.reply({
