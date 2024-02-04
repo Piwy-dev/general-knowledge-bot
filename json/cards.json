@@ -488,5 +488,222 @@
                 ]
             }
         }
+    },
+    "marketing" : {
+        "Segmentation" : {
+            "Macro-segmentation" : {
+                "color": "0xdba251",
+                "title": "Macro-segmentation",
+                "description": "La macro-segmentation segmente le marché en fonction de trois critères : \n1. Les **besoins** auxquels je réponds (quoi), \n2. Les groupes de **clients** concernés par ces besoins (qui) \n3. Les **solutions** technologiques existante capables de répondre à ces besoins (comment).",
+                "fields": [{
+                        "name": "Produit marché",
+                        "value": "Un besoin, un groupe de client, une solution."
+                    }, {
+                        "name": "Marché-solution",
+                        "value": "Un besoin, un groupe de clients, toutes les solutions."
+                    }, {
+                        "name": "Industrie",
+                        "value": "Une solution, tout les besoins, tout les groupes de clients."
+                    }, {
+                        "name": "Utilité de la macro-segmentation",
+                        "value": "1. Délimitation claire de son marché. \n2. Repérage de la concurrence générique. \n3. Diagnostic de dispersion et idées de nouveaux produits-marchés. \n4. Choix d’une stratégie de couverture \n5. Préparation d’une micro-segmentation"
+                    }, {
+                        "name": "Stratégie de couverture",
+                        "value": "1. **Concentration** : se spécialiser sur un produit-marché. \n2. **Spécialiste-produit** : se spécialiser dans une fonction mais couvrir les besoins de tous les groupes d'acheteurs concernés. \n3. **Spécialiste-client** : se concentrer sur un groupe de clients mais couvrir tous leurs besoins. \n4. **Spécialisation sélective** :  se diversifier sur plusieurs produits-marchés sans lien entre eux. \n5. **Couverture complète** : offrir une gamme complète."
+                    }
+                ]
+            },
+            "Micro-segmentation" : {
+                "color": "0xdba251",
+                "title": "Micro-segmentation",
+                "description": "La micro-segmentation permet de choisir entre standardisation et adaptation. \n**Standardisation** : gamme réduite de produits standards → coûts faible, réponse aux besoins pas optimale. \n**Adaptation** : gamme étendue de produits spécialisés → coûts élevés, réponse aux besoins optimale.",
+                "fields": [{
+                        "name": "Critères de micro-segmentation",
+                        "value": "1. **Socio-démographique** : profil du consommateur (âge, localisation, revenus, sexe, éducation…) \n2. **Avantage recherché** : valeur du produit (qualité, durabilité, prix faible, facilité d’utilisation…) \n3. **Style de vie** : habitude globale du consommateur (taux d’occupation, valeurs…) \n4. **Comportemental** : habitudes d’achat (fréquence d’achat, utilisation du produit, fidélité…) \n5. **Occasion d’achat** : moment d’achat et façon de consommer (pour moi, pour un cadeau, pour le travail, pour chez moi…)"
+                    }, {
+                        "name": "Critères de segmentation réussie",
+                        "value": "1. **Rentabilité** : Grand CA (en € ou en volume) et / ou petits coûts. \n2. **Réponse différentiée** : Homogénéité dans le segment et hétérogénéité des segment entre eux. \n3. **Réalisme** : segment identifiable et mesurable. \n4. **Accessibilité** : communication et distribution adaptée au segment visé"
+                    }
+                ]
+            }
+        }, 
+        "Ciblage": {
+            "Ciblage": {
+                "color": "0xdba251",
+                "title": "Ciblage",
+                "description": "Le ciblage est le choix de couverture des différents segments identifiés par la micro-segmentation.",
+                "fields": [{
+                        "name": "Types de ciblage",
+                        "value": "1. **Indifférencié** : tout le marché → pas de segmentation \n2. **Différencié complet** : tout le marché → segmentation \n3. **Différencié partiel** : pas tout le marché → segmentation. \n4. **Concentré** : pas tout le marché → un seul segment. \n5. **Marché de niche** : pas tout le marché → moins d’un segment (très peu de consommateur mais très rentable). \n6. **Sur-mesure** : tout le marché, solutions individuelles"
+                    }
+                ]
+            }
+        },
+        "Attractivité": {
+            "Demande primaire et demande à l'entreprise": {
+                "color": "0xdba251",
+                "title": "Demande primaire et demande à l'entreprise",
+                "fields": [{
+                        "name": "Demande primaire",
+                        "value": "La demande pour l’ensemble du marché. La demande primaire est expansible quand tous utilisateurs potentiels ne sont pas encore clients."
+                    }, {
+                        "name": "Demande à l’entreprise",
+                        "value": "La part de marché de l’entreprise."
+                    }, {
+                        "name": "Insuffisances qui créent un écart entre la demande primaire et le marché potentiel",
+                        "value": "1. Produits-marché  : tailles, options, couleurs, qualités, goûts… \n2. Utilisation  : non-utilisateurs, utilisateurs irréguliers, quantité faible… \n3. Distribution : couverture, intensité, exposition…"
+                    }, {
+                        "name": "Indicateurs de l'attractivité d'un marché",
+                        "value": "1. Attrait du marché : croissance, taille, cycle de vie, pouvoir d’achat… \n2. Intensité concurrentielle : nombre, force, substituts… \n3. Accessibilité du marché : barrières, technologies, médias…"
+                    }
+                ]
+            },
+            "Meta-marché": {
+                "color": "0xdba251",
+                "title": "Meta-marché",
+                "description": "Définir un marché non pas en fonctions d’un produit-marché, mais en fonction du résultat générique recherché par les clients (ex. organisation d’un mariage : fleuriste, traiteur, location de salle…), puis proposer une solution complète au client, en complétant sont offre et/ou en s’associant avec d’autres acteurs.",
+                "fields": [{
+                        "name": "Avantages pour l’acheteur",
+                        "value": "1. Concept aligné sur le point de vue de l’acheteur. \n2. Solution complète en un seul endroit à un problème complexe."
+                    }, {
+                        "name": "Avantages pour le vendeur",
+                        "value": "1. Communication facile. \n2. Meilleure exclusivité, fidélité et confiance. \n3. Identification d’opportunités de développement (activités liées) donc revenu potentiel supérieur. \n4. Identification des concurrents indirects et potentiels."
+                    }
+                ]
+            },
+            "Le cycle de vie d'un produit-marché": {
+                "color": "0xdba251",
+                "title": "Le cycle de vie d'un produit-marché",
+                "fields": [{
+                        "name": "Indroduction",
+                        "value": "- Risque financier élevé. \n- Demande lente et faible mais extensible. \n- Très peu de concurrence (voir monopole). \n- **Acheteurs** : innovateurs et adopteurs précoces."
+                    },  {
+                        "name": "Croissance",
+                        "value": "- Beaucoup de nouveaux entrant \n- Demande croissante et extensible \n- Beaucoup de concurrence mais pacifique \n- **Acheteurs** : majorité précoce"
+                    }, {
+                        "name": "Turbulence", 
+                        "value": "- Demande toujours croissante mais ralentie \n- Concurrence violente : départ des plus faible et restructuration. \n- **Acheteurs** : majorité précoce et majorité tardive"
+                    }, {
+                        "name": "Maturité",
+                        "value": "- Forte pression sur les prix \n- Lutte pour les parts de marché \n- Concurrence stable. \n- **Acheteurs** : majorité tardive et retardataires."
+                    }, {
+                        "name": "Déclin",
+                        "value": "- Obsolescence de la technologie ou changement d’habitude \n- Demande décroissante \n- Concurrence en déclin / disparition \n- **Acheteurs** : retardataires et spécialistes"
+                    }
+                ],
+                "image": {
+                    "url": "https://file.notion.so/f/f/3f1d15d7-392a-4d8c-938b-595bb873a21b/9a532f9b-fe23-4b87-9aff-209d7274d2ff/Capture_decran_2023-12-16_a_14.33.38.png?id=385313d2-da7f-4b47-993a-905ef8767ca1&table=block&spaceId=3f1d15d7-392a-4d8c-938b-595bb873a21b&expirationTimestamp=1706198400000&signature=6W5ge_A6LZTUpeM1kKnvx9NhTRKrVU78RK0-gsa9A6Y&downloadName=Capture+d%E2%80%99e%CC%81cran+2023-12-16+a%CC%80+14.33.38.png"
+                }
+            }
+        }, 
+        "Compétitivité": {
+            "L'avantage concurrentiel externe et la différentiation": {
+                "color": "0xdba251",
+                "title": "L'avantage concurrentiel externe et la différentiation",
+                "fields": [{
+                        "name": "Avantage concurrentiel externe",
+                        "value": "L'**avantage concurrentiel externe** se base sur les qualités et caractéristiques des produits reconnues par les clients de l’entreprise."
+                    }, {
+                        "name": "Différentiation",
+                        "value": "La **différentiation** est le fait d’apporter une caractéristique unique à un produit, qui est valorisée par les clients."
+                    }, {
+                        "name": "Stratégie de base",
+                        "value": "Différentiation"
+                    },{
+                        "name": "Matrice imporation / performance",
+                        "value": "Permet de déterminer la réussite ou non d’une différentiation en fonctions des caractéristiques du produit."
+                    }, {
+                        "name": "Conditions de réussite d'une différentiation",
+                        "value": "1. La valeur est apportée à l’acheteur soit par une augmentation de la performance du produit, soit par une diminution du prix. \n2. La différentiation doit porter sur une caractéristique importante pour le client. \n3. Le supplément de prix doit trouver une justification ****aux yeux du client. \n4. Supplément de prix >  supplément de coût causé. \n5. La différenciation doit être défendable : à l’abri des imitations. \n6. Il faut faire connaître les éléments d’unicité."
+                    }
+                ]
+            }, 
+            "L'avantage concurrentiel interne et l'effet d'expérience": {
+                "color": "0xdba251",
+                "title": "L'avantage concurrentiel interne et l'effet d'expérience",
+                "fields": [{
+                        "name": "Avantage concurrentiel interne",
+                        "value": "L’**avantage concurrentiel interne** se base sur la productivité et les coût faibles de l’entreprise."
+                    }, {
+                        "name": "L'effet d'expérience",
+                        "value": "L’**effet d’expérience** est le fait que plus on augmente la production, plus les coûts unitaires diminuent (amélioration et automatisation des processus, formations de travailleurs…). Adopter un prix de pénétration permet de vendre plus au début et donc d’accroître très rapidement son effet d’expérience."
+                    }, {
+                        "name": "Stratégie de base",
+                        "value": "Domination par les coûts"
+                    }
+                ],
+                "image": {
+                    "url": "https://file.notion.so/f/f/3f1d15d7-392a-4d8c-938b-595bb873a21b/15d54a21-6102-450e-8d31-20c4c220f051/Capture_decran_2023-12-16_a_10.31.29.png?id=ab5cc498-7330-484c-9204-7990541ea0b4&table=block&spaceId=3f1d15d7-392a-4d8c-938b-595bb873a21b&expirationTimestamp=1706212800000&signature=Dpg4wIiWiH8DcPSOwcQeTf-XaRffr8in5e0XPKBLvLw&downloadName=Capture+d%E2%80%99e%CC%81cran+2023-12-16+a%CC%80+10.31.29.png"
+                }
+            },
+            "Les situations concurrentielles": {
+                "color": "0xdba251",
+                "title": "Les situations concurrentielles",
+                "fields": [{
+                        "name": "Concurrence parfaite",
+                        "value": "- Grand nombre de fabricants et d’acheteurs. \n- Produits parfaitement substituables. \n- Prix déterminés par le jeu de l’offre et de la demande. \n- Absence de pouvoir de marché pour l’entreprise. \n- **Objectif** : Sortir de l’anonymat de la concurrence pure par la différenciation et la segmentation."
+                    }, {
+                        "name": "Concurrence monopolistique",
+                        "value": "- Grand nombre de fabricants et d’acheteurs \n- Produits ayant des qualités distinctives valorisées par les clients \n- Le capital de marque (ou d’entreprise) donne un pouvoir de marché limité. \n **Objectif** : Protéger et valoriser l’élément de différenciation."
+                    }, {
+                        "name": "Monopole",
+                        "value": "- Un seul fabricant sans concurrent direct \n- Monopole de l’innovateur limité dans le temps (introduction du CVP) \n- **Objectif** : Protéger (ou copier selon la position)"
+                    }, {
+                        "name": "Oligopole",
+                        "value": "- Petit nombre de concurrents \n- Marché stagnant ou en croissance faible \n- **Oligopole indifférencié** : les produits sont substituables \n- **Oligopole différencié** : les produits ont des caractéristiques distinctives valorisées par les clients \n- L’interdépendance entre concurrents neutralise le pouvoir de marché \n- **Objectif** : Sortir de l’anonymat de la concurrence pure par la différenciation et la segmentation."
+                    }
+                ]
+            }
+        },
+        "Stratégies" : {
+            "La matrice BCG": {
+                "color": "0xdba251",
+                "title": "La matrice BCG",
+                "fields": [{
+                        "name": "Vedette",
+                        "value": "- Leader sur un marché croissant \n- Grand besoin de liquidité \n- **Décision financière** :  Investir pour défendre la croissance. \n- **Décision stratégique** : Développer les opportunités de croissance."
+                    }, {
+                        "name": "Enfants à problèmes",
+                        "value": "- Suiveur sur un marché croissant \n- **Décision financière** : Investir pour augment les PDM ou désinvestir. \n- **Décision stratégique** : attaquer les concurrents ou cibler une niche ou quitter."
+                    }, {
+                        "name": "Vache à lait",
+                        "value": "- Leader sur un marché mature \n- Sources de liquidités \n- **Décision financière** :  Ne pas investir trop sur le produit et utiliser les liquidités sur des nouveaux produits. \n- **Décision stratégique** : Récolter les liquidité et protéger la position de force."
+                    }, {
+                        "name": "Poids morts",
+                        "value": "- Suiveur sur un marché mature \n- Rapporte peu \n- **Décision financière**: Se maintenir en adoptant un profil bas ou désinvestir. \n- **Décision stratégique** : Adopter une stratégie de niche ou récolter et extraire un cash flow maximum."
+                    }
+                ]
+            },
+            "Les stratégies de croissance": {
+                "color": "0xdba251",
+                "title": "Les stratégies de croissance",
+                "fields": [{
+                        "name": "Croissance intensive",
+                        "value": "Croître au sein du marché de référence. \n1. **Pénétration de marché** : stimuler la demande primaire et augmenter ses parts de marché \n2. **Croissance par les marchés** : nouveaux segments, expansion géographique et augmentation distribution \n3. **Croissance par les produit** : extension de gamme, amélioration des produits et rajeunissement des anciens produits \n 4. **Diversification** : concentrique -> complémentaire à ce qu’on faisait avant (même savoir faire…) (Nutella) ou pure -> autre domaine (Virgin : Radio, Casinos…)"
+                    }, {
+                        "name": "Croissance intégrative",
+                        "value": "On rachète des entreprises (donne plus de pouvoir sur l’industrie) : \n1. **Intégration en amont** : racheter des fournisseurs. \n2. **Intégration en aval** : racheter des distributeurs. \n3. **Intégration horizontale** : racheter des concurrents."
+                    }
+                ]
+            },
+            "Les stratégies conurrenctielles": {
+                "color": "0xdba251",
+                "title": "Les stratégies cocurrentielles",
+                "fields": [{
+                        "name": "Leader (domine en PDM)",
+                        "value": "1. **Offensif** : Maximiser ses parts de marché → industrie de volume \n2. **Défensif** : Garder ses parts de marché → innovation, gamme, pub \n3. **Recul volontaire** : Réduire sa taille pour éviter le monopole"
+                    }, {
+                        "name": "Challenger (deuxième en PDM)",
+                        "value": "→ But : surpasser le leader \n1. **Attaque frontale** : substitut direct au leader (même attributs, même forces) \n2. **Attaque latérale** : on s’attaque au point faible du leaderc \n3. **Acquisition** : augmenter sa taille en rachetant des concurrents"
+                    }, {
+                        "name": "Suiveur",
+                        "value": "Coexister avec les autres acteurs de manière pacifique mais créative. \n→ Créativité, segmentation, amélioration des coûts, R&D, rester à petite échelle"
+                    }, {
+                        "name": "Spécialiste",
+                        "value": "Coexister avec les autres acteurs de manière pacifique mais créative. \n→ Créativité, segmentation, amélioration des coûts, R&D, rester à petite échelle"
+                    }
+                ]
+            }
+        }
     }
 }

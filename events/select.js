@@ -93,6 +93,7 @@ module.exports = (client) => {
                 case 'algebra': subjects = cards.algebra;  break;
                 case 'algorithmics': subjects = cards.algorithmics; break;
                 case 'electronics': subjects = cards.electronics; break;
+                case 'marketing': subjects = cards.marketing; break;
             }
             previousSubjects = subjects
 

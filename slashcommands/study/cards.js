@@ -34,6 +34,9 @@ module.exports = {
                 new d.StringSelectMenuOptionBuilder()
 					.setLabel(language(guild, 'ELECTRONICS'))
 					.setValue('electronics'),
+                new d.StringSelectMenuOptionBuilder()
+					.setLabel(language(guild, 'MARKETING'))
+					.setValue('marketing'),
             )
 
         const row = new d.ActionRowBuilder()
