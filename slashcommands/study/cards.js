@@ -37,6 +37,12 @@ module.exports = {
                 new d.StringSelectMenuOptionBuilder()
 					.setLabel(language(guild, 'MARKETING'))
 					.setValue('marketing'),
+                new d.StringSelectMenuOptionBuilder()
+                    .setLabel(language(guild, 'FIRST_AID'))
+                    .setValue('firstaid'),
+                new d.StringSelectMenuOptionBuilder()
+                    .setLabel(language(guild, 'HERALDRY'))
+                    .setValue('heraldry')
             )
 
         const row = new d.ActionRowBuilder()

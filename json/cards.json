@@ -705,5 +705,40 @@
                 ]
             }
         }
+    },
+    "firstaid": {
+        "Concepts de base": {
+            "Contacter les secours": {
+                "color": "0xff0000",
+                "title": "Contacter les secours",
+                "description": "Pour contactet les secours il faut suivre la règle \"Où, Qui, Quoi\" pour donner les informations nécessaires aux secours.",
+                "fields": [{
+                        "name": "Où",
+                        "value": "Donner l'adresse précise de l'endroit où se trouve la victime (ville, rue, numéro de rue, étage, appartement...). On commence par l'endroit de l'urgence comme ça si l'appel est coupé, les secours peuvent quand même se rendre sur place."
+                    }, {
+                        "name": "Qui",
+                        "value": "Dites qui vous êtes (Nom et prénom)."
+                    }, {
+                        "name": "Quoi",
+                        "value": "Donner les informations sur l'accident. Ce qui s'est passé, le nombre de victimes et l'état des victimes, leur âge... et répondez aux questions des secours. Ils resteront en ligne avec vous pour vous guider et vous donner des conseils tant que c'est nécessaire."
+                    }
+                ]
+            }
+        }
+    },
+    "heraldry": {
+        "Blason": {
+            "color": "0x000000",
+            "title": "Blason",
+            "description": "Le blason est un écu sur lequel sont représentés des éléments graphiques et des couleurs. Il est divisé en plusieurs parties qui correspondent à des éléments de la nature ou à des objets. Chaque élément a une signification particulière.",
+            "fields": [{
+                    "name": "Parties de l'écu",
+                    "value": "1. **Chef** : partie supérieure de l'écu. \n2. **Flancs** : parties latérales de l'écu. \n3. **Pointe** : partie inférieure de l'écu. \n4. **Canton** : partie de l'écu située dans le coin supérieur droit. \n5. **Cimier** : élément qui surmonte l'écu. \n6. **Supports** : animaux ou objets qui soutiennent l'écu. \n7. **Devise** : phrase ou expression qui accompagne le blason."
+                }, {
+                    "name": "Couleurs",
+                    "value": "1. **Métaux** : Or (jaune) et Argent (blanc). \n2. **Émaux** : Gueules (rouge), Azur (bleu), Sable (noir), Sinople (vert) et Pourpre (violet)."
+                }
+            ]
+        }
     }
 }

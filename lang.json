@@ -475,6 +475,16 @@
             "french": "Philosophie",
             "dutch": "Filosofie"
         },
+        "FIRST_AID": {
+            "english": "First aid",
+            "french": "Premiers secours",
+            "dutch": "Eerste hulp"
+        },
+        "HERALDRY": {
+            "english": "Heraldry",
+            "french": "Héraldique",
+            "dutch": "Heraldiek"
+        },
         "NEW_QST": {
             "english": "If you want a new question, select a theme below.",
             "french": "Si tu veux une nouvelle question, sélectionne un thème ci-dessous.",
