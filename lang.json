@@ -485,6 +485,11 @@
             "french": "Héraldique",
             "dutch": "Heraldiek"
         },
+        "CALCULABILITY": {
+            "english": "Calculability",
+            "french": "Calculabilité",
+            "dutch": "Berekenbaarheid"
+        },
         "NEW_QST": {
             "english": "If you want a new question, select a theme below.",
             "french": "Si tu veux une nouvelle question, sélectionne un thème ci-dessous.",

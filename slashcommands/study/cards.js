@@ -40,9 +40,12 @@ module.exports = {
                 new d.StringSelectMenuOptionBuilder()
                     .setLabel(language(guild, 'FIRST_AID'))
                     .setValue('firstaid'),
-                new d.StringSelectMenuOptionBuilder()
+                /*new d.StringSelectMenuOptionBuilder()
                     .setLabel(language(guild, 'HERALDRY'))
-                    .setValue('heraldry')
+                    .setValue('heraldry')*/
+                new d.StringSelectMenuOptionBuilder()
+                    .setLabel(language(guild, 'CALCULABILITY'))
+                    .setValue('calculability')
             )
 
         const row = new d.ActionRowBuilder()

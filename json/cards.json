@@ -726,19 +726,58 @@
             }
         }
     },
-    "heraldry": {
-        "Blason": {
-            "color": "0x000000",
-            "title": "Blason",
-            "description": "Le blason est un écu sur lequel sont représentés des éléments graphiques et des couleurs. Il est divisé en plusieurs parties qui correspondent à des éléments de la nature ou à des objets. Chaque élément a une signification particulière.",
-            "fields": [{
-                    "name": "Parties de l'écu",
-                    "value": "1. **Chef** : partie supérieure de l'écu. \n2. **Flancs** : parties latérales de l'écu. \n3. **Pointe** : partie inférieure de l'écu. \n4. **Canton** : partie de l'écu située dans le coin supérieur droit. \n5. **Cimier** : élément qui surmonte l'écu. \n6. **Supports** : animaux ou objets qui soutiennent l'écu. \n7. **Devise** : phrase ou expression qui accompagne le blason."
-                }, {
-                    "name": "Couleurs",
-                    "value": "1. **Métaux** : Or (jaune) et Argent (blanc). \n2. **Émaux** : Gueules (rouge), Azur (bleu), Sable (noir), Sinople (vert) et Pourpre (violet)."
-                }
-            ]
+    "calculability": {
+        "Théorèmes": {
+            "Théorème de Cantor": {
+                "color": "0x325ca8",
+                "title": "Théorème de Cantor",
+                "description": "Le théorème de Cantor est un théorème de la théorie des ensembles qui énonce que pour tout ensemble E, il n'existe pas de bijection entre E et l'ensemble de ses parties.",
+                "fields": [{
+                        "name": "Formulation",
+                        "value": "Pour tout ensemble E, il n'existe pas de bijection entre E et l'ensemble de ses parties."
+                    }
+                ]
+            },
+            "Théorème de Hoare-Allison": {
+                "color": "0x325ca8",
+                "title": "Théorème de Hoare-Allison",
+                "description": "Le théorème de Hoare-Allison est un théorème de la théorie des ensembles qui énonce que pour tout ensemble E, il existe une bijection entre E et l'ensemble de ses parties.",
+                "fields": [{
+                        "name": "Formulation",
+                        "value": "Pour tout ensemble E, il existe une bijection entre E et l'ensemble de ses parties."
+                    }
+                ]
+            },
+            "Théorème de Rice": {
+                "color": "0x325ca8",
+                "title": "Théorème de Rice",
+                "description": "Le théorème de Rice est un théorème de la théorie de la calculabilité qui énonce que pour toute propriété non triviale des fonctions calculables, il est impossible de déterminer algorithmiquement si une machine de Turing donnée calcule une fonction ayant cette propriété.",
+                "fields": [{
+                        "name": "Formulation",
+                        "value": "Soit P une propriété non triviale des fonctions calculables. Alors il est impossible de déterminer algorithmiquement si une machine de Turing donnée calcule une fonction ayant cette propriété."
+                    }
+                ]
+            },
+            "Théorème de l'arret (HALT)": {
+                "color": "0x325ca8",
+                "title": "Théorème de l'arrêt (HALT)",
+                "description": "Le théorème de l'arrêt est un théorème de la théorie de la calculabilité qui énonce qu'il est impossible de déterminer, de manière algorithmique, si un programme informatique donné s'arrêtera ou non.",
+                "fields": [{
+                        "name": "Formulation",
+                        "value": "Il n'existe pas de programme qui, étant donné un programme P et une entrée I, détermine si P s'arrête sur I ou non."
+                    }
+                ]
+            },
+            "Théorème du point fixe": {
+                "color": "0x325ca8",
+                "title": "Théorème du point fixe",
+                "description": "Le théorème du point fixe est un théorème de la théorie des ensembles qui énonce que pour toute fonction f définie sur un ensemble E, s'il existe un élément x de E tel que f(x) = x, alors x est un point fixe de f.",
+                "fields": [{
+                        "name": "Formulation",
+                        "value": "Soit f une fonction définie sur un ensemble E. Si f admet un point fixe x, alors x est un point fixe de f."
+                    }
+                ]
+            }
         }
     }
 }

@@ -95,7 +95,8 @@ module.exports = (client) => {
                 case 'electronics': subjects = cards.electronics; break;
                 case 'marketing': subjects = cards.marketing; break;
                 case 'firstaid': subjects = cards.firstaid; break;
-                case 'heraldry': subjects = cards.heraldry; break;
+                //case 'heraldry': subjects = cards.heraldry; break;
+                case 'calculability': subjects = cards.calculability; break;
             }
             previousSubjects = subjects
 
