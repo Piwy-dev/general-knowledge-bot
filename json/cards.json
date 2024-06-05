@@ -761,10 +761,10 @@
             "Théorème de l'arret (HALT)": {
                 "color": "0x325ca8",
                 "title": "Théorème de l'arrêt (HALT)",
-                "description": "Le théorème de l'arrêt est un théorème de la théorie de la calculabilité qui énonce qu'il est impossible de déterminer, de manière algorithmique, si un programme informatique donné s'arrêtera ou non.",
+                "description": "Une fonction disant si un programme s’arrête ou non n’est pas calculable.",
                 "fields": [{
-                        "name": "Formulation",
-                        "value": "Il n'existe pas de programme qui, étant donné un programme P et une entrée I, détermine si P s'arrête sur I ou non."
+                        "name": "Démonstration",
+                        "value": ""
                     }
                 ]
             },
