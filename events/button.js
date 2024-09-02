@@ -8,7 +8,7 @@ module.exports = (client) => {
 
         if(!interaction.isButton()) return;
 
-        // Verify if the button is the flag button
+        /* FLAG BUTTON */
         if(interaction.customId === 'flag') {
             // Create the flag modal
             const flagModal = new d.ModalBuilder()
@@ -26,7 +26,27 @@ module.exports = (client) => {
 
             await interaction.showModal(flagModal);
         }
-        // Verify if the button is the logo button
+
+        /* TRUE OR FALSE BUTTON */
+        else if(interaction.customId === 'truefalse') {
+            // Create the true or false modal
+            const trueFalseModal = new d.ModalBuilder()
+            .setCustomId('trueFalseModal')
+            .setTitle(`${language(guild, "TRUE_FALSE_TITLE")}`)
+
+            const trueFalseInput = new d.TextInputBuilder()
+                .setCustomId('trueFalseInput')
+                .setLabel(`${language(guild, "TRUE_FALSE_ANSWER")}`)
+                .setStyle(d.TextInputStyle.Short);
+
+            const trueFalseActionRow = new d.ActionRowBuilder().addComponents(trueFalseInput);
+
+            trueFalseModal.addComponents(trueFalseActionRow);
+
+            await interaction.showModal(trueFalseModal);
+        }
+
+        /* LOGO BUTTON */
         else if(interaction.customId === 'logo') {
             // Create the logo modal
             const logoModal = new d.ModalBuilder()
@@ -43,7 +63,8 @@ module.exports = (client) => {
             logoModal.addComponents(logoActionRow);
             await interaction.showModal(logoModal);
         }
-        // Verify if the button is the capitals button
+
+        /* CAPITALS BUTTONS */
         else if(interaction.customId === 'capitals') {
             // Create the capitals modal
             const capitalsModal = new d.ModalBuilder()
@@ -60,7 +81,8 @@ module.exports = (client) => {
             capitalsModal.addComponents(capitalsActionRow);
             await interaction.showModal(capitalsModal);
         }
-        // Verify if the button is the part button
+
+        /* PARTICIPLE BUTTON */
         else if(interaction.customId === 'participle') {
             // Create the participle modal
             const partModal = new d.ModalBuilder()
@@ -77,7 +99,8 @@ module.exports = (client) => {
             partModal.addComponents(partActionRow);
             await interaction.showModal(partModal);
         }
-        // Verify if the button is the imperfect button
+        
+        /* IMPERFECT BUTTON */
         else if(interaction.customId === 'imperfect') {
             // Create the imperfect modal
             const impfModal = new d.ModalBuilder()
@@ -94,7 +117,8 @@ module.exports = (client) => {
             impfModal.addComponents(impfActionRow);
             await interaction.showModal(impfModal);
         }
-        // Verify if the button is the infinitive button
+
+        /* INFINITIVE BUTTON */
         else if(interaction.customId === 'infButton') {
             // Create the infinitive modal
             const infModal = new d.ModalBuilder()

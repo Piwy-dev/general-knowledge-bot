@@ -145,7 +145,7 @@
             "french": "Étudier les imparfaits",
             "dutch": "Bestudeer imperfectum"
         },
-        "STUDY_IMPERF_DESCR" : {
+        "STUDY_IMPERF_DESCR": {
             "english": "`/study-imperfect` currently not working properly.",
             "french": "`/study-imperfect` ne fonctionne pas correctement actuellement.",
             "dutch": "`/study-imperfect` werkt momenteel niet goed."
@@ -347,7 +347,7 @@
         },
         "UPD_FIXES_VALUE": {
             "english": "→ Fixing the system of correction of the test of flags, logos and capitals /flags /logos /capitals",
-			"french": "→  Correction du système de correction du test des drapeaux , des logos, et des capitales /drapeaux /logos /capitales",
+            "french": "→  Correction du système de correction du test des drapeaux , des logos, et des capitales /drapeaux /logos /capitales",
             "dutch": "→ Verbetering van het systeem van de correctie van de test van de vlaggen, logo's en hoofdsteden /vlaggen /logo's /hoofdsteden"
         },
         "UPD_IMP": {
@@ -390,10 +390,10 @@
             "french": "Tu peux répondre.",
             "dutch": "Je mag antwoorden."
         },
-        "GIVE_ANSW": {
-            "english": "Give the answer",
-            "french": "Donne la réponse",
-            "dutch": "Geef het antwoord"
+        "GIVE_ANSWER": {
+            "english": "Give your answer",
+            "french": "Donne ta réponse",
+            "dutch": "Geef je antwoord"
         },
         "PARTICIPLE": {
             "english": "Give the answer",
@@ -544,6 +544,16 @@
             "english": "Select a card",
             "french": "Selectionne une fiche",
             "dutch": "Selecteer een kaart"
+        },
+        "TRUE_FALSE_TITLE": {
+            "english": "True or false question",
+            "french": "Question \"vrai ou faux\"",
+            "dutch": "Waar of niet waar vraag"
+        },
+        "TRUE_FALSE_ANSWER": {
+            "english": "Enter \"true\" or \"false\"",
+            "french": "Entre \"vrai\" ou \"faux\"",
+            "dutch": "Voer \"waar\" of \"niet waar\" in"
         }
     }
 }

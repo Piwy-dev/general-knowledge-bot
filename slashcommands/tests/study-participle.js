@@ -64,7 +64,7 @@ module.exports = {
             .addComponents(
                 new d.ButtonBuilder()
                 .setCustomId('participle')
-                .setLabel(`${language(guild, "GIVE_ANSW")}`)
+                .setLabel(`${language(guild, "GIVE_ANSWER")}`)
                 .setStyle(d.ButtonStyle.Success)
             )
 

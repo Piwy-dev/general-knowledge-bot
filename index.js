@@ -75,7 +75,7 @@ client.once(d.Events.ClientReady, async () => {
     })
 
     // Charge les events
-    const testAnswers = require('./events/testAnswers')
+    const testAnswers = require('./events/button')
     const select = require('./events/select')
     testAnswers(client)
     select(client)

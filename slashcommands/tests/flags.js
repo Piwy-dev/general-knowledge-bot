@@ -109,7 +109,7 @@ module.exports = {
             has_answered = true;
             
             interaction.editReply({
-                content: `${member}, ${language(guild, "QST_OUTDATED_1")} 5 ${language(guild, "QST_OUTDATED_2")} ${contries[i].split(", ")[0]}`,
+                content: `${member}, ${language(guild, "QST_OUTDATED_1")} 5 ${language(guild, "QST_OUTDATED_2")} ${contries[i][lang]}`,
                 components: [],
             })
 
