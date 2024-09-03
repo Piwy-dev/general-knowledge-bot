@@ -49,4 +49,4 @@ Add the bot to your server : [link](https://discord.com/api/oauth2/authorize?cli
 Bot created by : piwy_
 
 
-Current version : 1.3.7
+Current version : 1.3.8
