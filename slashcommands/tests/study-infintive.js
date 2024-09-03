@@ -38,6 +38,17 @@ module.exports = {
         ),
 
     async execute(interaction) {
+        // If user has not answered the previous question
+        if (!has_answered) {
+            await interaction.reply({
+                content: `${language(guild, "PREVIOUS_QUESTION_NOT_ANSWERED")}`,
+                ephemeral: true
+            })
+            return
+        }
+        
+        has_answered = false;
+
         const { guild, member, options } = interaction
 
         await interaction.deferReply( { ephemeral: true } );

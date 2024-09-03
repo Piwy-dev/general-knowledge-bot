@@ -24,20 +24,20 @@ module.exports = {
         }),
 
     async execute(interaction) {
-        const { guild, member } = interaction
-        const lang = guildLanguages[guild.id]
-
-        await interaction.deferReply({ ephemeral: true })
-
         if (!has_answered) {
             await interaction.reply({
-                content: `${language(guild, "HAS_ANSWERED")}`,
+                content: `${language(guild, "PREVIOUS_QUESTION_NOT_ANSWERED")}`,
                 ephemeral: true
             })
             return
         }
 
         has_answered = false;
+
+        const { guild, member } = interaction
+        const lang = guildLanguages[guild.id]
+
+        await interaction.deferReply({ ephemeral: true })
 
         const i = Math.floor(Math.random() * contries.length)
 

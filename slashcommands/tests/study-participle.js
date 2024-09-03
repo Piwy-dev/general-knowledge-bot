@@ -9,6 +9,8 @@ const language = require('../../language.js')
 
 const profile = require('../../db/profile.js')
 
+let has_answered = true;
+
 module.exports = {
     data: new d.SlashCommandBuilder()
         .setName("study-participle")
@@ -32,6 +34,16 @@ module.exports = {
         ),
 
     async execute(interaction) {
+        if (!has_answered) {
+            await interaction.reply({
+                content: `${language(guild, "PREVIOUS_QUESTION_NOT_ANSWERED")}`,
+                ephemeral: true
+            })
+            return
+        }
+
+        has_answered = false;
+
         const { guild, member, channel, options } = interaction
 
         await interaction.deferReply( { ephemeral: true } );

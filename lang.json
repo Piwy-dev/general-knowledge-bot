@@ -380,7 +380,7 @@
             "french": "Les logs de mise à jour ont été envoyés.",
             "dutch": "De update logs zijn verzonden."
         },
-        "HAS_ANSWERED": {
+        "PREVIOUS_QUESTION_NOT_ANSWERED": {
             "english": "You have not answered the previous question.",
             "french": "Tu n'a pas encore répondu à la question précédente.",
             "dutch": "Je hebt het vorige vraag niet beantwoord."

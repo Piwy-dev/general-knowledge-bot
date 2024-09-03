@@ -19,24 +19,22 @@ module.exports = {
             nl: "Test uw kennis van logo's.",
         }),
        
-    async execute(interaction, client) {
-        const { guild, member, channel, options } = interaction
-
+    async execute(interaction) {
         if (!has_answered) {
             await interaction.reply({
-                content: `${language(guild, "HAS_ANSWERED")}`,
+                content: `${language(guild, "PREVIOUS_QUESTION_NOT_ANSWERED")}`,
                 ephemeral: true
             })
             return
         }
 
-        // Mark the answer as not answered
         has_answered = false;
+
+        const { guild, member } = interaction
 
         // Get a random logo
         let rd = 1 + Math.floor(Math.random() * 71);
 
-        // Create the button
         const logoButton = new d.ActionRowBuilder()
         .addComponents(
             new d.ButtonBuilder()

@@ -21,15 +21,9 @@ module.exports = {
         }),
 
     async execute(interaction) {
-        const { guild, user, member } = interaction
-
-        const selectedLanguage = await language.guildLanguages[guild.id]
-
-        await interaction.deferReply()
-
         if (!has_answered) {
             await interaction.reply({
-                content: `${language(guild, "HAS_ANSWERED")}`,
+                content: `${language(guild, "PREVIOUS_QUESTION_NOT_ANSWERED")}`,
                 ephemeral: true
             })
             return
@@ -37,6 +31,13 @@ module.exports = {
 
         has_answered = false;
 
+        const { guild, user, member } = interaction
+
+        const selectedLanguage = await language.guildLanguages[guild.id]
+
+        await interaction.deferReply()
+
+        // Get a random question
         var i = Math.floor(Math.random() * truefalse.questions.length)
 
         const trueFalseButton = new d.ActionRowBuilder()
