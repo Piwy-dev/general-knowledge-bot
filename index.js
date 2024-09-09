@@ -1,63 +1,67 @@
+/** Packages **/
 const d = require('discord.js');
-
 const fs = require('node:fs');
 const path = require('node:path');
-
 require('dotenv').config()
 
-const client = new d.Client({ intents: [d.GatewayIntentBits.Guilds, d.GatewayIntentBits.GuildMessages, d.GatewayIntentBits.GuildMessageReactions, d.GatewayIntentBits.Guilds] });
+/** Environment **/
+const production = false;
+production ? console.log("Bot is set in production mode !\n") : console.log("Bot is set in test mode !\n")
 
+/** Discord **/
+const client = new d.Client({ intents: [d.GatewayIntentBits.Guilds, d.GatewayIntentBits.GuildMessages, d.GatewayIntentBits.GuildMessageReactions, d.GatewayIntentBits.Guilds] });
+const { mainEmbed, testEmbed, irrverbsEmbed, studyEmbed, profileEmbed, configurationEmbed, inviteButtons } = require('./builders')
+
+/** Database **/
 const mongo = require("./db/mongo");
+
+/** Language **/
 const languageSchema = require('./db/language-schema');
 const { loadLanguages, setLanguage } = require('./language')
 const language = require('./language')
 
+/** Slash commands **/
 const commands = [];
 client.commands = new d.Collection();
 const foldersPath = path.join(__dirname, 'slashcommands');
 const commandFolders = fs.readdirSync(foldersPath);
 
-const { mainEmbed, testEmbed, irrverbsEmbed, studyEmbed, profileEmbed, configurationEmbed, inviteButtons } = require('./builders')
-
-
 for (const folder of commandFolders) {
-	// Grab all the command files from the commands directory you created earlier
-	const commandsPath = path.join(foldersPath, folder);
-	const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
-	// Grab the SlashCommandBuilder#toJSON() output of each command's data for deployment
-	for (const file of commandFiles) {
-		const filePath = path.join(commandsPath, file);
-		const command = require(filePath);
-		if ('data' in command && 'execute' in command) {
+    // Grab all the command files from the commands directory you created earlier
+    const commandsPath = path.join(foldersPath, folder);
+    const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
+    // Grab the SlashCommandBuilder#toJSON() output of each command's data for deployment
+    for (const file of commandFiles) {
+        const filePath = path.join(commandsPath, file);
+        const command = require(filePath);
+        if ('data' in command && 'execute' in command) {
             client.commands.set(command.data.name, command)
-			commands.push(command.data.toJSON());
-		} else {
-			console.log(`[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`);
-		}
-	}
+            commands.push(command.data.toJSON());
+        } else {
+            console.log(`[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`);
+        }
+    }
 }
 
-/* Construct and prepare an instance of the REST module */
-const rest = new d.REST({ version: '10' }).setToken(process.env.TEST_TOKEN); // Test
-//const rest = new d.REST().setToken(process.env.TOKEN); // Production
+// Construct and prepare an instance of the REST module
+let rest;
+production ? rest = new d.REST({ version: '10' }).setToken(process.env.PROD_TOKEN) : rest = new d.REST({ version: '10' }).setToken(process.env.TEST_TOKEN);
 
-// and deploy your commands!
+// Deploy commands 
 (async () => {
-	try {
-		console.log(`Started refreshing ${commands.length} application (/) commands.`);
+    try {
+        console.log(`Started refreshing ${commands.length} application (/) commands.`);
 
-		// The put method is used to fully refresh all commands in the guild with the current set
-		const data = await rest.put(
-			d.Routes.applicationGuildCommands(process.env.TEST_CLIENT_ID, process.env.GUILD_ID), // Test
-            //d.Routes.applicationCommands(process.env.CLIENT_ID), // Production
-			{ body: commands },
-		);
+        // The put method is used to fully refresh all commands in the guild with the current set
+        const data = await rest.put(
+            production ? d.Routes.applicationCommands(process.env.CLIENT_ID) : d.Routes.applicationCommands(process.env.TEST_CLIENT_ID, process.env.GUILD_ID),
+            { body: commands },
+        );
 
-		console.log(`Successfully reloaded ${data.length} application (/) commands.`);
-	} catch (error) {
-		// And of course, make sure you catch and log any errors!
-		console.error(error);
-	}
+        console.log(`Successfully reloaded ${data.length} application (/) commands.`);
+    } catch (error) {
+        console.error(error);
+    }
 })();
 
 
@@ -93,31 +97,31 @@ client.once(d.Events.ClientReady, async () => {
 });
 
 client.on(d.Events.InteractionCreate, async interaction => {
-	if (!interaction.isChatInputCommand()) return;
+    if (!interaction.isChatInputCommand()) return;
 
-	const command = interaction.client.commands.get(interaction.commandName);
+    const command = interaction.client.commands.get(interaction.commandName);
 
-	if (!command) {
-		console.error(`No command matching ${interaction.commandName} was found.`);
-		return;
-	}
+    if (!command) {
+        console.error(`No command matching ${interaction.commandName} was found.`);
+        return;
+    }
 
-	try {
-		await command.execute(interaction);
-	} catch (error) {
-		console.error(error);
-		if (interaction.replied || interaction.deferred) {
-			await interaction.followUp({ content: 'There was an error while executing this command!', ephemeral: true });
-		} else {
-			await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
-		}
-	}
+    try {
+        await command.execute(interaction);
+    } catch (error) {
+        console.error(error);
+        if (interaction.replied || interaction.deferred) {
+            await interaction.followUp({ content: 'There was an error while executing this command!', ephemeral: true });
+        } else {
+            await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
+        }
+    }
 });
 
 client.on(d.Events.GuildCreate, async guild => {
     // By default sets the bot language to english
     setLanguage(guild, "english")
-    await mongo().then(async(mongoose) => {
+    await mongo().then(async (mongoose) => {
         try {
             await languageSchema.findOneAndUpdate({
                 _id: guild.id
@@ -136,15 +140,15 @@ client.on(d.Events.GuildCreate, async guild => {
     // Find the first channel of the server
     const channel = guild.channels.cache.filter(channel => channel.type == d.ChannelType.GuildText).first()
     if (!channel) return console.log("Impossible de trouver le premier channel du serveur.")
-    
-    await channel.send({ 
+
+    await channel.send({
         embeds: [mainEmbed(guild), testEmbed(guild), irrverbsEmbed(guild), studyEmbed(guild), profileEmbed(guild), configurationEmbed(guild)],
         components: [inviteButtons(guild)]
     })
 
     // Sends a log message when the bot is added to a server
-    const logChannel = client.guilds.cache.get('784075037333520395').channels.cache.get('1119649916617244832') // Test
-    //const logChannel = client.guilds.cache.get('791608838209142796').channels.cache.get('943968391323066418') // Production
+    let logChannel;
+    production ? logChannel = client.guilds.cache.get('791608838209142796').channels.cache.get('943968391323066418') : logChannel = client.guilds.cache.get('784075037333520395').channels.cache.get('1119649916617244832')
     if (!logChannel) return console.log("Le channel de logs des nouveaux serveur n'existe pas.")
 
     const guildOwner = await guild.fetchOwner()
@@ -161,8 +165,8 @@ client.on(d.Events.GuildCreate, async guild => {
 
 // Sends a message when the bot is removed from a server
 client.on(d.Events.GuildDelete, async guild => {
-    const logChannel = client.guilds.cache.get('784075037333520395').channels.cache.get('1119649916617244832') // Test
-    //const logChannel = client.guilds.cache.get('791608838209142796').channels.cache.get('943968391323066418') // Production
+    let logChannel;
+    production ? logChannel = client.guilds.cache.get('791608838209142796').channels.cache.get('943968391323066418') : logChannel = client.guilds.cache.get('784075037333520395').channels.cache.get('1119649916617244832')
     if (!logChannel) return console.log("Le channel de logs des serveur n'existe pas.")
 
     // Try finding the owner
@@ -186,7 +190,4 @@ client.on(d.Events.GuildDelete, async guild => {
     })
 })
 
-// Test
-client.login(process.env.TEST_TOKEN)
-// Production
-//client.login(process.env.TOKEN)
+production ? client.login(process.env.PROD_TOKEN) : client.login(process.env.TEST_TOKEN)
