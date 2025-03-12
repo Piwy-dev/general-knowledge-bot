@@ -5,8 +5,12 @@ const path = require('node:path');
 require('dotenv').config()
 
 /** Environment **/
-const production = false;
-production ? console.log("Bot is set in production mode !\n") : console.log("Bot is set in test mode !\n")
+const production = process.env.BOT_ENV === 'production';
+if (production) {
+    console.log("Bot is set in production mode !");
+} else {
+    console.log("Bot is set in test mode !");
+}
 
 /** Discord **/
 const client = new d.Client({ intents: [d.GatewayIntentBits.Guilds, d.GatewayIntentBits.GuildMessages, d.GatewayIntentBits.GuildMessageReactions, d.GatewayIntentBits.Guilds] });
@@ -44,8 +48,8 @@ for (const folder of commandFolders) {
 }
 
 // Construct and prepare an instance of the REST module
-let rest;
-production ? rest = new d.REST({ version: '10' }).setToken(process.env.PROD_TOKEN) : rest = new d.REST({ version: '10' }).setToken(process.env.TEST_TOKEN);
+const token = process.env.BOT_ENV === 'production' ? process.env.PROD_TOKEN : process.env.TEST_TOKEN;
+const rest = new d.REST({ version: '10' }).setToken(token);
 
 // Deploy commands 
 (async () => {
@@ -147,8 +151,10 @@ client.on(d.Events.GuildCreate, async guild => {
     })
 
     // Sends a log message when the bot is added to a server
-    let logChannel;
-    production ? logChannel = client.guilds.cache.get('791608838209142796').channels.cache.get('943968391323066418') : logChannel = client.guilds.cache.get('784075037333520395').channels.cache.get('1119649916617244832')
+    const logChannelId = production
+    ? { guildId: '791608838209142796', channelId: '943968391323066418' }
+    : { guildId: '784075037333520395', channelId: '1119649916617244832' };
+    const logChannel = client.guilds.cache.get(logChannelId.guildId).channels.cache.get(logChannelId.channelId);
     if (!logChannel) return console.log("Le channel de logs des nouveaux serveur n'existe pas.")
 
     const guildOwner = await guild.fetchOwner()
@@ -165,9 +171,11 @@ client.on(d.Events.GuildCreate, async guild => {
 
 // Sends a message when the bot is removed from a server
 client.on(d.Events.GuildDelete, async guild => {
-    let logChannel;
-    production ? logChannel = client.guilds.cache.get('791608838209142796').channels.cache.get('943968391323066418') : logChannel = client.guilds.cache.get('784075037333520395').channels.cache.get('1119649916617244832')
-    if (!logChannel) return console.log("Le channel de logs des serveur n'existe pas.")
+     const logChannelId = production
+     ? { guildId: '791608838209142796', channelId: '943968391323066418' }
+     : { guildId: '784075037333520395', channelId: '1119649916617244832' };
+     const logChannel = client.guilds.cache.get(logChannelId.guildId).channels.cache.get(logChannelId.channelId);
+     if (!logChannel) return console.log("Le channel de logs des nouveaux serveur n'existe pas.")
 
     // Try finding the owner
     let guildOwner = 'Unknown'
@@ -190,4 +198,4 @@ client.on(d.Events.GuildDelete, async guild => {
     })
 })
 
-production ? client.login(process.env.PROD_TOKEN) : client.login(process.env.TEST_TOKEN)
+client.login(token);
