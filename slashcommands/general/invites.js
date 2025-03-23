@@ -1,5 +1,6 @@
 const d = require('discord.js');
 const language = require('../../language')
+require('dotenv').config()
 
 module.exports = {
     data: new d.SlashCommandBuilder()
@@ -12,7 +13,8 @@ module.exports = {
 
     async execute(interaction, client) {
         const { guild } = interaction
-        const invite = client.generateInvite({ scopes: ['bot', 'applications.commands'], permissions: [d.PermissionsBitField.Flags.Administrator] })
+        const clientId = process.env.CLIENT_ID
+        const invite = `https://discord.com/oauth2/authorize?client_id=${clientId}&permissions=8&scope=bot+applications.commands`
 
         const inviteButton = new d.ActionRowBuilder()
             .addComponents(
