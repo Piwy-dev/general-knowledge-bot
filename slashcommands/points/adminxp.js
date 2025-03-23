@@ -49,7 +49,7 @@ module.exports = {
 
         const amountXp = options.getNumber('points')
 
-        const xp = profile.addxp(guild.id, target.id, amountXp)
+        const xp = await profile.addxp(guild.id, target.id, amountXp)
 
         interaction.editReply(`${target} ${language(guild, "HAS_RECIVED")} ${amountXp} points, ${language(guild, "NOW_HAS")} ${xp} points`)
     }
