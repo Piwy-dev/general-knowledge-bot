@@ -30,6 +30,10 @@ module.exports = {
             .setTitle(language(guild, 'QUESTIONS'))
             .setDescription(language(guild, 'QST_SELECT'))
 
-        await interaction.reply({ embeds: [embed], components: [row], ephemeral: true })
+        await interaction.reply({ 
+            embeds: [embed],
+            components: [row],
+            flags: d.MessageFlags.Ephemeral
+        })
     }
 }

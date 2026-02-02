@@ -56,6 +56,10 @@ module.exports = {
             .setTitle(language(guild, 'COURSES'))
             .setDescription(language(guild, 'COURSES_DESC'))
 
-        await interaction.reply({ embeds: [embed], components: [row], ephemeral: true })
+        await interaction.reply({ 
+            embeds: [embed], 
+            components: [row], 
+            flags: d.MessageFlags.Ephemeral
+        })
     }
 }
