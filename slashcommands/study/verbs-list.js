@@ -62,7 +62,7 @@ module.exports = {
             default:
                 interaction.reply({
                     content: "Unknown language !",
-                    ephemeral: true
+                    flags: d.MessageFlags.Ephemeral
                 })
                 langIsSelected = false;
                 break;

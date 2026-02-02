@@ -52,6 +52,6 @@ module.exports = {
             components: [buttons]
         })
 
-        await interaction.reply({ content: `${language(guild, "UPD_SENT")}`, ephemeral: true })
+        await interaction.reply({ content: `${language(guild, "UPD_SENT")}`, flags: d.MessageFlags.Ephemeral })
     }
 }

@@ -24,7 +24,7 @@ module.exports = {
         if (!has_answered) {
             await interaction.reply({
                 content: `${language(guild, "PREVIOUS_QUESTION_NOT_ANSWERED")}`,
-                ephemeral: true
+                flags: d.MessageFlags.Ephemeral
             })
             return
         }

@@ -16,7 +16,7 @@ module.exports = {
         interaction.reply({
             embeds: [mainEmbed(guild), testEmbed(guild), irrverbsEmbed(guild), studyEmbed(guild), profileEmbed(guild), configurationEmbed(guild)],
             components: [inviteButtons(guild)],
-            ephemeral: true
+            flags: d.MessageFlags.Ephemeral
         })
     }
 }

@@ -271,9 +271,9 @@
             "dutch": "heefts:"
         },
         "CREDITS": {
-            "english": "Bot created by Piwy#2703. \nIf you need help with the bot, join the help server: https://discord.gg/PhCdM465np or uses the command bug + the description of the bug. \nTo see the commands list, uses the command help.",
-            "french": "Bot créer par Piwy#2703. \nPour reçevoir de l'aide, rejoingez le serveur d'aide: https://discord.gg/PhCdM465np ou utilisez la commande bug + la description du bug. \nPour voir ma liste des commandes, utilisez la commande help.",
-            "dutch": "Bot gemaakt door Piwy#2703. \nAls je hulp nodig hebt met de bot, join dan de help server: https://discord.gg/PhCdM465np of gebruik de bug command + de beschrijving van de bug. \nOm de commando lijst te zien, gebruik de help command."
+            "english": "Bot created by `piwy_`. \nIf you need help with the bot, join the help server: https://discord.gg/PhCdM465np or uses the command bug + the description of the bug. \nTo see the commands list, uses the command help.",
+            "french": "Bot créer par `piwy_`. \nPour reçevoir de l'aide, rejoingez le serveur d'aide: https://discord.gg/PhCdM465np ou utilisez la commande bug + la description du bug. \nPour voir ma liste des commandes, utilisez la commande help.",
+            "dutch": "Bot gemaakt door `piwy_`. \nAls je hulp nodig hebt met de bot, join dan de help server: https://discord.gg/PhCdM465np of gebruik de bug command + de beschrijving van de bug. \nOm de commando lijst te zien, gebruik de help command."
         },
         "INVITE": {
             "english": "There's the link to invite the bot on your server: \n",

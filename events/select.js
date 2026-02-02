@@ -30,7 +30,7 @@ module.exports = (client) => {
         // Verify if the interaction is a sellect menu
         if (!interaction.isStringSelectMenu()) return;
 
-        await interaction.deferReply({ephemeral: true})
+        await interaction.deferReply({flags: d.MessageFlags.Ephemeral})
 
         if(interaction.customId === 'langTrad') {
             values = interaction.values[0]

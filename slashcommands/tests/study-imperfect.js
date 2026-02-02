@@ -41,7 +41,7 @@ module.exports = {
         if (!has_answered) {
             await interaction.reply({
                 content: `${language(guild, "PREVIOUS_QUESTION_NOT_ANSWERED")}`,
-                ephemeral: true
+                flags: d.MessageFlags.Ephemeral
             })
             return
         }
@@ -50,7 +50,7 @@ module.exports = {
 
         const { guild, member, channel, options } = interaction
 
-        await interaction.deferReply( { ephemeral: true } );
+        await interaction.deferReply( { flags: d.MessageFlags.Ephemeral } );
 
         const selectLang = options.getString("language")
 

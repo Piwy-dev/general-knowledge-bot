@@ -42,7 +42,7 @@ module.exports = {
         if (!has_answered) {
             await interaction.reply({
                 content: `${language(guild, "PREVIOUS_QUESTION_NOT_ANSWERED")}`,
-                ephemeral: true
+                flags: d.MessageFlags.Ephemeral
             })
             return
         }
@@ -51,7 +51,7 @@ module.exports = {
 
         const { guild, member, options } = interaction
 
-        await interaction.deferReply( { ephemeral: true } );
+        await interaction.deferReply( { flags: d.MessageFlags.Ephemeral } );
 
         const selectLang = options.getString("language")
 
@@ -68,7 +68,10 @@ module.exports = {
                 lang = `${language(guild, "DUTCH")}`
                 break;
             default:
-                interaction.reply({ content: "Unknown language !" })
+                interaction.reply({ 
+                    content: "Unknown language !",
+                    flags: d.MessageFlags.Ephemeral
+                })
                 break;
         }
 

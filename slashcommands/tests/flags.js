@@ -27,7 +27,7 @@ module.exports = {
         if (!has_answered) {
             await interaction.reply({
                 content: `${language(guild, "PREVIOUS_QUESTION_NOT_ANSWERED")}`,
-                ephemeral: true
+                flags: d.MessageFlags.Ephemeral
             })
             return
         }
@@ -80,7 +80,7 @@ module.exports = {
                 if (similarity > 0.5) {
                     submitted.reply({
                         content: `${member} ${language(guild, "WIN_XP")} 10 points!`,
-                        ephemeral: true
+                        flags: d.MessageFlags.Ephemeral
                     });
                     interaction.editReply({
                         content: `${language(guild, "THX_ANSW")}`,
@@ -93,7 +93,7 @@ module.exports = {
                 else if (similarity <= 0.5 && p == 0) {
                     submitted.reply({
                         content: `${member} ${language(guild, "LOSE_XP")} 5 points ! ${language(guild, "ANSWER_WAS")} ${propositions[0]}`,
-                        ephemeral: true
+                        flags: d.MessageFlags.Ephemeral
                     });
                     interaction.editReply({
                         content: `${language(guild, "THX_ANSW")}`,
