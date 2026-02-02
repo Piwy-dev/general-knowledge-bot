@@ -76,7 +76,7 @@ client.once(d.Events.ClientReady, async () => {
     // Connecte à la bdd
     await mongo().then(mongoose => {
         try {
-            console.log('Base de donnée connectée');
+            console.log('DB connected successfully');
         } finally {
             mongoose.connection.close();
         }

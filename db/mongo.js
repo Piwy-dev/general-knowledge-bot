@@ -8,8 +8,6 @@ module.exports = async() => {
     const mongo_uri = `mongodb+srv://${mongo_user}:${mongo_password}@${cluster_name}/${mongo_db}?retryWrites=true&w=majority`;
     
     const options = {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
     }
 
     await mongoose.connect(mongo_uri, options);
