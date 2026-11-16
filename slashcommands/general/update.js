@@ -16,6 +16,7 @@ module.exports = {
         .setDefaultMemberPermissions(d.PermissionsBitField.Flags.Administrator),
 
     async execute(interaction, client) {
+        const clientId = process.env.CLIENT_ID
         const { guild, channel } = interaction
 
         const updateEmbed = new d.EmbedBuilder()
@@ -37,9 +38,9 @@ module.exports = {
             })
             .setFooter({ text: "Bot mis à jour by Piwy#2703" })
 
-        const invite = client.generateInvite({ scopes: ['bot', 'applications.commands'], permissions: [d.PermissionsBitField.Flags.Administrator] })
+        const invite = `https://discord.com/oauth2/authorize?client_id=${clientId}&permissions=8&scope=bot+applications.commands`
 
-        const buttons = new d.ActionRowBuilder()
+        const inviteButton = new d.ActionRowBuilder()
             .addComponents(
                 new d.ButtonBuilder()
                 .setLabel(`${language(guild, "INVITE_BUT")}`)
@@ -49,7 +50,7 @@ module.exports = {
 
         channel.send({
             embeds: [updateEmbed],
-            components: [buttons]
+            components: [inviteButton]
         })
 
         await interaction.reply({ content: `${language(guild, "UPD_SENT")}`, flags: d.MessageFlags.Ephemeral })
