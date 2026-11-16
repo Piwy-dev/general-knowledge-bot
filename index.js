@@ -13,7 +13,7 @@ if (production) {
 }
 
 /** Discord **/
-const client = new d.Client({ intents: [d.GatewayIntentBits.Guilds, d.GatewayIntentBits.GuildMessages, d.GatewayIntentBits.GuildMessageReactions, d.GatewayIntentBits.Guilds] });
+const client = new d.Client({ intents: [d.GatewayIntentBits.Guilds, d.GatewayIntentBits.GuildMessages, d.GatewayIntentBits.GuildMessageReactions] });
 const { mainEmbed, testEmbed, irrverbsEmbed, studyEmbed, profileEmbed, configurationEmbed, inviteButtons } = require('./builders')
 
 /** Database **/
